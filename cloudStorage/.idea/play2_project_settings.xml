@@ -3,12 +3,19 @@
   <component name="Play2ExcludedModulesSettings">
     <option name="INFO">
       <map>
+        <entry key="Testing And Tailoring CLoud Storages">
+          <value>
+            <ProjectSettingsEntry>
+              <option name="playDistrPath" value="$USER_HOME$/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.3.9.jar" />
+            </ProjectSettingsEntry>
+          </value>
+        </entry>
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
               <option name="version" value="2.3.9" />
-              <option name="sourceDir" value="$PROJECT_DIR$/app" />
-              <option name="confDir" value="$PROJECT_DIR$/conf" />
+              <option name="sourceDir" value="$PROJECT_DIR$/conf" />
+              <option name="confDir" value="$PROJECT_DIR$/app" />
               <option name="templateImports">
                 <list>
                   <option value="play.api.templates.PlayMagic._" />

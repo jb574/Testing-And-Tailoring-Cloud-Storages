@@ -1,6 +1,6 @@
-// @SOURCE:/Users/jackdavey/Documents/cloudStorage/conf/routes
-// @HASH:6a9b80af1de56193b3fe2a55a36e9641c5164488
-// @DATE:Fri Jun 05 13:48:43 BST 2015
+// @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
+// @HASH:d784cf765f3a8dff25b9dc8c393f0d58a766e957
+// @DATE:Mon Jun 08 13:46:37 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -14,17 +14,19 @@ import _root_.controllers.Assets.Asset
 import Router.queryString
 
 
-// @LINE:11
+// @LINE:13
+// @LINE:10
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
 package controllers {
 
-// @LINE:11
+// @LINE:13
 class ReverseAssets {
 
 
-// @LINE:11
+// @LINE:13
 def versioned(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -34,18 +36,13 @@ def versioned(file:String): Call = {
 }
                           
 
+// @LINE:10
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
 class ReverseApplication {
 
-
-// @LINE:8
-def testAction(): Call = {
-   import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "test")
-}
-                        
 
 // @LINE:6
 def listBooks(): Call = {
@@ -61,24 +58,47 @@ def saveBook(): Call = {
 }
                         
 
+// @LINE:8
+def testAction(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "test")
+}
+                        
+
+// @LINE:10
+def saveQuery(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "addQuery")
+}
+                        
+
+// @LINE:9
+def listQueries(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "seenQueries")
+}
+                        
+
 }
                           
 }
                   
 
 
-// @LINE:11
+// @LINE:13
+// @LINE:10
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:11
+// @LINE:13
 class ReverseAssets {
 
 
-// @LINE:11
+// @LINE:13
 def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.versioned",
    """
@@ -92,22 +112,13 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:10
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
 class ReverseApplication {
 
-
-// @LINE:8
-def testAction : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.testAction",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "test"})
-      }
-   """
-)
-                        
 
 // @LINE:6
 def listBooks : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -131,24 +142,59 @@ def saveBook : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:8
+def testAction : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.testAction",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "test"})
+      }
+   """
+)
+                        
+
+// @LINE:10
+def saveQuery : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.saveQuery",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addQuery"})
+      }
+   """
+)
+                        
+
+// @LINE:9
+def listQueries : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.listQueries",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "seenQueries"})
+      }
+   """
+)
+                        
+
 }
               
 }
         
 
 
-// @LINE:11
+// @LINE:13
+// @LINE:10
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
 package controllers.ref {
 
 
-// @LINE:11
+// @LINE:13
 class ReverseAssets {
 
 
-// @LINE:11
+// @LINE:13
 def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.versioned(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -157,17 +203,13 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
+// @LINE:10
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
 class ReverseApplication {
 
-
-// @LINE:8
-def testAction(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.testAction(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "testAction", Seq(), "GET", """""", _prefix + """test""")
-)
-                      
 
 // @LINE:6
 def listBooks(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
@@ -178,6 +220,24 @@ def listBooks(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:7
 def saveBook(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.saveBook(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "saveBook", Seq(), "POST", """""", _prefix + """saveBook""")
+)
+                      
+
+// @LINE:8
+def testAction(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.testAction(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "testAction", Seq(), "GET", """""", _prefix + """test""")
+)
+                      
+
+// @LINE:10
+def saveQuery(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.saveQuery(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "saveQuery", Seq(), "POST", """""", _prefix + """addQuery""")
+)
+                      
+
+// @LINE:9
+def listQueries(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.listQueries(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "listQueries", Seq(), "GET", """""", _prefix + """seenQueries""")
 )
                       
 
