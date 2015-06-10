@@ -7,9 +7,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b2b9a2a[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14e54d64[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -19,7 +18,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#twirl-api_2.10;1.0.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-api_2.10;1.0.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#twirl-api_2.10;1.0.2[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#twirl-api_2.10;1.0.2[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#twirl-api_2.10;1.0.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.10;1.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.10;1.0.2 [compile->compile][0m
@@ -31,7 +29,6 @@
 [0m[[0minfo[0m] [0mResolving org.apache.commons#commons-lang3;3.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-lang3;3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-lang3;3.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.commons#commons-lang3;3.1[0m
 [0m[[0mdebug[0m] [0m	found org.apache.commons#commons-lang3;3.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.apache.commons#commons-lang3;3.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.apache.commons#commons-lang3;3.1 [compile->runtime(*)][0m
@@ -45,7 +42,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play_2.10;2.3.9 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.3.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.3.9 [compile->compile][0m
@@ -55,21 +51,18 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#build-link;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#build-link;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#build-link;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#build-link;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#build-link;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-exceptions;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-exceptions;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-exceptions;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-exceptions;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.javassist#javassist;3.18.2-GA ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.javassist#javassist;3.18.2-GA {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.javassist#javassist;3.18.2-GA[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.javassist#javassist;3.18.2-GA[0m
 [0m[[0mdebug[0m] [0m	found org.javassist#javassist;3.18.2-GA in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->runtime(*)][0m
@@ -82,7 +75,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-iteratees_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-iteratees_2.10;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-iteratees_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-iteratees_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-iteratees_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->com.typesafe.play#play-iteratees_2.10;2.3.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-iteratees_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -91,7 +83,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-stm#scala-stm_2.10;0.7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-stm#scala-stm_2.10;0.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-stm#scala-stm_2.10;0.7[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-stm#scala-stm_2.10;0.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-stm#scala-stm_2.10;0.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-iteratees_2.10;2.3.9->org.scala-stm#scala-stm_2.10;0.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-stm#scala-stm_2.10;0.7->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
@@ -107,7 +98,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe#config;1.2.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#config;1.2.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#config;1.2.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe#config;1.2.1[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe#config;1.2.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-iteratees_2.10;2.3.9->com.typesafe#config;1.2.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->com.typesafe.play#play-iteratees_2.10;2.3.9 [compile->runtime(*)][0m
@@ -122,7 +112,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-json_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-json_2.10;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-json_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-json_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-json_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->com.typesafe.play#play-json_2.10;2.3.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -133,7 +122,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-functional_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-functional_2.10;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-functional_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-functional_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-functional_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->com.typesafe.play#play-functional_2.10;2.3.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-functional_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -142,7 +130,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-datacommons_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-datacommons_2.10;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-datacommons_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-datacommons_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-datacommons_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->com.typesafe.play#play-datacommons_2.10;2.3.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-datacommons_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -151,7 +138,6 @@
 [0m[[0minfo[0m] [0mResolving joda-time#joda-time;2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: joda-time#joda-time;2.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: joda-time#joda-time;2.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: joda-time#joda-time;2.3[0m
 [0m[[0mdebug[0m] [0m	found joda-time#joda-time;2.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->joda-time#joda-time;2.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->joda-time#joda-time;2.3 [compile->runtime(*)][0m
@@ -160,7 +146,6 @@
 [0m[[0minfo[0m] [0mResolving org.joda#joda-convert;1.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.joda#joda-convert;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.joda#joda-convert;1.6[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.joda#joda-convert;1.6[0m
 [0m[[0mdebug[0m] [0m	found org.joda#joda-convert;1.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->org.joda#joda-convert;1.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->org.joda#joda-convert;1.6 [compile->runtime(*)][0m
@@ -169,7 +154,6 @@
 [0m[[0minfo[0m] [0mResolving com.fasterxml.jackson.core#jackson-annotations;2.3.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-annotations;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.3.2[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.fasterxml.jackson.core#jackson-annotations;2.3.2[0m
 [0m[[0mdebug[0m] [0m	found com.fasterxml.jackson.core#jackson-annotations;2.3.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->com.fasterxml.jackson.core#jackson-annotations;2.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->com.fasterxml.jackson.core#jackson-annotations;2.3.2 [compile->runtime(*)][0m
@@ -178,7 +162,6 @@
 [0m[[0minfo[0m] [0mResolving com.fasterxml.jackson.core#jackson-core;2.3.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-core;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.3.2[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.fasterxml.jackson.core#jackson-core;2.3.2[0m
 [0m[[0mdebug[0m] [0m	found com.fasterxml.jackson.core#jackson-core;2.3.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->com.fasterxml.jackson.core#jackson-core;2.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->com.fasterxml.jackson.core#jackson-core;2.3.2 [compile->runtime(*)][0m
@@ -187,7 +170,6 @@
 [0m[[0minfo[0m] [0mResolving com.fasterxml.jackson.core#jackson-databind;2.3.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-databind;2.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.3.2[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.fasterxml.jackson.core#jackson-databind;2.3.2[0m
 [0m[[0mdebug[0m] [0m	found com.fasterxml.jackson.core#jackson-databind;2.3.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->com.fasterxml.jackson.core#jackson-databind;2.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.3.2->com.fasterxml.jackson.core#jackson-annotations;2.3.0 [compile->master(*)][0m
@@ -207,7 +189,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.4[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-reflect;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-reflect;2.10.4[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)][0m
@@ -251,7 +232,6 @@
 [0m[[0minfo[0m] [0mResolving io.netty#netty;3.9.8.Final ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.netty#netty;3.9.8.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.netty#netty;3.9.8.Final[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: io.netty#netty;3.9.8.Final[0m
 [0m[[0mdebug[0m] [0m	found io.netty#netty;3.9.8.Final in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->io.netty#netty;3.9.8.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->io.netty#netty;3.9.8.Final [compile->runtime(*)][0m
@@ -260,7 +240,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.netty#netty-http-pipelining;1.1.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.netty#netty-http-pipelining;1.1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.netty#netty-http-pipelining;1.1.2[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.netty#netty-http-pipelining;1.1.2[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.netty#netty-http-pipelining;1.1.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->com.typesafe.netty#netty-http-pipelining;1.1.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.2->io.netty#netty;3.6.3.Final [compile->master(*)][0m
@@ -276,7 +255,6 @@
 [0m[[0minfo[0m] [0mResolving org.slf4j#slf4j-api;1.7.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.slf4j#slf4j-api;1.7.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.6[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.slf4j#slf4j-api;1.7.6[0m
 [0m[[0mdebug[0m] [0m	found org.slf4j#slf4j-api;1.7.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.slf4j#slf4j-api;1.7.6 [compile->runtime(*)][0m
@@ -285,7 +263,6 @@
 [0m[[0minfo[0m] [0mResolving org.slf4j#jul-to-slf4j;1.7.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.slf4j#jul-to-slf4j;1.7.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.slf4j#jul-to-slf4j;1.7.6[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.slf4j#jul-to-slf4j;1.7.6[0m
 [0m[[0mdebug[0m] [0m	found org.slf4j#jul-to-slf4j;1.7.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.slf4j#jul-to-slf4j;1.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.6->org.slf4j#slf4j-api;1.7.6 [compile->master(*)][0m
@@ -298,7 +275,6 @@
 [0m[[0minfo[0m] [0mResolving org.slf4j#jcl-over-slf4j;1.7.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.slf4j#jcl-over-slf4j;1.7.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.slf4j#jcl-over-slf4j;1.7.6[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.slf4j#jcl-over-slf4j;1.7.6[0m
 [0m[[0mdebug[0m] [0m	found org.slf4j#jcl-over-slf4j;1.7.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.slf4j#jcl-over-slf4j;1.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.6->org.slf4j#slf4j-api;1.7.6 [compile->master(*)][0m
@@ -311,7 +287,6 @@
 [0m[[0minfo[0m] [0mResolving ch.qos.logback#logback-core;1.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: ch.qos.logback#logback-core;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: ch.qos.logback#logback-core;1.1.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: ch.qos.logback#logback-core;1.1.1[0m
 [0m[[0mdebug[0m] [0m	found ch.qos.logback#logback-core;1.1.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->ch.qos.logback#logback-core;1.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->ch.qos.logback#logback-core;1.1.1 [compile->runtime(*)][0m
@@ -320,7 +295,6 @@
 [0m[[0minfo[0m] [0mResolving ch.qos.logback#logback-classic;1.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: ch.qos.logback#logback-classic;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: ch.qos.logback#logback-classic;1.1.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: ch.qos.logback#logback-classic;1.1.1[0m
 [0m[[0mdebug[0m] [0m	found ch.qos.logback#logback-classic;1.1.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->ch.qos.logback#logback-classic;1.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.1->ch.qos.logback#logback-core;1.1.1 [compile->master(*)][0m
@@ -337,7 +311,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.10;2.3.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.10;2.3.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.3.4[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-actor_2.10;2.3.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.3.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->com.typesafe.akka#akka-actor_2.10;2.3.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.3.4->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -354,7 +327,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-slf4j_2.10;2.3.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-slf4j_2.10;2.3.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.10;2.3.4[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-slf4j_2.10;2.3.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-slf4j_2.10;2.3.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->com.typesafe.akka#akka-slf4j_2.10;2.3.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.3.4->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -380,7 +352,6 @@
 [0m[[0minfo[0m] [0mResolving commons-codec#commons-codec;1.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-codec#commons-codec;1.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: commons-codec#commons-codec;1.9[0m
 [0m[[0mdebug[0m] [0m	found commons-codec#commons-codec;1.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->commons-codec#commons-codec;1.9 [compile->runtime(*)][0m
@@ -401,14 +372,12 @@
 [0m[[0minfo[0m] [0mResolving xerces#xercesImpl;2.11.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: xerces#xercesImpl;2.11.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: xerces#xercesImpl;2.11.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: xerces#xercesImpl;2.11.0[0m
 [0m[[0mdebug[0m] [0m	found xerces#xercesImpl;2.11.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->xerces#xercesImpl;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.11.0->xml-apis#xml-apis;1.4.01 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving xml-apis#xml-apis;1.4.01 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: xml-apis#xml-apis;1.4.01 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: xml-apis#xml-apis;1.4.01[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: xml-apis#xml-apis;1.4.01[0m
 [0m[[0mdebug[0m] [0m	found xml-apis#xml-apis;1.4.01 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xerces#xercesImpl;2.11.0->xml-apis#xml-apis;1.4.01 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->xerces#xercesImpl;2.11.0 [compile->runtime(*)][0m
@@ -419,7 +388,6 @@
 [0m[[0minfo[0m] [0mResolving javax.transaction#jta;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: javax.transaction#jta;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: javax.transaction#jta;1.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: javax.transaction#jta;1.1[0m
 [0m[[0mdebug[0m] [0m	found javax.transaction#jta;1.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->javax.transaction#jta;1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->javax.transaction#jta;1.1 [compile->runtime(*)][0m
@@ -477,6 +445,77 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-jdbc_2.10;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-jdbc_2.10;2.3.9 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-jdbc_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-jdbc_2.10;2.3.9 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.jolbox#bonecp;0.8.0.RELEASE ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.jolbox#bonecp;0.8.0.RELEASE {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.jolbox#bonecp;0.8.0.RELEASE[0m
+[0m[[0mdebug[0m] [0m	found com.jolbox#bonecp;0.8.0.RELEASE in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.google.guava#guava;15.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.guava#guava;15.0[0m
+[0m[[0mdebug[0m] [0m	found com.google.guava#guava;15.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.h2database#h2;1.3.175 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.h2database#h2;1.3.175 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.h2database#h2;1.3.175[0m
+[0m[[0mdebug[0m] [0m	found com.h2database#h2;1.3.175 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving tyrex#tyrex;1.0.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: tyrex#tyrex;1.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: tyrex#tyrex;1.0.1[0m
+[0m[[0mdebug[0m] [0m	found tyrex#tyrex;1.0.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving mysql#mysql-connector-java;5.1.35 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: mysql#mysql-connector-java;5.1.35 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: mysql#mysql-connector-java;5.1.35[0m
+[0m[[0mdebug[0m] [0m	found mysql#mysql-connector-java;5.1.35 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [compile][0m
@@ -740,6 +779,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [runtime][0m
@@ -1004,11 +1082,49 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-test_2.10;2.3.9 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.10;2.3.9 {test=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-test_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-test_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-test_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-test_2.10;2.3.9 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-test_2.10;2.3.9 [test->compile][0m
@@ -1016,20 +1132,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->junit#junit;4.11 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving junit#junit;4.11 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: junit#junit;4.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: junit#junit;4.11[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: junit#junit;4.11[0m
 [0m[[0mdebug[0m] [0m	found junit#junit;4.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->junit#junit;4.11 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.hamcrest#hamcrest-core;1.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hamcrest#hamcrest-core;1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.hamcrest#hamcrest-core;1.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.hamcrest#hamcrest-core;1.3[0m
 [0m[[0mdebug[0m] [0m	found org.hamcrest#hamcrest-core;1.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->junit#junit;4.11 [compile->runtime(*)][0m
@@ -1040,7 +1152,6 @@
 [0m[[0minfo[0m] [0mResolving org.specs2#specs2-core_2.10;2.3.12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-core_2.10;2.3.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#specs2-core_2.10;2.3.12[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.specs2#specs2-core_2.10;2.3.12[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-core_2.10;2.3.12 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->org.specs2#specs2-core_2.10;2.3.12 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.10;2.3.12->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -1049,7 +1160,6 @@
 [0m[[0minfo[0m] [0mResolving org.specs2#specs2-matcher_2.10;2.3.12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-matcher_2.10;2.3.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#specs2-matcher_2.10;2.3.12[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.specs2#specs2-matcher_2.10;2.3.12[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-matcher_2.10;2.3.12 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.10;2.3.12->org.specs2#specs2-matcher_2.10;2.3.12 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.10;2.3.12->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -1058,7 +1168,6 @@
 [0m[[0minfo[0m] [0mResolving org.specs2#specs2-common_2.10;2.3.12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-common_2.10;2.3.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#specs2-common_2.10;2.3.12[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.specs2#specs2-common_2.10;2.3.12[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-common_2.10;2.3.12 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.10;2.3.12->org.specs2#specs2-common_2.10;2.3.12 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.10;2.3.12->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -1067,7 +1176,6 @@
 [0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-core_2.10;7.0.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-core_2.10;7.0.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.10;7.0.6[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scalaz#scalaz-core_2.10;7.0.6[0m
 [0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-core_2.10;7.0.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.10;2.3.12->org.scalaz#scalaz-core_2.10;7.0.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.6->org.scala-lang#scala-library;2.10.1 [compile->master(compile)][0m
@@ -1078,7 +1186,6 @@
 [0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-concurrent_2.10;7.0.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-concurrent_2.10;7.0.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalaz#scalaz-concurrent_2.10;7.0.6[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scalaz#scalaz-concurrent_2.10;7.0.6[0m
 [0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-concurrent_2.10;7.0.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.10;2.3.12->org.scalaz#scalaz-concurrent_2.10;7.0.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.6->org.scala-lang#scala-library;2.10.1 [compile->master(compile)][0m
@@ -1091,7 +1198,6 @@
 [0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-effect_2.10;7.0.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-effect_2.10;7.0.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalaz#scalaz-effect_2.10;7.0.6[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scalaz#scalaz-effect_2.10;7.0.6[0m
 [0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-effect_2.10;7.0.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.6->org.scalaz#scalaz-effect_2.10;7.0.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.6->org.scala-lang#scala-library;2.10.1 [compile->master(compile)][0m
@@ -1139,7 +1245,6 @@
 [0m[[0minfo[0m] [0mResolving org.specs2#specs2-junit_2.10;2.3.12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-junit_2.10;2.3.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#specs2-junit_2.10;2.3.12[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.specs2#specs2-junit_2.10;2.3.12[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-junit_2.10;2.3.12 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->org.specs2#specs2-junit_2.10;2.3.12 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-junit_2.10;2.3.12->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -1160,7 +1265,6 @@
 [0m[[0minfo[0m] [0mResolving org.specs2#specs2-mock_2.10;2.3.12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-mock_2.10;2.3.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#specs2-mock_2.10;2.3.12[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.specs2#specs2-mock_2.10;2.3.12[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-mock_2.10;2.3.12 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->org.specs2#specs2-mock_2.10;2.3.12 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-mock_2.10;2.3.12->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -1173,7 +1277,6 @@
 [0m[[0minfo[0m] [0mResolving org.mockito#mockito-core;1.9.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.mockito#mockito-core;1.9.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.mockito#mockito-core;1.9.5[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.mockito#mockito-core;1.9.5[0m
 [0m[[0mdebug[0m] [0m	found org.mockito#mockito-core;1.9.5 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-mock_2.10;2.3.12->org.mockito#mockito-core;1.9.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)][0m
@@ -1184,7 +1287,6 @@
 [0m[[0minfo[0m] [0mResolving org.objenesis#objenesis;1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.objenesis#objenesis;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.objenesis#objenesis;1.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.objenesis#objenesis;1.0[0m
 [0m[[0mdebug[0m] [0m	found org.objenesis#objenesis;1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.objenesis#objenesis;1.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->org.specs2#specs2-mock_2.10;2.3.12 [compile->runtime(*)][0m
@@ -1206,7 +1308,6 @@
 [0m[[0minfo[0m] [0mResolving org.specs2#specs2-matcher-extra_2.10;2.3.12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-matcher-extra_2.10;2.3.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#specs2-matcher-extra_2.10;2.3.12[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.specs2#specs2-matcher-extra_2.10;2.3.12[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-matcher-extra_2.10;2.3.12 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->org.specs2#specs2-matcher-extra_2.10;2.3.12 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher-extra_2.10;2.3.12->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -1215,14 +1316,12 @@
 [0m[[0minfo[0m] [0mResolving org.specs2#specs2-analysis_2.10;2.3.12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-analysis_2.10;2.3.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#specs2-analysis_2.10;2.3.12[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.specs2#specs2-analysis_2.10;2.3.12[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-analysis_2.10;2.3.12 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher-extra_2.10;2.3.12->org.specs2#specs2-analysis_2.10;2.3.12 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-analysis_2.10;2.3.12->org.scala-lang#scala-compiler;2.10.4 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.10.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.4[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-compiler;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-analysis_2.10;2.3.12->org.scala-lang#scala-compiler;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
@@ -1239,7 +1338,6 @@
 [0m[[0minfo[0m] [0mResolving org.specs2#classycle;1.4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#classycle;1.4.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#classycle;1.4.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.specs2#classycle;1.4.3[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#classycle;1.4.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-analysis_2.10;2.3.12->org.specs2#classycle;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher-extra_2.10;2.3.12->org.specs2#specs2-matcher_2.10;2.3.12 [compile->master(compile)][0m
@@ -1248,7 +1346,6 @@
 [0m[[0minfo[0m] [0mResolving org.scalamacros#quasiquotes_2.10;2.0.0-M7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalamacros#quasiquotes_2.10;2.0.0-M7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalamacros#quasiquotes_2.10;2.0.0-M7[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scalamacros#quasiquotes_2.10;2.0.0-M7[0m
 [0m[[0mdebug[0m] [0m	found org.scalamacros#quasiquotes_2.10;2.0.0-M7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher-extra_2.10;2.3.12->org.scalamacros#quasiquotes_2.10;2.0.0-M7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.0-M7->org.scala-lang#scala-library;2.10.2 [compile->master(compile)][0m
@@ -1293,7 +1390,6 @@
 [0m[[0minfo[0m] [0mResolving com.novocode#junit-interface;0.11-RC1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.novocode#junit-interface;0.11-RC1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.novocode#junit-interface;0.11-RC1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.novocode#junit-interface;0.11-RC1[0m
 [0m[[0mdebug[0m] [0m	found com.novocode#junit-interface;0.11-RC1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.novocode#junit-interface;0.11-RC1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.11-RC1->junit#junit;4.11 [compile->master(compile)][0m
@@ -1302,7 +1398,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#test-interface;1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#test-interface;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#test-interface;1.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-sbt#test-interface;1.0[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#test-interface;1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.11-RC1->org.scala-sbt#test-interface;1.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.novocode#junit-interface;0.11-RC1 [compile->runtime(*)][0m
@@ -1315,16 +1410,15 @@
 [0m[[0minfo[0m] [0mResolving com.google.guava#guava;16.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.guava#guava;16.0.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.guava#guava;16.0.1[0m
 [0m[[0mdebug[0m] [0m	found com.google.guava#guava;16.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;16.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;16.0.1 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;16.0.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.code.findbugs#jsr305;2.0.3 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.google.code.findbugs#jsr305;2.0.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.code.findbugs#jsr305;2.0.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.code.findbugs#jsr305;2.0.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.code.findbugs#jsr305;2.0.3[0m
 [0m[[0mdebug[0m] [0m	found com.google.code.findbugs#jsr305;2.0.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.code.findbugs#jsr305;2.0.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.code.findbugs#jsr305;2.0.3 [compile->runtime(*)][0m
@@ -1333,21 +1427,18 @@
 [0m[[0minfo[0m] [0mResolving org.fluentlenium#fluentlenium-festassert;0.9.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fluentlenium#fluentlenium-festassert;0.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fluentlenium#fluentlenium-festassert;0.9.2[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.fluentlenium#fluentlenium-festassert;0.9.2[0m
 [0m[[0mdebug[0m] [0m	found org.fluentlenium#fluentlenium-festassert;0.9.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->org.fluentlenium#fluentlenium-festassert;0.9.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.fluentlenium#fluentlenium-festassert;0.9.2->org.fluentlenium#fluentlenium-core;0.9.2 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.fluentlenium#fluentlenium-core;0.9.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fluentlenium#fluentlenium-core;0.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fluentlenium#fluentlenium-core;0.9.2[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.fluentlenium#fluentlenium-core;0.9.2[0m
 [0m[[0mdebug[0m] [0m	found org.fluentlenium#fluentlenium-core;0.9.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.fluentlenium#fluentlenium-festassert;0.9.2->org.fluentlenium#fluentlenium-core;0.9.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.fluentlenium#fluentlenium-core;0.9.2->org.seleniumhq.selenium#selenium-java;2.39.0 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-java;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-java;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-java;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-java;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-java;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.fluentlenium#fluentlenium-core;0.9.2->org.seleniumhq.selenium#selenium-java;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-android-driver;2.39.0 [compile->master(compile)][0m
@@ -1359,7 +1450,6 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-android-driver;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-android-driver;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-android-driver;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-android-driver;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-android-driver;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-android-driver;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-android-driver;2.39.0->org.seleniumhq.selenium#selenium-remote-driver;2.39.0 [compile->master(compile)][0m
@@ -1371,7 +1461,6 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-remote-driver;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-remote-driver;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-remote-driver;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-remote-driver;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-remote-driver;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-android-driver;2.39.0->org.seleniumhq.selenium#selenium-remote-driver;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->cglib#cglib-nodep;2.1_3 [compile->master(compile)][0m
@@ -1383,7 +1472,6 @@
 [0m[[0minfo[0m] [0mResolving cglib#cglib-nodep;2.1_3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: cglib#cglib-nodep;2.1_3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: cglib#cglib-nodep;2.1_3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: cglib#cglib-nodep;2.1_3[0m
 [0m[[0mdebug[0m] [0m	found cglib#cglib-nodep;2.1_3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->cglib#cglib-nodep;2.1_3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.json#json;20080701 [compile->master(compile)][0m
@@ -1395,7 +1483,6 @@
 [0m[[0minfo[0m] [0mResolving org.json#json;20080701 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json#json;20080701 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json#json;20080701[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.json#json;20080701[0m
 [0m[[0mdebug[0m] [0m	found org.json#json;20080701 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.json#json;20080701 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.seleniumhq.selenium#selenium-api;2.39.0 [compile->master(compile)][0m
@@ -1407,18 +1494,12 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-api;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-api;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-api;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-api;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-api;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.seleniumhq.selenium#selenium-api;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.google.guava#guava;15.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.guava#guava;15.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.guava#guava;15.0[0m
-[0m[[0mdebug[0m] [0m	found com.google.guava#guava;15.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;16.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->org.json#json;20080701 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->org.json#json;20080701 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [compile->master(compile)][0m
@@ -1430,7 +1511,6 @@
 [0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpclient;4.3.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpclient;4.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.3.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.httpcomponents#httpclient;4.3.1[0m
 [0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpclient;4.3.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
@@ -1476,7 +1556,6 @@
 [0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcore;4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcore;4.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.httpcomponents#httpcore;4.3[0m
 [0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpcore;4.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [compile->compile(*)][0m
@@ -1520,7 +1599,6 @@
 [0m[[0minfo[0m] [0mResolving commons-logging#commons-logging;1.1.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: commons-logging#commons-logging;1.1.3[0m
 [0m[[0mdebug[0m] [0m	found commons-logging#commons-logging;1.1.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [compile->compile(*)][0m
@@ -1565,7 +1643,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.commons#commons-exec;1.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -1575,7 +1655,6 @@
 [0m[[0minfo[0m] [0mResolving org.apache.commons#commons-exec;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-exec;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-exec;1.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.commons#commons-exec;1.1[0m
 [0m[[0mdebug[0m] [0m	found org.apache.commons#commons-exec;1.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.commons#commons-exec;1.1 [compile->compile(*)][0m
@@ -1589,7 +1668,6 @@
 [0m[[0minfo[0m] [0mResolving net.java.dev.jna#jna;3.4.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java.dev.jna#jna;3.4.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: net.java.dev.jna#jna;3.4.0[0m
 [0m[[0mdebug[0m] [0m	found net.java.dev.jna#jna;3.4.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->net.java.dev.jna#jna;3.4.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->net.java.dev.jna#platform;3.4.0 [compile->master(compile)][0m
@@ -1601,7 +1679,6 @@
 [0m[[0minfo[0m] [0mResolving net.java.dev.jna#platform;3.4.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java.dev.jna#platform;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java.dev.jna#platform;3.4.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: net.java.dev.jna#platform;3.4.0[0m
 [0m[[0mdebug[0m] [0m	found net.java.dev.jna#platform;3.4.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->net.java.dev.jna#platform;3.4.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-chrome-driver;2.39.0 [compile->master(compile)][0m
@@ -1613,7 +1690,6 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-chrome-driver;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-chrome-driver;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-chrome-driver;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-chrome-driver;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-chrome-driver;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-chrome-driver;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-chrome-driver;2.39.0->org.seleniumhq.selenium#selenium-remote-driver;2.39.0 [compile->master(compile)][0m
@@ -1627,7 +1703,6 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-htmlunit-driver;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-htmlunit-driver;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-htmlunit-driver;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-htmlunit-driver;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-htmlunit-driver;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-htmlunit-driver;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-htmlunit-driver;2.39.0->org.seleniumhq.selenium#selenium-remote-driver;2.39.0 [compile->master(compile)][0m
@@ -1641,7 +1716,6 @@
 [0m[[0minfo[0m] [0mResolving net.sourceforge.htmlunit#htmlunit;2.13 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sourceforge.htmlunit#htmlunit;2.13 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.sourceforge.htmlunit#htmlunit;2.13[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: net.sourceforge.htmlunit#htmlunit;2.13[0m
 [0m[[0mdebug[0m] [0m	found net.sourceforge.htmlunit#htmlunit;2.13 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-htmlunit-driver;2.39.0->net.sourceforge.htmlunit#htmlunit;2.13 [compile->compile(*)][0m
@@ -1659,7 +1733,6 @@
 [0m[[0minfo[0m] [0mResolving xalan#xalan;2.7.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: xalan#xalan;2.7.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: xalan#xalan;2.7.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: xalan#xalan;2.7.1[0m
 [0m[[0mdebug[0m] [0m	found xalan#xalan;2.7.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->xalan#xalan;2.7.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.1->xalan#serializer;2.7.1 [compile->master(compile)][0m
@@ -1675,7 +1748,6 @@
 [0m[[0minfo[0m] [0mResolving xalan#serializer;2.7.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: xalan#serializer;2.7.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: xalan#serializer;2.7.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: xalan#serializer;2.7.1[0m
 [0m[[0mdebug[0m] [0m	found xalan#serializer;2.7.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xalan#xalan;2.7.1->xalan#serializer;2.7.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies xalan#serializer;2.7.1->xml-apis#xml-apis;1.3.04 [compile->master(compile)][0m
@@ -1704,7 +1776,6 @@
 [0m[[0minfo[0m] [0mResolving commons-collections#commons-collections;3.2.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-collections#commons-collections;3.2.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-collections#commons-collections;3.2.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: commons-collections#commons-collections;3.2.1[0m
 [0m[[0mdebug[0m] [0m	found commons-collections#commons-collections;3.2.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [compile->compile(*)][0m
@@ -1739,7 +1810,6 @@
 [0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpmime;4.3.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpmime;4.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpmime;4.3.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.httpcomponents#httpmime;4.3.1[0m
 [0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpmime;4.3.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpmime;4.3.1 [compile->compile(*)][0m
@@ -1771,7 +1841,6 @@
 [0m[[0minfo[0m] [0mResolving net.sourceforge.htmlunit#htmlunit-core-js;2.13 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sourceforge.htmlunit#htmlunit-core-js;2.13 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.sourceforge.htmlunit#htmlunit-core-js;2.13[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: net.sourceforge.htmlunit#htmlunit-core-js;2.13[0m
 [0m[[0mdebug[0m] [0m	found net.sourceforge.htmlunit#htmlunit-core-js;2.13 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.htmlunit#htmlunit-core-js;2.13 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->xerces#xercesImpl;2.11.0 [compile->master(compile)][0m
@@ -1798,7 +1867,6 @@
 [0m[[0minfo[0m] [0mResolving net.sourceforge.nekohtml#nekohtml;1.9.19 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sourceforge.nekohtml#nekohtml;1.9.19 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.sourceforge.nekohtml#nekohtml;1.9.19[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: net.sourceforge.nekohtml#nekohtml;1.9.19[0m
 [0m[[0mdebug[0m] [0m	found net.sourceforge.nekohtml#nekohtml;1.9.19 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.nekohtml#nekohtml;1.9.19 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: xerces#xercesImpl;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
@@ -1815,7 +1883,6 @@
 [0m[[0minfo[0m] [0mResolving net.sourceforge.cssparser#cssparser;0.9.11 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sourceforge.cssparser#cssparser;0.9.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.sourceforge.cssparser#cssparser;0.9.11[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: net.sourceforge.cssparser#cssparser;0.9.11[0m
 [0m[[0mdebug[0m] [0m	found net.sourceforge.cssparser#cssparser;0.9.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->net.sourceforge.cssparser#cssparser;0.9.11 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.cssparser#cssparser;0.9.11->org.w3c.css#sac;1.3 [compile->master(compile)][0m
@@ -1831,7 +1898,6 @@
 [0m[[0minfo[0m] [0mResolving org.w3c.css#sac;1.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.w3c.css#sac;1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.w3c.css#sac;1.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.w3c.css#sac;1.3[0m
 [0m[[0mdebug[0m] [0m	found org.w3c.css#sac;1.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.cssparser#cssparser;0.9.11->org.w3c.css#sac;1.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-io#commons-io;2.2 [compile->master(compile)][0m
@@ -1847,7 +1913,6 @@
 [0m[[0minfo[0m] [0mResolving commons-io#commons-io;2.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-io#commons-io;2.2[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: commons-io#commons-io;2.2[0m
 [0m[[0mdebug[0m] [0m	found commons-io#commons-io;2.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.10 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-io#commons-io;2.2 [compile->compile(*)][0m
@@ -1871,7 +1936,6 @@
 [0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-websocket;8.1.12.v20130726 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-websocket;8.1.12.v20130726 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-websocket;8.1.12.v20130726[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.eclipse.jetty#jetty-websocket;8.1.12.v20130726[0m
 [0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-websocket;8.1.12.v20130726 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.eclipse.jetty#jetty-server;8.1.12.v20130726 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.eclipse.jetty#jetty-server;7.2.2.v20101205 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.eclipse.jetty#jetty-websocket;8.1.12.v20130726 [compile->compile(*)][0m
@@ -1915,7 +1979,6 @@
 [0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-util;8.1.12.v20130726 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-util;8.1.12.v20130726 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-util;8.1.12.v20130726[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.eclipse.jetty#jetty-util;8.1.12.v20130726[0m
 [0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-util;8.1.12.v20130726 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.12.v20130726->org.eclipse.jetty#jetty-util;8.1.12.v20130726 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.12.v20130726->org.eclipse.jetty#jetty-io;8.1.12.v20130726 [compile->master(compile)][0m
@@ -1957,7 +2020,6 @@
 [0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-io;8.1.12.v20130726 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-io;8.1.12.v20130726 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-io;8.1.12.v20130726[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.eclipse.jetty#jetty-io;8.1.12.v20130726[0m
 [0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-io;8.1.12.v20130726 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.12.v20130726->org.eclipse.jetty#jetty-io;8.1.12.v20130726 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.12.v20130726->org.eclipse.jetty#jetty-util;8.1.12.v20130726 [compile->master(compile)][0m
@@ -2001,7 +2063,6 @@
 [0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-http;8.1.12.v20130726 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-http;8.1.12.v20130726 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-http;8.1.12.v20130726[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.eclipse.jetty#jetty-http;8.1.12.v20130726[0m
 [0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-http;8.1.12.v20130726 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.12.v20130726->org.eclipse.jetty#jetty-http;8.1.12.v20130726 [compile->compile(*)][0m
@@ -2023,7 +2084,6 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-firefox-driver;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-firefox-driver;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-firefox-driver;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-firefox-driver;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-firefox-driver;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-firefox-driver;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-firefox-driver;2.39.0->org.seleniumhq.selenium#selenium-remote-driver;2.39.0 [compile->master(compile)][0m
@@ -2041,7 +2101,6 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-ie-driver;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-ie-driver;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-ie-driver;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-ie-driver;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-ie-driver;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-ie-driver;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-ie-driver;2.39.0->net.java.dev.jna#jna;3.4.0 [compile->master(compile)][0m
@@ -2059,7 +2118,6 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-iphone-driver;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-iphone-driver;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-iphone-driver;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-iphone-driver;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-iphone-driver;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-iphone-driver;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-iphone-driver;2.39.0->org.seleniumhq.selenium#selenium-remote-driver;2.39.0 [compile->master(compile)][0m
@@ -2073,7 +2131,6 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-safari-driver;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-safari-driver;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-safari-driver;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-safari-driver;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-safari-driver;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-safari-driver;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-safari-driver;2.39.0->org.seleniumhq.selenium#selenium-remote-driver;2.39.0 [compile->master(compile)][0m
@@ -2087,7 +2144,6 @@
 [0m[[0minfo[0m] [0mResolving org.webbitserver#webbit;0.4.14 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webbitserver#webbit;0.4.14 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.webbitserver#webbit;0.4.14[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.webbitserver#webbit;0.4.14[0m
 [0m[[0mdebug[0m] [0m	found org.webbitserver#webbit;0.4.14 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-safari-driver;2.39.0->org.webbitserver#webbit;0.4.14 [compile->compile(*)][0m
@@ -2114,7 +2170,6 @@
 [0m[[0minfo[0m] [0mResolving org.seleniumhq.selenium#selenium-support;2.39.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.seleniumhq.selenium#selenium-support;2.39.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-support;2.39.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.seleniumhq.selenium#selenium-support;2.39.0[0m
 [0m[[0mdebug[0m] [0m	found org.seleniumhq.selenium#selenium-support;2.39.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.39.0->org.seleniumhq.selenium#selenium-support;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-support;2.39.0->org.seleniumhq.selenium#selenium-api;2.39.0 [compile->master(compile)][0m
@@ -2125,7 +2180,6 @@
 [0m[[0minfo[0m] [0mResolving org.easytesting#fest-assert;1.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.easytesting#fest-assert;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.easytesting#fest-assert;1.4[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.easytesting#fest-assert;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.easytesting#fest-assert;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.fluentlenium#fluentlenium-festassert;0.9.2->org.easytesting#fest-assert;1.4 [compile->compile(*)][0m
@@ -2148,7 +2202,6 @@
 [0m[[0minfo[0m] [0mResolving org.easytesting#fest-util;1.1.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.easytesting#fest-util;1.1.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.easytesting#fest-util;1.1.6[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.easytesting#fest-util;1.1.6[0m
 [0m[[0mdebug[0m] [0m	found org.easytesting#fest-util;1.1.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.easytesting#fest-assert;1.4->org.easytesting#fest-util;1.1.6 [compile->compile(*)][0m
@@ -2170,7 +2223,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.seleniumhq.selenium#selenium-api;2.39.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.seleniumhq.selenium#selenium-api;2.39.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->org.json#json;20080701 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->org.json#json;20080701 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)][0m
@@ -2187,7 +2241,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.commons#commons-exec;1.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.commons#commons-exec;1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
@@ -2319,8 +2374,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.novocode#junit-interface;0.11-RC1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.novocode#junit-interface;0.11-RC1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.code.findbugs#jsr305;2.0.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.code.findbugs#jsr305;2.0.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->org.fluentlenium#fluentlenium-festassert;0.9.2 [runtime->runtime(*)][0m
@@ -2593,6 +2647,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -2859,6 +2952,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [test-internal][0m
@@ -3125,6 +3257,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.10;2.3.9->org.scala-lang#scala-reflect;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.typesafe.play#play_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.jolbox#bonecp;0.8.0.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->com.h2database#h2;1.3.175 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.3.9->tyrex#tyrex;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-test_2.10;2.3.9 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-test_2.10;2.3.9 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-test_2.10;2.3.9 [test->compile][0m
@@ -3280,7 +3451,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.seleniumhq.selenium#selenium-api;2.39.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;16.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->org.json#json;20080701 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->org.json#json;20080701 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [compile->master(compile)][0m
@@ -3412,7 +3585,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.commons#commons-exec;1.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -3966,8 +4141,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.11-RC1->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.11-RC1->org.scala-sbt#test-interface;1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.code.findbugs#jsr305;2.0.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->com.google.code.findbugs#jsr305;2.0.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.3.9->org.fluentlenium#fluentlenium-festassert;0.9.2 [runtime->runtime(*)][0m
@@ -3987,7 +4161,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.seleniumhq.selenium#selenium-api;2.39.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.seleniumhq.selenium#selenium-api;2.39.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->org.json#json;20080701 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->org.json#json;20080701 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)][0m
@@ -4004,7 +4179,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.commons#commons-exec;1.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.commons#commons-exec;1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
@@ -4132,7 +4308,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-docs_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-docs_2.10;2.3.9 {docs=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-docs_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-docs_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-docs_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-docs_2.10;2.3.9 [docs->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#play-docs_2.10;2.3.9 [docs->compile][0m
@@ -4270,7 +4445,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-doc_2.10;1.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-doc_2.10;1.1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-doc_2.10;1.1.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-doc_2.10;1.1.0[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-doc_2.10;1.1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-docs_2.10;2.3.9->com.typesafe.play#play-doc_2.10;1.1.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-doc_2.10;1.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -4279,35 +4453,30 @@
 [0m[[0minfo[0m] [0mResolving org.pegdown#pegdown;1.4.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.pegdown#pegdown;1.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.pegdown#pegdown;1.4.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.pegdown#pegdown;1.4.0[0m
 [0m[[0mdebug[0m] [0m	found org.pegdown#pegdown;1.4.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-doc_2.10;1.1.0->org.pegdown#pegdown;1.4.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.pegdown#pegdown;1.4.0->org.parboiled#parboiled-java;1.1.5 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.parboiled#parboiled-java;1.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.parboiled#parboiled-java;1.1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.parboiled#parboiled-java;1.1.5[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.parboiled#parboiled-java;1.1.5[0m
 [0m[[0mdebug[0m] [0m	found org.parboiled#parboiled-java;1.1.5 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.pegdown#pegdown;1.4.0->org.parboiled#parboiled-java;1.1.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-java;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.parboiled#parboiled-core;1.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.parboiled#parboiled-core;1.1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.parboiled#parboiled-core;1.1.5[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.parboiled#parboiled-core;1.1.5[0m
 [0m[[0mdebug[0m] [0m	found org.parboiled#parboiled-core;1.1.5 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-java;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-java;1.1.5->org.ow2.asm#asm;4.1 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.ow2.asm#asm;4.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.ow2.asm#asm;4.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.ow2.asm#asm;4.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.ow2.asm#asm;4.1[0m
 [0m[[0mdebug[0m] [0m	found org.ow2.asm#asm;4.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-java;1.1.5->org.ow2.asm#asm;4.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-java;1.1.5->org.ow2.asm#asm-tree;4.1 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-tree;4.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.ow2.asm#asm-tree;4.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.ow2.asm#asm-tree;4.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.ow2.asm#asm-tree;4.1[0m
 [0m[[0mdebug[0m] [0m	found org.ow2.asm#asm-tree;4.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-java;1.1.5->org.ow2.asm#asm-tree;4.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.ow2.asm#asm-tree;4.1->org.ow2.asm#asm;4.1 [compile->master(compile)][0m
@@ -4316,7 +4485,6 @@
 [0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-analysis;4.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.ow2.asm#asm-analysis;4.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.ow2.asm#asm-analysis;4.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.ow2.asm#asm-analysis;4.1[0m
 [0m[[0mdebug[0m] [0m	found org.ow2.asm#asm-analysis;4.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-java;1.1.5->org.ow2.asm#asm-analysis;4.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.ow2.asm#asm-analysis;4.1->org.ow2.asm#asm-tree;4.1 [compile->master(compile)][0m
@@ -4325,7 +4493,6 @@
 [0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-util;4.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.ow2.asm#asm-util;4.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.ow2.asm#asm-util;4.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.ow2.asm#asm-util;4.1[0m
 [0m[[0mdebug[0m] [0m	found org.ow2.asm#asm-util;4.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-java;1.1.5->org.ow2.asm#asm-util;4.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.ow2.asm#asm-util;4.1->org.ow2.asm#asm-tree;4.1 [compile->master(compile)][0m
@@ -4334,7 +4501,6 @@
 [0m[[0minfo[0m] [0mResolving commons-io#commons-io;2.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-io#commons-io;2.4[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: commons-io#commons-io;2.4[0m
 [0m[[0mdebug[0m] [0m	found commons-io#commons-io;2.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-doc_2.10;1.1.0->commons-io#commons-io;2.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-docs_2.10;2.3.9->com.typesafe.play#play-doc_2.10;1.1.0 [compile->runtime(*)][0m
@@ -4522,14 +4688,12 @@
 [0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.4 {optional=[compile(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#jline;2.10.4[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#jline;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#jline;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#jline;2.10.4 [optional->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.4->org.fusesource.jansi#jansi;1.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.fusesource.jansi#jansi;1.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.fusesource.jansi#jansi;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.4->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->default][0m
@@ -4543,7 +4707,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#fork-run_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#fork-run_2.10;2.3.9 {fork-run=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#fork-run_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#fork-run_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#fork-run_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#fork-run_2.10;2.3.9 [fork-run->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->com.typesafe.play#fork-run_2.10;2.3.9 [fork-run->compile][0m
@@ -4553,7 +4716,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#fork-run-protocol_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#fork-run-protocol_2.10;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#fork-run-protocol_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#fork-run-protocol_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#fork-run-protocol_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#fork-run_2.10;2.3.9->com.typesafe.play#fork-run-protocol_2.10;2.3.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -4562,7 +4724,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#run-support_2.10;2.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#run-support_2.10;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#run-support_2.10;2.3.9[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#run-support_2.10;2.3.9[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#run-support_2.10;2.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#fork-run-protocol_2.10;2.3.9->com.typesafe.play#run-support_2.10;2.3.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -4577,7 +4738,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbtrc#client-2-10;0.3.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbtrc#client-2-10;0.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbtrc#client-2-10;0.3.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.sbtrc#client-2-10;0.3.1[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.sbtrc#client-2-10;0.3.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -4595,7 +4755,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#serialization_2.10;0.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#serialization_2.10;0.1.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#serialization_2.10;0.1.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-sbt#serialization_2.10;0.1.0[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#serialization_2.10;0.1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -4605,7 +4764,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-pickling_2.10;0.10.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-pickling_2.10;0.10.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-pickling_2.10;0.10.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-pickling_2.10;0.10.0[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-pickling_2.10;0.10.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang.modules#scala-pickling_2.10;0.10.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang.modules#scala-pickling_2.10;0.10.0 [compile->compile][0m
@@ -4623,7 +4781,6 @@
 [0m[[0minfo[0m] [0mResolving org.scalamacros#quasiquotes_2.10;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalamacros#quasiquotes_2.10;2.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalamacros#quasiquotes_2.10;2.0.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scalamacros#quasiquotes_2.10;2.0.1[0m
 [0m[[0mdebug[0m] [0m	found org.scalamacros#quasiquotes_2.10;2.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
@@ -4653,7 +4810,6 @@
 [0m[[0minfo[0m] [0mResolving org.json4s#json4s-core_2.10;3.2.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json4s#json4s-core_2.10;3.2.10 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json4s#json4s-core_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.json4s#json4s-core_2.10;3.2.10[0m
 [0m[[0mdebug[0m] [0m	found org.json4s#json4s-core_2.10;3.2.10 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.json4s#json4s-core_2.10;3.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.json4s#json4s-core_2.10;3.2.10 [compile->compile][0m
@@ -4670,7 +4826,6 @@
 [0m[[0minfo[0m] [0mResolving org.json4s#json4s-ast_2.10;3.2.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json4s#json4s-ast_2.10;3.2.10 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json4s#json4s-ast_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.json4s#json4s-ast_2.10;3.2.10[0m
 [0m[[0mdebug[0m] [0m	found org.json4s#json4s-ast_2.10;3.2.10 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
@@ -4688,7 +4843,6 @@
 [0m[[0minfo[0m] [0mResolving com.thoughtworks.paranamer#paranamer;2.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.thoughtworks.paranamer#paranamer;2.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.thoughtworks.paranamer#paranamer;2.6[0m
 [0m[[0mdebug[0m] [0m	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->runtime(*)][0m
@@ -4706,7 +4860,6 @@
 [0m[[0minfo[0m] [0mResolving org.spire-math#jawn-parser_2.10;0.6.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.spire-math#jawn-parser_2.10;0.6.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.spire-math#jawn-parser_2.10;0.6.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.spire-math#jawn-parser_2.10;0.6.0[0m
 [0m[[0mdebug[0m] [0m	found org.spire-math#jawn-parser_2.10;0.6.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile][0m
@@ -4719,7 +4872,6 @@
 [0m[[0minfo[0m] [0mResolving org.spire-math#json4s-support_2.10;0.6.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.spire-math#json4s-support_2.10;0.6.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.spire-math#json4s-support_2.10;0.6.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.spire-math#json4s-support_2.10;0.6.0[0m
 [0m[[0mdebug[0m] [0m	found org.spire-math#json4s-support_2.10;0.6.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#json4s-support_2.10;0.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#json4s-support_2.10;0.6.0 [compile->compile][0m
@@ -4742,7 +4894,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#launcher-interface;0.13.8-M3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#launcher-interface;0.13.8-M3 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#launcher-interface;0.13.8-M3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-sbt#launcher-interface;0.13.8-M3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#launcher-interface;0.13.8-M3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#launcher-interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#launcher-interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -4752,7 +4903,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#interface;0.13.8-M3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#interface;0.13.8-M3 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#interface;0.13.8-M3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-sbt#interface;0.13.8-M3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#interface;0.13.8-M3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[0.13.8-M3] org.scala-sbt#interface;0.13.8-M3[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
@@ -4763,7 +4913,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#io;0.13.8-M3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#io;0.13.8-M3 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#io;0.13.8-M3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-sbt#io;0.13.8-M3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#io;0.13.8-M3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#io;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#io;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -4773,7 +4922,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#control;0.13.8-M3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#control;0.13.8-M3 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#control;0.13.8-M3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-sbt#control;0.13.8-M3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#control;0.13.8-M3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#control;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#control;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -4783,7 +4931,6 @@
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#collections;0.13.8-M3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#collections;0.13.8-M3 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#collections;0.13.8-M3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-sbt#collections;0.13.8-M3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#collections;0.13.8-M3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -4810,7 +4957,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbtrc#actor-client-2-10;0.3.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbtrc#actor-client-2-10;0.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbtrc#actor-client-2-10;0.3.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.sbtrc#actor-client-2-10;0.3.1[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.sbtrc#actor-client-2-10;0.3.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#actor-client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#actor-client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -4821,7 +4967,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.10;2.3.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.10;2.3.8 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.3.8[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-actor_2.10;2.3.8[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.3.8 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#actor-client-2-10;0.3.1->com.typesafe.akka#akka-actor_2.10;2.3.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#actor-client-2-10;0.3.1->com.typesafe.akka#akka-actor_2.10;2.3.8 [compile->compile][0m
@@ -4838,7 +4983,6 @@
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-testkit_2.10;2.3.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-testkit_2.10;2.3.8 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.10;2.3.8[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-testkit_2.10;2.3.8[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-testkit_2.10;2.3.8 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#actor-client-2-10;0.3.1->com.typesafe.akka#akka-testkit_2.10;2.3.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#actor-client-2-10;0.3.1->com.typesafe.akka#akka-testkit_2.10;2.3.8 [compile->compile][0m
@@ -4860,7 +5004,6 @@
 [0m[[0minfo[0m] [0mResolving net.contentobjects.jnotify#jnotify;0.94 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.contentobjects.jnotify#jnotify;0.94 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.contentobjects.jnotify#jnotify;0.94[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: net.contentobjects.jnotify#jnotify;0.94[0m
 [0m[[0mdebug[0m] [0m	found net.contentobjects.jnotify#jnotify;0.94 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#fork-run_2.10;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#fork-run_2.10;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->runtime(*)][0m
@@ -4879,6 +5022,8 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#twirl-api_2.10;1.0.2!twirl-api_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play_2.10;2.3.9!play_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc_2.10;2.3.9!play-jdbc_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] mysql#mysql-connector-java;5.1.35!mysql-connector-java.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.1!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#build-link;2.3.9!build-link.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-iteratees_2.10;2.3.9!play-iteratees_2.10.jar[0m
@@ -4910,6 +5055,10 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-functional_2.10;2.3.9!play-functional_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-datacommons_2.10;2.3.9!play-datacommons_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] xml-apis#xml-apis;1.4.01!xml-apis.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.jolbox#bonecp;0.8.0.RELEASE!bonecp.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.h2database#h2;1.3.175!h2.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] tyrex#tyrex;1.0.1!tyrex.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;15.0!guava.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-test_2.10;2.3.9!play-test_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.11!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.specs2#specs2-core_2.10;2.3.12!specs2-core_2.10.jar[0m
@@ -4917,6 +5066,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.specs2#specs2-mock_2.10;2.3.12!specs2-mock_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.specs2#specs2-matcher-extra_2.10;2.3.12!specs2-matcher-extra_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.novocode#junit-interface;0.11-RC1!junit-interface.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;16.0.1!guava.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.code.findbugs#jsr305;2.0.3!jsr305.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fluentlenium#fluentlenium-festassert;0.9.2!fluentlenium-festassert.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar[0m
@@ -4949,7 +5099,6 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json#json;20080701!json.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-api;2.39.0!selenium-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.3.1!httpclient.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;15.0!guava.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-exec;1.1!commons-exec.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.java.dev.jna#jna;3.4.0!jna.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.java.dev.jna#platform;3.4.0!platform.jar[0m
@@ -5003,7 +5152,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#control;0.13.8-M3!control.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.10;2.3.8!akka-actor_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.10;2.3.8!akka-testkit_2.10.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1241ms :: artifacts dl 42ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2019ms :: artifacts dl 78ms[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT compile produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT runtime produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT test produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-test.xml[0m
@@ -5018,5 +5167,5 @@
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT pom produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT scala-tool produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT fork-run produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-fork-run.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1241ms resolve - 42ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (2019ms resolve - 78ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

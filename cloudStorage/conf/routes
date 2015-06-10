@@ -3,8 +3,6 @@
 # ~~~~
 
 # Home page
-GET         /books               controllers.Application.listBooks
-POST        /saveBook            controllers.Application.saveBook
 GET         /test                controllers.Application.testAction
 GET         /seenQueries         controllers.Application.listQueries
 POST        /addQuery            controllers.Application.saveQuery
