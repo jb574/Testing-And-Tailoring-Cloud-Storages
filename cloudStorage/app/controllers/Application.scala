@@ -60,19 +60,19 @@ object Application extends Controller {
    * @param query the query to send
    * @return the output of tghe database transaction
    */
-  private def sendToDatabase(query:SQLQuery):String  =
+  private def queryDatabase(query:SQLQuery):String  =
   {
     try
     {
       val connection = DB.getConnection()
-      val statement = connection.createStatement();
-      val querySucsessful = statement.execute(query.queryContents)
-      if(querySucsessful)
+      val statement = connection.createStatement()
+      val res = statement.executeQuery(query.queryContents)
+      if(res != null)
       {
         val res = statement.getResultSet
         val metaData = res.getMetaData
         val colCount = metaData.getColumnCount
-        var result = ""
+        var result = "operation sucseeded"
         var counter = 1
         while(res.next())
         {
@@ -87,14 +87,38 @@ object Application extends Controller {
       }
       else
       {
-        statement.getWarnings.toString
+          "operation failed" + statement.getWarnings.toString
       }
     }
     catch
     {
-      case error:SQLException => composeErrorMessage(error)
+      case error:SQLException => error.getMessage
     }
   }
+
+
+  /**
+   * method that
+   * sends an sql query to the database
+   * @param query the query to send
+   * @return the output of tghe database transaction
+   */
+  private def sendToDatabase(query:SQLQuery):String  =
+  {
+    try
+    {
+      val connection = DB.getConnection()
+      val statement = connection.createStatement()
+      statement.executeUpdate(query.queryContents)
+      "change made sucsessfully"
+    }
+    catch
+      {
+        case error:SQLException => error.getMessage
+      }
+  }
+
+
 
   def saveQuery = Action(BodyParsers.parse.json)
   {
@@ -107,19 +131,29 @@ object Application extends Controller {
         },
         query  =>
         {
-          if(query.isValidQuery)
-          {
-            addQuery(query)
-            Ok(sendToDatabase(query))
-          }
-          else
-          {
-            BadRequest("this is not a valid query")
-          }
+          Ok(queryDatabase(query))
 
         }
       )
   }
+
+  def saveMutableQuery = Action(BodyParsers.parse.json)
+  {
+    request =>
+      val query = request.body.validate[SQLQuery]
+      query.fold(
+        errors =>
+        {
+          BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors)))
+        },
+        query  =>
+        {
+          Ok(sendToDatabase(query))
+
+        }
+      )
+  }
+
 
 
 }

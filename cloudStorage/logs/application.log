@@ -1,9 +1,9 @@
-2015-06-10 12:34:07,653 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-2 
+2015-06-10 14:16:31,168 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-06-10 12:34:21,004 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-10 14:17:26,595 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:mysql://localhost:8889/health
 
-2015-06-10 12:34:21,020 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-10 14:17:26,609 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

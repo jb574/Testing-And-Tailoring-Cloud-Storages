@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:37ee74296942482d004a9cbce1be3fb8bb8e319a
-// @DATE:Tue Jun 09 11:03:32 BST 2015
+// @HASH:a681126f2b19307a73c1bcf0cb987b2d59e790d3
+// @DATE:Wed Jun 10 14:14:59 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -14,17 +14,18 @@ import _root_.controllers.Assets.Asset
 import Router.queryString
 
 
-// @LINE:11
+// @LINE:12
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
 package controllers {
 
-// @LINE:11
+// @LINE:12
 class ReverseAssets {
 
 
-// @LINE:11
+// @LINE:12
 def versioned(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -34,6 +35,7 @@ def versioned(file:String): Call = {
 }
                           
 
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
@@ -61,24 +63,32 @@ def testAction(): Call = {
 }
                         
 
+// @LINE:9
+def saveMutableQuery(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "updateData")
+}
+                        
+
 }
                           
 }
                   
 
 
-// @LINE:11
+// @LINE:12
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:11
+// @LINE:12
 class ReverseAssets {
 
 
-// @LINE:11
+// @LINE:12
 def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.versioned",
    """
@@ -92,6 +102,7 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
@@ -131,24 +142,36 @@ def testAction : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:9
+def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.saveMutableQuery",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "updateData"})
+      }
+   """
+)
+                        
+
 }
               
 }
         
 
 
-// @LINE:11
+// @LINE:12
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
 package controllers.ref {
 
 
-// @LINE:11
+// @LINE:12
 class ReverseAssets {
 
 
-// @LINE:11
+// @LINE:12
 def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.versioned(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -157,6 +180,7 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
+// @LINE:9
 // @LINE:8
 // @LINE:7
 // @LINE:6
@@ -178,6 +202,12 @@ def listQueries(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:6
 def testAction(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.testAction(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "testAction", Seq(), "GET", """ Home page""", _prefix + """test""")
+)
+                      
+
+// @LINE:9
+def saveMutableQuery(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.saveMutableQuery(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "saveMutableQuery", Seq(), "POST", """""", _prefix + """updateData""")
 )
                       
 

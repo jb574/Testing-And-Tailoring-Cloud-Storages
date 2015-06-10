@@ -31,9 +31,12 @@ object  SQLQuery
      * @param possibleType the type to check
      * @return as above
      */
-    def isValidQueryType(possibleType: String): Boolean =
-      queryType == possibleType && queryContents.contains(possibleType)
-
+    def isValidQueryType(possibleType: String): Boolean = {
+      println(possibleType)
+      println(queryType)
+      println(queryContents)
+      queryType.contains(possibleType) && queryContents.contains(possibleType)
+    }
 
     /**
      * method to preform very simple
@@ -56,17 +59,9 @@ object  SQLQuery
    * @return a message that reports
    *         whether the operation was a sucsess
    */
-  def addQuery(query:SQLQuery):String =
+  def addQuery(query:SQLQuery) =
   {
-    if(query.isValidQuery)
-    {
       queryList = query :: queryList
-      "all A-OK!"
-    }
-    else
-    {
-      "invalid query"
-    }
   }
 
   def JsonVer = Json.toJson(queryList)
