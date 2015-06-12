@@ -1,0 +1,16 @@
+<controllers.ListTest-results timestamp="1434011705852"><result location="controllers.ListTest (ListTest.scala:16)" id="-436688185"><stats time="961" expectations="1" errors="1" examples="1"></stats></result>
+</controllers.ListTest-results>
+<controllers.ListTest-stats timestamp="1434011705860"><stats time="22" expectations="1" errors="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-results timestamp="1434011839931"><result location="controllers.ListTest (ListTest.scala:16)" id="-436688185"><stats time="1752" expectations="1" errors="1" examples="1"></stats></result>
+</controllers.ListTest-results>
+<controllers.ListTest-stats timestamp="1434011839939"><stats time="18" expectations="1" errors="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-results timestamp="1434011919096"><result location="controllers.ListTest (ListTest.scala:16)" id="-1039002247"><stats time="1458" expectations="1" errors="1" examples="1"></stats></result>
+</controllers.ListTest-results>
+<controllers.ListTest-stats timestamp="1434011919106"><stats time="17" expectations="1" errors="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-results timestamp="1434012085864"><result location="controllers.ListTest (ListTest.scala:16)" id="-1039002247"><stats time="1510" expectations="1" failures="1" examples="1"></stats></result>
+</controllers.ListTest-results>
+<controllers.ListTest-stats timestamp="1434012085873"><stats time="1516" expectations="1" failures="1" examples="1"><trend><stats time="1516" failures="1" errors="-1"></stats></trend></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1434012978846"><stats time="329" expectations="1" successes="1" examples="1"><trend><stats time="329" failures="-1" successes="1"></stats></trend></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1434016092642"><stats time="1584" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1434016984407"><stats time="70" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1434017263888"><stats time="55" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>

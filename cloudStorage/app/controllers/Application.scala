@@ -1,6 +1,6 @@
 package controllers
 
-import java.sql.{ResultSet, SQLException}
+import java.sql.{Statement, Connection, ResultSet, SQLException}
 
 import models.SQLQuery
 import play.api.libs.json._
@@ -32,26 +32,10 @@ object Application extends Controller {
     Ok(SQLQuery.JsonVer)
   }
 
-  /**
-   * method that composes
-   * a suitable error message
-   * to display to the end user
-   * @param error the SQLException that caused the error
-   * @return a string containing all
-   *         information related to the error
-   */
- private def composeErrorMessage(error:SQLException):String =
- {
-   var res = error.getErrorCode.toString + " "
-   res = res + error.getSQLState
-   res + error.getCause.toString + error.getMessage
- }
 
 
-  def produceTableResults(result:ResultSet)
-  {
 
-  }
+
 
 
   /**
@@ -64,8 +48,7 @@ object Application extends Controller {
   {
     try
     {
-      val connection = DB.getConnection()
-      val statement = connection.createStatement()
+      val (connection: Connection, statement: Statement) = connectToDatabase
       val res = statement.executeQuery(query.queryContents)
       if(res != null)
       {
@@ -96,6 +79,17 @@ object Application extends Controller {
     }
   }
 
+  /**
+   * method to preform the initial connection
+   * to the database
+   * @return  a database connection and a statement to run with
+   */
+  private def connectToDatabase: (Connection, Statement) =
+  {
+    val connection = DB.getConnection()
+    val statement = connection.createStatement()
+    (connection, statement)
+  }
 
   /**
    * method that
@@ -107,10 +101,9 @@ object Application extends Controller {
   {
     try
     {
-      val connection = DB.getConnection()
-      val statement = connection.createStatement()
+      val (connection: Connection, statement: Statement) = connectToDatabase
       statement.executeUpdate(query.queryContents)
-      "change made sucsessfully"
+      "operation sucseeded"
     }
     catch
       {
@@ -131,6 +124,7 @@ object Application extends Controller {
         },
         query  =>
         {
+          addQuery(query)
           Ok(queryDatabase(query))
 
         }
@@ -148,8 +142,8 @@ object Application extends Controller {
         },
         query  =>
         {
+          addQuery(query)
           Ok(sendToDatabase(query))
-
         }
       )
   }

@@ -20,6 +20,7 @@ class TestOfATest extends PlaySpecification
       match
       {
         case Some(response) => status(response) must equalTo(OK)
+        case None => failure
       }
     }
   }

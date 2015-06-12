@@ -1,3 +1,5 @@
+import sbt._
+
 name := "Testing and Tailoring cloud storages"
 
 version := "1.0-SNAPSHOT"
@@ -9,4 +11,5 @@ fork in run := true
 libraryDependencies += jdbc
 
 libraryDependencies +=  "mysql" % "mysql-connector-java" % "5.1.35"
+
 
