@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:a681126f2b19307a73c1bcf0cb987b2d59e790d3
-// @DATE:Wed Jun 10 14:14:59 BST 2015
+// @HASH:183e425921170dbf34d99679cf9f8d2c07157bb2
+// @DATE:Mon Jun 15 14:12:15 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,7 @@ import Router.queryString
 
 
 // @LINE:12
+// @LINE:10
 // @LINE:9
 // @LINE:8
 // @LINE:7
@@ -29,6 +30,20 @@ class ReverseAssets {
 def versioned(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
+}
+                        
+
+}
+                          
+
+// @LINE:10
+class ReverseFrontEnd {
+
+
+// @LINE:10
+def createTable(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "createTable")
 }
                         
 
@@ -77,6 +92,7 @@ def saveMutableQuery(): Call = {
 
 
 // @LINE:12
+// @LINE:10
 // @LINE:9
 // @LINE:8
 // @LINE:7
@@ -94,6 +110,24 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function(file) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("file", file)})
+      }
+   """
+)
+                        
+
+}
+              
+
+// @LINE:10
+class ReverseFrontEnd {
+
+
+// @LINE:10
+def createTable : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.createTable",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "createTable"})
       }
    """
 )
@@ -160,6 +194,7 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 
 
 // @LINE:12
+// @LINE:10
 // @LINE:9
 // @LINE:8
 // @LINE:7
@@ -174,6 +209,19 @@ class ReverseAssets {
 // @LINE:12
 def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.versioned(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
+)
+                      
+
+}
+                          
+
+// @LINE:10
+class ReverseFrontEnd {
+
+
+// @LINE:10
+def createTable(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.createTable(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "createTable", Seq(), "POST", """""", _prefix + """createTable""")
 )
                       
 

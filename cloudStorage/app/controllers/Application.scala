@@ -11,6 +11,7 @@ import play.api.Play.current
 object Application extends Controller {
 
 
+
   /**
    * very simple action i wrote to
    * test that my setup was working OK
@@ -20,6 +21,7 @@ object Application extends Controller {
   {
     Ok("awesome, we got there ok!")
   }
+
 
 
   /**

@@ -1,7 +1,7 @@
 package models
 
 
-object SQLStatement
+object SQLStatementHelper
 {
   private var lastID = 0
 

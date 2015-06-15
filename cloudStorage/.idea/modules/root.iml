@@ -128,5 +128,7 @@
     <orderEntry type="library" name="SBT: com.typesafe.play:play-jdbc_2.10:2.3.9:jar" level="project" />
     <orderEntry type="library" name="SBT: tyrex:tyrex:1.0.1:jar" level="project" />
     <orderEntry type="library" name="SBT: mysql:mysql-connector-java:5.1.35:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.jsuereth:scala-arm_2.10:1.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.play:anorm_2.10:2.3.9:jar" level="project" />
   </component>
 </module>

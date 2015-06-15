@@ -10,6 +10,8 @@ fork in run := true
 
 libraryDependencies += jdbc
 
+libraryDependencies += anorm
+
 libraryDependencies +=  "mysql" % "mysql-connector-java" % "5.1.35"
 
 
