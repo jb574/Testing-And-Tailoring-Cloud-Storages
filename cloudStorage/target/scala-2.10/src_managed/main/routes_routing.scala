@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:183e425921170dbf34d99679cf9f8d2c07157bb2
-// @DATE:Mon Jun 15 14:12:15 BST 2015
+// @HASH:2a6d7ac6148c4630be80ac6e74d396221ff63379
+// @DATE:Mon Jun 15 14:54:30 BST 2015
 
 
 import scala.language.reflectiveCalls
@@ -67,13 +67,20 @@ controllers.FrontEnd.createTable,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "createTable", Nil,"POST", """""", Routes.prefix + """createTable"""))
         
 
-// @LINE:12
-private[this] lazy val controllers_Assets_versioned5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_versioned5_invoker = createInvoker(
+// @LINE:11
+private[this] lazy val controllers_FrontEnd_dropTable5_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("dropTable"))))
+private[this] lazy val controllers_FrontEnd_dropTable5_invoker = createInvoker(
+controllers.FrontEnd.dropTable,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "dropTable", Nil,"POST", """""", Routes.prefix + """dropTable"""))
+        
+
+// @LINE:13
+private[this] lazy val controllers_Assets_versioned6_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_versioned6_invoker = createInvoker(
 controllers.Assets.versioned(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -121,10 +128,18 @@ case controllers_FrontEnd_createTable4_route(params) => {
 }
         
 
-// @LINE:12
-case controllers_Assets_versioned5_route(params) => {
+// @LINE:11
+case controllers_FrontEnd_dropTable5_route(params) => {
+   call { 
+        controllers_FrontEnd_dropTable5_invoker.call(controllers.FrontEnd.dropTable)
+   }
+}
+        
+
+// @LINE:13
+case controllers_Assets_versioned6_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_versioned5_invoker.call(controllers.Assets.versioned(path, file))
+        controllers_Assets_versioned6_invoker.call(controllers.Assets.versioned(path, file))
    }
 }
         

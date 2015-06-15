@@ -2,6 +2,7 @@ package controllers
 
 import controllers.Application._
 import models.CreateTableStatementHelpers.CreateTableStatement
+import models.DripTableStatementHelper.DropTableStatement
 import models.SQLQuery
 import play.api.libs.json._
 import play.api.mvc._
@@ -41,6 +42,27 @@ object FrontEnd  extends Controller
       )
 
   }
+
+  def dropTable = Action(BodyParsers.parse.json)
+  {
+    request =>
+      val statement = request.body.validate[DropTableStatement]
+      statement.fold(
+        errors =>
+        {
+          BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors)))
+        },
+        goodStatement  =>
+        {
+          createOrDropTable(goodStatement)
+        }
+      )
+
+  }
+
+
+
+
 
   private def createOrDropTable(goodStatement:SQLStatement): Result =
   {

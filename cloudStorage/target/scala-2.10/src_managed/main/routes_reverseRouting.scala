@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:183e425921170dbf34d99679cf9f8d2c07157bb2
-// @DATE:Mon Jun 15 14:12:15 BST 2015
+// @HASH:2a6d7ac6148c4630be80ac6e74d396221ff63379
+// @DATE:Mon Jun 15 14:54:30 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -14,7 +14,8 @@ import _root_.controllers.Assets.Asset
 import Router.queryString
 
 
-// @LINE:12
+// @LINE:13
+// @LINE:11
 // @LINE:10
 // @LINE:9
 // @LINE:8
@@ -22,11 +23,11 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
-// @LINE:12
+// @LINE:13
 class ReverseAssets {
 
 
-// @LINE:12
+// @LINE:13
 def versioned(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -36,6 +37,7 @@ def versioned(file:String): Call = {
 }
                           
 
+// @LINE:11
 // @LINE:10
 class ReverseFrontEnd {
 
@@ -44,6 +46,13 @@ class ReverseFrontEnd {
 def createTable(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "createTable")
+}
+                        
+
+// @LINE:11
+def dropTable(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "dropTable")
 }
                         
 
@@ -91,7 +100,8 @@ def saveMutableQuery(): Call = {
                   
 
 
-// @LINE:12
+// @LINE:13
+// @LINE:11
 // @LINE:10
 // @LINE:9
 // @LINE:8
@@ -100,11 +110,11 @@ def saveMutableQuery(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:12
+// @LINE:13
 class ReverseAssets {
 
 
-// @LINE:12
+// @LINE:13
 def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.versioned",
    """
@@ -118,6 +128,7 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:11
 // @LINE:10
 class ReverseFrontEnd {
 
@@ -128,6 +139,17 @@ def createTable : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "createTable"})
+      }
+   """
+)
+                        
+
+// @LINE:11
+def dropTable : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.dropTable",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "dropTable"})
       }
    """
 )
@@ -193,7 +215,8 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:12
+// @LINE:13
+// @LINE:11
 // @LINE:10
 // @LINE:9
 // @LINE:8
@@ -202,11 +225,11 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:12
+// @LINE:13
 class ReverseAssets {
 
 
-// @LINE:12
+// @LINE:13
 def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.versioned(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -215,6 +238,7 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
+// @LINE:11
 // @LINE:10
 class ReverseFrontEnd {
 
@@ -222,6 +246,12 @@ class ReverseFrontEnd {
 // @LINE:10
 def createTable(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.createTable(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "createTable", Seq(), "POST", """""", _prefix + """createTable""")
+)
+                      
+
+// @LINE:11
+def dropTable(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.dropTable(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "dropTable", Seq(), "POST", """""", _prefix + """dropTable""")
 )
                       
 
