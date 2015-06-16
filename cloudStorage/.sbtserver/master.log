@@ -1,5 +1,5 @@
-New log file opened at Mon Jun 15 14:58:36 BST 2015 by 3709@jacks-MacBook-Pro.local
-jvm 3709@jacks-MacBook-Pro.local
+New log file opened at Tue Jun 16 11:03:13 BST 2015 by 1084@jacks-MacBook-Pro.local
+jvm 1084@jacks-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.5-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project, returning: (cloudstorage-build)
 Loading project definition from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5030063f, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@cb75a1d, check cycles: false
 
 Initial source changes: 
 	removed:Set()

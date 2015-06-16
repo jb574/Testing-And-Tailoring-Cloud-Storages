@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5005239a[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70ba2823[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
@@ -5308,7 +5308,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#control;0.13.8-M3!control.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.10;2.3.8!akka-actor_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.10;2.3.8!akka-testkit_2.10.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1824ms :: artifacts dl 67ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1681ms :: artifacts dl 62ms[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT compile produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT runtime produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT test produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-test.xml[0m
@@ -5323,5 +5323,5 @@
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT pom produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT scala-tool produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.10;1.0-SNAPSHOT fork-run produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.10-fork-run.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1824ms resolve - 67ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (1681ms resolve - 62ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

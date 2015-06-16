@@ -141,7 +141,4 @@
 [info] 
 [info] 32m(Server started, use Ctrl+D to stop and go back to the console...)0m
 [info] 
-[info] Compiling 9 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.10/classes...
-[info] play - database [default] connected at jdbc:mysql://localhost:8889/health
-[info] play - Application started (Dev)
 [info] Stopping Play fork run ...

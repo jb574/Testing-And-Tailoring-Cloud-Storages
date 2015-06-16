@@ -1,3 +1,3 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/application.conf,/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.10/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes,/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.10/classes/routes)[0m
+[debug] Copy resource mappings: 
+[debug] 	(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/application.conf,/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.10/classes/application.conf)
+[debug] 	(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes,/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.10/classes/routes)
