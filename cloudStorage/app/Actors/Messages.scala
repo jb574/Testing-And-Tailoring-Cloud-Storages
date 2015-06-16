@@ -1,4 +1,5 @@
 package Actors
+import models.SQLStatementHelper.MutableSQLStatement
 
 /**
  * this object  contains al of the messages
@@ -11,4 +12,7 @@ object Messages
      abstract class logMessage
     case class Message(messageText:String)  extends logMessage
     case class RetrieveLog() extends logMessage
+
+  case class DatabaseOperation(update:MutableSQLStatement)
+  case class TerminationRequest()
 }
