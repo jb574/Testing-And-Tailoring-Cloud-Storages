@@ -3,6 +3,12 @@ package Actors.Replicators
 import Actors.SystemActor
 import Actors.Messages._
 import akka.actor.{Props, ActorRef}
+import java.util.Random
+import akka.dispatch
+import models.SQLStatementHelper.MutableSQLStatement
+import models.UpdateTableStatmentHelper.UpdateTableStatment
+import scala.concurrent.duration._
+import scala.concurrent.ExecutionContext.Implicits.global
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -24,15 +30,55 @@ class ReplicationOverSeer(logger:ActorRef) extends SystemActor(logger)
         servers.insert(index,server)
       }
       updateReferenceLists
+
+    scheduleNextConsistencyRun
+  }
+
+  def scheduleNextConsistencyRun: Unit = {
+    context.system.scheduler.scheduleOnce(30 seconds)
+    {
+      makeConsistent()
+    }
+  }
+
+  /**
+   * method to choose a server at raodom and
+   * send the  recently recieved SQL query to it
+   * @param update the update in question
+   */
+  def processUpdate(update:MutableSQLStatement) =
+  {
+    println("im on fire")
+    val rand = new Random()
+    val serverId = rand.nextInt(3)
+    servers(serverId) ! update
   }
 
 
+  /**
+   * very simple test method to ensure
+   * that all the servers are wired up correctly.
+   */
+   def sendTestMessage =
+   {
+     val rand = new Random()
+     val serverId = rand.nextInt(2)
+     servers(serverId) ! TestMessage
+   }
 
   def updateReferenceLists = servers.foreach((thing) => thing ! servers)
 
+  def makeConsistent(): Unit =
+  {
+    println("making consistent")
+    servers.foreach((server) => server ! MakeConsistent)
+    scheduleNextConsistencyRun
+  }
+
+
   def receive =
   {
-    case _ => println("got message")
+    case query:UpdateTableStatment =>  processUpdate(query)
   }
 
 

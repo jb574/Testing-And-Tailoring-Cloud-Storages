@@ -1,5 +1,7 @@
 package models
 
+import play.api.libs.json.Json
+
 
 object SQLStatementHelper
 {
@@ -36,6 +38,26 @@ object SQLStatementHelper
   abstract class MutableSQLStatement(private val tables:List[String]) extends SQLStatement(tables)
   {
     def getNewSQLStatement:String
+
+   def retrietables():List[String] = tables
+
+    def affectSameTable(querySetTables:List[String]) =
+    {
+      tables.exists((table) => querySetTables.exists((othertable) => table.equals(othertable)))
+    }
+
+    protected def produceStringOutput(data:List[(String,String)]):String =
+    {
+      var result = ""
+      for((col,value) <- data)
+      {
+        result = result +
+          s"$col = $value,"
+      }
+      result.dropRight(1)
+    }
+
   }
+
 
 }

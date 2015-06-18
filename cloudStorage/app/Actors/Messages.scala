@@ -12,7 +12,8 @@ object Messages
      abstract class logMessage
     case class Message(messageText:String)  extends logMessage
     case class RetrieveLog() extends logMessage
-
+   case class MakeConsistent()
   case class DatabaseOperation(update:MutableSQLStatement)
   case class TerminationRequest()
+  case class TestMessage()
 }

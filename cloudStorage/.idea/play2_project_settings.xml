@@ -6,7 +6,7 @@
         <entry key="Testing And Tailoring CLoud Storages">
           <value>
             <ProjectSettingsEntry>
-              <option name="playDistrPath" value="$USER_HOME$/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.3.9.jar" />
+              <option name="playDistrPath" value="$USER_HOME$/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.9.jar" />
             </ProjectSettingsEntry>
           </value>
         </entry>

@@ -1,5 +1,5 @@
-New log file opened at Tue Jun 16 11:03:13 BST 2015 by 1084@jacks-MacBook-Pro.local
-jvm 1084@jacks-MacBook-Pro.local
+New log file opened at Thu Jun 18 13:59:10 BST 2015 by 14157@jacks-MacBook-Pro.local
+jvm 14157@jacks-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.5-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project, returning: (cloudstorage-build)
 Loading project definition from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@cb75a1d, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@6c125bbe, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -65,10 +65,3 @@ Set current project to Testing and Tailoring cloud storages (in build file:/User
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 1084@jacks-MacBook-Pro.local logs at Tue Jun 16 11:06:13 BST 2015, goodbye.

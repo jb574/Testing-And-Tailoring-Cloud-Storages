@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:2a6d7ac6148c4630be80ac6e74d396221ff63379
-// @DATE:Mon Jun 15 14:54:30 BST 2015
+// @HASH:0b37644acc9202bfbcc8c2cb8a3aac7538cfda77
+// @DATE:Wed Jun 17 12:34:58 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -14,7 +14,9 @@ import _root_.controllers.Assets.Asset
 import Router.queryString
 
 
+// @LINE:15
 // @LINE:13
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -23,11 +25,11 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
-// @LINE:13
+// @LINE:15
 class ReverseAssets {
 
 
-// @LINE:13
+// @LINE:15
 def versioned(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -37,15 +39,31 @@ def versioned(file:String): Call = {
 }
                           
 
+// @LINE:13
+// @LINE:12
 // @LINE:11
 // @LINE:10
 class ReverseFrontEnd {
 
 
+// @LINE:12
+def update(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "updateData")
+}
+                        
+
 // @LINE:10
 def createTable(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "createTable")
+}
+                        
+
+// @LINE:13
+def getLogOutput(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "log")
 }
                         
 
@@ -90,7 +108,7 @@ def testAction(): Call = {
 // @LINE:9
 def saveMutableQuery(): Call = {
    import ReverseRouteContext.empty
-   Call("POST", _prefix + { _defaultPrefix } + "updateData")
+   Call("POST", _prefix + { _defaultPrefix } + "updateDataOld")
 }
                         
 
@@ -100,7 +118,9 @@ def saveMutableQuery(): Call = {
                   
 
 
+// @LINE:15
 // @LINE:13
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -110,11 +130,11 @@ def saveMutableQuery(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:13
+// @LINE:15
 class ReverseAssets {
 
 
-// @LINE:13
+// @LINE:15
 def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.versioned",
    """
@@ -128,10 +148,23 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:13
+// @LINE:12
 // @LINE:11
 // @LINE:10
 class ReverseFrontEnd {
 
+
+// @LINE:12
+def update : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.update",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "updateData"})
+      }
+   """
+)
+                        
 
 // @LINE:10
 def createTable : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -139,6 +172,17 @@ def createTable : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "createTable"})
+      }
+   """
+)
+                        
+
+// @LINE:13
+def getLogOutput : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.getLogOutput",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "log"})
       }
    """
 )
@@ -203,7 +247,7 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.saveMutableQuery",
    """
       function() {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "updateData"})
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "updateDataOld"})
       }
    """
 )
@@ -215,7 +259,9 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:15
 // @LINE:13
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -225,11 +271,11 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:13
+// @LINE:15
 class ReverseAssets {
 
 
-// @LINE:13
+// @LINE:15
 def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.versioned(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -238,14 +284,28 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
+// @LINE:13
+// @LINE:12
 // @LINE:11
 // @LINE:10
 class ReverseFrontEnd {
 
 
+// @LINE:12
+def update(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.update(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "update", Seq(), "POST", """""", _prefix + """updateData""")
+)
+                      
+
 // @LINE:10
 def createTable(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.createTable(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "createTable", Seq(), "POST", """""", _prefix + """createTable""")
+)
+                      
+
+// @LINE:13
+def getLogOutput(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.getLogOutput(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getLogOutput", Seq(), "GET", """""", _prefix + """log""")
 )
                       
 
@@ -285,7 +345,7 @@ def testAction(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 
 // @LINE:9
 def saveMutableQuery(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.saveMutableQuery(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "saveMutableQuery", Seq(), "POST", """""", _prefix + """updateData""")
+   controllers.Application.saveMutableQuery(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "saveMutableQuery", Seq(), "POST", """""", _prefix + """updateDataOld""")
 )
                       
 

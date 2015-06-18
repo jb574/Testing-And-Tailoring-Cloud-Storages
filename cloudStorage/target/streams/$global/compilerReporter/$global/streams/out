@@ -1,0 +1,11 @@
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:72: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m    case serverList:ArrayBuffer[ActorRef] => otherServers = serverList[0m
+[0m[[33mwarn[0m] [0m                    ^[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:74: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m    case foreignQUeries:List[QuerySet] =>  makeConsistent(foreignQUeries)[0m
+[0m[[33mwarn[0m] [0m                        ^[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:81: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result[0m
+[0m[[33mwarn[0m] [0m  def processUpdate(statement: JsResult[MutableSQLStatement]): SimpleResult = {[0m
+[0m[[33mwarn[0m] [0m                                                               ^[0m
+[0m[[33mwarn[0m] [0mthere was one feature warning; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mfour warnings found[0m

@@ -6,6 +6,7 @@ import akka.actor.ActorRef
 import anorm._
 import models.SQLStatementHelper.{MutableSQLStatement, SQLStatement}
 import play.api.db.DB
+import play.api.Play.current
 
 
 /**

@@ -1,5 +1,6 @@
 package Actors
 import akka.actor._
+import akka.pattern.AskSupport
 import models.LogHelper
 import Actors.Messages._
 /**
@@ -8,12 +9,18 @@ import Actors.Messages._
  * @author Jack Davey
  * @version 16th June 2014
  */
-class Logger  extends Actor
+class Logger  extends Actor with AskSupport
 {
+
+  override def preStart(): Unit =
+  {
+    println("hello world")
+    self ! Message("hello world")
+  }
+
    def receive =
    {
      case Message(msg:String) => LogHelper.addLogEntry(msg)
-     case RetrieveLog => sender ! LogHelper.jsonVersion
      case _ =>
        throw new IllegalArgumentException("invalid message sent to the logger")
    }

@@ -1,24 +1,26 @@
 [info] Setting up Play fork run ... (use Ctrl+D to cancel)
 [info] Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root...
-[info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[info] Resolving com.typesafe.play#twirl-api_2.10;1.0.2 ...
+[info] Resolving org.scala-lang#scala-library;2.11.6 ...
+[info] Resolving com.typesafe.play#twirl-api_2.11;1.0.2 ...
 [info] Resolving org.apache.commons#commons-lang3;3.1 ...
-[info] Resolving com.typesafe.play#play_2.10;2.3.9 ...
+[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.1 ...
+[info] Resolving com.typesafe.play#play_2.11;2.3.9 ...
 [info] Resolving com.typesafe.play#build-link;2.3.9 ...
 [info] Resolving com.typesafe.play#play-exceptions;2.3.9 ...
 [info] Resolving org.javassist#javassist;3.18.2-GA ...
-[info] Resolving com.typesafe.play#play-iteratees_2.10;2.3.9 ...
-[info] Resolving org.scala-stm#scala-stm_2.10;0.7 ...
+[info] Resolving com.typesafe.play#play-iteratees_2.11;2.3.9 ...
+[info] Resolving org.scala-stm#scala-stm_2.11;0.7 ...
 [info] Resolving com.typesafe#config;1.2.1 ...
-[info] Resolving com.typesafe.play#play-json_2.10;2.3.9 ...
-[info] Resolving com.typesafe.play#play-functional_2.10;2.3.9 ...
-[info] Resolving com.typesafe.play#play-datacommons_2.10;2.3.9 ...
+[info] Resolving com.typesafe.play#play-json_2.11;2.3.9 ...
+[info] Resolving com.typesafe.play#play-functional_2.11;2.3.9 ...
+[info] Resolving com.typesafe.play#play-datacommons_2.11;2.3.9 ...
 [info] Resolving joda-time#joda-time;2.3 ...
 [info] Resolving org.joda#joda-convert;1.6 ...
 [info] Resolving com.fasterxml.jackson.core#jackson-annotations;2.3.2 ...
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.3.2 ...
 [info] Resolving com.fasterxml.jackson.core#jackson-databind;2.3.2 ...
-[info] Resolving org.scala-lang#scala-reflect;2.10.4 ...
+[info] Resolving org.scala-lang#scala-reflect;2.11.1 ...
+[info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 ...
 [info] Resolving io.netty#netty;3.9.8.Final ...
 [info] Resolving com.typesafe.netty#netty-http-pipelining;1.1.2 ...
 [info] Resolving org.slf4j#slf4j-api;1.7.6 ...
@@ -26,38 +28,38 @@
 [info] Resolving org.slf4j#jcl-over-slf4j;1.7.6 ...
 [info] Resolving ch.qos.logback#logback-core;1.1.1 ...
 [info] Resolving ch.qos.logback#logback-classic;1.1.1 ...
-[info] Resolving com.typesafe.akka#akka-actor_2.10;2.3.4 ...
-[info] Resolving com.typesafe.akka#akka-slf4j_2.10;2.3.4 ...
+[info] Resolving com.typesafe.akka#akka-actor_2.11;2.3.4 ...
+[info] Resolving com.typesafe.akka#akka-slf4j_2.11;2.3.4 ...
 [info] Resolving commons-codec#commons-codec;1.9 ...
 [info] Resolving xerces#xercesImpl;2.11.0 ...
 [info] Resolving xml-apis#xml-apis;1.4.01 ...
 [info] Resolving javax.transaction#jta;1.1 ...
-[info] Resolving com.typesafe.play#play-jdbc_2.10;2.3.9 ...
+[info] Resolving com.typesafe.play#play-jdbc_2.11;2.3.9 ...
 [info] Resolving com.jolbox#bonecp;0.8.0.RELEASE ...
 [info] Resolving com.google.guava#guava;15.0 ...
 [info] Resolving com.h2database#h2;1.3.175 ...
 [info] Resolving tyrex#tyrex;1.0.1 ...
-[info] Resolving com.typesafe.play#anorm_2.10;2.3.9 ...
-[info] Resolving com.jsuereth#scala-arm_2.10;1.4 ...
+[info] Resolving com.typesafe.play#anorm_2.11;2.3.9 ...
+[info] Resolving com.jsuereth#scala-arm_2.11;1.4 ...
+[info] Resolving org.scala-lang.plugins#scala-continuations-library_2.11;1.0.1 ...
 [info] Resolving mysql#mysql-connector-java;5.1.35 ...
-[info] Resolving com.typesafe.play#play-test_2.10;2.3.9 ...
+[info] Resolving com.typesafe.play#play-test_2.11;2.3.9 ...
 [info] Resolving junit#junit;4.11 ...
 [info] Resolving org.hamcrest#hamcrest-core;1.3 ...
-[info] Resolving org.specs2#specs2-core_2.10;2.3.12 ...
-[info] Resolving org.specs2#specs2-matcher_2.10;2.3.12 ...
-[info] Resolving org.specs2#specs2-common_2.10;2.3.12 ...
-[info] Resolving org.scalaz#scalaz-core_2.10;7.0.6 ...
-[info] Resolving org.scalaz#scalaz-concurrent_2.10;7.0.6 ...
-[info] Resolving org.scalaz#scalaz-effect_2.10;7.0.6 ...
-[info] Resolving org.specs2#specs2-junit_2.10;2.3.12 ...
-[info] Resolving org.specs2#specs2-mock_2.10;2.3.12 ...
+[info] Resolving org.specs2#specs2-core_2.11;2.3.12 ...
+[info] Resolving org.specs2#specs2-matcher_2.11;2.3.12 ...
+[info] Resolving org.specs2#specs2-common_2.11;2.3.12 ...
+[info] Resolving org.scalaz#scalaz-core_2.11;7.0.6 ...
+[info] Resolving org.scalaz#scalaz-concurrent_2.11;7.0.6 ...
+[info] Resolving org.scalaz#scalaz-effect_2.11;7.0.6 ...
+[info] Resolving org.specs2#specs2-junit_2.11;2.3.12 ...
+[info] Resolving org.specs2#specs2-mock_2.11;2.3.12 ...
 [info] Resolving org.mockito#mockito-core;1.9.5 ...
 [info] Resolving org.objenesis#objenesis;1.0 ...
-[info] Resolving org.specs2#specs2-matcher-extra_2.10;2.3.12 ...
-[info] Resolving org.specs2#specs2-analysis_2.10;2.3.12 ...
-[info] Resolving org.scala-lang#scala-compiler;2.10.4 ...
+[info] Resolving org.specs2#specs2-matcher-extra_2.11;2.3.12 ...
+[info] Resolving org.specs2#specs2-analysis_2.11;2.3.12 ...
+[info] Resolving org.scala-lang#scala-compiler;2.11.0 ...
 [info] Resolving org.specs2#classycle;1.4.3 ...
-[info] Resolving org.scalamacros#quasiquotes_2.10;2.0.0-M7 ...
 [info] Resolving com.novocode#junit-interface;0.11-RC1 ...
 [info] Resolving org.scala-sbt#test-interface;1.0 ...
 [info] Resolving com.google.guava#guava;16.0.1 ...
@@ -100,8 +102,9 @@
 [info] Resolving org.seleniumhq.selenium#selenium-support;2.39.0 ...
 [info] Resolving org.easytesting#fest-assert;1.4 ...
 [info] Resolving org.easytesting#fest-util;1.1.6 ...
-[info] Resolving com.typesafe.play#play-docs_2.10;2.3.9 ...
-[info] Resolving com.typesafe.play#play-doc_2.10;1.1.0 ...
+[info] Resolving com.typesafe.play#play-docs_2.11;2.3.9 ...
+[info] Resolving org.scala-lang#scala-library;2.11.1 ...
+[info] Resolving com.typesafe.play#play-doc_2.11;1.1.0 ...
 [info] Resolving org.pegdown#pegdown;1.4.0 ...
 [info] Resolving org.parboiled#parboiled-java;1.1.5 ...
 [info] Resolving org.parboiled#parboiled-core;1.1.5 ...
@@ -110,28 +113,34 @@
 [info] Resolving org.ow2.asm#asm-analysis;4.1 ...
 [info] Resolving org.ow2.asm#asm-util;4.1 ...
 [info] Resolving commons-io#commons-io;2.4 ...
-[info] Resolving org.scala-lang#jline;2.10.4 ...
-[info] Resolving org.fusesource.jansi#jansi;1.4 ...
-[info] Resolving com.typesafe.play#fork-run_2.10;2.3.9 ...
-[info] Resolving com.typesafe.play#fork-run-protocol_2.10;2.3.9 ...
-[info] Resolving com.typesafe.play#run-support_2.10;2.3.9 ...
-[info] Resolving com.typesafe.sbtrc#client-2-10;0.3.1 ...
-[info] Resolving org.scala-sbt#serialization_2.10;0.1.0 ...
-[info] Resolving org.scala-lang.modules#scala-pickling_2.10;0.10.0 ...
-[info] Resolving org.scalamacros#quasiquotes_2.10;2.0.1 ...
-[info] Resolving org.json4s#json4s-core_2.10;3.2.10 ...
-[info] Resolving org.json4s#json4s-ast_2.10;3.2.10 ...
+[info] Resolving org.scala-lang#scala-compiler;2.11.6 ...
+[info] Resolving org.scala-lang#scala-reflect;2.11.6 ...
+[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...
+[info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 ...
+[info] Resolving jline#jline;2.12.1 ...
+[info] Resolving com.typesafe.play#fork-run_2.11;2.3.9 ...
+[info] Resolving com.typesafe.play#fork-run-protocol_2.11;2.3.9 ...
+[info] Resolving com.typesafe.play#run-support_2.11;2.3.9 ...
+[info] Resolving com.typesafe.sbtrc#client-2-11;0.3.1 ...
+[info] Resolving org.scala-lang#scala-reflect;2.11.5 ...
+[info] Resolving org.scala-sbt#serialization_2.11;0.1.0 ...
+[info] Resolving org.scala-lang.modules#scala-pickling_2.11;0.10.0 ...
+[info] Resolving org.scala-lang#scala-compiler;2.11.4 ...
+[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...
+[info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 ...
+[info] Resolving org.json4s#json4s-core_2.11;3.2.10 ...
+[info] Resolving org.json4s#json4s-ast_2.11;3.2.10 ...
 [info] Resolving com.thoughtworks.paranamer#paranamer;2.6 ...
-[info] Resolving org.spire-math#jawn-parser_2.10;0.6.0 ...
-[info] Resolving org.spire-math#json4s-support_2.10;0.6.0 ...
+[info] Resolving org.spire-math#jawn-parser_2.11;0.6.0 ...
+[info] Resolving org.spire-math#json4s-support_2.11;0.6.0 ...
 [info] Resolving org.scala-sbt#launcher-interface;0.13.8-M3 ...
 [info] Resolving org.scala-sbt#interface;0.13.8-M3 ...
-[info] Resolving org.scala-sbt#io;0.13.8-M3 ...
-[info] Resolving org.scala-sbt#control;0.13.8-M3 ...
-[info] Resolving org.scala-sbt#collections;0.13.8-M3 ...
-[info] Resolving com.typesafe.sbtrc#actor-client-2-10;0.3.1 ...
-[info] Resolving com.typesafe.akka#akka-actor_2.10;2.3.8 ...
-[info] Resolving com.typesafe.akka#akka-testkit_2.10;2.3.8 ...
+[info] Resolving org.scala-sbt#io_2.11;0.13.8-M3 ...
+[info] Resolving org.scala-sbt#control_2.11;0.13.8-M3 ...
+[info] Resolving org.scala-sbt#collections_2.11;0.13.8-M3 ...
+[info] Resolving com.typesafe.sbtrc#actor-client-2-11;0.3.1 ...
+[info] Resolving com.typesafe.akka#akka-actor_2.11;2.3.8 ...
+[info] Resolving com.typesafe.akka#akka-testkit_2.11;2.3.8 ...
 [info] Resolving net.contentobjects.jnotify#jnotify;0.94 ...
 [info] Done updating.
 [info] 
@@ -141,4 +150,859 @@
 [info] 
 [info] 32m(Server started, use Ctrl+D to stop and go back to the console...)0m
 [info] 
-[info] Stopping Play fork run ...
+[info] Compiling 19 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:72: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn]     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
+[warn]                     ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:74: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn]     case foreignQUeries:List[QuerySet] =>  makeConsistent(foreignQUeries)
+[warn]                         ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:81: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result
+[warn]   def processUpdate(statement: JsResult[MutableSQLStatement]): SimpleResult = {
+[warn]                                                                ^
+[warn] there was one feature warning; re-run with -feature for details
+[warn] four warnings found
+[info] play - database [default] connected at jdbc:mysql://localhost:8889/health
+[info] play - Application started (Dev)
+[info] play - Starting application default Akka system.
+[info] hello world
+[info] List(LogEntry(hello world,2015-06-18T13:57:09.135))
+[info] hitting it 
+[info] im on fire
+[info]  message received by server 1
+[info] List(LogEntry( message recieved by server $id,2015-06-18T13:57:09.302), LogEntry(hello world,2015-06-18T13:57:09.135))
+[info] 1
+[info] hitting it 
+[info] im on fire
+[info]  message received by server 2
+[info] List(LogEntry( message recieved by server $id,2015-06-18T13:57:12.329), LogEntry( message recieved by server $id,2015-06-18T13:57:09.302), LogEntry(hello world,2015-06-18T13:57:09.135))
+[info] 1
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] List(LogEntry(hi,2015-06-18T13:58:09.196), LogEntry( message recieved by server $id,2015-06-18T13:57:12.329), LogEntry( message recieved by server $id,2015-06-18T13:57:09.302), LogEntry(hello world,2015-06-18T13:57:09.135))
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is1
+[info] merging now
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is0
+[info] merging now
+[info] numbe rof queries is1
+[info] im cool   
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is0
+[info] merging now
+[info] im cool   
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is0
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is0
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] numbe rof queries is1
+[info] im cool   
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] im cool   
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] merging now
+[info] im cool   
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] im cool   
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is0
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is0
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] im cool   
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is0
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is0
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] numbe rof queries is0
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is0
+[info] numbe rof queries is1
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] numbe rof queries is1
+[info] im cool   
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is0
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] numbe rof queries is0
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is0
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is1
+[info] numbe rof queries is0
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] merging now
+[info] im cool   
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] making consistent
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] im cool   
+[info] numbe rof queries is0
+[info] im cool   
+[info] merging now
+[info] merging now
+[info] numbe rof queries is1
+[info] numbe rof queries is1
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   
+[info] update person set age = 52 where id = 2 ; update person set age = 52 where id = 2 ; 
+[info] im cool   

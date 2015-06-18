@@ -32,8 +32,11 @@ object LogHelper
    * add a new log entry to the log
    * @param message the new message to add
    */
-  def addLogEntry(message:String) = log =  new LogEntry(message,LocalDateTime.now().toString) :: log
-
+  def addLogEntry(message:String) =
+  {
+    log = new LogEntry(message, LocalDateTime.now().toString) :: log
+    println(log.toString())
+  }
   /**
    * @return a json version of the log
    */
