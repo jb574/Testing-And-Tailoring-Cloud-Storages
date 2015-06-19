@@ -3,13 +3,16 @@
 # ~~~~
 
 # Home page
-GET         /test                controllers.Application.testAction
-GET         /seenQueries         controllers.Application.listQueries
-POST        /addQuery            controllers.Application.saveQuery
-POST        /updateDataOld         controllers.Application.saveMutableQuery
-POST        /createTable         controllers.FrontEnd.createTable
-POST        /dropTable           controllers.FrontEnd.dropTable
-POST        /updateData          controllers.FrontEnd.update
-GET         /log                 controllers.FrontEnd.getLogOutput
+GET         /test                 controllers.Application.testAction
+GET         /seenQueries          controllers.Application.listQueries
+POST        /addQuery             controllers.Application.saveQuery
+POST        /updateDataOld        controllers.Application.saveMutableQuery
+POST        /createTable          controllers.FrontEnd.createTable
+POST        /dropTable            controllers.FrontEnd.dropTable
+POST        /updateData           controllers.FrontEnd.update
+GET         /log                  controllers.FrontEnd.getLogOutput
+POST        /insert               controllers.FrontEnd.insert
+POST       /delete                controllers.FrontEnd.delete
+GET        /makeConsistent        controllers.FrontEnd.makeConsistent
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/*file        controllers.Assets.versioned(path="/public", file)
+GET         /assets/*file         controllers.Assets.versioned(path="/public", file)

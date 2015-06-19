@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:0b37644acc9202bfbcc8c2cb8a3aac7538cfda77
-// @DATE:Thu Jun 18 11:37:40 BST 2015
+// @HASH:b7023433a0b2fba44e9163ffa6c7645bd14403b3
+// @DATE:Fri Jun 19 14:08:50 BST 2015
 
 
 import scala.language.reflectiveCalls
@@ -88,13 +88,34 @@ controllers.FrontEnd.getLogOutput,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getLogOutput", Nil,"GET", """""", Routes.prefix + """log"""))
         
 
+// @LINE:14
+private[this] lazy val controllers_FrontEnd_insert8_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("insert"))))
+private[this] lazy val controllers_FrontEnd_insert8_invoker = createInvoker(
+controllers.FrontEnd.insert,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "insert", Nil,"POST", """""", Routes.prefix + """insert"""))
+        
+
 // @LINE:15
-private[this] lazy val controllers_Assets_versioned8_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_versioned8_invoker = createInvoker(
+private[this] lazy val controllers_FrontEnd_delete9_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("delete"))))
+private[this] lazy val controllers_FrontEnd_delete9_invoker = createInvoker(
+controllers.FrontEnd.delete,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "delete", Nil,"POST", """""", Routes.prefix + """delete"""))
+        
+
+// @LINE:16
+private[this] lazy val controllers_FrontEnd_makeConsistent10_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("makeConsistent"))))
+private[this] lazy val controllers_FrontEnd_makeConsistent10_invoker = createInvoker(
+controllers.FrontEnd.makeConsistent,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "makeConsistent", Nil,"GET", """""", Routes.prefix + """makeConsistent"""))
+        
+
+// @LINE:18
+private[this] lazy val controllers_Assets_versioned11_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_versioned11_invoker = createInvoker(
 controllers.Assets.versioned(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -166,10 +187,34 @@ case controllers_FrontEnd_getLogOutput7_route(params) => {
 }
         
 
+// @LINE:14
+case controllers_FrontEnd_insert8_route(params) => {
+   call { 
+        controllers_FrontEnd_insert8_invoker.call(controllers.FrontEnd.insert)
+   }
+}
+        
+
 // @LINE:15
-case controllers_Assets_versioned8_route(params) => {
+case controllers_FrontEnd_delete9_route(params) => {
+   call { 
+        controllers_FrontEnd_delete9_invoker.call(controllers.FrontEnd.delete)
+   }
+}
+        
+
+// @LINE:16
+case controllers_FrontEnd_makeConsistent10_route(params) => {
+   call { 
+        controllers_FrontEnd_makeConsistent10_invoker.call(controllers.FrontEnd.makeConsistent)
+   }
+}
+        
+
+// @LINE:18
+case controllers_Assets_versioned11_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_versioned8_invoker.call(controllers.Assets.versioned(path, file))
+        controllers_Assets_versioned11_invoker.call(controllers.Assets.versioned(path, file))
    }
 }
         

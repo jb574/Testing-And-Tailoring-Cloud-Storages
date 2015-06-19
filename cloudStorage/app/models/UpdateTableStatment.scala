@@ -8,14 +8,14 @@ import play.api.libs.json.Json
 
 object UpdateTableStatmentHelper
 {
-   case class UpdateTableStatment(private val tables:List[String], private val set:List[String],val where:List[String]) extends MutableSQLStatement(tables)
+   case class UpdateTableStatment(private val tables: List[String], private val set: Map[String, String], val where: Map[String, String]) extends MutableSQLStatement(tables)
   {
 
     override def getNewSQLStatement  =
     {
       val tableString = tables.mkString(",")
-      val  colSet = set.mkString(",")
-      val whereClause = where.mkString(",")
+      val  colSet = produceStringOutput(set)
+      val whereClause = produceStringOutput(where)
       s"update $tableString set $colSet where $whereClause ; "
     }
   }

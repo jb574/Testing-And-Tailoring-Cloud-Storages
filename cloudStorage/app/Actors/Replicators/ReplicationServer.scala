@@ -14,12 +14,12 @@ import scala.collection.immutable.HashMap
  * @author Jack Davey
  * @version 16th June 2015
  */
-class ReplicationServer(logger:ActorRef,id:Int) extends SystemActor(logger)
+class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) extends SystemActor(logger)
 {
    private var otherServers:ArrayBuffer[ActorRef] = ArrayBuffer()
    private var inconsistentUpdates:List[QuerySet] = List()
    private var masterList:List[String]  = List()
-
+   private var noSeen = 0
   def respondToTestMessage =
   {
     println(" message received by server " + id)
@@ -71,10 +71,11 @@ class ReplicationServer(logger:ActorRef,id:Int) extends SystemActor(logger)
     case TestMessage => respondToTestMessage
     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
     case MakeConsistent => distributeUpdates()
-    case foreignQUeries:List[QuerySet] =>  makeConsistent(foreignQUeries)
+    case foreignQueries:List[QuerySet] =>  makeConsistent(foreignQueries)
   }
 
   def makeConsistent(foreignQUeries: List[QuerySet]): Unit = {
+    noSeen = noSeen + 1
     println("im cool   ")
     var resSet: ArrayBuffer[QuerySet] = ArrayBuffer()
     if(!foreignQUeries.isEmpty)
@@ -82,6 +83,11 @@ class ReplicationServer(logger:ActorRef,id:Int) extends SystemActor(logger)
       foreignQUeries.foreach(((query) => mergeOneExternalQuery(query, resSet)))
       println("numbe rof queries is" + resSet.size)
       resSet.foreach((set) => println(set.toString))
+      replicationMarshaller ! resSet
+    }
+    if(noSeen == 2)
+    {
+      inconsistentUpdates = List()
     }
   }
 }

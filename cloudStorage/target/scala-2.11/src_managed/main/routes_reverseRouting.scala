@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:0b37644acc9202bfbcc8c2cb8a3aac7538cfda77
-// @DATE:Thu Jun 18 11:37:40 BST 2015
+// @HASH:b7023433a0b2fba44e9163ffa6c7645bd14403b3
+// @DATE:Fri Jun 19 14:08:50 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -14,7 +14,10 @@ import _root_.controllers.Assets.Asset
 import Router.queryString
 
 
+// @LINE:18
+// @LINE:16
 // @LINE:15
+// @LINE:14
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -25,11 +28,11 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
-// @LINE:15
+// @LINE:18
 class ReverseAssets {
 
 
-// @LINE:15
+// @LINE:18
 def versioned(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -39,6 +42,9 @@ def versioned(file:String): Call = {
 }
                           
 
+// @LINE:16
+// @LINE:15
+// @LINE:14
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -46,10 +52,38 @@ def versioned(file:String): Call = {
 class ReverseFrontEnd {
 
 
-// @LINE:12
-def update(): Call = {
+// @LINE:13
+def getLogOutput(): Call = {
    import ReverseRouteContext.empty
-   Call("POST", _prefix + { _defaultPrefix } + "updateData")
+   Call("GET", _prefix + { _defaultPrefix } + "log")
+}
+                        
+
+// @LINE:16
+def makeConsistent(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "makeConsistent")
+}
+                        
+
+// @LINE:15
+def delete(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "delete")
+}
+                        
+
+// @LINE:14
+def insert(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "insert")
+}
+                        
+
+// @LINE:11
+def dropTable(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "dropTable")
 }
                         
 
@@ -60,17 +94,10 @@ def createTable(): Call = {
 }
                         
 
-// @LINE:13
-def getLogOutput(): Call = {
+// @LINE:12
+def update(): Call = {
    import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "log")
-}
-                        
-
-// @LINE:11
-def dropTable(): Call = {
-   import ReverseRouteContext.empty
-   Call("POST", _prefix + { _defaultPrefix } + "dropTable")
+   Call("POST", _prefix + { _defaultPrefix } + "updateData")
 }
                         
 
@@ -118,7 +145,10 @@ def saveMutableQuery(): Call = {
                   
 
 
+// @LINE:18
+// @LINE:16
 // @LINE:15
+// @LINE:14
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -130,11 +160,11 @@ def saveMutableQuery(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:15
+// @LINE:18
 class ReverseAssets {
 
 
-// @LINE:15
+// @LINE:18
 def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.versioned",
    """
@@ -148,6 +178,9 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:16
+// @LINE:15
+// @LINE:14
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -155,12 +188,56 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 class ReverseFrontEnd {
 
 
-// @LINE:12
-def update : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.FrontEnd.update",
+// @LINE:13
+def getLogOutput : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.getLogOutput",
    """
       function() {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "updateData"})
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "log"})
+      }
+   """
+)
+                        
+
+// @LINE:16
+def makeConsistent : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.makeConsistent",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "makeConsistent"})
+      }
+   """
+)
+                        
+
+// @LINE:15
+def delete : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.delete",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "delete"})
+      }
+   """
+)
+                        
+
+// @LINE:14
+def insert : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.insert",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "insert"})
+      }
+   """
+)
+                        
+
+// @LINE:11
+def dropTable : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.dropTable",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "dropTable"})
       }
    """
 )
@@ -177,23 +254,12 @@ def createTable : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:13
-def getLogOutput : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.FrontEnd.getLogOutput",
+// @LINE:12
+def update : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.update",
    """
       function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "log"})
-      }
-   """
-)
-                        
-
-// @LINE:11
-def dropTable : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.FrontEnd.dropTable",
-   """
-      function() {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "dropTable"})
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "updateData"})
       }
    """
 )
@@ -259,7 +325,10 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:18
+// @LINE:16
 // @LINE:15
+// @LINE:14
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -271,11 +340,11 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:15
+// @LINE:18
 class ReverseAssets {
 
 
-// @LINE:15
+// @LINE:18
 def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.versioned(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -284,6 +353,9 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
+// @LINE:16
+// @LINE:15
+// @LINE:14
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -291,9 +363,33 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 class ReverseFrontEnd {
 
 
-// @LINE:12
-def update(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.FrontEnd.update(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "update", Seq(), "POST", """""", _prefix + """updateData""")
+// @LINE:13
+def getLogOutput(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.getLogOutput(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getLogOutput", Seq(), "GET", """""", _prefix + """log""")
+)
+                      
+
+// @LINE:16
+def makeConsistent(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.makeConsistent(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "makeConsistent", Seq(), "GET", """""", _prefix + """makeConsistent""")
+)
+                      
+
+// @LINE:15
+def delete(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.delete(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "delete", Seq(), "POST", """""", _prefix + """delete""")
+)
+                      
+
+// @LINE:14
+def insert(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.insert(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "insert", Seq(), "POST", """""", _prefix + """insert""")
+)
+                      
+
+// @LINE:11
+def dropTable(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.dropTable(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "dropTable", Seq(), "POST", """""", _prefix + """dropTable""")
 )
                       
 
@@ -303,15 +399,9 @@ def createTable(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:13
-def getLogOutput(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.FrontEnd.getLogOutput(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getLogOutput", Seq(), "GET", """""", _prefix + """log""")
-)
-                      
-
-// @LINE:11
-def dropTable(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.FrontEnd.dropTable(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "dropTable", Seq(), "POST", """""", _prefix + """dropTable""")
+// @LINE:12
+def update(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.update(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "update", Seq(), "POST", """""", _prefix + """updateData""")
 )
                       
 

@@ -46,7 +46,7 @@ object SQLStatementHelper
       tables.exists((table) => querySetTables.exists((othertable) => table.equals(othertable)))
     }
 
-    protected def produceStringOutput(data:List[(String,String)]):String =
+    protected def produceStringOutput(data:Map[String,String]):String =
     {
       var result = ""
       for((col,value) <- data)

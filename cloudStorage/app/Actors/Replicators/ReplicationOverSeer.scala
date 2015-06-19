@@ -1,6 +1,6 @@
 package Actors.Replicators
 
-import Actors.SystemActor
+import Actors.{Messages, SystemActor}
 import Actors.Messages._
 import akka.actor.{Props, ActorRef}
 import java.util.Random
@@ -18,7 +18,7 @@ import scala.collection.mutable.ArrayBuffer
  * @author Jack Davey
  * @version 16th June 2015
  */
-class ReplicationOverSeer(logger:ActorRef) extends SystemActor(logger)
+class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) extends SystemActor(logger)
 {
   var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
 
@@ -26,7 +26,7 @@ class ReplicationOverSeer(logger:ActorRef) extends SystemActor(logger)
   {
       for(index <- 0 to 3)
       {
-        val server = context.actorOf(Props(new ReplicationServer(logger,index)))
+        val server = context.actorOf(Props(new ReplicationServer(logger,index,replicationMarshaller)))
         servers.insert(index,server)
       }
       updateReferenceLists
@@ -79,6 +79,7 @@ class ReplicationOverSeer(logger:ActorRef) extends SystemActor(logger)
   def receive =
   {
     case query:UpdateTableStatment =>  processUpdate(query)
+    case MakeConsistent => makeConsistent
   }
 
 

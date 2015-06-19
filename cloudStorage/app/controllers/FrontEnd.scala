@@ -1,8 +1,11 @@
 package controllers
 
-import Actors.Messages.{RetrieveLog, TestMessage}
+import Actors.Commiters.DatabaseCommiterOverseer
+import Actors.Messages.{MakeConsistent, RetrieveLog, TestMessage}
 import akka.actor.Props
 import akka.dispatch.Futures
+import models.DeleteStatementHelper.DeleteStatment
+import models.InsertStatmentHelper.InsertStatment
 import org.joda.time
 import org.joda.time.Seconds
 import scala.concurrent.Await
@@ -22,7 +25,7 @@ import anorm._
 import play.libs.Akka
 import Actors.Messages
 import Actors.Logger
-import Actors.Replicators.ReplicationOverSeer
+import Actors.Replicators._
 import akka.pattern.ask
 import scala.concurrent.duration.Duration
 import akka.util.Timeout._
@@ -36,7 +39,9 @@ object FrontEnd  extends Controller
 {
    val system = Akka.system()
    val loggingActor = system.actorOf(Props(new Logger))
-   val repServer = system.actorOf(Props(new ReplicationOverSeer(loggingActor)))
+   val databaseCommiter = system.actorOf(Props(new DatabaseCommiterOverseer(loggingActor)))
+   val replicationMarshaller = system.actorOf(Props(new ReplicationMarshaller(loggingActor,databaseCommiter)))
+   val repServer = system.actorOf(Props(new ReplicationOverSeer(loggingActor,replicationMarshaller)))
 
   def createTable = Action(BodyParsers.parse.json)
   {
@@ -61,24 +66,35 @@ object FrontEnd  extends Controller
     Ok(LogHelper.jsonVersion)
   }
 
+  def makeConsistent = Action
+  {
+    repServer ! MakeConsistent
+    Ok("database fully consistent")
+  }
+
+  def delete = Action(BodyParsers.parse.json)
+  {
+    request =>
+      val statement = request.body.validate[DeleteStatment]
+      processUpdate(statement)
+  }
+
+  def insert = Action(BodyParsers.parse.json)
+  {
+    request =>
+      val statement = request.body.validate[InsertStatment]
+      processUpdate(statement)
+  }
+
   def update = Action(BodyParsers.parse.json)
   {
     request =>
       val statement = request.body.validate[UpdateTableStatment]
-      statement.fold(
-        errors => {
-          BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors)))
-        },
-        goodStatement => {
-          println("hitting it ")
-          repServer ! goodStatement
-          Ok("all ok here")
-        }
-      )
+      processUpdate(statement)
   }
 
 
-  def processUpdate(statement: JsResult[MutableSQLStatement]): SimpleResult = {
+  def processUpdate(statement: JsResult[MutableSQLStatement]) = {
     statement.fold(
       errors => {
         BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors)))

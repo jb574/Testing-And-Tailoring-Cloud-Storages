@@ -2,6 +2,7 @@ package models
 import java.time.LocalDateTime
 import models.SQLStatementHelper.MutableSQLStatement
 import scala.collection.mutable.Map
+import akka.actor.ActorRef
 /**
  * this class represents a set of SQL operations that operate on the same
  * data
@@ -25,6 +26,8 @@ class QuerySet(private var vectorClocks:Map[Int,LocalDateTime], private var quer
   {
     this(querySet.vectorClocks,querySet.queries,querySet.tableNames)
   }
+
+  def sendQuerries(committer:ActorRef) = committer ! queries
 
    def canBeMeged(other:QuerySet):Boolean  =
    {
