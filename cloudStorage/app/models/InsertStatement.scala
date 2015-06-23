@@ -5,7 +5,7 @@ import play.api.libs.json.Json
 
 object InsertStatmentHelper
 {
-  case class InsertStatment(private val tables: List[String], private val values: Map[String, String]) extends MutableSQLStatement(tables)
+  case class InsertStatment(private val tables: List[String],  values: Map[String, String]) extends MutableSQLStatement(tables)
   {
 
     override def getNewSQLStatement  =
@@ -25,8 +25,8 @@ object InsertStatmentHelper
 
     def endSQLText(text:String):String =
     {
-      text.dropRight(1)
-      text + ")"
+      val newtext = text.dropRight(1)
+      newtext + ")"
     }
   }
   implicit val TableeWrites = Json.writes[InsertStatment]

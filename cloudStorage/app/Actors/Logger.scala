@@ -12,12 +12,20 @@ import Actors.Messages._
 class Logger  extends Actor with AskSupport
 {
 
+  /**
+   * code that is run as soon as the logger starts up
+   */
   override def preStart(): Unit =
   {
     println("hello world")
     self ! Message("hello world")
   }
 
+  /**
+   * our recieve block, if we get a meessage
+   * then we log it otherwise we just error
+   * @return
+   */
    def receive =
    {
      case Message(msg:String) => LogHelper.addLogEntry(msg)

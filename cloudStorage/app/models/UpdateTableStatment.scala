@@ -8,7 +8,7 @@ import play.api.libs.json.Json
 
 object UpdateTableStatmentHelper
 {
-   case class UpdateTableStatment(private val tables: List[String], private val set: Map[String, String], val where: Map[String, String]) extends MutableSQLStatement(tables)
+   case class UpdateTableStatment(private val tables: List[String],  val set: Map[String, String], val where: Map[String, String]) extends MutableSQLStatement(tables)
   {
 
     override def getNewSQLStatement  =

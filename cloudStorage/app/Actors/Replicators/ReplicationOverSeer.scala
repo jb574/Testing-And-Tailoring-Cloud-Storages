@@ -5,6 +5,7 @@ import Actors.Messages._
 import akka.actor.{Props, ActorRef}
 import java.util.Random
 import akka.dispatch
+import models.QueryResultHelper.QueryResult
 import models.SQLStatementHelper.MutableSQLStatement
 import models.UpdateTableStatmentHelper.UpdateTableStatment
 import scala.concurrent.duration._
@@ -61,10 +62,15 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
    */
    def sendTestMessage =
    {
-     val rand = new Random()
-     val serverId = rand.nextInt(2)
+     val serverId: Int = getRandomServerNumber
      servers(serverId) ! TestMessage
    }
+
+  def getRandomServerNumber: Int = {
+    val rand = new Random()
+    val serverId = rand.nextInt(2)
+    serverId
+  }
 
   def updateReferenceLists = servers.foreach((thing) => thing ! servers)
 
@@ -78,8 +84,9 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
 
   def receive =
   {
-    case query:UpdateTableStatment =>  processUpdate(query)
+    case query:MutableSQLStatement =>  processUpdate(query)
     case MakeConsistent => makeConsistent
+    case results:QueryResult => servers(getRandomServerNumber) ! results
   }
 
 

@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:b7023433a0b2fba44e9163ffa6c7645bd14403b3
-// @DATE:Fri Jun 19 14:08:50 BST 2015
+// @HASH:c25579c30179a83b9eb8adaba021a5a6ae7df68c
+// @DATE:Mon Jun 22 14:45:12 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -14,6 +14,7 @@ import _root_.controllers.Assets.Asset
 import Router.queryString
 
 
+// @LINE:19
 // @LINE:18
 // @LINE:16
 // @LINE:15
@@ -42,6 +43,7 @@ def versioned(file:String): Call = {
 }
                           
 
+// @LINE:19
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -70,6 +72,13 @@ def makeConsistent(): Call = {
 def delete(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "delete")
+}
+                        
+
+// @LINE:19
+def runEventuallyConsistentQuery(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "select")
 }
                         
 
@@ -145,6 +154,7 @@ def saveMutableQuery(): Call = {
                   
 
 
+// @LINE:19
 // @LINE:18
 // @LINE:16
 // @LINE:15
@@ -178,6 +188,7 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:19
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -216,6 +227,17 @@ def delete : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "delete"})
+      }
+   """
+)
+                        
+
+// @LINE:19
+def runEventuallyConsistentQuery : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.runEventuallyConsistentQuery",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "select"})
       }
    """
 )
@@ -325,6 +347,7 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:19
 // @LINE:18
 // @LINE:16
 // @LINE:15
@@ -353,6 +376,7 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
+// @LINE:19
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -378,6 +402,12 @@ def makeConsistent(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:15
 def delete(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.delete(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "delete", Seq(), "POST", """""", _prefix + """delete""")
+)
+                      
+
+// @LINE:19
+def runEventuallyConsistentQuery(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.runEventuallyConsistentQuery(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "runEventuallyConsistentQuery", Seq(), "POST", """""", _prefix + """select""")
 )
                       
 

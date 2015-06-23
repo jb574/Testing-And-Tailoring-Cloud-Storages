@@ -6,8 +6,10 @@ import akka.actor.Props
 import akka.dispatch.Futures
 import models.DeleteStatementHelper.DeleteStatment
 import models.InsertStatmentHelper.InsertStatment
+import models.SelectStatementHelper.SelectStatement
 import org.joda.time
 import org.joda.time.Seconds
+import scala.collection.mutable
 import scala.concurrent.Await
 import akka.util.Timeout
 import controllers.Application._
@@ -29,6 +31,9 @@ import Actors.Replicators._
 import akka.pattern.ask
 import scala.concurrent.duration.Duration
 import akka.util.Timeout._
+import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.Map
+import models.QueryResultHelper.QueryResult
 /**
  * this is the main controller
  * for the application
@@ -43,6 +48,9 @@ object FrontEnd  extends Controller
    val replicationMarshaller = system.actorOf(Props(new ReplicationMarshaller(loggingActor,databaseCommiter)))
    val repServer = system.actorOf(Props(new ReplicationOverSeer(loggingActor,replicationMarshaller)))
 
+  /**
+   * this is the sevice to create new tables in the database
+   */
   def createTable = Action(BodyParsers.parse.json)
   {
     request =>
@@ -60,18 +68,27 @@ object FrontEnd  extends Controller
 
   }
 
+  /**
+   * this simply retrieves the output of the log
+   */
   def getLogOutput = Action
   {
     loggingActor ! Messages.Message("hi")
     Ok(LogHelper.jsonVersion)
   }
 
+  /**
+   *  sends a request to make the qhole system consistent
+   */
   def makeConsistent = Action
   {
     repServer ! MakeConsistent
     Ok("database fully consistent")
   }
 
+  /**
+   * deletes some data from the database
+   */
   def delete = Action(BodyParsers.parse.json)
   {
     request =>
@@ -79,6 +96,9 @@ object FrontEnd  extends Controller
       processUpdate(statement)
   }
 
+  /**
+   *inserts some data into the database
+   */
   def insert = Action(BodyParsers.parse.json)
   {
     request =>
@@ -86,6 +106,10 @@ object FrontEnd  extends Controller
       processUpdate(statement)
   }
 
+
+  /**
+   *updates some data into the databse
+   */
   def update = Action(BodyParsers.parse.json)
   {
     request =>
@@ -93,7 +117,11 @@ object FrontEnd  extends Controller
       processUpdate(statement)
   }
 
-
+  /**
+   * method to process a mutable sql update
+   * @param statement  the update in question
+   * @return a mesage saying whther this was a sucsess
+   */
   def processUpdate(statement: JsResult[MutableSQLStatement]) = {
     statement.fold(
       errors => {
@@ -107,6 +135,53 @@ object FrontEnd  extends Controller
     )
   }
 
+ def runEventuallyConsistentQuery = Action(BodyParsers.parse.json)
+ {
+   request =>
+      val query = request.body.validate[SelectStatement]
+     query.fold(
+       errors =>
+       {
+         BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors)))
+       },
+       goodQuery =>
+       {
+         var queryResult: QueryResult = queryDatabase(goodQuery)
+         repServer ! queryResult
+         while(queryResult.isDone == false)
+         {
+
+         }
+         Ok(Json.toJson(queryResult.toString))
+       }
+     )
+ }
+
+
+  def addRow(queryResult:QueryResult,row:Row): Unit = {
+    val rawData = row.asMap
+    var betterRow: mutable.Map[String, String] = Map()
+    for ((key:String, value:Option[Any]) <- rawData) {
+      betterRow = betterRow + (key -> value.get.toString)
+    }
+    queryResult.addRow(betterRow)
+  }
+
+  def queryDatabase(goodQuery: SelectStatement):QueryResult = {
+    val queryResult: QueryResult = new QueryResult(goodQuery.retrieveTableInfo())
+    println(goodQuery.getNewSQLStatement)
+    DB.withConnection {
+      implicit con =>
+        val result: List[Row] = SQL(goodQuery.getNewSQLStatement)().toList
+        val workableResults: ArrayBuffer[mutable.Map[String, String]] = ArrayBuffer()
+        result.foreach(row => addRow(queryResult,row))
+    }
+    queryResult
+  }
+
+  /**
+   * as above for createTable
+   */
   def dropTable = Action(BodyParsers.parse.json)
   {
     request =>
@@ -125,9 +200,12 @@ object FrontEnd  extends Controller
   }
 
 
-
-
-
+  /**
+   * this is the method that acually does the legwork for create or dop table.
+   *
+   * @param goodStatement the table in question
+   * @return  a htpresult that tells you whether it works or not.
+   */
   private def createOrDropTable(goodStatement:SQLStatement): Result =
   {
     try

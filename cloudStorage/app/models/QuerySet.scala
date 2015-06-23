@@ -27,6 +27,15 @@ class QuerySet(private var vectorClocks:Map[Int,LocalDateTime], private var quer
     this(querySet.vectorClocks,querySet.queries,querySet.tableNames)
   }
 
+
+  def executeQuery(QueryResult:QueryResultHelper.QueryResult) =
+  {
+    if(QueryResult.talkingAboutSameTable(tableNames))
+    {
+      queries.foreach(query => QueryResult.applySQLUpdate(query))
+    }
+  }
+
   def sendQuerries(committer:ActorRef) = committer ! queries
 
    def canBeMeged(other:QuerySet):Boolean  =

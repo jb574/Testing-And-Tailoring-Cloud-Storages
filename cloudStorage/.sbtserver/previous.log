@@ -1,5 +1,5 @@
-New log file opened at Fri Jun 19 14:03:49 BST 2015 by 5484@jacks-MacBook-Pro.local
-jvm 5484@jacks-MacBook-Pro.local
+New log file opened at Tue Jun 23 13:11:46 BST 2015 by 8543@jacks-MacBook-Pro.local
+jvm 8543@jacks-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.5-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project, returning: (cloudstorage-build)
 Loading project definition from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@24b3f2e8, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@75907888, check cycles: false
 [info] Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/}cloudstorage-build...
 Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/}cloudstorage-build...
 Other repositories:
@@ -15765,7 +15765,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8-M3!apply-macro.jar
 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-:: resolution report :: resolve 5766ms :: artifacts dl 126ms
+:: resolution report :: resolve 5579ms :: artifacts dl 103ms
 	report for default#cloudstorage-build;0.1-SNAPSHOT compile produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-compile.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT runtime produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-runtime.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT test produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-test.xml
@@ -15779,7 +15779,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	report for default#cloudstorage-build;0.1-SNAPSHOT docs produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-docs.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT pom produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-pom.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT scala-tool produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-scala-tool.xml
-	resolve done (5766ms resolve - 126ms download)
+	resolve done (5579ms resolve - 103ms download)
 [info] Done updating.
 Done updating.
 
@@ -15821,7 +15821,7 @@ Set current project to Testing and Tailoring cloud storages (in build file:/User
 > server-handle-next-server-request
 > {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@2f77c633, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@422f5ef9, check cycles: false
 Read from stdout: Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root...
 Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root...
 Other repositories:
@@ -15836,7 +15836,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.6 ...
 Resolving org.scala-lang#scala-library;2.11.6 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55197b5b
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c11b3ef
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6
 	found org.scala-lang#scala-library;2.11.6 in sbt-chain
 	[2.11.6] org.scala-lang#scala-library;2.11.6
@@ -21897,7 +21897,7 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
-:: resolution report :: resolve 2152ms :: artifacts dl 72ms
+:: resolution report :: resolve 1948ms :: artifacts dl 56ms
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT compile produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-compile.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT runtime produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-runtime.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT test produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-test.xml
@@ -21912,16 +21912,16 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT pom produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-pom.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT scala-tool produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-scala-tool.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT fork-run produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-fork-run.xml
-	resolve done (2152ms resolve - 72ms download)
+	resolve done (1948ms resolve - 56ms download)
 Read from stdout: Done updating.
 Done updating.
-Total time: 3 s, completed 19-Jun-2015 14:04:03
+Total time: 2 s, completed 23-Jun-2015 13:11:59
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@65b12b45, check cycles: false
-Total time: 0 s, completed 19-Jun-2015 14:04:04
+Running task... Cancel: sbt.server.ServerTaskCancellation@190e43f3, check cycles: false
+Total time: 0 s, completed 23-Jun-2015 13:12:00
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -21930,4 +21930,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 5484@jacks-MacBook-Pro.local logs at Fri Jun 19 14:06:51 BST 2015, goodbye.
+Closing the 8543@jacks-MacBook-Pro.local logs at Tue Jun 23 13:14:48 BST 2015, goodbye.

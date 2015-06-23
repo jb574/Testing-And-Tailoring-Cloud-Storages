@@ -8,7 +8,7 @@ import play.api.libs.json.Json
  */
 object DeleteStatementHelper {
 
-  case class DeleteStatment(private val tables: List[String],OtherClauses:String, val where: Map[String, String]) extends MutableSQLStatement(tables)
+  case class DeleteStatment(private val tables: List[String],OtherClauses:String, where: Map[String, String]) extends MutableSQLStatement(tables)
   {
 
     override def getNewSQLStatement  =
@@ -17,7 +17,16 @@ object DeleteStatementHelper {
       val whereClause = produceStringOutput(where)
       s"delete from $tableString where $whereClause $OtherClauses ; "
     }
+
+    def this(tables:List[String],where:Map[String,String]) =
+    {
+      this(tables,"",where)
+    }
+
   }
+
+
+
   implicit val TableeWrites = Json.writes[DeleteStatment]
   implicit val TableReads = Json.reads[DeleteStatment]
 

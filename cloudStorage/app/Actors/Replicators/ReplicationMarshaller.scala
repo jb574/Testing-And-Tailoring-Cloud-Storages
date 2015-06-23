@@ -5,8 +5,17 @@ import akka.actor.ActorRef
 import models.QuerySet
 import scala.collection.mutable.ArrayBuffer
 
+
 /**
- * Created by jackdavey on 18/06/15.
+ * class that intercepts updates
+ * from the replication servers to send ot the
+ * database,  once it sees a certian number of queires, it flushes everything and starts
+ * over
+ * @author Jack Davey
+ * @version 17th June 2015
+ * @param logger  a reference to the logger actor
+ * @param committer the actor responsible for committing everything to the
+ *                  database
  */
 class ReplicationMarshaller(logger:ActorRef,committer:ActorRef) extends SystemActor(logger)
 {
