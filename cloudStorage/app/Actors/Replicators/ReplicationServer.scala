@@ -17,10 +17,10 @@ import scala.collection.immutable.HashMap
  */
 class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) extends SystemActor(logger)
 {
-   private var otherServers:ArrayBuffer[ActorRef] = ArrayBuffer()
-   private var inconsistentUpdates:List[QuerySet] = List()
-   private var masterList:List[String]  = List()
-   private var noSeen = 0
+    var otherServers:ArrayBuffer[ActorRef] = ArrayBuffer()
+    var inconsistentUpdates:List[QuerySet] = List()
+   var masterList:List[String]  = List()
+    var noSeen = 0
 
   /**
    *method that announces that a message has been recieved
@@ -111,6 +111,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
     case MakeConsistent => distributeUpdates
     case foreignQueries:List[QuerySet] =>  makeConsistent(foreignQueries)
     case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
+      println("all done")
       queryResult.markComplete
   }
 

@@ -19,16 +19,19 @@ import scala.collection.mutable.ArrayBuffer
  */
 class ReplicationMarshaller(logger:ActorRef,committer:ActorRef) extends SystemActor(logger)
 {
-    private var noSeen = 0;
-   private var queries:ArrayBuffer[QuerySet]  = ArrayBuffer()
+     var noSeen = 0;
+    var queries:ArrayBuffer[QuerySet]  = ArrayBuffer()
 
   def receive =
   {
     case list:ArrayBuffer[QuerySet] =>  queries = queries ++ list
       noSeen = noSeen + 1
+      println(noSeen)
       if(noSeen == 6)
       {
+        println("clear")
         queries.clear()
+        noSeen = 0
       }
       list.foreach(query => query.sendQuerries(committer))
   }

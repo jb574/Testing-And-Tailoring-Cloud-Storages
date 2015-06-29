@@ -3,17 +3,18 @@
 # ~~~~
 
 # Home page
-GET         /test                 controllers.Application.testAction
-GET         /seenQueries          controllers.Application.listQueries
-POST        /addQuery             controllers.Application.saveQuery
-POST        /updateDataOld        controllers.Application.saveMutableQuery
-POST        /createTable          controllers.FrontEnd.createTable
-POST        /dropTable            controllers.FrontEnd.dropTable
-POST        /updateData           controllers.FrontEnd.update
-GET         /log                  controllers.FrontEnd.getLogOutput
-POST        /insert               controllers.FrontEnd.insert
-POST       /delete                controllers.FrontEnd.delete
-GET        /makeConsistent        controllers.FrontEnd.makeConsistent
+GET         /test                  controllers.Application.testAction
+GET         /seenQueries           controllers.Application.listQueries
+POST        /addQuery              controllers.Application.saveQuery
+POST        /updateDataOld         controllers.Application.saveMutableQuery
+POST        /createTable           controllers.FrontEnd.createTable
+POST        /dropTable             controllers.FrontEnd.dropTable
+POST        /updateData            controllers.FrontEnd.update
+GET         /log                   controllers.FrontEnd.getLogOutput
+POST        /insert                controllers.FrontEnd.insert
+POST        /delete                controllers.FrontEnd.delete
+GET         /makeConsistent        controllers.FrontEnd.makeConsistent
+POST        /time/updatedTIme                  controllers.FrontEnd.changeTImeSweep(updatedTime:Int)
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/*file         controllers.Assets.versioned(path="/public", file)
-POST       /select                controllers.FrontEnd.runEventuallyConsistentQuery
+GET         /assets/*file          controllers.Assets.versioned(path="/public", file)
+POST        /select                controllers.FrontEnd.runEventuallyConsistentQuery

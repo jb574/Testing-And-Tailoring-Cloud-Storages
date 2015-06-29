@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:c25579c30179a83b9eb8adaba021a5a6ae7df68c
-// @DATE:Mon Jun 22 14:45:12 BST 2015
+// @HASH:11b3fd8728f8cac56b6a82c10785b04a59df62ee
+// @DATE:Mon Jun 29 10:38:02 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -14,8 +14,9 @@ import _root_.controllers.Assets.Asset
 import Router.queryString
 
 
+// @LINE:20
 // @LINE:19
-// @LINE:18
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -29,11 +30,11 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
-// @LINE:18
+// @LINE:19
 class ReverseAssets {
 
 
-// @LINE:18
+// @LINE:19
 def versioned(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -43,7 +44,8 @@ def versioned(file:String): Call = {
 }
                           
 
-// @LINE:19
+// @LINE:20
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -75,10 +77,17 @@ def delete(): Call = {
 }
                         
 
-// @LINE:19
+// @LINE:20
 def runEventuallyConsistentQuery(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "select")
+}
+                        
+
+// @LINE:17
+def changeTImeSweep(updatedTime:Int): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "time/updatedTIme" + queryString(List(Some(implicitly[QueryStringBindable[Int]].unbind("updatedTime", updatedTime)))))
 }
                         
 
@@ -154,8 +163,9 @@ def saveMutableQuery(): Call = {
                   
 
 
+// @LINE:20
 // @LINE:19
-// @LINE:18
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -170,11 +180,11 @@ def saveMutableQuery(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:18
+// @LINE:19
 class ReverseAssets {
 
 
-// @LINE:18
+// @LINE:19
 def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.versioned",
    """
@@ -188,7 +198,8 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:19
+// @LINE:20
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -232,12 +243,23 @@ def delete : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:19
+// @LINE:20
 def runEventuallyConsistentQuery : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.FrontEnd.runEventuallyConsistentQuery",
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "select"})
+      }
+   """
+)
+                        
+
+// @LINE:17
+def changeTImeSweep : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.changeTImeSweep",
+   """
+      function(updatedTime) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "time/updatedTIme" + _qS([(""" + implicitly[QueryStringBindable[Int]].javascriptUnbind + """)("updatedTime", updatedTime)])})
       }
    """
 )
@@ -347,8 +369,9 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:20
 // @LINE:19
-// @LINE:18
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -363,11 +386,11 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:18
+// @LINE:19
 class ReverseAssets {
 
 
-// @LINE:18
+// @LINE:19
 def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.versioned(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -376,7 +399,8 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
-// @LINE:19
+// @LINE:20
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -405,9 +429,15 @@ def delete(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:19
+// @LINE:20
 def runEventuallyConsistentQuery(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.runEventuallyConsistentQuery(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "runEventuallyConsistentQuery", Seq(), "POST", """""", _prefix + """select""")
+)
+                      
+
+// @LINE:17
+def changeTImeSweep(updatedTime:Int): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.changeTImeSweep(updatedTime), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "changeTImeSweep", Seq(classOf[Int]), "POST", """""", _prefix + """time/updatedTIme""")
 )
                       
 

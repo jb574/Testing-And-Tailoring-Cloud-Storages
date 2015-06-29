@@ -28,6 +28,8 @@ class DatabaseCommiter(logger:ActorRef) extends SystemActor(logger)
   def receive =
   {
     case  update:MutableSQLStatement    => applyDatabaseUpdate(update)
+    case _  => throw new IllegalArgumentException("only database messages" +
+    "should be setn to this actor")
   }
 
   /**

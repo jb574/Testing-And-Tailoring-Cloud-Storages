@@ -1,5 +1,6 @@
 package models
 import java.time.LocalDateTime
+import models.QueryResultHelper.QueryResult
 import models.SQLStatementHelper.MutableSQLStatement
 import scala.collection.mutable.Map
 import akka.actor.ActorRef
@@ -13,22 +14,48 @@ class QuerySet(private var vectorClocks:Map[Int,LocalDateTime], private var quer
              private   var tableNames:List[String])
 {
   val dateCreated = LocalDateTime.now()
+
+  /**
+   * method to find out if two updates are relevan
+   * @param update the update to check
+   * @return  a boolean indicating whether the update
+   *          and this query set work on the same tables.
+   */
   def isUpdateRelavant(update:MutableSQLStatement):Boolean  =
   {
      update.affectSameTable(tableNames)
   }
+  /**
+   * this does a similar job to the method above
+   * except it compares two QuerySet objects
+   * as opposed to a Queryset and an update
+   * @param other the QuerySet to check
+   * @return  a boolean indicating whether the update
+   *          and this query set work on the same tables.
+   */
+
   def dealQithSameeData(other:QuerySet):Boolean =
   {
     other.tableNames.equals(tableNames)
   }
 
+  /**
+   * copy constructor for this class
+   * @param querySet  the queryset to copy
+   */
   def this(querySet: QuerySet)
   {
     this(querySet.vectorClocks,querySet.queries,querySet.tableNames)
   }
 
 
-  def executeQuery(QueryResult:QueryResultHelper.QueryResult) =
+  /**
+   * runs all the sql queries stored
+   * in this  queryset against the
+   * resultset parameter
+   * @param QueryResult the resultset in question
+   */
+  def executeQuery(QueryResult:QueryResult) =
   {
     if(QueryResult.talkingAboutSameTable(tableNames))
     {
@@ -36,8 +63,21 @@ class QuerySet(private var vectorClocks:Map[Int,LocalDateTime], private var quer
     }
   }
 
+  /**
+   * sends the list of queries for this
+   * actor to the database committer
+   * @param committer the comitter to send to
+   */
   def sendQuerries(committer:ActorRef) = committer ! queries
 
+  /**
+   * method to check to see if two query sets
+   * can be merged using a variation of Amazons stategy
+   * for comparing vector Clocks (we use dates
+   *  rather than sequence numbers)
+   * @param other  the other queryset to check
+   * @return   a yes or no answer to the above question
+   */
    def canBeMeged(other:QuerySet):Boolean  =
    {
      var otherVectorClocks = other.vectorClocks
@@ -61,12 +101,23 @@ class QuerySet(private var vectorClocks:Map[Int,LocalDateTime], private var quer
    }
 
 
+  /**
+   * method to merge another queryset into this
+   * one
+   * @param setToMerge  the other queryset to merge
+   */
   def mergeQuerySets(setToMerge:QuerySet): Unit =
   {
     vectorClocks = vectorClocks ++ setToMerge.vectorClocks
     queries = queries ::: setToMerge.queries
   }
 
+
+  /**
+   * adds new tables to the list of tables that we are working
+   * on
+   * @param update  the sql query whose tables we want to add
+   */
   def addNewTables(update:MutableSQLStatement) =
   {
     val tables:List[String] = update.retrietables
@@ -75,11 +126,24 @@ class QuerySet(private var vectorClocks:Map[Int,LocalDateTime], private var quer
   }
 
 
+  /**
+   * constructor that allows you to create
+   * a new vecot rclock from the serverID
+   * and sql update
+   * @param mutableSQLStatement  the sql update
+   * @param serverId  the server id
+   */
   def this(mutableSQLStatement: MutableSQLStatement,serverId:Int)
   {
     this(Map((serverId,LocalDateTime.now())), List(mutableSQLStatement),mutableSQLStatement.retrietables())
   }
 
+  /**
+   *  adds anew query to this queryset
+   * @param update the queyr in questin
+   * @param serverID  the server id in question
+   * @return  a boolean indicating sucsess or failure
+   */
  def addNewQuery(update:MutableSQLStatement,serverID:Int):Boolean =
  {
    if(isUpdateRelavant(update))

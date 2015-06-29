@@ -10,7 +10,7 @@ import models.SelectStatementHelper.SelectStatement
 import org.joda.time
 import org.joda.time.Seconds
 import scala.collection.mutable
-import scala.concurrent.Await
+import scala.concurrent.{ExecutionContext, Future, Await}
 import akka.util.Timeout
 import controllers.Application._
 import models.CreateTableStatementHelpers.CreateTableStatement
@@ -18,6 +18,7 @@ import models.DripTableStatementHelper.DropTableStatement
 import models.{LogHelper, SQLQuery}
 import models.UpdateTableStatmentHelper.UpdateTableStatment
 import play.api.libs.json._
+
 import play.api.mvc._
 import models.SQLQuery._
 import play.api.db._
@@ -34,6 +35,7 @@ import akka.util.Timeout._
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.mutable.Map
 import models.QueryResultHelper.QueryResult
+import ExecutionContext.Implicits.global
 /**
  * this is the main controller
  * for the application
@@ -135,34 +137,52 @@ object FrontEnd  extends Controller
     )
   }
 
- def runEventuallyConsistentQuery = Action(BodyParsers.parse.json)
+  def changeTImeSweep(updatedTime:Int) = Action
+  {
+    repServer ! updatedTime
+    Ok("time updated")
+  }
+
+
+ def runEventuallyConsistentQuery = Action.async(BodyParsers.parse.json)
  {
-   request =>
+
+     request =>
       val query = request.body.validate[SelectStatement]
      query.fold(
        errors =>
        {
-         BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors)))
+
+         Future(BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors))))
        },
        goodQuery =>
        {
-         var queryResult: QueryResult = queryDatabase(goodQuery)
-         repServer ! queryResult
-         while(queryResult.isDone == false)
+         Future
          {
-
+           var queryResult: QueryResult = queryDatabase(goodQuery)
+           repServer ! queryResult
+           while (!queryResult.isDone) {
+             var index = 0
+             while (index < 10000) {
+               index = index + 1
+             }
+           }
+           Ok(Json.toJson(queryResult.toString))
          }
-         Ok(Json.toJson(queryResult.toString))
        }
      )
- }
+   }
+
 
 
   def addRow(queryResult:QueryResult,row:Row): Unit = {
     val rawData = row.asMap
     var betterRow: mutable.Map[String, String] = Map()
-    for ((key:String, value:Option[Any]) <- rawData) {
-      betterRow = betterRow + (key -> value.get.toString)
+    for ((key:String, value:Option[Any]) <- rawData)
+    {
+      val index = key.indexOf(".")
+      var betterKey = key.substring(index+1)
+      betterRow = betterRow + (betterKey -> value.get.toString)
     }
     queryResult.addRow(betterRow)
   }

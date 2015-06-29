@@ -1,68 +1,7 @@
-New log file opened at Tue Jun 23 13:14:53 BST 2015 by 8594@jacks-MacBook-Pro.local
-Taking next connection to: 51205
-New client attempting to connect on port: 51206-51205
-  Address = /129.12.211.85:51205
-This client on port 51206 has uuid 4e90c512-4fef-4eb6-8416-c7aa479dfdf6 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-4e90c512-4fef-4eb6-8416-c7aa479dfdf6
-Taking next connection to: 51205
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51205
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51205
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51205
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51205
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51205
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51205
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51205
-New client attempting to connect on port: 51247-51205
-  Address = /129.12.211.85:51205
-Handshake exception on socket: 51247
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:189)
-	at java.net.SocketInputStream.read(SocketInputStream.java:121)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 51205
-New client attempting to connect on port: 51248-51205
-  Address = /129.12.211.85:51205
-This client on port 51248 has uuid 61496d1f-2286-4826-a261-250509f39996 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-4e90c512-4fef-4eb6-8416-c7aa479dfdf6, play-fork-run-61496d1f-2286-4826-a261-250509f39996
-Taking next connection to: 51205
-New client attempting to connect on port: 51302-51205
-  Address = /129.12.211.85:51205
-Handshake exception on socket: 51302
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 51205
-New client attempting to connect on port: 51303-51205
-  Address = /129.12.211.85:51205
-This client on port 51303 has uuid e5b2e818-5aa0-45b4-b505-d1b87c196c60 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-e5b2e818-5aa0-45b4-b505-d1b87c196c60
-Taking next connection to: 51205
+New log file opened at Mon Jun 29 10:52:47 BST 2015 by 3732@jacks-MacBook-Pro.local
+Taking next connection to: 50184
+New client attempting to connect on port: 50185-50184
+  Address = /129.12.211.226:50184
+This client on port 50185 has uuid f95c3803-0e32-4e6a-bd4c-97f332cbfa09 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-f95c3803-0e32-4e6a-bd4c-97f332cbfa09
+Taking next connection to: 50184

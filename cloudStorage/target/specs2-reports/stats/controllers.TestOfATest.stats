@@ -6,3 +6,42 @@
 <controllers.TestOfATest-stats timestamp="1434016092799"><stats time="61" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
 <controllers.TestOfATest-stats timestamp="1434016984488"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
 <controllers.TestOfATest-stats timestamp="1434017263713"><stats time="61" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435138496675"><stats time="54" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435154534740"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435252730742"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435253066261"><stats time="50" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435253269216"><stats time="49" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435259996068"><stats time="47" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435260175066"><stats time="51" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435260840764"><stats time="58" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435260909699"><stats time="51" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435261205749"><stats time="47" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435261627557"><stats time="53" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435261674057"><stats time="49" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435261766378"><stats time="50" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435261886821"><stats time="48" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435261996025"><stats time="49" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435262068987"><stats time="51" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435262103518"><stats time="47" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435262372267"><stats time="47" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435262445985"><stats time="57" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435262574121"><stats time="60" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435262652944"><stats time="54" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435262700918"><stats time="58" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435262881835"><stats time="53" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435263034470"><stats time="65" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435263066232"><stats time="55" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-results timestamp="1435520029323"><result location="controllers.TestOfATest (TestOfATest.scala:17)" id="-436688185"><stats time="47" expectations="1" errors="1" examples="1"></stats></result>
+</controllers.TestOfATest-results>
+<controllers.TestOfATest-stats timestamp="1435520029328"><stats time="48" expectations="1" errors="1" examples="1"><trend><stats time="48" errors="1" successes="-1"></stats></trend></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435520102349"><stats time="71" expectations="1" successes="1" examples="1"><trend><stats time="71" errors="-1" successes="1"></stats></trend></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435520761822"><stats time="58" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435521561321"><stats time="56" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435522150338"><stats time="53" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435522833414"><stats time="54" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435523180751"><stats time="50" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435523498095"><stats time="63" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435560270183"><stats time="134" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435561774504"><stats time="53" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435562312244"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435562495095"><stats time="56" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>

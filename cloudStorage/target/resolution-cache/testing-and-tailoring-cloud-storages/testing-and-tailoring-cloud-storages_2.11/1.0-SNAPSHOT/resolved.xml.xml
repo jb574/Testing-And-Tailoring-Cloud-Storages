@@ -4,7 +4,7 @@
 		module="testing-and-tailoring-cloud-storages_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20150623134117"
+		publication="20150629105258"
 	>
 		<description>
 		Testing and Tailoring cloud storages
@@ -33,8 +33,8 @@
 		<artifact name="testing-and-tailoring-cloud-storages_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.6" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.11.6" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="twirl-api_2.11" rev="1.0.2" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play_2.11" rev="2.3.9" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-test_2.11" rev="2.3.9" conf="test->default(compile)"/>
@@ -43,5 +43,6 @@
 		<dependency org="com.typesafe.play" name="play-jdbc_2.11" rev="2.3.9" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="anorm_2.11" rev="2.3.9" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.35" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-testkit_2.11" rev="2.3.3" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

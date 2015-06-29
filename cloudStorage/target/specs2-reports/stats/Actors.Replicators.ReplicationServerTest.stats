@@ -1,0 +1,3 @@
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1435561774616"><stats time="83" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1435562312516"><stats time="225" expectations="3" successes="3" examples="3"><trend><stats time="225" expectations="2" successes="2" examples="2"></stats></trend></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1435562495418"><stats time="281" expectations="4" successes="4" examples="4"><trend><stats time="281" expectations="1" successes="1" examples="1"></stats></trend></stats></Actors.Replicators.ReplicationServerTest-stats>

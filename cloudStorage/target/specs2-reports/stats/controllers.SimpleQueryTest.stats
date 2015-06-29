@@ -1,3 +1,42 @@
 <controllers.SimpleQueryTest-stats timestamp="1434016092977"><stats time="152" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
 <controllers.SimpleQueryTest-stats timestamp="1434016984222"><stats time="1594" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
 <controllers.SimpleQueryTest-stats timestamp="1434017263800"><stats time="56" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435138496939"><stats time="63" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435154535122"><stats time="64" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435252731200"><stats time="66" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435253066615"><stats time="53" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435253269724"><stats time="57" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435259996434"><stats time="57" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435260175519"><stats time="137" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435260841147"><stats time="56" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435260910089"><stats time="54" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435261206171"><stats time="136" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435261627947"><stats time="63" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435261674411"><stats time="57" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435261766731"><stats time="55" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435261887181"><stats time="55" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435261996391"><stats time="64" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435262069354"><stats time="57" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435262103884"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435262372643"><stats time="61" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435262446387"><stats time="59" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435262574497"><stats time="61" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435262653305"><stats time="57" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435262701300"><stats time="53" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435262882192"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435263034849"><stats time="64" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435263066628"><stats time="65" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-results timestamp="1435520029768"><result location="controllers.SimpleQueryTest (SimpleQueryTest.scala:12)" id="-867425176"><stats time="23" expectations="1" errors="1" examples="1"></stats></result>
+</controllers.SimpleQueryTest-results>
+<controllers.SimpleQueryTest-stats timestamp="1435520029772"><stats time="25" expectations="1" errors="1" examples="1"><trend><stats time="25" errors="1" successes="-1"></stats></trend></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435520102817"><stats time="49" expectations="1" successes="1" examples="1"><trend><stats time="49" errors="-1" successes="1"></stats></trend></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435520762359"><stats time="50" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435521561936"><stats time="56" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435522151029"><stats time="45" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435522834105"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435523181493"><stats time="62" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435523498920"><stats time="62" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435560271067"><stats time="53" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435561775405"><stats time="45" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435562313344"><stats time="45" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435562496214"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>

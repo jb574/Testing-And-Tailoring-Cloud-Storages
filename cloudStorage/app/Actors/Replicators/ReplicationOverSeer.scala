@@ -5,6 +5,7 @@ import Actors.Messages._
 import akka.actor.{Props, ActorRef}
 import java.util.Random
 import akka.dispatch
+import akka.testkit.TestActorRef
 import models.QueryResultHelper.QueryResult
 import models.SQLStatementHelper.MutableSQLStatement
 import models.UpdateTableStatmentHelper.UpdateTableStatment
@@ -23,6 +24,8 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
 {
   var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
 
+  var timetilNextConsistencySweep = 180
+
   override  def preStart() =
   {
       for(index <- 0 to 3)
@@ -31,12 +34,17 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
         servers.insert(index,server)
       }
       updateReferenceLists
-
     scheduleNextConsistencyRun
   }
 
+
+
+  /**
+   * this chedules the next run to make everything eventually
+   * consistent on all the worker servers.
+   */
   def scheduleNextConsistencyRun: Unit = {
-    context.system.scheduler.scheduleOnce(30 seconds)
+    context.system.scheduler.scheduleOnce(timetilNextConsistencySweep seconds)
     {
       makeConsistent()
     }
@@ -50,9 +58,7 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
   def processUpdate(update:MutableSQLStatement) =
   {
     println("im on fire")
-    val rand = new Random()
-    val serverId = rand.nextInt(3)
-    servers(serverId) ! update
+    servers(getRandomServerNumber) ! update
   }
 
 
@@ -66,9 +72,11 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
      servers(serverId) ! TestMessage
    }
 
-  def getRandomServerNumber: Int = {
+  def getRandomServerNumber: Int =
+  {
     val rand = new Random()
-    val serverId = rand.nextInt(2)
+    val serverId = rand.nextInt(3)
+    println("chosen server" + serverId)
     serverId
   }
 
@@ -87,6 +95,10 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
     case query:MutableSQLStatement =>  processUpdate(query)
     case MakeConsistent => makeConsistent
     case results:QueryResult => servers(getRandomServerNumber) ! results
+    case time:Int => timetilNextConsistencySweep = time
+    case testData:ArrayBuffer[ActorRef] => servers = testData
+              updateReferenceLists
+
   }
 
 

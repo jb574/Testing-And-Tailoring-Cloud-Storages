@@ -1,6 +1,6 @@
 [info] Setting up Play fork run ... (use Ctrl+D to cancel)
 [info] Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root...
-[info] Resolving org.scala-lang#scala-library;2.11.6 ...
+[info] Resolving org.scala-lang#scala-library;2.11.7 ...
 [info] Resolving com.typesafe.play#twirl-api_2.11;1.0.2 ...
 [info] Resolving org.apache.commons#commons-lang3;3.1 ...
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.1 ...
@@ -43,6 +43,7 @@
 [info] Resolving com.jsuereth#scala-arm_2.11;1.4 ...
 [info] Resolving org.scala-lang.plugins#scala-continuations-library_2.11;1.0.1 ...
 [info] Resolving mysql#mysql-connector-java;5.1.35 ...
+[info] Resolving com.typesafe.akka#akka-testkit_2.11;2.3.3 ...
 [info] Resolving com.typesafe.play#play-test_2.11;2.3.9 ...
 [info] Resolving junit#junit;4.11 ...
 [info] Resolving org.hamcrest#hamcrest-core;1.3 ...
@@ -113,10 +114,10 @@
 [info] Resolving org.ow2.asm#asm-analysis;4.1 ...
 [info] Resolving org.ow2.asm#asm-util;4.1 ...
 [info] Resolving commons-io#commons-io;2.4 ...
-[info] Resolving org.scala-lang#scala-compiler;2.11.6 ...
-[info] Resolving org.scala-lang#scala-reflect;2.11.6 ...
-[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...
-[info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 ...
+[info] Resolving org.scala-lang#scala-compiler;2.11.7 ...
+[info] Resolving org.scala-lang#scala-reflect;2.11.7 ...
+[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.4 ...
+[info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...
 [info] Resolving jline#jline;2.12.1 ...
 [info] Resolving com.typesafe.play#fork-run_2.11;2.3.9 ...
 [info] Resolving com.typesafe.play#fork-run-protocol_2.11;2.3.9 ...
@@ -150,88 +151,4 @@
 [info] 
 [info] 32m(Server started, use Ctrl+D to stop and go back to the console...)0m
 [info] 
-[info] Compiling 24 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure
-[warn]      case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
-[warn]                   ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern scala.collection.mutable.ArrayBuffer[models.QuerySet] is unchecked since it is eliminated by erasure
-[warn]     case list:ArrayBuffer[QuerySet] =>  queries = queries ++ list
-[warn]               ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:110: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
-[warn]     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
-[warn]                     ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:112: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
-[warn]     case foreignQueries:List[QuerySet] =>  makeConsistent(foreignQueries)
-[warn]                         ^
-[warn] there was one feature warning; re-run with -feature for details
-[warn] 5 warnings found
-[info] play - database [default] connected at jdbc:mysql://localhost:8889/health
-[info] play - Application started (Dev)
-[info] play - Starting application default Akka system.
-[info] hello world
-[info] List(LogEntry(hello world,2015-06-23T13:41:43.965))
-[info] select * from test ; 
-[info] making consistent
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] making consistent
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
-[info] im cool   
 [info] Stopping Play fork run ...
-[info] play - Shutdown application default Akka system.
-[info] making consistent
-[info] [ERROR] [06/23/2015 13:42:47.238] [application-akka.actor.default-dispatcher-5] [ActorSystem(application)] exception while executing timer task
-[info] java.lang.NullPointerException
-[info] 	at Actors.Replicators.ReplicationOverSeer.scheduleNextConsistencyRun(ReplicationOverSeer.scala:39)
-[info] 	at Actors.Replicators.ReplicationOverSeer.makeConsistent(ReplicationOverSeer.scala:81)
-[info] 	at Actors.Replicators.ReplicationOverSeer$$anonfun$scheduleNextConsistencyRun$1.apply$mcV$sp(ReplicationOverSeer.scala:41)
-[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
-[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
-[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:750)
-[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1202)
-[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
-[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
-[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
-[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
-[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
-[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
-[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-[info] 
