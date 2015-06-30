@@ -10,8 +10,8 @@ import akka.actor.ActorRef
  * @author Jack Davey
  * @version 16th June 2015
  */
-class QuerySet(private var vectorClocks:Map[Int,LocalDateTime], private var queries:List[MutableSQLStatement],
-             private   var tableNames:List[String])
+class QuerySet( var vectorClocks:Map[Int,LocalDateTime],  var queries:List[MutableSQLStatement],
+                var tableNames:List[String])
 {
   val dateCreated = LocalDateTime.now()
 

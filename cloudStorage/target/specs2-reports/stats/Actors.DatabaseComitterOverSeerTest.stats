@@ -41,3 +41,22 @@
 <Actors.DatabaseComitterOverSeerTest-stats timestamp="1435561775335"><stats time="109" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
 <Actors.DatabaseComitterOverSeerTest-stats timestamp="1435562313266"><stats time="130" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
 <Actors.DatabaseComitterOverSeerTest-stats timestamp="1435562496136"><stats time="136" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-results timestamp="1435579165489"><result location="Actors.DatabaseComitterOverSeerTest (DatabaseComitterOverSeerTest.scala:42)" id="-1388862983"><stats time="18" expectations="1" errors="1" examples="1"></stats></result>
+<result location="Actors.DatabaseComitterOverSeerTest (DatabaseComitterOverSeerTest.scala:50)" id="681108782"><stats time="19" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.DatabaseComitterOverSeerTest-results>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435579165492"><stats time="37" expectations="2" errors="2" examples="2"><trend><stats time="37" errors="2" successes="-2"></stats></trend></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435579244238"><stats time="97" expectations="2" successes="2" examples="2"><trend><stats time="97" errors="-2" successes="2"></stats></trend></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435579517825"><stats time="115" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435580422456"><stats time="102" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435580585431"><stats time="103" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435580681307"><stats time="103" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435583036170"><stats time="165" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435584063969"><stats time="103" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435584889266"><stats time="112" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435585243430"><stats time="116" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435585634071"><stats time="216" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435586489241"><stats time="98" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435654827418"><stats time="104" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435655143479"><stats time="96" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435656889375"><stats time="194" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>
+<Actors.DatabaseComitterOverSeerTest-stats timestamp="1435664823384"><stats time="99" expectations="2" successes="2" examples="2"></stats></Actors.DatabaseComitterOverSeerTest-stats>

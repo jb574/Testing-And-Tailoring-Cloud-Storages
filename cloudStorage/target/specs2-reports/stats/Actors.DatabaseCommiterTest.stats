@@ -41,3 +41,21 @@
 <Actors.DatabaseCommiterTest-stats timestamp="1435561775197"><stats time="54" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
 <Actors.DatabaseCommiterTest-stats timestamp="1435562313091"><stats time="55" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
 <Actors.DatabaseCommiterTest-stats timestamp="1435562495973"><stats time="57" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-results timestamp="1435579165403"><result location="Actors.DatabaseCommiterTest (DatabaseCommiterTest.scala:49)" id="-1454710474"><stats time="36" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.DatabaseCommiterTest-results>
+<Actors.DatabaseCommiterTest-stats timestamp="1435579165408"><stats time="36" expectations="1" errors="1" examples="1"><trend><stats time="36" errors="1" successes="-1"></stats></trend></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435579244109"><stats time="65" expectations="1" successes="1" examples="1"><trend><stats time="65" errors="-1" successes="1"></stats></trend></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435579517683"><stats time="58" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435580422330"><stats time="61" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435580585302"><stats time="54" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435580681156"><stats time="53" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435583035957"><stats time="74" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435584063835"><stats time="53" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435584889124"><stats time="56" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435585243279"><stats time="55" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435585633825"><stats time="54" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435586489116"><stats time="83" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435654827226"><stats time="62" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435655143290"><stats time="55" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435656888987"><stats time="55" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>
+<Actors.DatabaseCommiterTest-stats timestamp="1435664823082"><stats time="54" expectations="1" successes="1" examples="1"></stats></Actors.DatabaseCommiterTest-stats>

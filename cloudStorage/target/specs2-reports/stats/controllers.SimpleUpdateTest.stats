@@ -39,3 +39,21 @@
 <controllers.SimpleUpdateTest-stats timestamp="1435561774277"><stats time="390" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
 <controllers.SimpleUpdateTest-stats timestamp="1435562312044"><stats time="385" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
 <controllers.SimpleUpdateTest-stats timestamp="1435562494878"><stats time="397" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-results timestamp="1435579164465"><result location="controllers.SimpleUpdateTest (SimpleUpdateTest.scala:13)" id="1412797781"><stats time="37" expectations="1" errors="1" examples="1"></stats></result>
+</controllers.SimpleUpdateTest-results>
+<controllers.SimpleUpdateTest-stats timestamp="1435579164472"><stats time="37" expectations="1" errors="1" examples="1"><trend><stats time="37" errors="1" successes="-1"></stats></trend></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435579242988"><stats time="533" expectations="1" successes="1" examples="1"><trend><stats time="533" errors="-1" successes="1"></stats></trend></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435579516510"><stats time="347" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435580421042"><stats time="352" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435580584096"><stats time="359" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435580679848"><stats time="406" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435583034021"><stats time="582" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435584062236"><stats time="583" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435584887605"><stats time="558" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435585241746"><stats time="372" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435585632303"><stats time="352" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435586487506"><stats time="355" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435654825382"><stats time="549" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435655141502"><stats time="357" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435656887266"><stats time="353" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1435664821190"><stats time="452" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>

@@ -1,11 +1,14 @@
 package Actors.Replicators
 
+import java.time.LocalDateTime
+
 import Actors.{Messages, SystemActor}
 import Actors.Messages._
 import akka.actor.{Props, ActorRef}
 import java.util.Random
 import akka.dispatch
 import akka.testkit.TestActorRef
+import models.InconsistentQueryRecords
 import models.QueryResultHelper.QueryResult
 import models.SQLStatementHelper.MutableSQLStatement
 import models.UpdateTableStatmentHelper.UpdateTableStatment
@@ -44,6 +47,8 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
    * consistent on all the worker servers.
    */
   def scheduleNextConsistencyRun: Unit = {
+
+    InconsistentQueryRecords.time = LocalDateTime.now().plusSeconds(timetilNextConsistencySweep)
     context.system.scheduler.scheduleOnce(timetilNextConsistencySweep seconds)
     {
       makeConsistent()

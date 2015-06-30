@@ -15,7 +15,7 @@ import akka.util.Timeout
 import controllers.Application._
 import models.CreateTableStatementHelpers.CreateTableStatement
 import models.DripTableStatementHelper.DropTableStatement
-import models.{LogHelper, SQLQuery}
+import models.{InconsistentQueryRecords, LogHelper, SQLQuery}
 import models.UpdateTableStatmentHelper.UpdateTableStatment
 import play.api.libs.json._
 
@@ -78,6 +78,17 @@ object FrontEnd  extends Controller
     loggingActor ! Messages.Message("hi")
     Ok(LogHelper.jsonVersion)
   }
+
+  /**
+   * service to keep track of all
+   * inconsistent records in the
+   * database.
+   */
+  def getInconsistentUPdateInfo = Action
+  {
+    Ok(InconsistentQueryRecords.getUserOutPut())
+  }
+
 
   /**
    *  sends a request to make the qhole system consistent

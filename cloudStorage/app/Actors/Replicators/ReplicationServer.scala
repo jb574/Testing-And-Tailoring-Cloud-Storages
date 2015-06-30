@@ -4,7 +4,7 @@ import Actors.Messages.{MakeConsistent, TestMessage, Message}
 import Actors.SystemActor
 import akka.actor.ActorRef
 import models.QueryResultHelper.QueryResult
-import models.QuerySet
+import models.{InconsistentQueryRecords, QuerySet}
 import models.SQLStatementHelper.MutableSQLStatement
 import java.time.LocalDate
 import scala.collection.mutable.ArrayBuffer
@@ -41,6 +41,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
   private def processNewQuery(update:MutableSQLStatement) =
   {
     respondToTestMessage
+    InconsistentQueryRecords.addItem(update.getNewSQLStatement)
     if(!inconsistentUpdates.exists((clockSeq) => clockSeq.addNewQuery(update,id)))
     {
        inconsistentUpdates =new QuerySet(update,id) :: inconsistentUpdates
@@ -72,7 +73,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
    * @param mergedQueries an arraybuffer containing the results
    *                      to send to the database
    */
- private def mergeOneQuery(first:QuerySet,second:QuerySet, mergedQueries:ArrayBuffer[QuerySet]): Unit =
+ def mergeOneQuery(first:QuerySet,second:QuerySet, mergedQueries:ArrayBuffer[QuerySet]): Unit =
  {
    val resultQuery =  new QuerySet(second)
    if(resultQuery.canBeMeged(first))
@@ -108,7 +109,8 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
     case update:MutableSQLStatement => processNewQuery(update)
     case TestMessage => respondToTestMessage
     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
-    case MakeConsistent => distributeUpdates
+    case MakeConsistent => InconsistentQueryRecords.clear()
+      distributeUpdates
     case foreignQueries:List[QuerySet] =>  makeConsistent(foreignQueries)
     case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
       println("all done")
@@ -124,7 +126,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
     noSeen = noSeen + 1
     println("im cool   ")
     var resSet: ArrayBuffer[QuerySet] = ArrayBuffer()
-    if(!foreignQUeries.isEmpty)
+    if(foreignQUeries.nonEmpty)
     {
       if(inconsistentUpdates.isEmpty)
       {

@@ -9,6 +9,7 @@ import models.DeleteStatementHelper.DeleteStatment
 import models.InsertStatmentHelper.InsertStatment
 import models.QueryResultHelper.QueryResult
 import models.QuerySet
+import models.UpdateTableStatmentHelper.UpdateTableStatment
 import play.api.test.{WithApplication, PlaySpecification}
 
 import scala.collection.mutable.ArrayBuffer
@@ -44,7 +45,8 @@ class ReplicationServerTest extends  PlaySpecification {
       server.underlyingActor.inconsistentUpdates.size > 1
     }
 
-    def checkServerReciept(): Boolean = {
+    def checkServerReciept(): Boolean =
+    {
       server ! servers
       server.underlyingActor.otherServers.equals(server)
     }
@@ -61,6 +63,36 @@ class ReplicationServerTest extends  PlaySpecification {
       val res = new QueryResult()
       server ! res
       res.isDone
+    }
+     def checkEmptyMergeTest(): Boolean =
+    {
+      server !  List[QuerySet]()
+      marshaller.underlying.mailbox.hasMessages
+    }
+
+    def checkNonEmptyMergeTest(): Boolean =
+    {
+      val statement: DeleteStatment = new DeleteStatment(List("doo"),
+        Map())
+      server ! statement
+      server !  List[QuerySet]()
+      marshaller.underlying.mailbox.hasMessages
+    }
+
+    def checkMergFalse():Boolean =
+    {
+      server ! new UpdateTableStatment(List("foo"),Map(),Map())
+      val other = new UpdateTableStatment(List("foo"),Map(),Map())
+      server ! List(other)
+      marshaller.underlyingActor.queries.size == 1
+    }
+
+    def checkMergTrue():Boolean =
+    {
+      val other = new UpdateTableStatment(List("foo"),Map(),Map())
+      server ! new UpdateTableStatment(List("foo"),Map(),Map())
+      server ! List(other)
+      marshaller.underlyingActor.queries.size > 1
     }
 
 
@@ -100,9 +132,40 @@ class ReplicationServerTest extends  PlaySpecification {
         system.checkQueryExecution()
       }
     }
+  "a replication server " should
+    {
+      "send all foriegn queries strraight to the replication server when it has none  " in new WithApplication()
+      {
+        val system = new TestSystem
+        system.checkEmptyMergeTest()
+      }
+    }
 
+  "a replication server " should
+    {
+      "send all foriegn queries strraight to the replication server after bieng merged  " in new WithApplication()
+      {
+        val system = new TestSystem
+        system.checkNonEmptyMergeTest()
+      }
+    }
+  "a replication server " should
+    {
+      "should not merge queris sent after the latest one it has" in new WithApplication()
+      {
+        val system = new TestSystem
+        system.checkMergFalse()
+      }
+    }
 
-
+  "a replication server " should
+    {
+      "should merge all queries that operate on the same tables sent before the last one " in new WithApplication()
+      {
+        val system = new TestSystem
+        system.checkMergTrue()
+      }
+    }
 
 
 }

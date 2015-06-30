@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:11b3fd8728f8cac56b6a82c10785b04a59df62ee
-// @DATE:Mon Jun 29 10:38:02 BST 2015
+// @HASH:2cf03e41db1bdb93842e0595a7b3b4a94f86b6ed
+// @DATE:Tue Jun 30 12:32:44 BST 2015
 
 
 import scala.language.reflectiveCalls
@@ -116,20 +116,27 @@ controllers.FrontEnd.changeTImeSweep(fakeValue[Int]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "changeTImeSweep", Seq(classOf[Int]),"POST", """""", Routes.prefix + """time/updatedTIme"""))
         
 
-// @LINE:19
-private[this] lazy val controllers_Assets_versioned12_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_versioned12_invoker = createInvoker(
+// @LINE:18
+private[this] lazy val controllers_FrontEnd_getInconsistentUPdateInfo12_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("allUpdates"))))
+private[this] lazy val controllers_FrontEnd_getInconsistentUPdateInfo12_invoker = createInvoker(
+controllers.FrontEnd.getInconsistentUPdateInfo,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getInconsistentUPdateInfo", Nil,"GET", """""", Routes.prefix + """allUpdates"""))
+        
+
+// @LINE:20
+private[this] lazy val controllers_Assets_versioned13_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_versioned13_invoker = createInvoker(
 controllers.Assets.versioned(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
 
-// @LINE:20
-private[this] lazy val controllers_FrontEnd_runEventuallyConsistentQuery13_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("select"))))
-private[this] lazy val controllers_FrontEnd_runEventuallyConsistentQuery13_invoker = createInvoker(
+// @LINE:21
+private[this] lazy val controllers_FrontEnd_runEventuallyConsistentQuery14_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("select"))))
+private[this] lazy val controllers_FrontEnd_runEventuallyConsistentQuery14_invoker = createInvoker(
 controllers.FrontEnd.runEventuallyConsistentQuery,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "runEventuallyConsistentQuery", Nil,"POST", """""", Routes.prefix + """select"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """time/updatedTIme""","""controllers.FrontEnd.changeTImeSweep(updatedTime:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """time/updatedTIme""","""controllers.FrontEnd.changeTImeSweep(updatedTime:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.FrontEnd.getInconsistentUPdateInfo"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -233,18 +240,26 @@ case controllers_FrontEnd_changeTImeSweep11_route(params) => {
 }
         
 
-// @LINE:19
-case controllers_Assets_versioned12_route(params) => {
-   call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_versioned12_invoker.call(controllers.Assets.versioned(path, file))
+// @LINE:18
+case controllers_FrontEnd_getInconsistentUPdateInfo12_route(params) => {
+   call { 
+        controllers_FrontEnd_getInconsistentUPdateInfo12_invoker.call(controllers.FrontEnd.getInconsistentUPdateInfo)
    }
 }
         
 
 // @LINE:20
-case controllers_FrontEnd_runEventuallyConsistentQuery13_route(params) => {
+case controllers_Assets_versioned13_route(params) => {
+   call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
+        controllers_Assets_versioned13_invoker.call(controllers.Assets.versioned(path, file))
+   }
+}
+        
+
+// @LINE:21
+case controllers_FrontEnd_runEventuallyConsistentQuery14_route(params) => {
    call { 
-        controllers_FrontEnd_runEventuallyConsistentQuery13_invoker.call(controllers.FrontEnd.runEventuallyConsistentQuery)
+        controllers_FrontEnd_runEventuallyConsistentQuery14_invoker.call(controllers.FrontEnd.runEventuallyConsistentQuery)
    }
 }
         

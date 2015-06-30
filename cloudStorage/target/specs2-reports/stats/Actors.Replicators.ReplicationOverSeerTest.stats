@@ -12,3 +12,26 @@
 <Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435561775097"><stats time="422" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
 <Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435562312986"><stats time="400" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
 <Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435562495859"><stats time="371" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-results timestamp="1435579165226"><result location="Actors.Replicators.ReplicationOverSeerTest (ReplicationOverSeerTest.scala:114)" id="-2009403455"><stats time="24" expectations="1" errors="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationOverSeerTest (ReplicationOverSeerTest.scala:123)" id="1699334291"><stats time="28" expectations="1" errors="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationOverSeerTest (ReplicationOverSeerTest.scala:132)" id="-693757231"><stats time="22" expectations="1" errors="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationOverSeerTest (ReplicationOverSeerTest.scala:141)" id="838540064"><stats time="17" expectations="1" errors="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationOverSeerTest (ReplicationOverSeerTest.scala:151)" id="-1015756921"><stats time="22" expectations="1" errors="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationOverSeerTest (ReplicationOverSeerTest.scala:160)" id="-1111337253"><stats time="21" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationOverSeerTest-results>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435579165230"><stats time="138" expectations="6" errors="6" examples="6"><trend><stats time="138" errors="6" successes="-6"></stats></trend></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435579243980"><stats time="350" expectations="6" successes="6" examples="6"><trend><stats time="350" errors="-6" successes="6"></stats></trend></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435579517582"><stats time="349" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435580422227"><stats time="355" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435580585201"><stats time="333" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435580681061"><stats time="358" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435583035794"><stats time="582" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435584063730"><stats time="456" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435584889019"><stats time="380" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435585243179"><stats time="383" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435585633730"><stats time="356" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435586488995"><stats time="343" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435654827117"><stats time="428" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435655143188"><stats time="346" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435656888887"><stats time="352" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435664822892"><stats time="361" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>

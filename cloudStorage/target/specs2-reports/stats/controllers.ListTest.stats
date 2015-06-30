@@ -53,3 +53,21 @@
 <controllers.ListTest-stats timestamp="1435561774412"><stats time="88" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
 <controllers.ListTest-stats timestamp="1435562312158"><stats time="69" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
 <controllers.ListTest-stats timestamp="1435562495003"><stats time="77" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-results timestamp="1435579164573"><result location="controllers.ListTest (ListTest.scala:16)" id="-1039002247"><stats time="34" expectations="1" errors="1" examples="1"></stats></result>
+</controllers.ListTest-results>
+<controllers.ListTest-stats timestamp="1435579164578"><stats time="35" expectations="1" errors="1" examples="1"><trend><stats time="35" errors="1" successes="-1"></stats></trend></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435579243088"><stats time="59" expectations="1" successes="1" examples="1"><trend><stats time="59" errors="-1" successes="1"></stats></trend></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435579516617"><stats time="65" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435580421133"><stats time="55" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435580584199"><stats time="63" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435580679958"><stats time="66" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435583034156"><stats time="86" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435584062371"><stats time="77" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435584887714"><stats time="65" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435585241928"><stats time="137" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435585632539"><stats time="58" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435586487764"><stats time="68" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435654825755"><stats time="76" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435655141891"><stats time="62" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435656887587"><stats time="61" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435664821573"><stats time="59" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
