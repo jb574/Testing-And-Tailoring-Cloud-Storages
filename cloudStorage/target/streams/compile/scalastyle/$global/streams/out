@@ -1,0 +1,175 @@
+[0m[[0minfo[0m] [0mscalastyle using config /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/scalastyle-config.xml[0m
+[0m[[0mdebug[0m] [0mStarting scalastyle[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala:42:4: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala:28:6: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:47:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:29:7: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala:20:4: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala:29:7: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala:1: Header does not match expected text[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:29:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:32:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:25:6: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:27:36: Magic Number[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:60:4: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:79:4: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:87:4: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:29:16: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:58:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:69:7: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:83:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:93:6: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:31:4: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:47:7: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:80:5: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:114:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:125:4: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:132:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:133:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:135:32: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:140:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:141:32: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:105:6: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala:1: Header does not match expected text[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala:55:16: Avoid using null[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala:20:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala:32:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala:118:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala:136:6: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:184:41: There should be a space after the plus (+) sign[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:184:41: There should be a space before the plus (+) sign[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:133:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:192:4: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:56:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:76:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:85:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:94:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:104:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:115:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:127:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:140:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:147:5: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:205:6: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala:30:11: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala:21: File line length exceeds 160 characters[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala:14:17: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala:1: Header does not match expected text[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala:11:17: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala:38:4: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala:35:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala:43:6: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:17:24: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:22:27: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:23:34: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:83:41: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:111:51: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:148:27: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:153:38: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:179:76: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:225:0: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:226:0: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:227:0: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:125:9: Avoid using return[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:161:8: Avoid using return[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:207:7: Avoid using return[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:101:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:116:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:119:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:120:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:124:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:127:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:159:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:183:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:187:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:189:8: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:215:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:48:8: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:134:18: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:170:8: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala:223:8: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala: File must end with newline character[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala:157:7: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala:159:10: Whitespace at end of line[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala:58:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala:71:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala:121:6: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala:14:17: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala:35:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala:36:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala:37:6: Regular expression matched 'println'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala:67:6: Method name does not match the regular expression '^[a-z][A-Za-z0-9]*$'[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala:62:6: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala:67:6: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala:44:8: Public method must have explicit type[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala: File must end with newline character[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala[0m
+[0m[[0mdebug[0m] [0mstart file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala:1: Header does not match expected text[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala:11: File line length exceeds 160 characters[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala:14:17: Public method must have explicit type[0m
+[0m[[0mdebug[0m] [0mend file /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala[0m
+[0m[[0minfo[0m] [0mProcessed 22 file(s)[0m
+[0m[[0minfo[0m] [0mFound 0 errors[0m
+[0m[[0minfo[0m] [0mFound 123 warnings[0m
+[0m[[0minfo[0m] [0mFound 0 infos[0m
+[0m[[0minfo[0m] [0mFinished in 35 ms[0m
+[0m[[32msuccess[0m] [0mcreated output: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target[0m

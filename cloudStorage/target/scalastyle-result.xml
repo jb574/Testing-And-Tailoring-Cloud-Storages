@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.0">
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="4" line="38" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="35" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="43" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="17" line="11" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="17" line="14" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="16" line="55" source="org.scalastyle.scalariform.NullChecker" severity="warning" message="Avoid using null"/>
+  <error column="6" line="20" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="32" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="118" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="136" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="4" line="42" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="28" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="6" line="35" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="36" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="37" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="67" source="org.scalastyle.scalariform.MethodNamesChecker" severity="warning" message="Method name does not match the regular expression '^[a-z][A-Za-z0-9]*$'"/>
+  <error column="6" line="62" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="67" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="4" line="20" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="7" line="29" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="4" line="31" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="7" line="47" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="5" line="80" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="114" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="4" line="125" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="132" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="133" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="32" line="135" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="140" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="32" line="141" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="105" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="41" line="184" source="org.scalastyle.scalariform.SpacesAfterPlusChecker" severity="warning" message="There should be a space after the plus (+) sign"/>
+  <error column="41" line="184" source="org.scalastyle.scalariform.SpacesBeforePlusChecker" severity="warning" message="There should be a space before the plus (+) sign"/>
+  <error column="8" line="133" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="4" line="192" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="56" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="76" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="85" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="94" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="104" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="115" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="127" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="140" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="5" line="147" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="205" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="17" line="14" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="6" line="47" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="7" line="29" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error line="21" source="org.scalastyle.file.FileLineLengthChecker" severity="warning" message="File line length exceeds 160 characters"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="11" line="30" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="36" line="27" source="org.scalastyle.scalariform.MagicNumberChecker" severity="warning" message="Magic Number"/>
+  <error column="4" line="60" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="4" line="79" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="4" line="87" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="16" line="29" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="58" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="7" line="69" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="83" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="93" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="8" line="44" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error source="org.scalastyle.file.NewLineAtEofChecker" severity="warning" message="File must end with newline character"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="6" line="29" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="32" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="25" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="7" line="157" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="10" line="159" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="6" line="58" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="71" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="6" line="121" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="24" line="17" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="27" line="22" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="34" line="23" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="41" line="83" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="51" line="111" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="27" line="148" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="38" line="153" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="76" line="179" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="0" line="225" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="0" line="226" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="0" line="227" source="org.scalastyle.file.WhitespaceEndOfLineChecker" severity="warning" message="Whitespace at end of line"/>
+  <error column="9" line="125" source="org.scalastyle.scalariform.ReturnChecker" severity="warning" message="Avoid using return"/>
+  <error column="8" line="161" source="org.scalastyle.scalariform.ReturnChecker" severity="warning" message="Avoid using return"/>
+  <error column="7" line="207" source="org.scalastyle.scalariform.ReturnChecker" severity="warning" message="Avoid using return"/>
+  <error column="6" line="101" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="116" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="119" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="120" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="124" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="127" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="159" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="183" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="187" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="189" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="6" line="215" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="8" line="48" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="18" line="134" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="8" line="170" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error column="8" line="223" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+  <error source="org.scalastyle.file.NewLineAtEofChecker" severity="warning" message="File must end with newline character"/>
+ </file>
+ <file name="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error line="11" source="org.scalastyle.file.FileLineLengthChecker" severity="warning" message="File line length exceeds 160 characters"/>
+  <error column="17" line="14" source="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker" severity="warning" message="Public method must have explicit type"/>
+ </file>
+</checkstyle>
