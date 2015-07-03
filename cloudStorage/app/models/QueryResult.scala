@@ -45,7 +45,7 @@ object QueryResultHelper
      * mark this query as complete, so it can
      * be returned to the user
      */
-    def markComplete = done = true;
+    def markComplete = done = true
 
     /**
      * @return a signal to the web application on whther it is safe t

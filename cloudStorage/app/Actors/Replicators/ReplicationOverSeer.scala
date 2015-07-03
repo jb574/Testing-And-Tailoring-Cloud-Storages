@@ -1,19 +1,25 @@
 package Actors.Replicators
 
 import java.time.LocalDateTime
-
+import scala.util.Success
+import scala.util.Failure
 import Actors.{Messages, SystemActor}
 import Actors.Messages._
+import akka.actor.FSM.Failure
 import akka.actor.{Props, ActorRef}
 import java.util.Random
 import akka.dispatch
+import akka.pattern.AskSupport
 import akka.testkit.TestActorRef
+import akka.util.Timeout
 import models.InconsistentQueryRecords
 import models.QueryResultHelper.QueryResult
 import models.SQLStatementHelper.MutableSQLStatement
 import models.UpdateTableStatmentHelper.UpdateTableStatment
+import scala.concurrent.{Future, Await}
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
+import  akka.util.Timeout._
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -24,10 +30,11 @@ import scala.collection.mutable.ArrayBuffer
  * @version 16th June 2015
  */
 class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) extends SystemActor(logger)
+with AskSupport
 {
   var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
 
-  var timetilNextConsistencySweep = 180
+  var timetilNextConsistencySweep = 30
 
   override  def preStart() =
   {
@@ -99,7 +106,13 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
   {
     case query:MutableSQLStatement =>  processUpdate(query)
     case MakeConsistent => makeConsistent
-    case results:QueryResult => servers(getRandomServerNumber) ! results
+    case results:QueryResult =>
+      implicit val timeout = Timeout(5 seconds)
+      val res:Future[Any] = servers(getRandomServerNumber) ? results
+      res onSuccess
+      {
+      case properResults:QueryResult => sender ! properResults
+      }
     case time:Int => timetilNextConsistencySweep = time
     case testData:ArrayBuffer[ActorRef] => servers = testData
               updateReferenceLists

@@ -71,3 +71,4 @@
 <controllers.ListTest-stats timestamp="1435655141891"><stats time="62" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
 <controllers.ListTest-stats timestamp="1435656887587"><stats time="61" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
 <controllers.ListTest-stats timestamp="1435664821573"><stats time="59" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1435841130182"><stats time="62" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>

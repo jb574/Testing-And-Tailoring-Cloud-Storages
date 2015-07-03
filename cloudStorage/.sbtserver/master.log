@@ -1,5 +1,5 @@
-New log file opened at Tue Jun 30 12:36:22 BST 2015 by 4788@jacks-MacBook-Pro.local
-jvm 4788@jacks-MacBook-Pro.local
+New log file opened at Thu Jul 02 16:02:53 BST 2015 by 8403@jacks-MacBook-Pro.local
+jvm 8403@jacks-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.5-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project, returning: (cloudstorage-build)
 Loading project definition from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2adc33cf, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3162bcdb, check cycles: false
 [info] Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/}cloudstorage-build...
 Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/}cloudstorage-build...
 Other repositories:
@@ -15947,7 +15947,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8-M3!apply-macro.jar
 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-:: resolution report :: resolve 5413ms :: artifacts dl 105ms
+:: resolution report :: resolve 6164ms :: artifacts dl 176ms
 	report for default#cloudstorage-build;0.1-SNAPSHOT compile produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-compile.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT runtime produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-runtime.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT test produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-test.xml
@@ -15961,7 +15961,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	report for default#cloudstorage-build;0.1-SNAPSHOT docs produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-docs.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT pom produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-pom.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT scala-tool produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-scala-tool.xml
-	resolve done (5413ms resolve - 105ms download)
+	resolve done (6164ms resolve - 176ms download)
 [info] Done updating.
 Done updating.
 
@@ -16003,7 +16003,7 @@ Set current project to Testing and Tailoring cloud storages (in build file:/User
 > server-handle-next-server-request
 > {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@67cb99f9, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@3b67b4f1, check cycles: false
 Read from stdout: Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root...
 Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root...
 Other repositories:
@@ -16018,7 +16018,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.7 ...
 Resolving org.scala-lang#scala-library;2.11.7 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43e0e306
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@715463fe
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -22193,7 +22193,7 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
-:: resolution report :: resolve 2226ms :: artifacts dl 64ms
+:: resolution report :: resolve 1998ms :: artifacts dl 62ms
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT compile produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-compile.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT runtime produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-runtime.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT test produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-test.xml
@@ -22208,21 +22208,21 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT pom produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-pom.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT scala-tool produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-scala-tool.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT fork-run produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-fork-run.xml
-	resolve done (2226ms resolve - 64ms download)
+	resolve done (1998ms resolve - 62ms download)
 Read from stdout: Done updating.
 Done updating.
-Total time: 3 s, completed 30-Jun-2015 12:38:54
+Total time: 2 s, completed 02-Jul-2015 16:03:08
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@5981d72f, check cycles: false
-Total time: 0 s, completed 30-Jun-2015 12:38:55
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f8b4294, check cycles: false
+Total time: 0 s, completed 02-Jul-2015 16:03:09
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@13328822, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@216e35f0, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -22248,7 +22248,7 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
-Running cached compiler 65e2847c, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Running cached compiler 7ffb94f8, interfacing (CompilerInterface) with Scala compiler version 2.11.7
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -22264,39 +22264,39 @@ Read from stdout: case updates:List[MutableSQLStatement] => updates.map(query =>
      case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
 Read from stdout: ^
                   ^
-Read from stdout: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern scala.collection.mutable.ArrayBuffer[models.QuerySet] is unchecked since it is eliminated by erasure
-/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern scala.collection.mutable.ArrayBuffer[models.QuerySet] is unchecked since it is eliminated by erasure
-Read from stdout: case list:ArrayBuffer[QuerySet] =>  queries = queries ++ list
-    case list:ArrayBuffer[QuerySet] =>  queries = queries ++ list
+Read from stdout: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+Read from stdout: case list:List[QuerySet] =>  queries = queries ++ list
+    case list:List[QuerySet] =>  queries = queries ++ list
 Read from stdout: ^
               ^
-Read from stdout: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:104: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
-/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:104: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+Read from stdout: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:117: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:117: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 Read from stdout: case testData:ArrayBuffer[ActorRef] => servers = testData
     case testData:ArrayBuffer[ActorRef] => servers = testData
 Read from stdout: ^
                   ^
-Read from stdout: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:111: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
-/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:111: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+Read from stdout: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:115: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:115: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 Read from stdout: case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
 Read from stdout: ^
                     ^
-Read from stdout: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:114: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
-/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:114: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
-Read from stdout: case foreignQueries:List[QuerySet] =>  makeConsistent(foreignQueries)
-    case foreignQueries:List[QuerySet] =>  makeConsistent(foreignQueries)
+Read from stdout: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:127: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:127: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+Read from stdout: case foreignQueries:List[QuerySet] =>
+    case foreignQueries:List[QuerySet] =>
 Read from stdout: ^
                         ^
-Read from stdout: there was one feature warning; re-run with -feature for details
-there was one feature warning; re-run with -feature for details
+Read from stdout: there were three feature warnings; re-run with -feature for details
+there were three feature warnings; re-run with -feature for details
 Read from stdout: 6 warnings found
 6 warnings found
-Scala compilation took 12.466767 s
-Attempting to call com.sun.tools.javac.api.JavacTool@6e282cef directly...
-Java compilation took 0.450723 s
-Java analysis took 0.012872 s
-Java compile + analysis took 0.473387 s
+Scala compilation took 12.405193 s
+Attempting to call com.sun.tools.javac.api.JavacTool@1434a714 directly...
+Java compilation took 0.469284 s
+Java analysis took 0.011224 s
+Java compile + analysis took 0.491653 s
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala)
@@ -22323,15 +22323,6 @@ Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents
 The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala source file has the following regular definitions changed:
 	notify, wait, saveMutableQuery, saveQuery, $asInstanceOf, testAction, makeConsistent, insert, equals, asInstanceOf, getInconsistentUPdateInfo, runEventuallyConsistentQuery, synchronized, $isInstanceOf, ReverseAssets, notifyAll, listQueries, isInstanceOf, ReverseFrontEnd, createTable, <init>, ==, changeTImeSweep, clone, delete, toString, !=, getClass, update, getLogOutput, ne, versioned, eq, ReverseApplication, ##, finalize, hashCode, dropTable.
 All member reference dependencies will be considered within this context.
-Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala...
-Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala...
-Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala)
-The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala source file has the following implicit definitions changed:
-	self, context.
-All member reference dependencies will be considered within this context.
-The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala are invalidated:
-	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala)
@@ -22341,7 +22332,7 @@ The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage
 All member reference dependencies will be considered within this context.
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala: Set(asInstanceOf, isInstanceOf, ==, time, InconsistentQueryRecords)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(getUserOutPut, asInstanceOf, isInstanceOf, toString, time, ne, InconsistentQueryRecords)
-The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(clear, asInstanceOf, isInstanceOf, inconsistentUpdates, ==, toString, !=, addItem, time, isEmpty, InconsistentQueryRecords)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(equals, clear, asInstanceOf, isInstanceOf, inconsistentUpdates, ==, !=, addItem, time, InconsistentQueryRecords)
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala)
@@ -22352,6 +22343,15 @@ All member reference dependencies will be considered within this context.
 The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala
+Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala)
+The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala source file has the following implicit definitions changed:
+	ask, self, context.
+All member reference dependencies will be considered within this context.
+The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala are invalidated:
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala)
@@ -22360,8 +22360,8 @@ The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage
 	notify, unapply, curried, wait, applySQLUpdate, copy$default$2, $asInstanceOf, tables$1, results$1, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, tupled, isWhereClauseValid, canEqual, productPrefix, notifyAll, readResolve, updateValue, isInstanceOf, talkingAboutSameTable, checkRowForUpdates, <init>, results, isValidCluase, apply, QueryResultHelper, markComplete, isDone, ==, findApplicableRows, clone, copy, done, QueryResult, toString, !=, getClass, copy$default$1, ne, addRow, tables, applyUpdate, applyDelete, eq, productIterator, ##, finalize, productElement, hashCode.
 All member reference dependencies will be considered within this context.
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala: Set(asInstanceOf, isInstanceOf, <init>, apply, QueryResultHelper, ==, QueryResult)
-The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(asInstanceOf, isInstanceOf, <init>, apply, QueryResultHelper, isDone, QueryResult, toString, ne, addRow)
-The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(asInstanceOf, isInstanceOf, <init>, apply, QueryResultHelper, markComplete, ==, QueryResult, toString, !=)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(asInstanceOf, isInstanceOf, <init>, apply, QueryResultHelper, QueryResult, toString, ne, addRow)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(equals, asInstanceOf, isInstanceOf, <init>, apply, QueryResultHelper, ==, QueryResult, !=)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala: Set(applySQLUpdate, equals, talkingAboutSameTable, <init>, apply, QueryResultHelper, QueryResult, ne, tables)
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala...
@@ -22372,6 +22372,15 @@ The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage
 All member reference dependencies will be considered within this context.
 The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
+Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala)
+The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala source file has the following implicit definitions changed:
+	ask, self, context.
+All member reference dependencies will be considered within this context.
+The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala...
@@ -22491,15 +22500,6 @@ The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage
 All member reference dependencies will be considered within this context.
 The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
-Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala...
-Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala...
-Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala)
-The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala source file has the following implicit definitions changed:
-	self, context.
-All member reference dependencies will be considered within this context.
-The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala are invalidated:
-	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala)
@@ -22519,7 +22519,7 @@ All member reference dependencies will be considered within this context.
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala: Set(asInstanceOf, isInstanceOf, <init>, Messages, apply, DatabaseOperation, update)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala: Set(asInstanceOf, isInstanceOf, <init>, Messages, apply, messageText, ne)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala: Set(asInstanceOf, isInstanceOf, <init>, Messages, apply, ==, update)
-The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(TestMessage, asInstanceOf, MakeConsistent, isInstanceOf, <init>, Messages, apply, ==, Message, toString, !=, update)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(equals, TestMessage, asInstanceOf, MakeConsistent, isInstanceOf, <init>, Messages, apply, ==, Message, !=, update)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala: Set(asInstanceOf, isInstanceOf, <init>, Messages)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(TestMessage, asInstanceOf, RetrieveLog, MakeConsistent, isInstanceOf, <init>, Messages, apply, toString, ne)
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala...
@@ -22538,7 +22538,7 @@ The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage
 	notify, mergeQuerySets, sendQuerries, wait, $asInstanceOf, dealQithSameeData, queries, tableNames, equals, isUpdateRelavant, executeQuery, asInstanceOf, QuerySet, addNewTables, createNewQuerySet, synchronized, $isInstanceOf, notifyAll, isInstanceOf, <init>, dateCreated, ==, clone, vectorClocks, addNewQuery, toString, !=, getClass, canBeMeged, ne, eq, ##, finalize, hashCode.
 All member reference dependencies will be considered within this context.
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala: Set(sendQuerries, queries, asInstanceOf, QuerySet, isInstanceOf, <init>, ==)
-The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(mergeQuerySets, executeQuery, asInstanceOf, QuerySet, isInstanceOf, <init>, ==, addNewQuery, toString, !=, canBeMeged)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(mergeQuerySets, equals, executeQuery, asInstanceOf, QuerySet, isInstanceOf, <init>, ==, addNewQuery, !=, canBeMeged)
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala)
@@ -22573,7 +22573,7 @@ The following modified names cause invalidation of /Users/jackdavey/Documents/Te
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, SQLStatementHelper, produceStringOutput, toString, MutableSQLStatement, tables, eq)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, SQLStatementHelper, MutableSQLStatement)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, SQLStatementHelper, produceStringOutput, toString, MutableSQLStatement, tables, eq)
-The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(asInstanceOf, isInstanceOf, <init>, id, getNewSQLStatement, ==, SQLStatementHelper, toString, !=, MutableSQLStatement)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(equals, asInstanceOf, isInstanceOf, <init>, id, getNewSQLStatement, ==, SQLStatementHelper, !=, MutableSQLStatement)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, getNewSQLStatement, SQLStatementHelper, MutableSQLStatement)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala: Set(affectSameTable, equals, retrietables, <init>, id, getNewSQLStatement, SQLStatementHelper, MutableSQLStatement, ne, tables)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, getNewSQLStatement, SQLStatementHelper, toString, MutableSQLStatement, ne)
@@ -22596,7 +22596,7 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Copy resource mappings: 
 	(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/application.conf,/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes/application.conf)
 	(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes,/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes/routes)
-Total time: 14 s, completed 30-Jun-2015 12:40:21
+Total time: 14 s, completed 02-Jul-2015 16:04:07
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -22605,4 +22605,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 4788@jacks-MacBook-Pro.local logs at Tue Jun 30 12:41:51 BST 2015, goodbye.
+Closing the 8403@jacks-MacBook-Pro.local logs at Thu Jul 02 16:05:55 BST 2015, goodbye.

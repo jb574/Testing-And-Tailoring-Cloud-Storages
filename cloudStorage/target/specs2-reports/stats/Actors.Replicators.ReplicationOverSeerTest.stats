@@ -35,3 +35,4 @@
 <Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435655143188"><stats time="346" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
 <Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435656888887"><stats time="352" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
 <Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435664822892"><stats time="361" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1435841131523"><stats time="371" expectations="6" successes="6" examples="6"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>

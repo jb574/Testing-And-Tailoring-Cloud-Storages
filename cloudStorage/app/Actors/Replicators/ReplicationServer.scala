@@ -2,13 +2,17 @@ package Actors.Replicators
 
 import Actors.Messages.{MakeConsistent, TestMessage, Message}
 import Actors.SystemActor
-import akka.actor.ActorRef
+import akka.actor._
+import akka.pattern.AskSupport
 import models.QueryResultHelper.QueryResult
-import models.{InconsistentQueryRecords, QuerySet}
+import models.{QuerySet, InconsistentQueryRecords}
 import models.SQLStatementHelper.MutableSQLStatement
 import java.time.LocalDate
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.immutable.HashMap
+import Actor._
+import akka._
+import akka.actor.ActorContext
 
 /**
  * this represents one replication server
@@ -16,6 +20,7 @@ import scala.collection.immutable.HashMap
  * @version 16th June 2015
  */
 class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) extends SystemActor(logger)
+  with AskSupport
 {
     var otherServers:ArrayBuffer[ActorRef] = ArrayBuffer()
     var inconsistentUpdates:List[QuerySet] = List()
@@ -73,14 +78,13 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
    * @param mergedQueries an arraybuffer containing the results
    *                      to send to the database
    */
- def mergeOneQuery(first:QuerySet,second:QuerySet, mergedQueries:ArrayBuffer[QuerySet]): Unit =
+ def mergeOneQuery(first:QuerySet,second:QuerySet, sender:ActorRef): Unit =
  {
-   val resultQuery =  new QuerySet(second)
-   if(resultQuery.canBeMeged(first))
+   if(second.canBeMeged(first))
    {
      println("merging now")
-     resultQuery.mergeQuerySets(first)
-     mergedQueries.append(resultQuery)
+     second.mergeQuerySets(first)
+     sender ! (false,first)
    }
  }
 
@@ -89,9 +93,9 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
    * @param first the query to merge
    * @param mergedQueries  an arraybuffer to collec tthe results to send to the database
    */
- private def mergeOneExternalQuery(first:QuerySet,mergedQueries:ArrayBuffer[QuerySet]): Unit =
+ private def mergeOneExternalQuery(first:QuerySet,sender:ActorRef): Unit =
  {
-   inconsistentUpdates.foreach((query) => mergeOneQuery(first,query,mergedQueries))
+   inconsistentUpdates.foreach((query) => mergeOneQuery(first,query,sender))
  }
 
   /**
@@ -103,7 +107,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
    * distribute all our pieces of  data to all other requests. if we recieve
    * such a list of queries, then we  maeke it consistent and send the results onto the database.
    */
-  def receive =
+  def standardOperation: Receive =
   {
 
     case update:MutableSQLStatement => processNewQuery(update)
@@ -111,42 +115,44 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
     case MakeConsistent => InconsistentQueryRecords.clear()
       distributeUpdates
-    case foreignQueries:List[QuerySet] =>  makeConsistent(foreignQueries)
+      noSeen = 0
+      println("starting consistency sweeep now")
+      context.become(mergeMode)
     case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
-      println("all done")
-      queryResult.markComplete
+      sender ! queryResult
   }
+
+  def mergeMode:Receive =
+  {
+    case foreignQueries:List[QuerySet] =>
+       makeConsistent(foreignQueries,sender)
+      noSeen = noSeen + 1
+      println("doing consistency run for this node")
+      if(noSeen == 2)
+      {
+        replicationMarshaller ! inconsistentUpdates
+        println("ferrying everything back to the standard mode")
+        inconsistentUpdates = List()
+        context.become(standardOperation)
+      }
+    case (false, set:QuerySet) =>
+      println("removing old nodes ")
+      inconsistentUpdates = inconsistentUpdates.filter(
+        (current) => !set.equals(current))
+  }
+
+  def receive = standardOperation
+
+
+
+
 
   /**
    * this is the main code that makes everything consistent
    * @param foreignQUeries the list of queries we recieved from all other replicas
    */
-  def makeConsistent(foreignQUeries: List[QuerySet]): Unit =
+  def makeConsistent(foreignQUeries: List[QuerySet],sender:ActorRef): Unit =
   {
-    noSeen = noSeen + 1
-    println("im cool   ")
-    var resSet: ArrayBuffer[QuerySet] = ArrayBuffer()
-    if(foreignQUeries.nonEmpty)
-    {
-      if(inconsistentUpdates.isEmpty)
-      {
-        resSet = resSet ++ foreignQUeries
-        println("all empty so sending everything straight through")
-        println("this had " + foreignQUeries.size + " queries")
-        replicationMarshaller ! resSet
-        resSet.foreach((set) => println(set.toString))
-      }
-      else
-      {
-        foreignQUeries.foreach(query => mergeOneExternalQuery(query, resSet))
-        println("numbe rof queries is" + resSet.size)
-        resSet.foreach((set) => println(set.toString))
-        replicationMarshaller ! resSet
-      }
-    }
-    if(noSeen == 2)
-    {
-      inconsistentUpdates = List()
-    }
+    foreignQUeries.foreach(query => mergeOneExternalQuery(query, sender))
   }
 }

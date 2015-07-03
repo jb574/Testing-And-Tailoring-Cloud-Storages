@@ -1,2 +1,3 @@
 <models.QuerySetTest-stats timestamp="1435656889098"><stats time="88" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
 <models.QuerySetTest-stats timestamp="1435664823209"><stats time="104" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1435841131875"><stats time="94" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>

@@ -63,3 +63,4 @@
 <controllers.TestOfATest-stats timestamp="1435655141978"><stats time="54" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
 <controllers.TestOfATest-stats timestamp="1435656887677"><stats time="54" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
 <controllers.TestOfATest-stats timestamp="1435664821660"><stats time="55" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1435841130269"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>

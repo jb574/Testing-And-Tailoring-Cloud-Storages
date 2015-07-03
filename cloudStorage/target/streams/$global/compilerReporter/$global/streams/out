@@ -1,17 +1,17 @@
 [0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m     case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))[0m
 [0m[[33mwarn[0m] [0m                  ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern scala.collection.mutable.ArrayBuffer[models.QuerySet] is unchecked since it is eliminated by erasure[0m
-[0m[[33mwarn[0m] [0m    case list:ArrayBuffer[QuerySet] =>  queries = queries ++ list[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m    case list:List[QuerySet] =>  queries = queries ++ list[0m
 [0m[[33mwarn[0m] [0m              ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:104: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:117: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case testData:ArrayBuffer[ActorRef] => servers = testData[0m
 [0m[[33mwarn[0m] [0m                  ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:111: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:115: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case serverList:ArrayBuffer[ActorRef] => otherServers = serverList[0m
 [0m[[33mwarn[0m] [0m                    ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:114: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
-[0m[[33mwarn[0m] [0m    case foreignQueries:List[QuerySet] =>  makeConsistent(foreignQueries)[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:127: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m    case foreignQueries:List[QuerySet] =>[0m
 [0m[[33mwarn[0m] [0m                        ^[0m
-[0m[[33mwarn[0m] [0mthere was one feature warning; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mthere were three feature warnings; re-run with -feature for details[0m
 [0m[[33mwarn[0m] [0m6 warnings found[0m

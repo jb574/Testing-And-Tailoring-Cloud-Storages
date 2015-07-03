@@ -2,3 +2,4 @@
 <models.insertTableStatementTest-stats timestamp="1435655141790"><stats time="47" expectations="1" successes="1" examples="1"></stats></models.insertTableStatementTest-stats>
 <models.insertTableStatementTest-stats timestamp="1435656887491"><stats time="58" expectations="1" successes="1" examples="1"></stats></models.insertTableStatementTest-stats>
 <models.insertTableStatementTest-stats timestamp="1435664821482"><stats time="53" expectations="1" successes="1" examples="1"></stats></models.insertTableStatementTest-stats>
+<models.insertTableStatementTest-stats timestamp="1435841130086"><stats time="62" expectations="1" successes="1" examples="1"></stats></models.insertTableStatementTest-stats>

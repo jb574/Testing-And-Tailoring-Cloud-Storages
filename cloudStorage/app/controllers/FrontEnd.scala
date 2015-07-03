@@ -11,14 +11,13 @@ import org.joda.time
 import org.joda.time.Seconds
 import scala.collection.mutable
 import scala.concurrent.{ExecutionContext, Future, Await}
-import akka.util.Timeout
 import controllers.Application._
 import models.CreateTableStatementHelpers.CreateTableStatement
 import models.DripTableStatementHelper.DropTableStatement
 import models.{InconsistentQueryRecords, LogHelper, SQLQuery}
 import models.UpdateTableStatmentHelper.UpdateTableStatment
 import play.api.libs.json._
-
+import akka.util.Timeout
 import play.api.mvc._
 import models.SQLQuery._
 import play.api.db._
@@ -35,6 +34,7 @@ import akka.util.Timeout._
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.mutable.Map
 import models.QueryResultHelper.QueryResult
+import scala.concurrent.duration._
 import ExecutionContext.Implicits.global
 /**
  * this is the main controller
@@ -171,13 +171,12 @@ object FrontEnd  extends Controller
          Future
          {
            var queryResult: QueryResult = queryDatabase(goodQuery)
-           repServer ! queryResult
-           while (!queryResult.isDone) {
-             var index = 0
-             while (index < 10000) {
-               index = index + 1
+           implicit val timeout = Timeout(5 seconds)
+           val res:Future[Any] = repServer ? queryResult
+           res onSuccess
+             {
+               case properResults:QueryResult =>  queryResult = properResults
              }
-           }
            Ok(Json.toJson(queryResult.toString))
          }
        }

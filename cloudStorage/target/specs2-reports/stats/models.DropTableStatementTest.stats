@@ -4,3 +4,4 @@
 <models.DropTableStatementTest-stats timestamp="1435655141709"><stats time="171" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
 <models.DropTableStatementTest-stats timestamp="1435656887398"><stats time="95" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
 <models.DropTableStatementTest-stats timestamp="1435664821379"><stats time="139" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1435841129986"><stats time="102" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>

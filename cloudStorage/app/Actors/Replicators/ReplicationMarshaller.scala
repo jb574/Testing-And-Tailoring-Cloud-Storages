@@ -24,7 +24,7 @@ class ReplicationMarshaller(logger:ActorRef,committer:ActorRef) extends SystemAc
 
   def receive =
   {
-    case list:ArrayBuffer[QuerySet] =>  queries = queries ++ list
+    case list:List[QuerySet] =>  queries = queries ++ list
       noSeen = noSeen + 1
       println(noSeen)
       if(noSeen == 6)

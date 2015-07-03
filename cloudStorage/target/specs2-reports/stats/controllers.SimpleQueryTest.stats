@@ -58,3 +58,4 @@
 <controllers.SimpleQueryTest-stats timestamp="1435655143537"><stats time="38" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
 <controllers.SimpleQueryTest-stats timestamp="1435656889436"><stats time="42" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
 <controllers.SimpleQueryTest-stats timestamp="1435664823445"><stats time="40" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1435841132139"><stats time="45" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>

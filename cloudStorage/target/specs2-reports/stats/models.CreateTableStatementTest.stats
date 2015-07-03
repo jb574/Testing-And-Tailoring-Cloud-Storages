@@ -7,3 +7,4 @@
 <models.CreateTableStatementTest-stats timestamp="1435655142251"><stats time="85" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
 <models.CreateTableStatementTest-stats timestamp="1435656887960"><stats time="86" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
 <models.CreateTableStatementTest-stats timestamp="1435664821919"><stats time="78" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1435841130539"><stats time="88" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>

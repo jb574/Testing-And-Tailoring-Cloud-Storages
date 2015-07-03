@@ -155,45 +155,59 @@
 [warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure
 [warn]      case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
 [warn]                   ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern scala.collection.mutable.ArrayBuffer[models.QuerySet] is unchecked since it is eliminated by erasure
-[warn]     case list:ArrayBuffer[QuerySet] =>  queries = queries ++ list
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn]     case list:List[QuerySet] =>  queries = queries ++ list
 [warn]               ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:104: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:117: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case testData:ArrayBuffer[ActorRef] => servers = testData
 [warn]                   ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:111: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:115: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
 [warn]                     ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:114: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
-[warn]     case foreignQueries:List[QuerySet] =>  makeConsistent(foreignQueries)
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:127: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn]     case foreignQueries:List[QuerySet] =>
 [warn]                         ^
-[warn] there was one feature warning; re-run with -feature for details
+[warn] there were three feature warnings; re-run with -feature for details
 [warn] 6 warnings found
 [info] play - database [default] connected at jdbc:mysql://localhost:8889/health
 [info] play - Application started (Dev)
 [info] play - Starting application default Akka system.
 [info] hello world
-[info] List(LogEntry(hello world,2015-06-30T12:40:23.040))
+[info] List(LogEntry(hello world,2015-07-02T16:04:08.170))
 [info] hitting it 
 [info] im on fire
 [info] chosen server1
 [info]  message received by server 1
-[info] List(LogEntry( message recieved by server $id,2015-06-30T12:40:23.288), LogEntry(hello world,2015-06-30T12:40:23.040))
+[info] List(LogEntry( message recieved by server $id,2015-07-02T16:04:08.338), LogEntry(hello world,2015-07-02T16:04:08.170))
 [info] 1
-[info] hitting it 
-[info] im on fire
-[info] chosen server2
-[info]  message received by server 2
-[info] List(LogEntry( message recieved by server $id,2015-06-30T12:40:37.585), LogEntry( message recieved by server $id,2015-06-30T12:40:23.288), LogEntry(hello world,2015-06-30T12:40:23.040))
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
 [info] 1
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] sending to database now
+[info] update test set age = 55 where name = 'dad' ; 
+[info] List(LogEntry(1 update sucsessfully in database,2015-07-02T16:04:38.225), LogEntry( message recieved by server $id,2015-07-02T16:04:08.338), LogEntry(hello world,2015-07-02T16:04:08.170))
 [info] Stopping Play fork run ...
 [info] play - Shutdown application default Akka system.
 [info] making consistent
-[info] [ERROR] [06/30/2015 12:41:10.747] [application-akka.actor.default-dispatcher-5] [ActorSystem(application)] exception while executing timer task
+[info] [ERROR] [07/02/2015 16:04:55.817] [application-akka.actor.default-dispatcher-6] [ActorSystem(application)] exception while executing timer task
 [info] java.lang.NullPointerException
-[info] 	at Actors.Replicators.ReplicationOverSeer.scheduleNextConsistencyRun(ReplicationOverSeer.scala:52)
-[info] 	at Actors.Replicators.ReplicationOverSeer.makeConsistent(ReplicationOverSeer.scala:94)
-[info] 	at Actors.Replicators.ReplicationOverSeer$$anonfun$scheduleNextConsistencyRun$1.apply$mcV$sp(ReplicationOverSeer.scala:54)
+[info] 	at Actors.Replicators.ReplicationOverSeer.scheduleNextConsistencyRun(ReplicationOverSeer.scala:59)
+[info] 	at Actors.Replicators.ReplicationOverSeer.makeConsistent(ReplicationOverSeer.scala:101)
+[info] 	at Actors.Replicators.ReplicationOverSeer$$anonfun$scheduleNextConsistencyRun$1.apply$mcV$sp(ReplicationOverSeer.scala:61)
 [info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
 [info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
 [info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)

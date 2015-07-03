@@ -5,3 +5,4 @@
 <models.UpdateStatementTest-stats timestamp="1435656887754"><stats time="49" expectations="1" successes="1" examples="1"></stats></models.UpdateStatementTest-stats>
 <models.UpdateStatementTest-stats timestamp="1435663766828"><stats time="27" expectations="1" successes="1" examples="1"></stats></models.UpdateStatementTest-stats>
 <models.UpdateStatementTest-stats timestamp="1435664821742"><stats time="53" expectations="1" successes="1" examples="1"></stats></models.UpdateStatementTest-stats>
+<models.UpdateStatementTest-stats timestamp="1435841130351"><stats time="52" expectations="1" successes="1" examples="1"></stats></models.UpdateStatementTest-stats>

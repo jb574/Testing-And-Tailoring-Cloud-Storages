@@ -85,3 +85,4 @@
 <Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1435655141053"><stats time="1324" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
 <Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1435656886823"><stats time="1295" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
 <Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1435664820627"><stats time="1322" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1435841129336"><stats time="1334" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
