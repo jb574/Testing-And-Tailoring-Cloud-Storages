@@ -1,7 +1,9 @@
 package controllers
 
-import play.api.mvc.Controller
 
+import play.api.mvc._
+import sample.SingleWriterSample
+import sample.DoubleWriterService
 
 /**
  * This class houses
@@ -14,5 +16,15 @@ import play.api.mvc.Controller
  */
 object SampleApplications  extends Controller
 {
+  def runFirstSample = Action
+  {
+     Ok(SingleWriterSample.runSample())
+  }
+
+  def runSecondSample = Action
+  {
+    Ok(DoubleWriterService.runSecondSample())
+  }
+
 
 }

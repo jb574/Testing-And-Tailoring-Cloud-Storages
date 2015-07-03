@@ -2,11 +2,19 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Home page
+#these urls are for the very simple pieces of code
+# i developed as part of the first tieration
+# they dont contribute anythign useful to the
+#rest of the application
 GET         /test                    controllers.Application.testAction
 GET         /seenQueries             controllers.Application.listQueries
 POST        /addQuery                controllers.Application.saveQuery
 POST        /updateDataOld           controllers.Application.saveMutableQuery
+
+
+
+#These urls  are the services that form
+# my implementation of eventual consistency
 POST        /createTable             controllers.FrontEnd.createTable
 POST        /dropTable               controllers.FrontEnd.dropTable
 POST        /updateData              controllers.FrontEnd.update
@@ -16,6 +24,14 @@ POST        /delete                  controllers.FrontEnd.delete
 GET         /makeConsistent          controllers.FrontEnd.makeConsistent
 POST        /time/updatedTIme        controllers.FrontEnd.changeTImeSweep(updatedTime:Int)
 GET         /allUpdates              controllers.FrontEnd.getInconsistentUPdateInfo
+POST        /select                  controllers.FrontEnd.runEventuallyConsistentQuery
+
+
+
+# the urls below show the ample applications i wrote to help rove my eventual consistency implementation does the jo
+GET    /sample1                    controllers.SampleApplications.runFirstSample
+GET    /sample2                    controllers.SampleApplications.runSecondSample
+
+
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file            controllers.Assets.versioned(path="/public", file)
-POST        /select                  controllers.FrontEnd.runEventuallyConsistentQuery

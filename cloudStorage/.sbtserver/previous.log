@@ -1,5 +1,5 @@
-New log file opened at Thu Jul 02 14:17:54 BST 2015 by 7749@jacks-MacBook-Pro.local
-jvm 7749@jacks-MacBook-Pro.local
+New log file opened at Fri Jul 03 14:17:13 BST 2015 by 4149@jacks-MacBook-Pro.local
+jvm 4149@jacks-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.5-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project, returning: (cloudstorage-build)
 Loading project definition from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@15982c5b, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@afe7e66, check cycles: false
 [info] Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/}cloudstorage-build...
 Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/}cloudstorage-build...
 Other repositories:
@@ -15947,7 +15947,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8-M3!apply-macro.jar
 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-:: resolution report :: resolve 5551ms :: artifacts dl 98ms
+:: resolution report :: resolve 5660ms :: artifacts dl 99ms
 	report for default#cloudstorage-build;0.1-SNAPSHOT compile produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-compile.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT runtime produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-runtime.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT test produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-test.xml
@@ -15961,7 +15961,7 @@ sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 	report for default#cloudstorage-build;0.1-SNAPSHOT docs produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-docs.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT pom produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-pom.xml
 	report for default#cloudstorage-build;0.1-SNAPSHOT scala-tool produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/project/target/resolution-cache/reports/default-cloudstorage-build-scala-tool.xml
-	resolve done (5551ms resolve - 98ms download)
+	resolve done (5660ms resolve - 99ms download)
 [info] Done updating.
 Done updating.
 
@@ -16003,7 +16003,7 @@ Set current project to Testing and Tailoring cloud storages (in build file:/User
 > server-handle-next-server-request
 > {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@ea180df, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@2f78b1f2, check cycles: false
 Read from stdout: Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root...
 Updating {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root...
 Other repositories:
@@ -16018,7 +16018,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.7 ...
 Resolving org.scala-lang#scala-library;2.11.7 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@306e6fee
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@533a1dbf
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -16709,6 +16709,133 @@ sbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.11;2
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->compile]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.akka#akka-testkit_2.11;2.3.3 [compile->master]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->default(compile)]
+Read from stdout: Resolving com.typesafe.play#play-ws_2.11;2.3.9 ...
+Resolving com.typesafe.play#play-ws_2.11;2.3.9 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#play-ws_2.11;2.3.9 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: com.typesafe.play#play-ws_2.11;2.3.9
+	found com.typesafe.play#play-ws_2.11;2.3.9 in sbt-chain
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->runtime]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->master(*)]
+Read from stdout: Resolving com.google.guava#guava;16.0.1 ...
+Resolving com.google.guava#guava;16.0.1 ...
+sbt-chain: Checking cache for: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: com.google.guava#guava;16.0.1
+	found com.google.guava#guava;16.0.1 in sbt-chain
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->master(*)]
+Read from stdout: Resolving com.ning#async-http-client;1.8.15 ...
+Resolving com.ning#async-http-client;1.8.15 ...
+sbt-chain: Checking cache for: dependency: com.ning#async-http-client;1.8.15 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: com.ning#async-http-client;1.8.15
+	found com.ning#async-http-client;1.8.15 in sbt-chain
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+Read from stdout: Resolving oauth.signpost#signpost-core;1.2.1.2 ...
+Resolving oauth.signpost#signpost-core;1.2.1.2 ...
+sbt-chain: Checking cache for: dependency: oauth.signpost#signpost-core;1.2.1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: oauth.signpost#signpost-core;1.2.1.2
+	found oauth.signpost#signpost-core;1.2.1.2 in sbt-chain
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->compile]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->master(*)]
+Read from stdout: Resolving oauth.signpost#signpost-commonshttp4;1.2.1.2 ...
+Resolving oauth.signpost#signpost-commonshttp4;1.2.1.2 ...
+sbt-chain: Checking cache for: dependency: oauth.signpost#signpost-commonshttp4;1.2.1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: oauth.signpost#signpost-commonshttp4;1.2.1.2
+	found oauth.signpost#signpost-commonshttp4;1.2.1.2 in sbt-chain
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+Read from stdout: Resolving org.apache.httpcomponents#httpcore;4.0.1 ...
+Resolving org.apache.httpcomponents#httpcore;4.0.1 ...
+sbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcore;4.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.0.1
+	found org.apache.httpcomponents#httpcore;4.0.1 in sbt-chain
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->master(*)]
+Read from stdout: Resolving org.apache.httpcomponents#httpclient;4.0.1 ...
+Resolving org.apache.httpcomponents#httpclient;4.0.1 ...
+sbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpclient;4.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.0.1
+	found org.apache.httpcomponents#httpclient;4.0.1 in sbt-chain
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->master(*)]
+Read from stdout: Resolving commons-logging#commons-logging;1.1.1 ...
+Resolving commons-logging#commons-logging;1.1.1 ...
+sbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.1
+	found commons-logging#commons-logging;1.1.1 in sbt-chain
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->master]
 resolving dependencies for configuration 'runtime'
 == resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT [runtime]
 == resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT [compile]
@@ -17122,6 +17249,85 @@ resolving dependencies for configuration 'runtime'
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->compile]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.akka#akka-testkit_2.11;2.3.3 [compile->master]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->default(compile)]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->runtime]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->master]
 resolving dependencies for configuration 'test'
 == resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT [test]
 == resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT [runtime]
@@ -17536,6 +17742,85 @@ resolving dependencies for configuration 'test'
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->compile]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.akka#akka-testkit_2.11;2.3.3 [compile->master]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->default(compile)]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->runtime]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->master]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.9 [test->default(compile)]
 Read from stdout: Resolving com.typesafe.play#play-test_2.11;2.3.9 ...
 Resolving com.typesafe.play#play-test_2.11;2.3.9 ...
@@ -17866,15 +18151,7 @@ sbt-chain: module revision found in cache: org.scala-sbt#test-interface;1.0
 == resolving dependencies com.novocode#junit-interface;0.11-RC1->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)]
 == resolving dependencies com.novocode#junit-interface;0.11-RC1->org.scala-sbt#test-interface;1.0 [runtime->compile]
 == resolving dependencies com.typesafe.play#play-test_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->master(compile)]
-Read from stdout: Resolving com.google.guava#guava;16.0.1 ...
-Resolving com.google.guava#guava;16.0.1 ...
-sbt-chain: Checking cache for: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-sbt-chain: module revision found in cache: com.google.guava#guava;16.0.1
-	found com.google.guava#guava;16.0.1 in sbt-chain
 == resolving dependencies com.typesafe.play#play-test_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->compile(*)]
-== resolving dependencies com.typesafe.play#play-test_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->master(*)]
-== resolving dependencies com.typesafe.play#play-test_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->runtime(*)]
-== resolving dependencies com.typesafe.play#play-test_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->compile]
 == resolving dependencies com.typesafe.play#play-test_2.11;2.3.9->com.google.code.findbugs#jsr305;2.0.3 [compile->master(compile)]
 Read from stdout: Resolving com.google.code.findbugs#jsr305;2.0.3 ...
 Resolving com.google.code.findbugs#jsr305;2.0.3 ...
@@ -17996,6 +18273,12 @@ dependency descriptor has been mediated: dependency: commons-codec#commons-codec
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -18031,7 +18314,17 @@ sbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 == resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [compile->compile(*)]
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [compile->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [compile->compile]
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 == resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -18075,7 +18368,17 @@ sbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.3
 dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 == resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [compile->compile(*)]
 dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [compile->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [compile->compile]
+dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 == resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.8 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -18114,6 +18417,18 @@ dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0
 == resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [compile->master(compile)]
 == resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.8 [compile->compile(*)]
 == resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [compile->master(*)]
+== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [compile->runtime(*)]
+== resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [compile->compile]
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.8 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->compile]
 == resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->master(compile)]
 == resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [compile->master(compile)]
 == resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [compile->compile(*)]
@@ -18728,17 +19043,6 @@ dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[ru
 == resolving dependencies org.seleniumhq.selenium#selenium-api;2.39.0->org.json#json;20080701 [runtime->compile]
 == resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)]
 == resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->org.apache.httpcomponents#httpclient;4.3.1 [runtime->compile]
-dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
-== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [runtime->runtime(*)]
-== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->org.apache.httpcomponents#httpcore;4.3 [runtime->compile]
-dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
-== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [runtime->runtime(*)]
-== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [runtime->compile]
-dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
-== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.8 [runtime->runtime(*)]
-== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
-== resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.9 [runtime->compile]
 == resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;15.0 [runtime->runtime(*)]
 == resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [runtime->runtime(*)]
 == resolving dependencies org.seleniumhq.selenium#selenium-remote-driver;2.39.0->com.google.guava#guava;16.0.1 [runtime->compile]
@@ -19297,6 +19601,85 @@ resolving dependencies for configuration 'compile-internal'
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->compile]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.akka#akka-testkit_2.11;2.3.3 [compile->master]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->default(compile)]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->runtime]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->master]
 == resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT [optional]
 == resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT [provided]
 resolving dependencies for configuration 'runtime-internal'
@@ -19713,6 +20096,85 @@ resolving dependencies for configuration 'runtime-internal'
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->compile]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.akka#akka-testkit_2.11;2.3.3 [compile->master]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->default(compile)]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->runtime]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->master]
 == resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT [optional]
 resolving dependencies for configuration 'test-internal'
 == resolving dependencies for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT [test-internal]
@@ -20129,6 +20591,85 @@ resolving dependencies for configuration 'test-internal'
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.3->com.typesafe.akka#akka-actor_2.11;2.3.4 [runtime->compile]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.akka#akka-testkit_2.11;2.3.3 [compile->master]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->default(compile)]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->runtime]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->master(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->master(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->master(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->master(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->compile(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.typesafe.play#play_2.11;2.3.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.google.guava#guava;16.0.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->com.ning#async-http-client;1.8.15 [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.2.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->io.netty#netty;3.9.8.Final [runtime->compile]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->runtime(*)]
+== resolving dependencies com.ning#async-http-client;1.8.15->org.slf4j#slf4j-api;1.7.6 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-core;1.2.1.2->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#play-ws_2.11;2.3.9->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->runtime(*)]
+== resolving dependencies oauth.signpost#signpost-commonshttp4;1.2.1.2->org.apache.httpcomponents#httpclient;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile]
+== resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.3.9 [compile->master]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.9 [test->default(compile)]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.9 [test->runtime]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.9 [test->compile]
@@ -20328,6 +20869,12 @@ dependency descriptor has been mediated: dependency: commons-codec#commons-codec
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -20367,6 +20914,12 @@ dependency descriptor has been mediated: dependency: commons-codec#commons-codec
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: net.java.dev.jna#jna;3.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -20398,6 +20951,12 @@ dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[ru
 == resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-logging#commons-logging;1.1.3 [compile->compile(*)]
 dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 == resolving dependencies org.apache.httpcomponents#httpclient;4.3.1->commons-codec#commons-codec;1.8 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 dependency descriptor has been mediated: dependency: junit#junit;4.9 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
 dependency descriptor has been mediated: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: commons-codec#commons-codec;1.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -22046,6 +22605,8 @@ sbt-chain: module revision found in cache: net.contentobjects.jnotify#jnotify;0.
 == resolving dependencies com.typesafe.play#fork-run_2.11;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [runtime->compile]
 == resolving dependencies testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT->com.typesafe.play#fork-run_2.11;2.3.9 [fork-run->master]
 circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-compiler;2.11.0->...
+all callers are evicted for commons-logging#commons-logging;1.1.1: evicting too
+all callers are evicted for commons-logging#commons-logging;1.1.1: evicting too
 	resolved ivy file produced in cache
 :: downloading artifacts ::
 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.7!scala-library.jar
@@ -22055,6 +22616,7 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	[NOT REQUIRED] com.typesafe.play#anorm_2.11;2.3.9!anorm_2.11.jar
 	[NOT REQUIRED] mysql#mysql-connector-java;5.1.35!mysql-connector-java.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.3!akka-testkit_2.11.jar
+	[NOT REQUIRED] com.typesafe.play#play-ws_2.11;2.3.9!play-ws_2.11.jar
 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.1!scala-library.jar
 	[NOT REQUIRED] org.apache.commons#commons-lang3;3.1!commons-lang3.jar
 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)
@@ -22092,9 +22654,16 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	[NOT REQUIRED] com.jolbox#bonecp;0.8.0.RELEASE!bonecp.jar(bundle)
 	[NOT REQUIRED] com.h2database#h2;1.3.175!h2.jar
 	[NOT REQUIRED] tyrex#tyrex;1.0.1!tyrex.jar
-	[NOT REQUIRED] com.google.guava#guava;15.0!guava.jar(bundle)
 	[NOT REQUIRED] com.jsuereth#scala-arm_2.11;1.4!scala-arm_2.11.jar
 	[NOT REQUIRED] org.scala-lang.plugins#scala-continuations-library_2.11;1.0.1!scala-continuations-library_2.11.jar(bundle)
+	[NOT REQUIRED] com.google.guava#guava;16.0.1!guava.jar(bundle)
+	[NOT REQUIRED] com.ning#async-http-client;1.8.15!async-http-client.jar
+	[NOT REQUIRED] oauth.signpost#signpost-core;1.2.1.2!signpost-core.jar(test-jar)
+	[NOT REQUIRED] oauth.signpost#signpost-core;1.2.1.2!signpost-core.jar
+	[NOT REQUIRED] oauth.signpost#signpost-commonshttp4;1.2.1.2!signpost-commonshttp4.jar
+	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.0.1!httpcore.jar
+	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.0.1!httpclient.jar
+	[NOT REQUIRED] commons-logging#commons-logging;1.1.1!commons-logging.jar
 	[NOT REQUIRED] com.typesafe.play#play-test_2.11;2.3.9!play-test_2.11.jar
 	[NOT REQUIRED] junit#junit;4.11!junit.jar
 	[NOT REQUIRED] org.specs2#specs2-core_2.11;2.3.12!specs2-core_2.11.jar
@@ -22102,7 +22671,6 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	[NOT REQUIRED] org.specs2#specs2-mock_2.11;2.3.12!specs2-mock_2.11.jar
 	[NOT REQUIRED] org.specs2#specs2-matcher-extra_2.11;2.3.12!specs2-matcher-extra_2.11.jar
 	[NOT REQUIRED] com.novocode#junit-interface;0.11-RC1!junit-interface.jar
-	[NOT REQUIRED] com.google.guava#guava;16.0.1!guava.jar(bundle)
 	[NOT REQUIRED] com.google.code.findbugs#jsr305;2.0.3!jsr305.jar
 	[NOT REQUIRED] org.fluentlenium#fluentlenium-festassert;0.9.2!fluentlenium-festassert.jar
 	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar
@@ -22193,7 +22761,7 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
-:: resolution report :: resolve 2094ms :: artifacts dl 56ms
+:: resolution report :: resolve 2216ms :: artifacts dl 62ms
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT compile produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-compile.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT runtime produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-runtime.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT test produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-test.xml
@@ -22208,47 +22776,47 @@ circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scal
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT pom produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-pom.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT scala-tool produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-scala-tool.xml
 	report for testing-and-tailoring-cloud-storages#testing-and-tailoring-cloud-storages_2.11;1.0-SNAPSHOT fork-run produced in /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/resolution-cache/reports/testing-and-tailoring-cloud-storages-testing-and-tailoring-cloud-storages_2.11-fork-run.xml
-	resolve done (2094ms resolve - 56ms download)
+	resolve done (2216ms resolve - 62ms download)
 Read from stdout: Done updating.
 Done updating.
-Total time: 3 s, completed 02-Jul-2015 14:18:08
+Total time: 3 s, completed 03-Jul-2015 14:17:26
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@25d0f378, check cycles: false
-Total time: 0 s, completed 02-Jul-2015 14:18:08
+Running task... Cancel: sbt.server.ServerTaskCancellation@545e15b3, check cycles: false
+Total time: 0 s, completed 03-Jul-2015 14:17:27
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@7d97ebb1, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f6bca1a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
-	added: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala)
+	added: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala)
 	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala)
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala)
+All initially invalidated sources: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/JSonResultSet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/UpdateTableStatment.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/SystemActor.scala, /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala)
 
-Recompiling all 26 sources: invalidated sources (26) exceeded 50.0% of all sources
-Read from stdout: Compiling 25 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
-Compiling 25 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
+Recompiling all 29 sources: invalidated sources (29) exceeded 50.0% of all sources
+Read from stdout: Compiling 28 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
+Compiling 28 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
-Running cached compiler 519d2c7c, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Running cached compiler 1174aefc, interfacing (CompilerInterface) with Scala compiler version 2.11.7
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -22257,7 +22825,7 @@ Calling Scala compiler with arguments  (CompilerInterface):
 	-bootclasspath
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
 	-classpath
-	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes:/Users/jackdavey/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/Users/jackdavey/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.9.jar:/Users/jackdavey/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.2-GA.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/Users/jackdavey/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/Users/jackdavey/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/Users/jackdavey/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/Users/jackdavey/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/jackdavey/.ivy2/cache/io.netty/netty/bundles/netty-3.9.8.Final.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/jackdavey/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/Users/jackdavey/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/Users/jackdavey/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/Users/jackdavey/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/Users/jackdavey/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/Users/jackdavey/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/Users/jackdavey/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/jackdavey/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/jackdavey/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/Users/jackdavey/.ivy2/cache/com.google.guava/guava/bundles/guava-15.0.jar:/Users/jackdavey/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/Users/jackdavey/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/anorm_2.11/jars/anorm_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.jsuereth/scala-arm_2.11/jars/scala-arm_2.11-1.4.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang.plugins/scala-continuations-library_2.11/bundles/scala-continuations-library_2.11-1.0.1.jar:/Users/jackdavey/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.35.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/jars/akka-testkit_2.11-2.3.3.jar
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes:/Users/jackdavey/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/Users/jackdavey/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.9.jar:/Users/jackdavey/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.2-GA.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/Users/jackdavey/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/Users/jackdavey/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/Users/jackdavey/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/Users/jackdavey/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/jackdavey/.ivy2/cache/io.netty/netty/bundles/netty-3.9.8.Final.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/jackdavey/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/Users/jackdavey/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/Users/jackdavey/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/Users/jackdavey/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/Users/jackdavey/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/Users/jackdavey/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/Users/jackdavey/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/jackdavey/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/jackdavey/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/Users/jackdavey/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/Users/jackdavey/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/anorm_2.11/jars/anorm_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.jsuereth/scala-arm_2.11/jars/scala-arm_2.11-1.4.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang.plugins/scala-continuations-library_2.11/bundles/scala-continuations-library_2.11-1.0.1.jar:/Users/jackdavey/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.35.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/jars/akka-testkit_2.11-2.3.3.jar:/Users/jackdavey/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.3.9.jar:/Users/jackdavey/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/Users/jackdavey/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.8.15.jar:/Users/jackdavey/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/jackdavey/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/jackdavey/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/jackdavey/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/jackdavey/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar
 Read from stdout: /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure
 /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure
 Read from stdout: case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
@@ -22292,11 +22860,11 @@ Read from stdout: there were three feature warnings; re-run with -feature for de
 there were three feature warnings; re-run with -feature for details
 Read from stdout: 6 warnings found
 6 warnings found
-Scala compilation took 12.311508 s
-Attempting to call com.sun.tools.javac.api.JavacTool@1825a945 directly...
-Java compilation took 0.450467 s
-Java analysis took 0.010959 s
-Java compile + analysis took 0.471212 s
+Scala compilation took 12.022422 s
+Attempting to call com.sun.tools.javac.api.JavacTool@21cd0c8e directly...
+Java compilation took 0.429966 s
+Java analysis took 0.011558 s
+Java compile + analysis took 0.450568 s
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala)
@@ -22316,13 +22884,7 @@ All member reference dependencies will be considered within this context.
 The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala
-Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala...
-Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala...
-Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
-The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala source file has the following regular definitions changed:
-	notify, wait, saveMutableQuery, saveQuery, $asInstanceOf, testAction, makeConsistent, insert, equals, asInstanceOf, getInconsistentUPdateInfo, runEventuallyConsistentQuery, synchronized, $isInstanceOf, ReverseAssets, notifyAll, listQueries, isInstanceOf, ReverseFrontEnd, createTable, <init>, ==, changeTImeSweep, clone, delete, toString, !=, getClass, update, getLogOutput, ne, versioned, eq, ReverseApplication, ##, finalize, hashCode, dropTable.
-All member reference dependencies will be considered within this context.
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InconsistentQueryRecords.scala)
@@ -22343,6 +22905,15 @@ All member reference dependencies will be considered within this context.
 The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DeleteStatementHelper.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala
+Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala)
+The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala source file has the following regular definitions changed:
+	notify, SingleWriterSample, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, runSample, notifyAll, isInstanceOf, ==, clone, toString, !=, getClass, ne, eq, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala: Set(SingleWriterSample, runSample)
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala)
@@ -22373,6 +22944,13 @@ All member reference dependencies will be considered within this context.
 The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLQuery.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/Application.scala
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
+Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala source file has the following regular definitions changed:
+	notify, wait, saveMutableQuery, saveQuery, $asInstanceOf, testAction, makeConsistent, insert, equals, asInstanceOf, getInconsistentUPdateInfo, runEventuallyConsistentQuery, synchronized, $isInstanceOf, ReverseAssets, notifyAll, listQueries, isInstanceOf, ReverseFrontEnd, createTable, <init>, ReverseSampleApplications, ==, changeTImeSweep, clone, delete, toString, !=, getClass, update, getLogOutput, ne, versioned, eq, ReverseApplication, ##, finalize, hashCode, dropTable, runFirstSample.
+All member reference dependencies will be considered within this context.
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala)
@@ -22447,6 +23025,8 @@ The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage
 All member reference dependencies will be considered within this context.
 The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/Log.scala)
@@ -22484,6 +23064,14 @@ The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala
+Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala)
+The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala source file has the following regular definitions changed:
+	notify, badRequest, wait, controllers_FrontEnd_update6_invoker, controllers_Application_saveMutableQuery3_invoker, controllers_Application_testAction0_route, $asInstanceOf, controllers_Application_saveQuery2_route, routes, controllers_FrontEnd_insert8_route, createInvoker, controllers_FrontEnd_runEventuallyConsistentQuery13_route, controllers_FrontEnd_delete9_invoker, controllers_FrontEnd_getLogOutput7_invoker, equals, controllers_Application_listQueries1_invoker, controllers_FrontEnd_getInconsistentUPdateInfo12_invoker, prefix, asInstanceOf, documentation, controllers_FrontEnd_changeTImeSweep11_route, synchronized, $isInstanceOf, handlerFor, controllers_FrontEnd_delete9_route, _prefix, notifyAll, isInstanceOf, controllers_Application_saveMutableQuery3_route, controllers_FrontEnd_dropTable5_route, controllers_FrontEnd_createTable4_route, controllers_Application_saveQuery2_invoker, controllers_FrontEnd_getInconsistentUPdateInfo12_route, ==, clone, controllers_FrontEnd_makeConsistent10_route, controllers_FrontEnd_getLogOutput7_route, Routes, controllers_FrontEnd_changeTImeSweep11_invoker, toString, controllers_Application_testAction0_invoker, controllers_FrontEnd_insert8_invoker, controllers_FrontEnd_runEventuallyConsistentQuery13_invoker, !=, fakeValue, controllers_SampleApplications_runFirstSample14_invoker, getClass, setPrefix, controllers_FrontEnd_createTable4_invoker, ne, call, controllers_Assets_versioned15_route, controllers_Application_listQueries1_route, controllers_FrontEnd_dropTable5_invoker, controllers_FrontEnd_update6_route, controllers_FrontEnd_makeConsistent10_invoker, eq, defaultPrefix, ##, finalize, controllers_SampleApplications_runFirstSample14_route, hashCode, controllers_Assets_versioned15_invoker.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala: Set(prefix, _prefix, Routes, getClass, defaultPrefix)
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/controllers/routes.java...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/controllers/routes.java...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/controllers/routes.java)
@@ -22500,6 +23088,16 @@ The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage
 All member reference dependencies will be considered within this context.
 The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
+Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala)
+The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala source file has the following implicit definitions changed:
+	request2session, request2flash, request2lang.
+All member reference dependencies will be considered within this context.
+The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/SampleApplications.scala are invalidated:
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala)
@@ -22509,6 +23107,14 @@ The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage
 All member reference dependencies will be considered within this context.
 The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Logger.scala are invalidated:
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
+Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala)
+The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala source file has the following regular definitions changed:
+	notify, wait, $asInstanceOf, equals, asInstanceOf, executeServiceRequest, synchronized, $isInstanceOf, executeUpdate, notifyAll, isInstanceOf, executeDelete, ==, clone, executeInsert, toString, !=, getClass, ne, eq, ##, executeSelect, finalize, hashCode, WebServiceUtils.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala: Set(equals, executeUpdate, executeSelect, WebServiceUtils)
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Messages.scala)
@@ -22522,14 +23128,6 @@ The following modified names cause invalidation of /Users/jackdavey/Documents/Te
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala: Set(equals, TestMessage, asInstanceOf, MakeConsistent, isInstanceOf, <init>, Messages, apply, ==, Message, !=, update)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiter.scala: Set(asInstanceOf, isInstanceOf, <init>, Messages)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(TestMessage, asInstanceOf, RetrieveLog, MakeConsistent, isInstanceOf, <init>, Messages, apply, toString, ne)
-Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala...
-Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala...
-Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala)
-The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_routing.scala source file has the following regular definitions changed:
-	notify, badRequest, wait, controllers_FrontEnd_update6_invoker, controllers_Application_saveMutableQuery3_invoker, controllers_Application_testAction0_route, $asInstanceOf, controllers_Application_saveQuery2_route, routes, controllers_FrontEnd_insert8_route, createInvoker, controllers_FrontEnd_delete9_invoker, controllers_FrontEnd_getLogOutput7_invoker, equals, controllers_Application_listQueries1_invoker, controllers_FrontEnd_getInconsistentUPdateInfo12_invoker, prefix, controllers_FrontEnd_runEventuallyConsistentQuery14_invoker, asInstanceOf, documentation, controllers_FrontEnd_changeTImeSweep11_route, synchronized, $isInstanceOf, handlerFor, controllers_FrontEnd_delete9_route, _prefix, notifyAll, controllers_Assets_versioned13_route, isInstanceOf, controllers_Application_saveMutableQuery3_route, controllers_FrontEnd_dropTable5_route, controllers_FrontEnd_createTable4_route, controllers_Application_saveQuery2_invoker, controllers_FrontEnd_getInconsistentUPdateInfo12_route, ==, clone, controllers_FrontEnd_makeConsistent10_route, controllers_FrontEnd_getLogOutput7_route, controllers_Assets_versioned13_invoker, controllers_FrontEnd_runEventuallyConsistentQuery14_route, Routes, controllers_FrontEnd_changeTImeSweep11_invoker, toString, controllers_Application_testAction0_invoker, controllers_FrontEnd_insert8_invoker, !=, fakeValue, getClass, setPrefix, controllers_FrontEnd_createTable4_invoker, ne, call, controllers_Application_listQueries1_route, controllers_FrontEnd_dropTable5_invoker, controllers_FrontEnd_update6_route, controllers_FrontEnd_makeConsistent10_invoker, eq, defaultPrefix, ##, finalize, hashCode.
-All member reference dependencies will be considered within this context.
-The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/src_managed/main/routes_reverseRouting.scala: Set(prefix, _prefix, Routes, getClass, defaultPrefix)
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QuerySet.scala)
@@ -22550,6 +23148,8 @@ The following member ref dependencies of /Users/jackdavey/Documents/Testing-And-
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala
 	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala
+	/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala
 Invalidating /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala...
 Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala...
 Initial set of included nodes: Set(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SQLStatement.scala)
@@ -22565,6 +23165,7 @@ The /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage
 All member reference dependencies will be considered within this context.
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, getNewSQLStatement, SQLStatementHelper, toString, MutableSQLStatement, ne)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, getNewSQLStatement, SQLStatementHelper, toString, MutableSQLStatement, ne)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala: Set(SQLStatement, <init>, SQLStatementHelper)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala: Set(asInstanceOf, isInstanceOf, <init>, SQLStatementHelper, MutableSQLStatement)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/createTableStatement.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, ==, SQLStatementHelper, toString, tables, eq)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/DripTableStatementHelper.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, ==, SQLStatementHelper, toString, tables, eq)
@@ -22580,12 +23181,18 @@ The following modified names cause invalidation of /Users/jackdavey/Documents/Te
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/SelectStatementHelper.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, ==, SQLStatementHelper, toString, tables, eq)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/InsertStatement.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, SQLStatementHelper, toString, MutableSQLStatement, ne, tables, eq)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala: Set(equals, asInstanceOf, isInstanceOf, <init>, ==, SQLStatementHelper, toString, MutableSQLStatement, ne, tables, eq)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala: Set(SQLStatement, <init>, SQLStatementHelper)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, getNewSQLStatement, SQLStatementHelper, toString, MutableSQLStatement, ne)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala: Set(equals, <init>)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala: Set(SQLStatement, <init>, SQLStatementHelper)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala: Set(equals, asInstanceOf, isInstanceOf, <init>, ==, SQLStatementHelper, toString, MutableSQLStatement, ne, tables, eq)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, SQLStatementHelper, MutableSQLStatement)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, getNewSQLStatement, SQLStatementHelper, toString, MutableSQLStatement, ne)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala: Set(SQLStatement, <init>, SQLStatementHelper)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, getNewSQLStatement, SQLStatementHelper, toString, MutableSQLStatement, ne)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/SingleWriterSample.scala: Set(equals, <init>)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/models/QueryResult.scala: Set(equals, asInstanceOf, isInstanceOf, <init>, ==, SQLStatementHelper, toString, MutableSQLStatement, ne, tables, eq)
+The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/sample/WebServiceUtils.scala: Set(SQLStatement, <init>, SQLStatementHelper)
 The following modified names cause invalidation of /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala: Set(asInstanceOf, isInstanceOf, SQLStatement, <init>, getNewSQLStatement, SQLStatementHelper, toString, MutableSQLStatement, ne)
 New invalidations:
 	Set()
@@ -22596,7 +23203,7 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Copy resource mappings: 
 	(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/application.conf,/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes/application.conf)
 	(/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes,/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes/routes)
-Total time: 14 s, completed 02-Jul-2015 14:18:50
+Total time: 13 s, completed 03-Jul-2015 14:17:51
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -22605,4 +23212,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 7749@jacks-MacBook-Pro.local logs at Thu Jul 02 14:20:56 BST 2015, goodbye.
+Closing the 4149@jacks-MacBook-Pro.local logs at Fri Jul 03 14:20:14 BST 2015, goodbye.

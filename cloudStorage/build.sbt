@@ -18,5 +18,5 @@ libraryDependencies +=  "mysql" % "mysql-connector-java" % "5.1.35"
 
 libraryDependencies +=   "com.typesafe.akka" %% "akka-testkit" % "2.3.3"
 
-
+libraryDependencies += ws
 

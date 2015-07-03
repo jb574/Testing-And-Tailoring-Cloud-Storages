@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:2cf03e41db1bdb93842e0595a7b3b4a94f86b6ed
-// @DATE:Tue Jun 30 12:32:44 BST 2015
+// @HASH:e2e3ba977ca5c917a1fb4a11f80ddd19836589db
+// @DATE:Fri Jul 03 14:47:25 BST 2015
 
 
 import scala.language.reflectiveCalls
@@ -32,111 +32,129 @@ def prefix = _prefix
 lazy val defaultPrefix = { if(Routes.prefix.endsWith("/")) "" else "/" }
 
 
-// @LINE:6
+// @LINE:9
 private[this] lazy val controllers_Application_testAction0_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("test"))))
 private[this] lazy val controllers_Application_testAction0_invoker = createInvoker(
 controllers.Application.testAction,
-HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "testAction", Nil,"GET", """ Home page""", Routes.prefix + """test"""))
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "testAction", Nil,"GET", """these urls are for the very simple pieces of code
+ i developed as part of the first tieration
+ they dont contribute anythign useful to the
+rest of the application""", Routes.prefix + """test"""))
         
 
-// @LINE:7
+// @LINE:10
 private[this] lazy val controllers_Application_listQueries1_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("seenQueries"))))
 private[this] lazy val controllers_Application_listQueries1_invoker = createInvoker(
 controllers.Application.listQueries,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "listQueries", Nil,"GET", """""", Routes.prefix + """seenQueries"""))
         
 
-// @LINE:8
+// @LINE:11
 private[this] lazy val controllers_Application_saveQuery2_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("addQuery"))))
 private[this] lazy val controllers_Application_saveQuery2_invoker = createInvoker(
 controllers.Application.saveQuery,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "saveQuery", Nil,"POST", """""", Routes.prefix + """addQuery"""))
         
 
-// @LINE:9
+// @LINE:12
 private[this] lazy val controllers_Application_saveMutableQuery3_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("updateDataOld"))))
 private[this] lazy val controllers_Application_saveMutableQuery3_invoker = createInvoker(
 controllers.Application.saveMutableQuery,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "saveMutableQuery", Nil,"POST", """""", Routes.prefix + """updateDataOld"""))
         
 
-// @LINE:10
+// @LINE:18
 private[this] lazy val controllers_FrontEnd_createTable4_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("createTable"))))
 private[this] lazy val controllers_FrontEnd_createTable4_invoker = createInvoker(
 controllers.FrontEnd.createTable,
-HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "createTable", Nil,"POST", """""", Routes.prefix + """createTable"""))
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "createTable", Nil,"POST", """These urls  are the services that form
+ my implementation of eventual consistency""", Routes.prefix + """createTable"""))
         
 
-// @LINE:11
+// @LINE:19
 private[this] lazy val controllers_FrontEnd_dropTable5_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("dropTable"))))
 private[this] lazy val controllers_FrontEnd_dropTable5_invoker = createInvoker(
 controllers.FrontEnd.dropTable,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "dropTable", Nil,"POST", """""", Routes.prefix + """dropTable"""))
         
 
-// @LINE:12
+// @LINE:20
 private[this] lazy val controllers_FrontEnd_update6_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("updateData"))))
 private[this] lazy val controllers_FrontEnd_update6_invoker = createInvoker(
 controllers.FrontEnd.update,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "update", Nil,"POST", """""", Routes.prefix + """updateData"""))
         
 
-// @LINE:13
+// @LINE:21
 private[this] lazy val controllers_FrontEnd_getLogOutput7_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("log"))))
 private[this] lazy val controllers_FrontEnd_getLogOutput7_invoker = createInvoker(
 controllers.FrontEnd.getLogOutput,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getLogOutput", Nil,"GET", """""", Routes.prefix + """log"""))
         
 
-// @LINE:14
+// @LINE:22
 private[this] lazy val controllers_FrontEnd_insert8_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("insert"))))
 private[this] lazy val controllers_FrontEnd_insert8_invoker = createInvoker(
 controllers.FrontEnd.insert,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "insert", Nil,"POST", """""", Routes.prefix + """insert"""))
         
 
-// @LINE:15
+// @LINE:23
 private[this] lazy val controllers_FrontEnd_delete9_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("delete"))))
 private[this] lazy val controllers_FrontEnd_delete9_invoker = createInvoker(
 controllers.FrontEnd.delete,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "delete", Nil,"POST", """""", Routes.prefix + """delete"""))
         
 
-// @LINE:16
+// @LINE:24
 private[this] lazy val controllers_FrontEnd_makeConsistent10_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("makeConsistent"))))
 private[this] lazy val controllers_FrontEnd_makeConsistent10_invoker = createInvoker(
 controllers.FrontEnd.makeConsistent,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "makeConsistent", Nil,"GET", """""", Routes.prefix + """makeConsistent"""))
         
 
-// @LINE:17
+// @LINE:25
 private[this] lazy val controllers_FrontEnd_changeTImeSweep11_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("time/updatedTIme"))))
 private[this] lazy val controllers_FrontEnd_changeTImeSweep11_invoker = createInvoker(
 controllers.FrontEnd.changeTImeSweep(fakeValue[Int]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "changeTImeSweep", Seq(classOf[Int]),"POST", """""", Routes.prefix + """time/updatedTIme"""))
         
 
-// @LINE:18
+// @LINE:26
 private[this] lazy val controllers_FrontEnd_getInconsistentUPdateInfo12_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("allUpdates"))))
 private[this] lazy val controllers_FrontEnd_getInconsistentUPdateInfo12_invoker = createInvoker(
 controllers.FrontEnd.getInconsistentUPdateInfo,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getInconsistentUPdateInfo", Nil,"GET", """""", Routes.prefix + """allUpdates"""))
         
 
-// @LINE:20
-private[this] lazy val controllers_Assets_versioned13_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_versioned13_invoker = createInvoker(
-controllers.Assets.versioned(fakeValue[String], fakeValue[String]),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
-        
-
-// @LINE:21
-private[this] lazy val controllers_FrontEnd_runEventuallyConsistentQuery14_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("select"))))
-private[this] lazy val controllers_FrontEnd_runEventuallyConsistentQuery14_invoker = createInvoker(
+// @LINE:27
+private[this] lazy val controllers_FrontEnd_runEventuallyConsistentQuery13_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("select"))))
+private[this] lazy val controllers_FrontEnd_runEventuallyConsistentQuery13_invoker = createInvoker(
 controllers.FrontEnd.runEventuallyConsistentQuery,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "runEventuallyConsistentQuery", Nil,"POST", """""", Routes.prefix + """select"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """time/updatedTIme""","""controllers.FrontEnd.changeTImeSweep(updatedTime:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.FrontEnd.getInconsistentUPdateInfo"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:32
+private[this] lazy val controllers_SampleApplications_runFirstSample14_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("sample1"))))
+private[this] lazy val controllers_SampleApplications_runFirstSample14_invoker = createInvoker(
+controllers.SampleApplications.runFirstSample,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "runFirstSample", Nil,"GET", """ the urls below show the ample applications i wrote to help rove my eventual consistency implementation does the jo""", Routes.prefix + """sample1"""))
+        
+
+// @LINE:33
+private[this] lazy val controllers_SampleApplications_runSecondSample15_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("sample2"))))
+private[this] lazy val controllers_SampleApplications_runSecondSample15_invoker = createInvoker(
+controllers.SampleApplications.runSecondSample,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "runSecondSample", Nil,"GET", """""", Routes.prefix + """sample2"""))
+        
+
+// @LINE:37
+private[this] lazy val controllers_Assets_versioned16_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_versioned16_invoker = createInvoker(
+controllers.Assets.versioned(fakeValue[String], fakeValue[String]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
+        
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """time/updatedTIme""","""controllers.FrontEnd.changeTImeSweep(updatedTime:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.FrontEnd.getInconsistentUPdateInfo"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample1""","""controllers.SampleApplications.runFirstSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample2""","""controllers.SampleApplications.runSecondSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -144,7 +162,7 @@ def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else 
 
 def routes:PartialFunction[RequestHeader,Handler] = {
 
-// @LINE:6
+// @LINE:9
 case controllers_Application_testAction0_route(params) => {
    call { 
         controllers_Application_testAction0_invoker.call(controllers.Application.testAction)
@@ -152,7 +170,7 @@ case controllers_Application_testAction0_route(params) => {
 }
         
 
-// @LINE:7
+// @LINE:10
 case controllers_Application_listQueries1_route(params) => {
    call { 
         controllers_Application_listQueries1_invoker.call(controllers.Application.listQueries)
@@ -160,7 +178,7 @@ case controllers_Application_listQueries1_route(params) => {
 }
         
 
-// @LINE:8
+// @LINE:11
 case controllers_Application_saveQuery2_route(params) => {
    call { 
         controllers_Application_saveQuery2_invoker.call(controllers.Application.saveQuery)
@@ -168,7 +186,7 @@ case controllers_Application_saveQuery2_route(params) => {
 }
         
 
-// @LINE:9
+// @LINE:12
 case controllers_Application_saveMutableQuery3_route(params) => {
    call { 
         controllers_Application_saveMutableQuery3_invoker.call(controllers.Application.saveMutableQuery)
@@ -176,7 +194,7 @@ case controllers_Application_saveMutableQuery3_route(params) => {
 }
         
 
-// @LINE:10
+// @LINE:18
 case controllers_FrontEnd_createTable4_route(params) => {
    call { 
         controllers_FrontEnd_createTable4_invoker.call(controllers.FrontEnd.createTable)
@@ -184,7 +202,7 @@ case controllers_FrontEnd_createTable4_route(params) => {
 }
         
 
-// @LINE:11
+// @LINE:19
 case controllers_FrontEnd_dropTable5_route(params) => {
    call { 
         controllers_FrontEnd_dropTable5_invoker.call(controllers.FrontEnd.dropTable)
@@ -192,7 +210,7 @@ case controllers_FrontEnd_dropTable5_route(params) => {
 }
         
 
-// @LINE:12
+// @LINE:20
 case controllers_FrontEnd_update6_route(params) => {
    call { 
         controllers_FrontEnd_update6_invoker.call(controllers.FrontEnd.update)
@@ -200,7 +218,7 @@ case controllers_FrontEnd_update6_route(params) => {
 }
         
 
-// @LINE:13
+// @LINE:21
 case controllers_FrontEnd_getLogOutput7_route(params) => {
    call { 
         controllers_FrontEnd_getLogOutput7_invoker.call(controllers.FrontEnd.getLogOutput)
@@ -208,7 +226,7 @@ case controllers_FrontEnd_getLogOutput7_route(params) => {
 }
         
 
-// @LINE:14
+// @LINE:22
 case controllers_FrontEnd_insert8_route(params) => {
    call { 
         controllers_FrontEnd_insert8_invoker.call(controllers.FrontEnd.insert)
@@ -216,7 +234,7 @@ case controllers_FrontEnd_insert8_route(params) => {
 }
         
 
-// @LINE:15
+// @LINE:23
 case controllers_FrontEnd_delete9_route(params) => {
    call { 
         controllers_FrontEnd_delete9_invoker.call(controllers.FrontEnd.delete)
@@ -224,7 +242,7 @@ case controllers_FrontEnd_delete9_route(params) => {
 }
         
 
-// @LINE:16
+// @LINE:24
 case controllers_FrontEnd_makeConsistent10_route(params) => {
    call { 
         controllers_FrontEnd_makeConsistent10_invoker.call(controllers.FrontEnd.makeConsistent)
@@ -232,7 +250,7 @@ case controllers_FrontEnd_makeConsistent10_route(params) => {
 }
         
 
-// @LINE:17
+// @LINE:25
 case controllers_FrontEnd_changeTImeSweep11_route(params) => {
    call(params.fromQuery[Int]("updatedTime", None)) { (updatedTime) =>
         controllers_FrontEnd_changeTImeSweep11_invoker.call(controllers.FrontEnd.changeTImeSweep(updatedTime))
@@ -240,7 +258,7 @@ case controllers_FrontEnd_changeTImeSweep11_route(params) => {
 }
         
 
-// @LINE:18
+// @LINE:26
 case controllers_FrontEnd_getInconsistentUPdateInfo12_route(params) => {
    call { 
         controllers_FrontEnd_getInconsistentUPdateInfo12_invoker.call(controllers.FrontEnd.getInconsistentUPdateInfo)
@@ -248,18 +266,34 @@ case controllers_FrontEnd_getInconsistentUPdateInfo12_route(params) => {
 }
         
 
-// @LINE:20
-case controllers_Assets_versioned13_route(params) => {
-   call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_versioned13_invoker.call(controllers.Assets.versioned(path, file))
+// @LINE:27
+case controllers_FrontEnd_runEventuallyConsistentQuery13_route(params) => {
+   call { 
+        controllers_FrontEnd_runEventuallyConsistentQuery13_invoker.call(controllers.FrontEnd.runEventuallyConsistentQuery)
    }
 }
         
 
-// @LINE:21
-case controllers_FrontEnd_runEventuallyConsistentQuery14_route(params) => {
+// @LINE:32
+case controllers_SampleApplications_runFirstSample14_route(params) => {
    call { 
-        controllers_FrontEnd_runEventuallyConsistentQuery14_invoker.call(controllers.FrontEnd.runEventuallyConsistentQuery)
+        controllers_SampleApplications_runFirstSample14_invoker.call(controllers.SampleApplications.runFirstSample)
+   }
+}
+        
+
+// @LINE:33
+case controllers_SampleApplications_runSecondSample15_route(params) => {
+   call { 
+        controllers_SampleApplications_runSecondSample15_invoker.call(controllers.SampleApplications.runSecondSample)
+   }
+}
+        
+
+// @LINE:37
+case controllers_Assets_versioned16_route(params) => {
+   call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
+        controllers_Assets_versioned16_invoker.call(controllers.Assets.versioned(path, file))
    }
 }
         

@@ -34,7 +34,7 @@ with AskSupport
 {
   var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
 
-  var timetilNextConsistencySweep = 30
+  var timetilNextConsistencySweep = 180
 
   override  def preStart() =
   {

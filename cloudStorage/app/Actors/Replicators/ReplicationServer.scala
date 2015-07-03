@@ -139,6 +139,8 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
       println("removing old nodes ")
       inconsistentUpdates = inconsistentUpdates.filter(
         (current) => !set.equals(current))
+    case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
+      sender ! queryResult
   }
 
   def receive = standardOperation

@@ -98,7 +98,6 @@ object QueryResultHelper
     def isWhereClauseValid(where:Map[String,String],row:Map[String,String]):Boolean =
     {
       val result = where.forall{case (key, value) => isValidCluase(row,key,value)}
-      println(result)
       result
     }
 
@@ -113,18 +112,13 @@ object QueryResultHelper
      */
      def isValidCluase(row:Map[String,String],key:String, value:String):Boolean =
     {
-      println(s"checking key $key")
       if(row.contains(key))
       {
-        println(s"value is " + row(key))
-        println("value it should be is " + value)
         var newValue = value.replaceAll("'","")
         newValue = newValue.trim
        val res = newValue.equals(row(key))
-        println("res is " + res)
          return res
       }
-      println(s"$key not in this map")
       false
     }
 
@@ -156,7 +150,6 @@ object QueryResultHelper
     {
       if(row.contains(key))
       {
-        println("row contains " + key)
          val value = updates(key)
         return row + (key -> value)
       }
@@ -180,7 +173,6 @@ object QueryResultHelper
      */
     def applyUpdate(where:Map[String,String],updates:Map[String,String]): Unit =
     {
-      println("hitting method")
       val applicableRows =  findApplicableRows(where)
       if(applicableRows.nonEmpty)
       {
@@ -212,7 +204,6 @@ object QueryResultHelper
     def findApplicableRows(where: Map[String, String]):List[Map[String,String]] =
     {
       val res = results.filter(row => isWhereClauseValid(where, row))
-      println(res.size)
       res
     }
 
