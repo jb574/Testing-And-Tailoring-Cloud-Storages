@@ -5,12 +5,14 @@ import models.InsertStatmentHelper.InsertStatment
 import models.SQLStatementHelper.SQLStatement
 import models.SelectStatementHelper.SelectStatement
 import models.UpdateTableStatmentHelper.UpdateTableStatment
+import org.joda.time.Minutes
 import play.api.libs.ws._
 import scala.concurrent._
 import play.api.libs.json.{JsValue, Json}
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.util.{Try, Failure, Success}
  import play.api.Play.current
+import scala.concurrent.duration._
 /**
  * code to call the web services
  * that emulate eventual consistncy
@@ -73,13 +75,9 @@ object WebServiceUtils
     private def executeServiceRequest(url:String,statement:JsValue):String =
     {
         var result = ""
-        val futureResponse: Future[String] =  WS.url(url).post(statement).map(
-          response => response.body
-        )
-        futureResponse.onComplete
-        {
-          case res => result = result + res
-        }
+        val futureResponse: Future[String] =  WS.url(url).post(statement).map(_.body)
+        result =  Await.result(futureResponse,10 minutes)
+        println(result)
         result
     }
 }

@@ -177,6 +177,7 @@ object FrontEnd  extends Controller
              {
                case properResults:QueryResult =>  queryResult = properResults
              }
+           println("rocking and rolling")
            Ok(Json.toJson(queryResult.toString))
          }
        }

@@ -1,9 +1,9 @@
 package controllers
 
 
+import models.SelectStatementHelper.SelectStatement
 import play.api.mvc._
-import sample.SingleWriterSample
-import sample.DoubleWriterService
+import sample.{WebServiceUtils, SingleWriterSample, DoubleWriterService}
 
 /**
  * This class houses
@@ -20,6 +20,14 @@ object SampleApplications  extends Controller
   {
      Ok(SingleWriterSample.runSample())
   }
+
+
+  def test = Action
+  {
+    val query = new SelectStatement(List("test"),"*","")
+    Ok(WebServiceUtils.executeSelect(query))
+  }
+
 
   def runSecondSample = Action
   {

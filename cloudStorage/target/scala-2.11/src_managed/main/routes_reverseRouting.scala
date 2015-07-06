@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:e2e3ba977ca5c917a1fb4a11f80ddd19836589db
-// @DATE:Fri Jul 03 14:47:25 BST 2015
+// @HASH:4fe6b6b3d825407ac6acb212c86f293637b1be2c
+// @DATE:Mon Jul 06 11:51:51 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,7 @@ import Router.queryString
 
 
 // @LINE:37
+// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:27
@@ -33,6 +34,7 @@ import Router.queryString
 // @LINE:9
 package controllers {
 
+// @LINE:34
 // @LINE:33
 // @LINE:32
 class ReverseSampleApplications {
@@ -42,6 +44,13 @@ class ReverseSampleApplications {
 def runSecondSample(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "sample2")
+}
+                        
+
+// @LINE:34
+def test(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "test")
 }
                         
 
@@ -179,7 +188,7 @@ def listQueries(): Call = {
 // @LINE:9
 def testAction(): Call = {
    import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "test")
+   Call("GET", _prefix + { _defaultPrefix } + "testold")
 }
                         
 
@@ -197,6 +206,7 @@ def saveMutableQuery(): Call = {
 
 
 // @LINE:37
+// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:27
@@ -216,6 +226,7 @@ def saveMutableQuery(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:34
 // @LINE:33
 // @LINE:32
 class ReverseSampleApplications {
@@ -227,6 +238,17 @@ def runSecondSample : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "sample2"})
+      }
+   """
+)
+                        
+
+// @LINE:34
+def test : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.SampleApplications.test",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "test"})
       }
    """
 )
@@ -424,7 +446,7 @@ def testAction : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.testAction",
    """
       function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "test"})
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "testold"})
       }
    """
 )
@@ -448,6 +470,7 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 
 
 // @LINE:37
+// @LINE:34
 // @LINE:33
 // @LINE:32
 // @LINE:27
@@ -467,6 +490,7 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
+// @LINE:34
 // @LINE:33
 // @LINE:32
 class ReverseSampleApplications {
@@ -475,6 +499,12 @@ class ReverseSampleApplications {
 // @LINE:33
 def runSecondSample(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.SampleApplications.runSecondSample(), HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "runSecondSample", Seq(), "GET", """""", _prefix + """sample2""")
+)
+                      
+
+// @LINE:34
+def test(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.SampleApplications.test(), HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "test", Seq(), "GET", """""", _prefix + """test""")
 )
                       
 
@@ -601,7 +631,7 @@ def testAction(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.testAction(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "testAction", Seq(), "GET", """these urls are for the very simple pieces of code
  i developed as part of the first tieration
  they dont contribute anythign useful to the
-rest of the application""", _prefix + """test""")
+rest of the application""", _prefix + """testold""")
 )
                       
 

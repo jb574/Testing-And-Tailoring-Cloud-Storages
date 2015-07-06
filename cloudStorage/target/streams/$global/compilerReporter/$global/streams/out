@@ -13,5 +13,5 @@
 [0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:127: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case foreignQueries:List[QuerySet] =>[0m
 [0m[[33mwarn[0m] [0m                        ^[0m
-[0m[[33mwarn[0m] [0mthere were three feature warnings; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mthere were four feature warnings; re-run with -feature for details[0m
 [0m[[33mwarn[0m] [0m6 warnings found[0m

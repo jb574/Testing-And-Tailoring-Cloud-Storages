@@ -6,7 +6,7 @@
 # i developed as part of the first tieration
 # they dont contribute anythign useful to the
 #rest of the application
-GET         /test                    controllers.Application.testAction
+GET         /testold                    controllers.Application.testAction
 GET         /seenQueries             controllers.Application.listQueries
 POST        /addQuery                controllers.Application.saveQuery
 POST        /updateDataOld           controllers.Application.saveMutableQuery
@@ -31,7 +31,7 @@ POST        /select                  controllers.FrontEnd.runEventuallyConsisten
 # the urls below show the ample applications i wrote to help rove my eventual consistency implementation does the jo
 GET    /sample1                    controllers.SampleApplications.runFirstSample
 GET    /sample2                    controllers.SampleApplications.runSecondSample
-
+GET    /test                       controllers.SampleApplications.test
 
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file            controllers.Assets.versioned(path="/public", file)

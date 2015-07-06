@@ -1,7 +1,13 @@
-New log file opened at Fri Jul 03 14:55:01 BST 2015 by 5078@jacks-MacBook-Pro.local
-Taking next connection to: 54026
-New client attempting to connect on port: 54027-54026
-  Address = /129.12.209.194:54026
-This client on port 54027 has uuid 7b32fbc7-6dab-4ebc-898e-ebfbd4a16ad6 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-7b32fbc7-6dab-4ebc-898e-ebfbd4a16ad6
-Taking next connection to: 54026
+New log file opened at Mon Jul 06 14:20:42 BST 2015 by 5836@jacks-MacBook-Pro.local
+Taking next connection to: 57550
+New client attempting to connect on port: 57551-57550
+  Address = /192.168.0.18:57550
+This client on port 57551 has uuid 656b94d5-dace-405b-9fa0-54e9e9e80d02 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-656b94d5-dace-405b-9fa0-54e9e9e80d02
+Taking next connection to: 57550
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 5836@jacks-MacBook-Pro.local logs at Mon Jul 06 14:23:42 BST 2015, goodbye.
