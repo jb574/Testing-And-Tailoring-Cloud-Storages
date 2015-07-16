@@ -24,3 +24,37 @@
 <Actors.Replicators.ReplicationServerTest-stats timestamp="1435656888475"><stats time="456" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
 <Actors.Replicators.ReplicationServerTest-stats timestamp="1435664822461"><stats time="480" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
 <Actors.Replicators.ReplicationServerTest-stats timestamp="1435841131089"><stats time="488" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1436951728225"><stats time="488" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1437052641062"><stats time="477" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1437052671077"><stats time="466" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1437052739558"><stats time="478" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1437053227612"><stats time="495" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1437055082975"><stats time="473" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1437055162085"><stats time="482" expectations="8" successes="8" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-results timestamp="1437055576230"><result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:110)" id="-966973616"><stats time="59" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:119)" id="-671134843"><stats time="56" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:129)" id="-574447404"><stats time="60" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:137)" id="952503261"><stats time="69" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:146)" id="-1594062743"><stats time="54" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:154)" id="-448532800"><stats time="58" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:163)" id="905330866"><stats time="54" expectations="1" failures="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationServerTest-results>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1437055576234"><stats time="482" expectations="8" failures="7" successes="1" examples="8"><trend><stats time="482" failures="7" successes="-7"></stats></trend></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-results timestamp="1437055656166"><result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:110)" id="-966973616"><stats time="63" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:119)" id="-671134843"><stats time="54" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:129)" id="-574447404"><stats time="65" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:137)" id="952503261"><stats time="65" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:146)" id="-1594062743"><stats time="55" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:154)" id="-448532800"><stats time="59" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:163)" id="905330866"><stats time="56" expectations="1" failures="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationServerTest-results>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1437055656172"><stats time="487" expectations="8" failures="7" successes="1" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>
+<Actors.Replicators.ReplicationServerTest-results timestamp="1437055803372"><result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:110)" id="-966973616"><stats time="54" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:119)" id="-671134843"><stats time="54" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:129)" id="-574447404"><stats time="56" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:137)" id="952503261"><stats time="73" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:146)" id="-1594062743"><stats time="59" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:154)" id="-448532800"><stats time="56" expectations="1" failures="1" examples="1"></stats></result>
+<result location="Actors.Replicators.ReplicationServerTest (ReplicationServerTest.scala:163)" id="905330866"><stats time="59" expectations="1" failures="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationServerTest-results>
+<Actors.Replicators.ReplicationServerTest-stats timestamp="1437055803376"><stats time="478" expectations="8" failures="7" successes="1" examples="8"></stats></Actors.Replicators.ReplicationServerTest-stats>

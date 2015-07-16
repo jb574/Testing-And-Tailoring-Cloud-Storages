@@ -29,7 +29,7 @@ class DatabaseCommiterOverseer (logger:ActorRef) extends SystemActor(logger)
    def receive =
    {
      case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
-     case _ => throw new IllegalArgumentException("lnvalid message type")
+     case msg  => error(getClass.toString,msg.getClass.toString)
    }
 
 

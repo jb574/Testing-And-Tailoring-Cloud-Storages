@@ -1,0 +1,14 @@
+<controllers.SettingsManagerTest-stats timestamp="1437052641686"><stats time="34" expectations="1" successes="1" examples="1"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437052671685"><stats time="32" expectations="1" successes="1" examples="1"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-results timestamp="1437052740208"><result location="controllers.SettingsManagerTest (SettingsManagerTest.scala:11)" id="-604291614"><stats time="33" expectations="1" errors="1" examples="1"></stats></result>
+</controllers.SettingsManagerTest-results>
+<controllers.SettingsManagerTest-stats timestamp="1437052740209"><stats time="34" expectations="1" errors="1" examples="1"><trend><stats time="34" errors="1" successes="-1"></stats></trend></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437053228293"><stats time="39" expectations="1" successes="1" examples="1"><trend><stats time="39" errors="-1" successes="1"></stats></trend></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437055083607"><stats time="31" expectations="1" successes="1" examples="1"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437055162709"><stats time="31" expectations="1" successes="1" examples="1"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437055576886"><stats time="32" expectations="1" successes="1" examples="1"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437055656853"><stats time="36" expectations="1" successes="1" examples="1"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437055804041"><stats time="38" expectations="1" successes="1" examples="1"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437056059988"><stats time="22" expectations="2" successes="2" examples="2"><trend><stats time="22" expectations="1" successes="1" examples="1"></stats></trend></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437056174691"><stats time="17" expectations="3" successes="3" examples="3"><trend><stats time="17" expectations="1" successes="1" examples="1"></stats></trend></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437056305106"><stats time="21" expectations="4" successes="4" examples="4"><trend><stats time="21" expectations="1" successes="1" examples="1"></stats></trend></stats></controllers.SettingsManagerTest-stats>

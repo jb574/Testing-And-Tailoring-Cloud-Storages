@@ -8,3 +8,13 @@
 <models.CreateTableStatementTest-stats timestamp="1435656887960"><stats time="86" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
 <models.CreateTableStatementTest-stats timestamp="1435664821919"><stats time="78" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
 <models.CreateTableStatementTest-stats timestamp="1435841130539"><stats time="88" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1436951727676"><stats time="93" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437052640521"><stats time="86" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437052670551"><stats time="99" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437052739003"><stats time="90" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437053227049"><stats time="83" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437055082445"><stats time="76" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437055161546"><stats time="90" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437055575686"><stats time="92" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437055655625"><stats time="92" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437055802842"><stats time="88" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>

@@ -6,8 +6,9 @@ package sample
  * @author Jack Davey
  * @version 3rd July 2015
  */
-object DoubleWriterService
+object DoubleWriterService extends App
 {
+
   /**
    *   this is the second sample application
    *   This uses two writers, and loops

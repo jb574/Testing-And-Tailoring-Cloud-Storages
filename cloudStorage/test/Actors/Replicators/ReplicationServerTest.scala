@@ -101,7 +101,7 @@ class ReplicationServerTest extends  PlaySpecification {
   "a replication server" should {
     " always handle  new queries effectively" in new WithApplication() {
       val system = new TestSystem()
-      system.checkProcessingNewQueries
+      system.checkProcessingNewQueries    must equalTo(true)
     }
   }
 
@@ -110,7 +110,7 @@ class ReplicationServerTest extends  PlaySpecification {
     "always be able to change application servers at aill " in new WithApplication()
     {
       val system = new TestSystem
-      system.checkServerReciept()
+      system.checkServerReciept()  must equalTo(true)
     }
   }
 
@@ -119,7 +119,7 @@ class ReplicationServerTest extends  PlaySpecification {
       "always be able to send updates to all replication servers " in new WithApplication()
       {
         val system = new TestSystem
-        system.checkUpdateDistribution()
+        system.checkUpdateDistribution()   must equalTo(true)
       }
     }
 
@@ -129,7 +129,7 @@ class ReplicationServerTest extends  PlaySpecification {
       "be able to proces reuests for  information  " in new WithApplication()
       {
         val system = new TestSystem
-        system.checkQueryExecution()
+        system.checkQueryExecution()   must equalTo(true)
       }
     }
   "a replication server " should
@@ -137,7 +137,7 @@ class ReplicationServerTest extends  PlaySpecification {
       "send all foriegn queries strraight to the replication server when it has none  " in new WithApplication()
       {
         val system = new TestSystem
-        system.checkEmptyMergeTest()
+        system.checkEmptyMergeTest()    must equalTo(true)
       }
     }
 
@@ -146,7 +146,7 @@ class ReplicationServerTest extends  PlaySpecification {
       "send all foriegn queries strraight to the replication server after bieng merged  " in new WithApplication()
       {
         val system = new TestSystem
-        system.checkNonEmptyMergeTest()
+        system.checkNonEmptyMergeTest()  must equalTo(true)
       }
     }
   "a replication server " should
@@ -154,7 +154,7 @@ class ReplicationServerTest extends  PlaySpecification {
       "should not merge queris sent after the latest one it has" in new WithApplication()
       {
         val system = new TestSystem
-        system.checkMergFalse()
+        system.checkMergFalse()      must equalTo(true)
       }
     }
 
@@ -163,7 +163,7 @@ class ReplicationServerTest extends  PlaySpecification {
       "should merge all queries that operate on the same tables sent before the last one " in new WithApplication()
       {
         val system = new TestSystem
-        system.checkMergTrue()
+        system.checkMergTrue()    must equalTo(true)
       }
     }
 

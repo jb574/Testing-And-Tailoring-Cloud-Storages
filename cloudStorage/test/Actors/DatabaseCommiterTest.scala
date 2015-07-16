@@ -5,6 +5,7 @@ import akka.dispatch.{Dispatchers, Mailboxes}
 import akka.event.{LoggingAdapter, EventStream}
 import play.api.test._
 import akka.testkit._
+import akka.testkit.TestActor
 import akka.actor._
 import Actors.Commiters.DatabaseCommiter
 import play.libs.Akka
@@ -30,15 +31,16 @@ class DatabaseCommiterTest  extends PlaySpecification
 
     def test(): Boolean =
     {
+      var result = false
       try
       {
-        comitter ! ok
+        comitter ! "ok"
         false
       }
       catch
-        {
-          case good:IllegalArgumentException => true
-        }
+      {
+        case good:IllegalArgumentException => true
+      }
     }
   }
 
@@ -48,8 +50,8 @@ class DatabaseCommiterTest  extends PlaySpecification
     "throw an illegalArgumentException when it gets a message it doesn't" +
       "know how to handle" in new WithApplication()
     {
-      val testSystem:TestSystem  = new TestSystem
-      testSystem.test()
+       val system = new TestSystem()
+       system.test()
     }
   }
 }

@@ -5,3 +5,13 @@
 <models.DropTableStatementTest-stats timestamp="1435656887398"><stats time="95" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
 <models.DropTableStatementTest-stats timestamp="1435664821379"><stats time="139" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
 <models.DropTableStatementTest-stats timestamp="1435841129986"><stats time="102" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1436951727070"><stats time="121" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437052639981"><stats time="104" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437052669959"><stats time="98" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437052738440"><stats time="103" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437053226509"><stats time="99" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437055081916"><stats time="97" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437055160949"><stats time="99" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437055575023"><stats time="108" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437055655029"><stats time="111" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437055802237"><stats time="117" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>

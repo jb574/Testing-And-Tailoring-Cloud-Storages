@@ -59,3 +59,13 @@
 <controllers.SimpleQueryTest-stats timestamp="1435656889436"><stats time="42" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
 <controllers.SimpleQueryTest-stats timestamp="1435664823445"><stats time="40" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
 <controllers.SimpleQueryTest-stats timestamp="1435841132139"><stats time="45" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1436951729352"><stats time="45" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437052642145"><stats time="51" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437052672073"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437052740641"><stats time="63" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437053228668"><stats time="41" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437055084071"><stats time="55" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437055163181"><stats time="57" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437055577272"><stats time="57" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437055657315"><stats time="43" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437055804431"><stats time="55" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>

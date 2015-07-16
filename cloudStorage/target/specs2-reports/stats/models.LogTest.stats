@@ -2,3 +2,13 @@
 <models.LogTest-stats timestamp="1435656887838"><stats time="55" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
 <models.LogTest-stats timestamp="1435664821812"><stats time="40" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
 <models.LogTest-stats timestamp="1435841130423"><stats time="41" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1436951727548"><stats time="50" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437052640402"><stats time="39" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437052670424"><stats time="41" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437052738876"><stats time="43" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437053226938"><stats time="38" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437055082332"><stats time="43" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437055161410"><stats time="46" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437055575562"><stats time="53" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437055655497"><stats time="63" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437055802721"><stats time="113" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>

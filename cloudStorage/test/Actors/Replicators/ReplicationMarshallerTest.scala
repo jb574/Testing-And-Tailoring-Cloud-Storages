@@ -21,17 +21,17 @@ class ReplicationMarshallerTest extends  PlaySpecification
   class TestSystem extends TestKit(ActorSystem("testSystem"))
   {
     val logger = TestActorRef[Logger]
-    val commiterOverseer = TestActorRef(new DatabaseCommiter(logger ))
+    val commiterOverseer = TestActorRef(new DatabaseCommiterOverseer(logger ))
     val marshaller = TestActorRef(new ReplicationMarshaller(logger,commiterOverseer))
 
     def passingOnQueriesTest():Boolean =
     {
-      var msg = new ArrayBuffer[QuerySet]
+      var msg:List[QuerySet] = List()
       val update = new InsertStatment(List(), Map())
       val query = new QuerySet(update, 1)
-      msg.append(query)
-      marshaller ! msg
-      marshaller.underlyingActor.queries.contains(update)
+      msg = query :: msg
+      marshaller.underlyingActor.sendUpdatesToDatabase(msg)
+      marshaller.underlyingActor.queries.contains(query)
     }
 
 
@@ -45,7 +45,7 @@ class ReplicationMarshallerTest extends  PlaySpecification
     "send any ArrayBuffer messages it gets straight onto the database server to be comitted" in new WithApplication()
     {
       val system = new TestSystem
-      system.passingOnQueriesTest()
+      system.passingOnQueriesTest() must equalTo(true)
     }
   }
 

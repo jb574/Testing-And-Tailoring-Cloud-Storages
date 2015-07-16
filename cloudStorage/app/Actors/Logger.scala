@@ -29,5 +29,7 @@ class Logger  extends Actor with AskSupport
    def receive =
    {
      case Message(msg:String) => LogHelper.addLogEntry(msg)
+     case thing:Any => throw new IllegalArgumentException("" +
+     s"${getClass.toString} cannot handle messages of type ${thing.getClass.toString}")
    }
 }

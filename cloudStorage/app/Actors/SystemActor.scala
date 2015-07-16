@@ -13,5 +13,15 @@ import akka.actor.{ActorRef, Actor}
  */
  abstract class SystemActor(logger:ActorRef)  extends Actor
 {
-
+ /**
+  * method that raises an error if
+  * we get a message we can't handle
+  * @param actor the  actor the actor that recieved the message
+  * @param message the message that was sent
+  */
+ def error(actor:String,message:String) =
+ {
+  throw new IllegalArgumentException("" +
+    s"$actor cannot handle messages of type $message")
+ }
 }

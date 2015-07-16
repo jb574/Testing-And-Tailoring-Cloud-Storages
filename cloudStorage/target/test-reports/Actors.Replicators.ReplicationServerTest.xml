@@ -1,16 +1,100 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuite hostname="jacks-MacBook-Pro.local" name="Actors.Replicators.ReplicationServerTest" tests="8" errors="0" failures="0" time="-0.008">
+<testsuite hostname="jacks-MacBook-Pro.local" name="Actors.Replicators.ReplicationServerTest" tests="8" errors="0" failures="7" time="-0.008">
                 <properties> <property name="jline.esc.timeout" value="0"/><property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/><property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib"/><property name="java.vm.version" value="25.5-b02"/><property name="user.country.format" value="GB"/><property name="gopherProxySet" value="false"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=":"/><property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="US"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value="unknown"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage"/><property name="java.runtime.version" value="1.8.0_05-b13"/><property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/><property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/endorsed"/><property name="os.arch" value="x86_64"/><property name="java.io.tmpdir" value="/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/"/><property name="line.separator" value="
-"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="os.name" value="Mac OS X"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="java.library.path" value="/Users/jackdavey/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="10.10.4"/><property name="user.home" value="/Users/jackdavey"/><property name="user.timezone" value="Europe/London"/><property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="/usr/local/Cellar/sbt/0.13.8/libexec/sbt-launch.jar"/><property name="user.name" value="jackdavey"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="/usr/local/Cellar/sbt/0.13.8/libexec/sbt-launch.jar test"/><property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_05"/><property name="java.ext.dirs" value="/Users/jackdavey/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/><property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="file.separator" value="/"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="sun.cpu.endian" value="little"/><property name="sun.cpu.isalist" value=""/>
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="os.name" value="Mac OS X"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="java.library.path" value="/Users/jackdavey/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="10.10.4"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="user.home" value="/Users/jackdavey"/><property name="user.timezone" value="Europe/London"/><property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="/usr/local/Cellar/sbt/0.13.8/libexec/sbt-launch.jar"/><property name="user.name" value="jackdavey"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="/usr/local/Cellar/sbt/0.13.8/libexec/sbt-launch.jar test"/><property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_05"/><property name="java.ext.dirs" value="/Users/jackdavey/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/><property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="file.separator" value="/"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="sun.cpu.endian" value="little"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.isalist" value=""/>
         </properties>
                 <testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> 
-                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> 
-                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> 
-                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> 
-                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> 
-                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> 
-                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> 
-                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> 
+                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> <failure message="the value is not equal to 'true'" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: the value is not equal to 'true'
+	at Actors.Replicators.ReplicationServerTest$$anonfun$16$$anonfun$apply$10$$anon$2.delayedEndpoint$Actors$Replicators$ReplicationServerTest$$anonfun$16$$anonfun$apply$10$$anon$2$1(ReplicationServerTest.scala:113)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$16$$anonfun$apply$10$$anon$2$delayedInit$body.apply(ReplicationServerTest.scala:110)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.PlayRunners$class.running(Helpers.scala:49)
+	at play.api.test.Helpers$.running(Helpers.scala:403)
+	at play.api.test.WithApplication.around(Specs.scala:23)
+	at play.api.test.WithApplication.delayedInit(Specs.scala:20)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$16$$anonfun$apply$10$$anon$2.&lt;init&gt;(ReplicationServerTest.scala:110)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$16$$anonfun$apply$10.apply(ReplicationServerTest.scala:110)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$16$$anonfun$apply$10.apply(ReplicationServerTest.scala:110)
+</failure>
+                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> <failure message="the value is not equal to 'true'" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: the value is not equal to 'true'
+	at Actors.Replicators.ReplicationServerTest$$anonfun$18$$anonfun$apply$11$$anon$3.delayedEndpoint$Actors$Replicators$ReplicationServerTest$$anonfun$18$$anonfun$apply$11$$anon$3$1(ReplicationServerTest.scala:122)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$18$$anonfun$apply$11$$anon$3$delayedInit$body.apply(ReplicationServerTest.scala:119)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.PlayRunners$class.running(Helpers.scala:49)
+	at play.api.test.Helpers$.running(Helpers.scala:403)
+	at play.api.test.WithApplication.around(Specs.scala:23)
+	at play.api.test.WithApplication.delayedInit(Specs.scala:20)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$18$$anonfun$apply$11$$anon$3.&lt;init&gt;(ReplicationServerTest.scala:119)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$18$$anonfun$apply$11.apply(ReplicationServerTest.scala:119)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$18$$anonfun$apply$11.apply(ReplicationServerTest.scala:119)
+</failure>
+                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> <failure message="the value is not equal to 'true'" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: the value is not equal to 'true'
+	at Actors.Replicators.ReplicationServerTest$$anonfun$20$$anonfun$apply$12$$anon$4.delayedEndpoint$Actors$Replicators$ReplicationServerTest$$anonfun$20$$anonfun$apply$12$$anon$4$1(ReplicationServerTest.scala:132)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$20$$anonfun$apply$12$$anon$4$delayedInit$body.apply(ReplicationServerTest.scala:129)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.PlayRunners$class.running(Helpers.scala:49)
+	at play.api.test.Helpers$.running(Helpers.scala:403)
+	at play.api.test.WithApplication.around(Specs.scala:23)
+	at play.api.test.WithApplication.delayedInit(Specs.scala:20)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$20$$anonfun$apply$12$$anon$4.&lt;init&gt;(ReplicationServerTest.scala:129)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$20$$anonfun$apply$12.apply(ReplicationServerTest.scala:129)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$20$$anonfun$apply$12.apply(ReplicationServerTest.scala:129)
+</failure>
+                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> <failure message="the value is not equal to 'true'" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: the value is not equal to 'true'
+	at Actors.Replicators.ReplicationServerTest$$anonfun$22$$anonfun$apply$13$$anon$5.delayedEndpoint$Actors$Replicators$ReplicationServerTest$$anonfun$22$$anonfun$apply$13$$anon$5$1(ReplicationServerTest.scala:140)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$22$$anonfun$apply$13$$anon$5$delayedInit$body.apply(ReplicationServerTest.scala:137)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.PlayRunners$class.running(Helpers.scala:49)
+	at play.api.test.Helpers$.running(Helpers.scala:403)
+	at play.api.test.WithApplication.around(Specs.scala:23)
+	at play.api.test.WithApplication.delayedInit(Specs.scala:20)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$22$$anonfun$apply$13$$anon$5.&lt;init&gt;(ReplicationServerTest.scala:137)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$22$$anonfun$apply$13.apply(ReplicationServerTest.scala:137)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$22$$anonfun$apply$13.apply(ReplicationServerTest.scala:137)
+</failure>
+                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> <failure message="the value is not equal to 'true'" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: the value is not equal to 'true'
+	at Actors.Replicators.ReplicationServerTest$$anonfun$24$$anonfun$apply$14$$anon$6.delayedEndpoint$Actors$Replicators$ReplicationServerTest$$anonfun$24$$anonfun$apply$14$$anon$6$1(ReplicationServerTest.scala:149)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$24$$anonfun$apply$14$$anon$6$delayedInit$body.apply(ReplicationServerTest.scala:146)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.PlayRunners$class.running(Helpers.scala:49)
+	at play.api.test.Helpers$.running(Helpers.scala:403)
+	at play.api.test.WithApplication.around(Specs.scala:23)
+	at play.api.test.WithApplication.delayedInit(Specs.scala:20)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$24$$anonfun$apply$14$$anon$6.&lt;init&gt;(ReplicationServerTest.scala:146)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$24$$anonfun$apply$14.apply(ReplicationServerTest.scala:146)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$24$$anonfun$apply$14.apply(ReplicationServerTest.scala:146)
+</failure>
+                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> <failure message="the value is not equal to 'true'" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: the value is not equal to 'true'
+	at Actors.Replicators.ReplicationServerTest$$anonfun$26$$anonfun$apply$15$$anon$7.delayedEndpoint$Actors$Replicators$ReplicationServerTest$$anonfun$26$$anonfun$apply$15$$anon$7$1(ReplicationServerTest.scala:157)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$26$$anonfun$apply$15$$anon$7$delayedInit$body.apply(ReplicationServerTest.scala:154)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.PlayRunners$class.running(Helpers.scala:49)
+	at play.api.test.Helpers$.running(Helpers.scala:403)
+	at play.api.test.WithApplication.around(Specs.scala:23)
+	at play.api.test.WithApplication.delayedInit(Specs.scala:20)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$26$$anonfun$apply$15$$anon$7.&lt;init&gt;(ReplicationServerTest.scala:154)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$26$$anonfun$apply$15.apply(ReplicationServerTest.scala:154)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$26$$anonfun$apply$15.apply(ReplicationServerTest.scala:154)
+</failure>
+                    </testcase><testcase classname="Actors.Replicators.ReplicationServerTest" name="(It is not a test)" time="-0.001"> <failure message="the value is not equal to 'true'" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: the value is not equal to 'true'
+	at Actors.Replicators.ReplicationServerTest$$anonfun$28$$anonfun$apply$16$$anon$8.delayedEndpoint$Actors$Replicators$ReplicationServerTest$$anonfun$28$$anonfun$apply$16$$anon$8$1(ReplicationServerTest.scala:166)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$28$$anonfun$apply$16$$anon$8$delayedInit$body.apply(ReplicationServerTest.scala:163)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.PlayRunners$class.running(Helpers.scala:49)
+	at play.api.test.Helpers$.running(Helpers.scala:403)
+	at play.api.test.WithApplication.around(Specs.scala:23)
+	at play.api.test.WithApplication.delayedInit(Specs.scala:20)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$28$$anonfun$apply$16$$anon$8.&lt;init&gt;(ReplicationServerTest.scala:163)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$28$$anonfun$apply$16.apply(ReplicationServerTest.scala:163)
+	at Actors.Replicators.ReplicationServerTest$$anonfun$28$$anonfun$apply$16.apply(ReplicationServerTest.scala:163)
+</failure>
                     </testcase>
                 <system-out></system-out>
                 <system-err></system-err>

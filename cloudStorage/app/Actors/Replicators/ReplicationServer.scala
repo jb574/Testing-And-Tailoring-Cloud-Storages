@@ -4,6 +4,7 @@ import Actors.Messages.{MakeConsistent, TestMessage, Message}
 import Actors.SystemActor
 import akka.actor._
 import akka.pattern.AskSupport
+import controllers.SettingsManager
 import models.QueryResultHelper.QueryResult
 import models.{QuerySet, InconsistentQueryRecords}
 import models.SQLStatementHelper.MutableSQLStatement
@@ -13,6 +14,8 @@ import scala.collection.immutable.HashMap
 import Actor._
 import akka._
 import akka.actor.ActorContext
+
+import scala.util.Random
 
 /**
  * this represents one replication server
@@ -45,13 +48,19 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
    */
   private def processNewQuery(update:MutableSQLStatement) =
   {
-    respondToTestMessage
-    InconsistentQueryRecords.addItem(update.getNewSQLStatement)
-    if(!inconsistentUpdates.exists((clockSeq) => clockSeq.addNewQuery(update,id)))
+    val rand = new Random()
+    val chance = rand.nextInt(100)
+    if(chance > SettingsManager.retrieveValue("chanceOfGoodResult"))
     {
-       inconsistentUpdates =new QuerySet(update,id) :: inconsistentUpdates
-       println(inconsistentUpdates.size)
+      respondToTestMessage
+      InconsistentQueryRecords.addItem(update.getNewSQLStatement)
+      if(!inconsistentUpdates.exists((clockSeq) => clockSeq.addNewQuery(update,id)))
+      {
+        inconsistentUpdates =new QuerySet(update,id) :: inconsistentUpdates
+        println(inconsistentUpdates.size)
+      }
     }
+
   }
 
   /**

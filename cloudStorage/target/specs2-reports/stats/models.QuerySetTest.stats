@@ -1,3 +1,13 @@
 <models.QuerySetTest-stats timestamp="1435656889098"><stats time="88" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
 <models.QuerySetTest-stats timestamp="1435664823209"><stats time="104" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
 <models.QuerySetTest-stats timestamp="1435841131875"><stats time="94" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1436951729097"><stats time="186" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437052641890"><stats time="177" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437052671823"><stats time="112" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437052740379"><stats time="90" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437053228430"><stats time="113" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437055083814"><stats time="186" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437055162921"><stats time="193" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437055576997"><stats time="89" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437055656968"><stats time="91" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437055804153"><stats time="91" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>

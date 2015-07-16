@@ -58,3 +58,13 @@
 <controllers.SimpleUpdateTest-stats timestamp="1435656887266"><stats time="353" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
 <controllers.SimpleUpdateTest-stats timestamp="1435664821190"><stats time="452" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
 <controllers.SimpleUpdateTest-stats timestamp="1435841129836"><stats time="391" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1436951726902"><stats time="584" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437052639831"><stats time="435" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437052669819"><stats time="400" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437052738299"><stats time="363" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437053226368"><stats time="403" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437055081770"><stats time="368" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437055160804"><stats time="378" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437055574877"><stats time="374" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437055654878"><stats time="361" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437055802073"><stats time="385" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>

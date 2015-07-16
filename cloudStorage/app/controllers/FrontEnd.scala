@@ -150,8 +150,15 @@ object FrontEnd  extends Controller
 
   def changeTImeSweep(updatedTime:Int) = Action
   {
-    repServer ! updatedTime
-    Ok("time updated")
+    if(updatedTime > 0)
+    {
+      SettingsManager.updateKey("timeTilNextConsistencySweep",updatedTime)
+      Ok("time updated")
+    }
+    else
+    {
+      BadRequest("the new time value must be greater than 0")
+    }
   }
 
 

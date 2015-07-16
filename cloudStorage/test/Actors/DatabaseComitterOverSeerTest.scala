@@ -42,7 +42,7 @@ class DatabaseComitterOverSeerTest  extends  PlaySpecification
     "spawn a slave, send it on and keep a record of it" in new WithApplication
     {
       val testSystem:TestSystem  = new TestSystem
-      testSystem.test()
+      assert(testSystem.test())
     }
   }
   "the database committer overseer should" should
@@ -50,7 +50,7 @@ class DatabaseComitterOverSeerTest  extends  PlaySpecification
       "not process each query more than once" in new WithApplication
       {
         val testSystem:TestSystem  = new TestSystem
-        testSystem.seenMoreThanOnceTest()
+        assert(testSystem.seenMoreThanOnceTest())
       }
     }
 

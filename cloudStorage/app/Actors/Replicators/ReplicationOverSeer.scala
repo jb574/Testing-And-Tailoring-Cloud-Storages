@@ -1,6 +1,8 @@
 package Actors.Replicators
 
 import java.time.LocalDateTime
+import controllers.SettingsManager
+
 import scala.util.Success
 import scala.util.Failure
 import Actors.{Messages, SystemActor}
@@ -34,7 +36,7 @@ with AskSupport
 {
   var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
 
-  var timetilNextConsistencySweep = 180
+
 
   override  def preStart() =
   {
@@ -53,10 +55,11 @@ with AskSupport
    * this chedules the next run to make everything eventually
    * consistent on all the worker servers.
    */
-  def scheduleNextConsistencyRun: Unit = {
-
-    InconsistentQueryRecords.time = LocalDateTime.now().plusSeconds(timetilNextConsistencySweep)
-    context.system.scheduler.scheduleOnce(timetilNextConsistencySweep seconds)
+  def scheduleNextConsistencyRun =
+  {
+    val time = SettingsManager.retrieveValue("timeTilNextConsistencySweep")
+    InconsistentQueryRecords.time = LocalDateTime.now().plusSeconds(time)
+    context.system.scheduler.scheduleOnce(time  seconds)
     {
       makeConsistent()
     }
@@ -113,9 +116,9 @@ with AskSupport
       {
       case properResults:QueryResult => sender ! properResults
       }
-    case time:Int => timetilNextConsistencySweep = time
     case testData:ArrayBuffer[ActorRef] => servers = testData
               updateReferenceLists
+    case msg  => error(getClass.toString,msg.getClass.toString)
 
   }
 
