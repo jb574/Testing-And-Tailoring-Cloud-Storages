@@ -16,4 +16,5 @@ object Messages
   case class DatabaseOperation(update:MutableSQLStatement)
   case class TerminationRequest()
   case class TestMessage()
+  case class RequestVote()
 }

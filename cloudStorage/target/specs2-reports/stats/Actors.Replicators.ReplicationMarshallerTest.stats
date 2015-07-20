@@ -124,3 +124,28 @@
 </Actors.Replicators.ReplicationMarshallerTest-results>
 <Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437058170326"><stats time="24" expectations="1" failures="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
 <Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437058281316"><stats time="19" expectations="1" successes="1" examples="1"><trend><stats time="19" failures="-1" successes="1"></stats></trend></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-results timestamp="1437324493004"><result location="Actors.Replicators.ReplicationMarshallerTest (ReplicationMarshallerTest.scala:44)" id="-2145559243"><stats time="871" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationMarshallerTest-results>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437324493026"><stats time="22" expectations="1" errors="1" examples="1"><trend><stats time="22" errors="1" successes="-1"></stats></trend></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-results timestamp="1437324541540"><result location="Actors.Replicators.ReplicationMarshallerTest (ReplicationMarshallerTest.scala:44)" id="-2145559243"><stats time="1361" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationMarshallerTest-results>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437324541566"><stats time="20" expectations="1" errors="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-results timestamp="1437324993485"><result location="Actors.Replicators.ReplicationMarshallerTest (ReplicationMarshallerTest.scala:44)" id="-2145559243"><stats time="1374" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationMarshallerTest-results>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437324993508"><stats time="19" expectations="1" errors="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-results timestamp="1437325055821"><result location="Actors.Replicators.ReplicationMarshallerTest (ReplicationMarshallerTest.scala:44)" id="-2145559243"><stats time="1374" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationMarshallerTest-results>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437325055846"><stats time="28" expectations="1" errors="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-results timestamp="1437325188057"><result location="Actors.Replicators.ReplicationMarshallerTest (ReplicationMarshallerTest.scala:44)" id="-2145559243"><stats time="1367" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationMarshallerTest-results>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437325188077"><stats time="17" expectations="1" errors="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-results timestamp="1437325322258"><result location="Actors.Replicators.ReplicationMarshallerTest (ReplicationMarshallerTest.scala:44)" id="-2145559243"><stats time="1506" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationMarshallerTest-results>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437325322279"><stats time="25" expectations="1" errors="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437381220901"><stats time="1257" expectations="1" successes="1" examples="1"><trend><stats time="1257" errors="-1" successes="1"></stats></trend></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437381359375"><stats time="1223" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437381540926"><stats time="1235" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437381815021"><stats time="1256" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437382017028"><stats time="1220" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437382457498"><stats time="1233" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>
+<Actors.Replicators.ReplicationMarshallerTest-stats timestamp="1437382817195"><stats time="1222" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationMarshallerTest-stats>

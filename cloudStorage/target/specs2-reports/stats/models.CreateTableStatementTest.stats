@@ -18,3 +18,10 @@
 <models.CreateTableStatementTest-stats timestamp="1437055575686"><stats time="92" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
 <models.CreateTableStatementTest-stats timestamp="1437055655625"><stats time="92" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
 <models.CreateTableStatementTest-stats timestamp="1437055802842"><stats time="88" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437381222308"><stats time="84" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437381360547"><stats time="80" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437381542161"><stats time="76" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437381816189"><stats time="83" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437382018200"><stats time="78" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437382458687"><stats time="80" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>
+<models.CreateTableStatementTest-stats timestamp="1437382818410"><stats time="96" expectations="2" successes="2" examples="2"></stats></models.CreateTableStatementTest-stats>

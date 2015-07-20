@@ -13,7 +13,7 @@ class UpdateStatementTest extends PlaySpecification
     {
       val statment = UpdateTableStatmentHelper.UpdateTableStatment(
       List("person"),Map("'age'" -> "32"),Map("name" -> "jack"))
-      statment.getNewSQLStatement.equals("update person set 'age' = 32 where name = jack ;  ")
+      assert(statment.getNewSQLStatement.equals("update person set 'age' = 32 where name = jack ; "))
     }
   }
 }

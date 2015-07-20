@@ -12,3 +12,10 @@
 <controllers.SettingsManagerTest-stats timestamp="1437056059988"><stats time="22" expectations="2" successes="2" examples="2"><trend><stats time="22" expectations="1" successes="1" examples="1"></stats></trend></stats></controllers.SettingsManagerTest-stats>
 <controllers.SettingsManagerTest-stats timestamp="1437056174691"><stats time="17" expectations="3" successes="3" examples="3"><trend><stats time="17" expectations="1" successes="1" examples="1"></stats></trend></stats></controllers.SettingsManagerTest-stats>
 <controllers.SettingsManagerTest-stats timestamp="1437056305106"><stats time="21" expectations="4" successes="4" examples="4"><trend><stats time="21" expectations="1" successes="1" examples="1"></stats></trend></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437381223678"><stats time="232" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437381361749"><stats time="155" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437381543471"><stats time="250" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437381817455"><stats time="220" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437382019422"><stats time="146" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437382459921"><stats time="150" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437382819703"><stats time="226" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>

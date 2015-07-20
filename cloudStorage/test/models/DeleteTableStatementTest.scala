@@ -15,7 +15,7 @@ class DeleteTableStatementTest extends PlaySpecification
     "be capable of bing run in a database when convertted to a string" in new WithApplication()
     {
       var statemment = new DeleteStatment(List("persons"),Map("name" -> "Jack"))
-      statemment.getNewSQLStatement.equals("delete from persons where name = Jack  ; ")
+      assert(statemment.getNewSQLStatement.equals("delete from persons where name = Jack  ; "))
     }
   }
 }

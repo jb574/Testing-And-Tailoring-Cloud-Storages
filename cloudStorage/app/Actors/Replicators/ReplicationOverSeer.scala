@@ -35,14 +35,14 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
 with AskSupport
 {
   var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
-
+  var serverId  = 0
 
 
   override  def preStart() =
   {
-      for(index <- 0 to 3)
+      for(index <- 0 to SettingsManager.retrieveValue("primServers"))
       {
-        val server = context.actorOf(Props(new ReplicationServer(logger,index,replicationMarshaller)))
+        val server = context.actorOf(Props(new ReplicationCluster(logger,index,replicationMarshaller)))
         servers.insert(index,server)
       }
       updateReferenceLists
@@ -64,6 +64,8 @@ with AskSupport
       makeConsistent()
     }
   }
+
+
 
   /**
    * method to choose a server at raodom and
@@ -90,7 +92,7 @@ with AskSupport
   def getRandomServerNumber: Int =
   {
     val rand = new Random()
-    val serverId = rand.nextInt(3)
+    serverId = rand.nextInt(3)
     println("chosen server" + serverId)
     serverId
   }

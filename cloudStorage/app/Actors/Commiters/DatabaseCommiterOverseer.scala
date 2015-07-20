@@ -19,7 +19,7 @@ import scala.collection.mutable.ArrayBuffer
 class DatabaseCommiterOverseer (logger:ActorRef) extends SystemActor(logger)
 {
   var seenQueries:Set[MutableSQLStatement] = Set()
-
+  val FailureHandle = context.actorSelection("akka://application/user/$e")
   /**
    * main receive block for this actor
    * if it gets a list of MutableSQL queries,
@@ -46,6 +46,7 @@ class DatabaseCommiterOverseer (logger:ActorRef) extends SystemActor(logger)
     {
       println("sending to database now")
       val slave = context.actorOf(Props(new DatabaseCommiter(logger)))
+      FailureHandle ! (true, update)
       slave ! update
       slave ! PoisonPill
       seenQueries = seenQueries + update

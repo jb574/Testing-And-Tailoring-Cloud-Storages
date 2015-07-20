@@ -22,7 +22,7 @@ class InconsistentUpdatesLogTest extends PlaySpecification
     "be able to regurgitatle all seen updates" in new WithApplication()
     {
       InconsistentQueryRecords.addItem("hi")
-      InconsistentQueryRecords.getUserOutPut().toString().contains("hi")
+      assert(InconsistentQueryRecords.getUserOutPut().toString().contains("hi"))
     }
   }
 

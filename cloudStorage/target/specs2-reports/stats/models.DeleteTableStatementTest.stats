@@ -13,3 +13,10 @@
 <models.DeleteTableStatementTest-stats timestamp="1437055577049"><stats time="30" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
 <models.DeleteTableStatementTest-stats timestamp="1437055657020"><stats time="30" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
 <models.DeleteTableStatementTest-stats timestamp="1437055804206"><stats time="30" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
+<models.DeleteTableStatementTest-stats timestamp="1437381223886"><stats time="33" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
+<models.DeleteTableStatementTest-stats timestamp="1437381361963"><stats time="39" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
+<models.DeleteTableStatementTest-stats timestamp="1437381543697"><stats time="42" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
+<models.DeleteTableStatementTest-stats timestamp="1437381817690"><stats time="38" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
+<models.DeleteTableStatementTest-stats timestamp="1437382019606"><stats time="35" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
+<models.DeleteTableStatementTest-stats timestamp="1437382460105"><stats time="36" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
+<models.DeleteTableStatementTest-stats timestamp="1437382819868"><stats time="30" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>

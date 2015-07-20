@@ -13,7 +13,7 @@ class insertTableStatementTest extends PlaySpecification
      "behave like real SQL when converted to text" in new WithApplication()
      {
        val statement = new InsertStatment(List("persons"),Map("name" -> "'jack","age" -> "22"))
-       statement.getNewSQLStatement.equals("insert into persons (name,age) values ('jack,22);")
+       assert(statement.getNewSQLStatement.equals("insert into persons (name,age) values ('jack,22);"))
      }
   }
 }

@@ -1,0 +1,8 @@
+<Actors.Replicators.ReplicationClusterTest-results timestamp="1437382463384"><result location="Actors.Replicators.ReplicationClusterTest (ReplicationClusterTest.scala:31)" id="926121747"><stats time="3076" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationClusterTest-results>
+<Actors.Replicators.ReplicationClusterTest-stats timestamp="1437382463386"><stats time="3077" expectations="1" errors="1" examples="1"></stats></Actors.Replicators.ReplicationClusterTest-stats>
+<Actors.Replicators.ReplicationClusterTest-results timestamp="1437382513544"><result location="Actors.Replicators.ReplicationClusterTest (ReplicationClusterTest.scala:31)" id="926121747"><stats time="4294" expectations="1" errors="1" examples="1"></stats></result>
+</Actors.Replicators.ReplicationClusterTest-results>
+<Actors.Replicators.ReplicationClusterTest-stats timestamp="1437382513552"><stats time="21" expectations="1" errors="1" examples="1"></stats></Actors.Replicators.ReplicationClusterTest-stats>
+<Actors.Replicators.ReplicationClusterTest-stats timestamp="1437382804306"><stats time="21" expectations="1" successes="1" examples="1"><trend><stats time="21" errors="-1" successes="1"></stats></trend></stats></Actors.Replicators.ReplicationClusterTest-stats>
+<Actors.Replicators.ReplicationClusterTest-stats timestamp="1437382820101"><stats time="69" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationClusterTest-stats>

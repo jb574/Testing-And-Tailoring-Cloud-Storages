@@ -29,7 +29,7 @@ class CreateTableStatementTest extends PlaySpecification {
     {
       var command = new CreateTableStatement(List("persons"),
         List("PersonID int","LastName varchar(255)" ),"")
-      command.getNewSQLStatement.equals("started at 14:39 ...\ncreate table persons (id integer not null unique, PersonID int,LastName varchar(255)) engine innodb;")
+      assert( command.getNewSQLStatement.equals("create table persons (id integer not null unique, PersonID int,LastName varchar(255)) engine innodb;"))
     }
   }
 

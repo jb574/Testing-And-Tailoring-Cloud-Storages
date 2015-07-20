@@ -10,6 +10,9 @@ object SettingsManager
    private var configSettings:Map[String,Int] = Map()
   addValue("timeTilNextConsistencySweep",100)
   addValue("chanceOfGoodResult",0)
+  addValue("primServers",3)
+  addValue("secServers", 4)
+  addValue("checkUpTime",20)
   private def addValue(key:String,value:Int) =
   {
     configSettings = configSettings + (key -> value)

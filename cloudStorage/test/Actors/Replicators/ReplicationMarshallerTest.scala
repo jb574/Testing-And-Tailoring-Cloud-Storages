@@ -20,9 +20,7 @@ class ReplicationMarshallerTest extends  PlaySpecification
 {
   class TestSystem extends TestKit(ActorSystem("testSystem"))
   {
-    val logger = TestActorRef[Logger]
-    val commiterOverseer = TestActorRef(new DatabaseCommiterOverseer(logger ))
-    val marshaller = TestActorRef(new ReplicationMarshaller(logger,commiterOverseer))
+    val marshaller = TestActorRef(new ReplicationMarshaller(testActor,testActor))
 
     def passingOnQueriesTest():Boolean =
     {

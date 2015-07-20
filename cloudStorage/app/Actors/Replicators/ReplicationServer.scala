@@ -1,6 +1,6 @@
 package Actors.Replicators
 
-import Actors.Messages.{MakeConsistent, TestMessage, Message}
+import Actors.Messages.{RequestVote, MakeConsistent, TestMessage, Message}
 import Actors.SystemActor
 import akka.actor._
 import akka.pattern.AskSupport
@@ -8,7 +8,7 @@ import controllers.SettingsManager
 import models.QueryResultHelper.QueryResult
 import models.{QuerySet, InconsistentQueryRecords}
 import models.SQLStatementHelper.MutableSQLStatement
-import java.time.LocalDate
+import java.time.{LocalDateTime, LocalDate}
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.immutable.HashMap
 import Actor._
@@ -22,14 +22,23 @@ import scala.util.Random
  * @author Jack Davey
  * @version 16th June 2015
  */
-class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) extends SystemActor(logger)
+class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,var master:Boolean,
+                        val clusterOverseer:ActorRef, val avIndex:Int) extends SystemActor(logger)
   with AskSupport
 {
+
+
+
+
+
+  println(s"master is $master")
     var otherServers:ArrayBuffer[ActorRef] = ArrayBuffer()
     var inconsistentUpdates:List[QuerySet] = List()
    var masterList:List[String]  = List()
     var noSeen = 0
-
+  val FailureHandle = context.actorSelection("akka://application/user/$e")
+  var avServers:ArrayBuffer[ActorRef] = ArrayBuffer()
+  var seenMaster = true
   /**
    *method that announces that a message has been recieved
    * by this server
@@ -39,6 +48,32 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
     println(" message received by server " + id)
     logger ! Message(" message recieved by server $id")
   }
+
+  def scheduleNextConsistencyRun =
+  {
+    val time = SettingsManager.retrieveValue("timeTilNextConsistencySweep")
+    context.system.scheduler.scheduleOnce(time  seconds)
+    {
+      runSafteyCheck()
+    }
+  }
+
+  def  runSafteyCheck(): Unit =
+  {
+    if(!master)
+    {
+       if(seenMaster)
+       {
+         seenMaster = false
+         avServers.foreach((server) => server ! false)
+       }
+      else
+       {
+            clusterOverseer ! RequestVote
+       }
+    }
+  }
+
 
 
   /**
@@ -50,17 +85,20 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
   {
     val rand = new Random()
     val chance = rand.nextInt(100)
-    if(chance > SettingsManager.retrieveValue("chanceOfGoodResult"))
+    if (chance > SettingsManager.retrieveValue("chanceOfGoodResult"))
     {
       respondToTestMessage
       InconsistentQueryRecords.addItem(update.getNewSQLStatement)
-      if(!inconsistentUpdates.exists((clockSeq) => clockSeq.addNewQuery(update,id)))
+      if (!inconsistentUpdates.exists((clockSeq) => clockSeq.addNewQuery(update, id)))
       {
-        inconsistentUpdates =new QuerySet(update,id) :: inconsistentUpdates
+        inconsistentUpdates = new QuerySet(update, id) :: inconsistentUpdates
         println(inconsistentUpdates.size)
       }
     }
-
+    else
+    {
+      FailureHandle ! (false,update)
+    }
   }
 
   /**
@@ -70,7 +108,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
    */
   private def distributeUpdates =
   {
-    for(index <- 0 to 2)
+    for(index <- 0 to SettingsManager.retrieveValue("primServers"))
     {
        if(index != id)
        {
@@ -122,10 +160,15 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
     case update:MutableSQLStatement => processNewQuery(update)
     case TestMessage => respondToTestMessage
     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
-    case MakeConsistent => InconsistentQueryRecords.clear()
-      distributeUpdates
-      noSeen = 0
-      println("starting consistency sweeep now")
+    case (true, avList:ArrayBuffer[ActorRef]) => avServers = avList
+    case MakeConsistent =>
+      if(master)
+      {
+        InconsistentQueryRecords.clear()
+        distributeUpdates
+        noSeen = 0
+        println("starting consistency sweeep now")
+      }
       context.become(mergeMode)
     case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
       sender ! queryResult
@@ -134,29 +177,31 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef) e
   def mergeMode:Receive =
   {
     case foreignQueries:List[QuerySet] =>
-       makeConsistent(foreignQueries,sender)
-      noSeen = noSeen + 1
-      println("doing consistency run for this node")
-      if(noSeen == 2)
+      println("checking foriegn queries")
+      if(master)
       {
-        replicationMarshaller ! inconsistentUpdates
-        println("ferrying everything back to the standard mode")
-        inconsistentUpdates = List()
-        context.become(standardOperation)
+        makeConsistent(foreignQueries,sender)
+        noSeen = noSeen + 1
+        println("doing consistency run for this node")
+        if(noSeen == 2)
+        {
+          replicationMarshaller ! inconsistentUpdates
+          println("ferrying everything back to the standard mode")
+          inconsistentUpdates = List()
+          context.become(standardOperation)
+        }
       }
     case (false, set:QuerySet) =>
       println("removing old nodes ")
       inconsistentUpdates = inconsistentUpdates.filter(
         (current) => !set.equals(current))
     case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
+      queryResult.markComplete
+      println("all done!")
       sender ! queryResult
   }
 
   def receive = standardOperation
-
-
-
-
 
   /**
    * this is the main code that makes everything consistent

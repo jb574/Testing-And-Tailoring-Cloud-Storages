@@ -18,7 +18,7 @@ class QuerySetTest extends  PlaySpecification
     {
       val statement = new InsertStatment(List("persons"),Map())
       val first = new QuerySet(statement,0)
-      first.isUpdateRelavant(statement)
+      assert(first.isUpdateRelavant(statement))
     }
   }
 
@@ -29,7 +29,7 @@ class QuerySetTest extends  PlaySpecification
       val statement = new InsertStatment(List("persons"),Map())
       val first = new QuerySet(statement,0)
       val second = new QuerySet(first)
-      first.dealQithSameeData(second)
+      assert(first.dealQithSameeData(second))
     }
   }
 
@@ -43,7 +43,7 @@ class QuerySetTest extends  PlaySpecification
       val second = new QuerySet(statement,0)
       first.addNewQuery(new InsertStatment(List("persons"),Map()),0)
       first.mergeQuerySets(second)
-      first.vectorClocks.size > 1  && first.queries.size > 1
+      assert(first.vectorClocks.size >= 1  && first.queries.size >= 1)
     }
   }
 

@@ -14,7 +14,7 @@ class LogTest extends PlaySpecification
     {
        val msg = "hi there"
        LogHelper.addLogEntry(msg)
-       LogHelper.jsonVersion.toString().contains(msg)
+       assert(LogHelper.jsonVersion.toString().contains(msg))
     }
   }
 }

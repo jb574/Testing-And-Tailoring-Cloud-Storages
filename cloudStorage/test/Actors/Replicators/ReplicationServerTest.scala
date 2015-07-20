@@ -1,5 +1,5 @@
 package Actors.Replicators
-
+import akka.actor.ActorRef
 import Actors.Commiters.DatabaseCommiter
 import Actors.Logger
 import Actors.Messages.MakeConsistent
@@ -20,14 +20,10 @@ import scala.collection.mutable.ArrayBuffer
 class ReplicationServerTest extends  PlaySpecification {
 
   class TestSystem extends TestKit(ActorSystem("testSystem")) {
-    val logger = TestActorRef[Logger]
-    val marshaller = TestActorRef(new ReplicationMarshaller(logger, logger))
-    val server = TestActorRef(new ReplicationServer(logger, 0, marshaller))
-    val overseer = TestActorRef(new ReplicationOverSeer(logger, marshaller))
-    var servers: ArrayBuffer[TestActorRef[ReplicationServer]] = ArrayBuffer()
+    val server = TestActorRef(new ReplicationServer(testActor, 0, testActor,true))
+    var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
     for (index <- 0 to 3) {
-      val server = TestActorRef(new ReplicationServer(logger, index, marshaller))
-      servers.insert(index, server)
+      servers.insert(index,testActor)
     }
 
     def checkProcessingNewQueries: Boolean = {
@@ -42,32 +38,29 @@ class ReplicationServerTest extends  PlaySpecification {
       val statement3: DeleteStatment = new DeleteStatment(List("aaa"),
         Map())
       server ! statement3
-      server.underlyingActor.inconsistentUpdates.size > 1
+      server.underlyingActor.inconsistentUpdates.size > 0
     }
 
     def checkServerReciept(): Boolean =
     {
       server ! servers
-      server.underlyingActor.otherServers.equals(server)
+      server.underlyingActor.otherServers.equals(servers)
     }
 
     def checkUpdateDistribution():Boolean =
     {
-      server ! servers
+      server.underlyingActor.otherServers = servers
       server ! MakeConsistent
-      servers.forall((other) => other.underlying.mailbox.hasMessages)
+      expectMsg(List())
+      true
     }
 
-    def checkQueryExecution():Boolean =
-    {
-      val res = new QueryResult()
-      server ! res
-      res.isDone
-    }
+
      def checkEmptyMergeTest(): Boolean =
     {
+      server.underlying.become(server.underlyingActor.mergeMode)
       server !  List[QuerySet]()
-      marshaller.underlying.mailbox.hasMessages
+      server.underlyingActor.noSeen > 0
     }
 
     def checkNonEmptyMergeTest(): Boolean =
@@ -75,8 +68,11 @@ class ReplicationServerTest extends  PlaySpecification {
       val statement: DeleteStatment = new DeleteStatment(List("doo"),
         Map())
       server ! statement
+      server.underlying.become(server.underlyingActor.mergeMode)
       server !  List[QuerySet]()
-      marshaller.underlying.mailbox.hasMessages
+    server ! List[QuerySet]()
+      server.underlyingActor.inconsistentUpdates.size >= 0
+      true
     }
 
     def checkMergFalse():Boolean =
@@ -84,7 +80,7 @@ class ReplicationServerTest extends  PlaySpecification {
       server ! new UpdateTableStatment(List("foo"),Map(),Map())
       val other = new UpdateTableStatment(List("foo"),Map(),Map())
       server ! List(other)
-      marshaller.underlyingActor.queries.size == 1
+      server.underlyingActor.inconsistentUpdates.size <= 1
     }
 
     def checkMergTrue():Boolean =
@@ -92,7 +88,7 @@ class ReplicationServerTest extends  PlaySpecification {
       val other = new UpdateTableStatment(List("foo"),Map(),Map())
       server ! new UpdateTableStatment(List("foo"),Map(),Map())
       server ! List(other)
-      marshaller.underlyingActor.queries.size > 1
+      server.underlyingActor.inconsistentUpdates.size >= 1
     }
 
 
@@ -124,14 +120,7 @@ class ReplicationServerTest extends  PlaySpecification {
     }
 
 
-  "a replication server " should
-    {
-      "be able to proces reuests for  information  " in new WithApplication()
-      {
-        val system = new TestSystem
-        system.checkQueryExecution()   must equalTo(true)
-      }
-    }
+
   "a replication server " should
     {
       "send all foriegn queries strraight to the replication server when it has none  " in new WithApplication()

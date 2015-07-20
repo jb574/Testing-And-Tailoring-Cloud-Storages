@@ -26,7 +26,7 @@ class DropTableStatementTest extends  PlaySpecification
     "be capable of producign perfect SQL" in new WithApplication()
     {
        val command = new DropTableStatement(List("persons"))
-      command.getNewSQLStatement.equals("drop table persons;")
+       assert(command.getNewSQLStatement.equals("drop table persons;"))
     }
   }
 

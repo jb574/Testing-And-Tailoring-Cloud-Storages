@@ -11,3 +11,17 @@
 <models.QuerySetTest-stats timestamp="1437055576997"><stats time="89" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
 <models.QuerySetTest-stats timestamp="1437055656968"><stats time="91" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
 <models.QuerySetTest-stats timestamp="1437055804153"><stats time="91" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437381223826"><stats time="102" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437381361882"><stats time="100" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-results timestamp="1437381543613"><result location="models.QuerySetTest (QuerySetTest.scala:38)" id="500277457"><stats time="36" expectations="1" errors="1" examples="1"></stats></result>
+</models.QuerySetTest-results>
+<models.QuerySetTest-stats timestamp="1437381543616"><stats time="108" expectations="3" errors="1" successes="2" examples="3"><trend><stats time="108" errors="1" successes="-1"></stats></trend></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-results timestamp="1437381817582"><result location="models.QuerySetTest (QuerySetTest.scala:38)" id="500277457"><stats time="33" expectations="1" errors="1" examples="1"></stats></result>
+</models.QuerySetTest-results>
+<models.QuerySetTest-stats timestamp="1437381817583"><stats time="97" expectations="3" errors="1" successes="2" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-results timestamp="1437381954978"><result location="models.QuerySetTest (QuerySetTest.scala:38)" id="500277457"><stats time="1079" expectations="1" errors="1" examples="1"></stats></result>
+</models.QuerySetTest-results>
+<models.QuerySetTest-stats timestamp="1437381954989"><stats time="17" expectations="3" errors="1" successes="2" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437382019546"><stats time="94" expectations="3" successes="3" examples="3"><trend><stats time="94" errors="-1" successes="1"></stats></trend></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437382460045"><stats time="93" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437382819816"><stats time="84" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>

@@ -2,15 +2,15 @@
 [0m[[33mwarn[0m] [0m     case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))[0m
 [0m[[33mwarn[0m] [0m                  ^[0m
 [0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
-[0m[[33mwarn[0m] [0m    case list:List[QuerySet] =>  queries = queries ++ list[0m
+[0m[[33mwarn[0m] [0m    case list:List[QuerySet] => sendUpdatesToDatabase(list)[0m
 [0m[[33mwarn[0m] [0m              ^[0m
 [0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:119: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case testData:ArrayBuffer[ActorRef] => servers = testData[0m
 [0m[[33mwarn[0m] [0m                  ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:115: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:129: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case serverList:ArrayBuffer[ActorRef] => otherServers = serverList[0m
 [0m[[33mwarn[0m] [0m                    ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:127: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:145: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case foreignQueries:List[QuerySet] =>[0m
 [0m[[33mwarn[0m] [0m                        ^[0m
 [0m[[33mwarn[0m] [0mthere were four feature warnings; re-run with -feature for details[0m

@@ -19,17 +19,13 @@ class ReplicationOverSeerTest  extends PlaySpecification
 {
   class TestSystem extends TestKit(ActorSystem("testSystem"))
   {
-    val logger = TestActorRef[Logger]
-    val comitter = TestActorRef(new DatabaseCommiterOverseer(logger))
-    val marshaller = TestActorRef(new ReplicationMarshaller(logger,comitter))
-    val overseer = TestActorRef(new ReplicationOverSeer(logger,marshaller))
-    var servers:ArrayBuffer[TestActorRef[ReplicationServer]]  = ArrayBuffer()
+    val overseer = TestActorRef(new ReplicationOverSeer(testActor,testActor))
+    var servers:ArrayBuffer[ActorRef]  = ArrayBuffer()
     for(index <- 0 to 3)
     {
-      val server = TestActorRef(new ReplicationServer(logger,index,marshaller))
-      servers.insert(index,server)
+      servers.insert(index,testActor)
     }
-     overseer ! servers
+     overseer.underlyingActor.servers = servers
 
 
     /**
@@ -79,27 +75,31 @@ class ReplicationOverSeerTest  extends PlaySpecification
     {
       val otherServers = overseer.underlyingActor.servers
       overseer.underlyingActor.updateReferenceLists
-      servers.forall((thing) => thing.underlyingActor.otherServers == otherServers)
+      servers.foreach((thing) => expectMsg(otherServers))
+      true
     }
 
     def checkConsistencyMessages:Boolean =
     {
       overseer.underlyingActor.makeConsistent()
-      servers.forall((server) => ensuereMessageRecieved(server))
+      servers.foreach((server) => expectMsgClass(MakeConsistent.getClass))
+      true
     }
 
     def checkUpdateRecievedByOneServer():Boolean =
     {
       val statement = new UpdateTableStatment(List(),Map(),Map())
       overseer.underlyingActor.processUpdate(statement)
-      servers.exists((server) => ensuereMessageRecieved(server))
+      expectMsg(statement)
+      true
     }
 
     def checkResultRecievedByOneServer():Boolean =
     {
       val statement = new QueryResult()
       overseer ! statement
-      servers.exists((server) => ensuereMessageRecieved(server))
+      expectMsg(statement)
+      true
     }
     
     

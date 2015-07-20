@@ -15,3 +15,10 @@
 <models.DropTableStatementTest-stats timestamp="1437055575023"><stats time="108" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
 <models.DropTableStatementTest-stats timestamp="1437055655029"><stats time="111" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
 <models.DropTableStatementTest-stats timestamp="1437055802237"><stats time="117" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437381221763"><stats time="101" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437381360008"><stats time="98" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437381541583"><stats time="104" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437381815663"><stats time="95" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437382017670"><stats time="105" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437382458146"><stats time="97" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437382817830"><stats time="96" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>

@@ -158,20 +158,20 @@
 [info] 
 [info] 32m(Server started, use Ctrl+D to stop and go back to the console...)0m
 [info] 
-[info] Compiling 31 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
+[info] Compiling 33 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
 [warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure
 [warn]      case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
 [warn]                   ^
 [warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
-[warn]     case list:List[QuerySet] =>  queries = queries ++ list
+[warn]     case list:List[QuerySet] => sendUpdatesToDatabase(list)
 [warn]               ^
 [warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:119: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case testData:ArrayBuffer[ActorRef] => servers = testData
 [warn]                   ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:115: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:129: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
 [warn]                     ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:127: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:145: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
 [warn]     case foreignQueries:List[QuerySet] =>
 [warn]                         ^
 [warn] there were four feature warnings; re-run with -feature for details
@@ -180,74 +180,4250 @@
 [info] play - Application started (Dev)
 [info] play - Starting application default Akka system.
 [info] hello world
-[info] List(LogEntry(hello world,2015-07-16T12:31:24.227))
+[info] akka://application/user/$e
+[info] hitting prestart
+[info] hitting prestart
+[info] hitting prestart
+[info] master is true
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is true
+[info] master is true
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] List(LogEntry(hello world,2015-07-20T11:38:19.890))
 [info] hitting it 
 [info] im on fire
 [info] chosen server2
 [info]  message received by server 2
-[info] List(LogEntry( message recieved by server $id,2015-07-16T12:31:24.529), LogEntry(hello world,2015-07-16T12:31:24.227))
+[info]  message received by server 2
+[info]  message received by server 2
+[info]  message received by server 2
+[info] List(LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry(hello world,2015-07-20T11:38:19.890))
+[info] List(LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry(hello world,2015-07-20T11:38:19.890))
+[info] List(LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry(hello world,2015-07-20T11:38:19.890))
+[info] List(LogEntry( message recieved by server $id,2015-07-20T11:38:20.056), LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry(hello world,2015-07-20T11:38:19.890))
+[info] 1
+[info] 1
+[info] 1
 [info] 1
 [info] making consistent
 [info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
 [info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
 [info] starting consistency sweeep now
-[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
 [info] doing consistency run for this node
 [info] doing consistency run for this node
-[info] doing consistency run for this node
-[info] doing consistency run for this node
-[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
 [info] doing consistency run for this node
 [info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
 [info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
 [info] ferrying everything back to the standard mode
 [info] 1
 [info] 2
 [info] 3
 [info] sending to database now
 [info] update test set age = 55 where name = 'dad' ; 
-[info] List(LogEntry(1 update sucsessfully in database,2015-07-16T12:33:04.297), LogEntry( message recieved by server $id,2015-07-16T12:31:24.529), LogEntry(hello world,2015-07-16T12:31:24.227))
-[info] Stopping Play fork run ...
-[info] play - Shutdown application default Akka system.
+[info] List(LogEntry(1 update sucsessfully in database,2015-07-20T11:39:59.936), LogEntry( message recieved by server $id,2015-07-20T11:38:20.056), LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry( message recieved by server $id,2015-07-20T11:38:20.055), LogEntry(hello world,2015-07-20T11:38:19.890))
 [info] making consistent
-[info] [ERROR] [07/16/2015 12:33:20.896] [application-akka.actor.default-dispatcher-10] [ActorSystem(application)] exception while executing timer task
-[info] java.lang.NullPointerException
-[info] 	at Actors.Replicators.ReplicationOverSeer.scheduleNextConsistencyRun(ReplicationOverSeer.scala:62)
-[info] 	at Actors.Replicators.ReplicationOverSeer.makeConsistent(ReplicationOverSeer.scala:104)
-[info] 	at Actors.Replicators.ReplicationOverSeer$$anonfun$scheduleNextConsistencyRun$1.apply$mcV$sp(ReplicationOverSeer.scala:64)
-[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
-[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
-[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
-[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
-[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
-[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
-[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
-[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
-[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
-[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
-[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-[info] 
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] starting consistency sweeep now
+[info] 5
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 6
+[info] clear
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 3
+[info] checking foriegn queries
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 1
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] checking foriegn queries
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 5
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] 3
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 4
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 6
+[info] clear
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 2
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 6
+[info] clear
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] 5
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] starting consistency sweeep now
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] starting consistency sweeep now
+[info] 2
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 4
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] starting consistency sweeep now
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] starting consistency sweeep now
+[info] 5
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 6
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 2
+[info] 3
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] 6
+[info] clear
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 1
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 4
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 3
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] 2
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] 5
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] 4
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 5
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] 1
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 4
+[info] 5
+[info] 6
+[info] clear
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] 6
+[info] clear
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 4
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] starting consistency sweeep now
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 3
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 4
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 2
+[info] 3
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 5
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 1
+[info] 2
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 4
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] 5
+[info] 6
+[info] clear
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] 2
+[info] 3
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 4
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 2
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 3
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] 3
+[info] making consistent
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] 4
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] 6
+[info] clear
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] ferrying everything back to the standard mode
+[info] 1
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] ferrying everything back to the standard mode
+[info] 2
+[info] checking foriegn queries
+[info] 3
+[info] making consistent
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] starting consistency sweeep now
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 4
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] 5
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] doing consistency run for this node
+[info] checking foriegn queries
+[info] ferrying everything back to the standard mode
+[info] checking foriegn queries
+[info] 6
+[info] clear

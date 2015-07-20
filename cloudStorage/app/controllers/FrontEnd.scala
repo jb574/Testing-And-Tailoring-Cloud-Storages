@@ -49,7 +49,8 @@ object FrontEnd  extends Controller
    val databaseCommiter = system.actorOf(Props(new DatabaseCommiterOverseer(loggingActor)))
    val replicationMarshaller = system.actorOf(Props(new ReplicationMarshaller(loggingActor,databaseCommiter)))
    val repServer = system.actorOf(Props(new ReplicationOverSeer(loggingActor,replicationMarshaller)))
-
+    val checker = system.actorOf(Props(new AvailibilityChecker(repServer,loggingActor)))
+  println(checker.path)
   /**
    * this is the sevice to create new tables in the database
    */

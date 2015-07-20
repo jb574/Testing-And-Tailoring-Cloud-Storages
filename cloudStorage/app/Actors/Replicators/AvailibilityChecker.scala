@@ -3,6 +3,7 @@ package Actors.Replicators
 import Actors.SystemActor
 import akka.actor.ActorRef
 import models.QuerySet
+import models.SQLStatementHelper.MutableSQLStatement
 
 
 /**
@@ -17,7 +18,9 @@ class AvailibilityChecker(repOverseer:ActorRef,logger:ActorRef) extends SystemAc
    def receive =
    {
      case work:QuerySet => outstandingwork += 1
-     case (true,work:QuerySet ) => outstandingwork -= 1
-     case (false,work:QuerySet) =>   repOverseer ! work
+     case (true,work:QuerySet)  => outstandingwork -= work.queries.size
+     case (false,work:MutableSQLStatement) =>   repOverseer ! work
    }
 }
+
+
