@@ -1,6 +1,6 @@
 package Actors.Replicators
 
-import Actors.Messages.RequestVote
+import Actors.Messages.{WonVote, RequestVote}
 import Actors.SystemActor
 import akka.actor.{Props, ActorRef}
 import akka.pattern.AskSupport
@@ -24,6 +24,7 @@ with AskSupport
   var votes:Map[Int,Int]  = Map()
   var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
   var masterIndex = 0
+  var downServers:Set[Int] = Set()
   override  def preStart() =
   {
     println("hitting prestart")
@@ -44,20 +45,51 @@ with AskSupport
 
   def requestVote(index:Int): Unit =
   {
-    implicit val timeout = Timeout(5 seconds)
-    val res:Future[Any] =  servers(masterIndex) ? RequestVote
-    res onSuccess
+    var  done = false
+    while(!done)
+    {
+      implicit val timeout = Timeout(5 seconds)
+      val res:Future[Any] =  servers(masterIndex) ? RequestVote
+      res onSuccess
+        {
+          case properResults:Int =>
+            if(!downServers.contains(properResults))
+            {
+              done = true
+              if(votes.contains(index))
+              {
+                votes = votes + (index -> 0)
+              }
+              else
+              {
+                votes = votes + (index -> (votes(index) + 1))
+              }
+            }
+
+        }
+    }
+
+  }
+
+
+  def holdVote =
+  {
+    for (index <- 0 to servers.size)
+    {
+      requestVote(index)
+    }
+    var biggest = 0
+    var winner = -1
+    for ((key, value) <- votes)
+    {
+      if (value > biggest)
       {
-        case properResults:Int =>
-          if(votes.contains(index))
-          {
-            votes = votes + (index -> 0)
-          }
-          else
-          {
-            votes = votes + (index -> (votes(index) + 1))
-          }
+        biggest = value
+        winner = key
       }
+      servers(winner) ! WonVote
+      masterIndex = winner
+    }
   }
 
 
@@ -72,21 +104,22 @@ with AskSupport
         }
     case msg:Any => servers.foreach((server) => server ! msg)
     case voteChange:RequestVote =>
-      for(index <- 0 to servers.size)
+      holdVote
+    case (nodeRank:Boolean, pos:Int ) =>
+      val time = SettingsManager.retrieveValue("lifeTime")
+      downServers = downServers + pos
+      context.system.scheduler.scheduleOnce( time seconds)
       {
-        requestVote(index)
-      }
-      var biggest = 0
-      var winner = -1
-      for((key, value) <- votes)
-      {
-        if(value > biggest)
+        downServers = downServers - pos
+        if(nodeRank)
         {
-           biggest = value
-           winner = key
+          createServer(false,pos)
         }
-        servers(winner) ! true
-        masterIndex = winner
+        else
+        {
+          createServer(nodeRank,pos)
+        }
       }
+
   }
 }

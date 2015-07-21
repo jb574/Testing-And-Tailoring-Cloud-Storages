@@ -149,10 +149,17 @@ class QuerySet( var vectorClocks:Map[Int,LocalDateTime],  var queries:List[Mutab
    if(isUpdateRelavant(update))
    {
      addNewTables(update)
-     val pair = (serverID,LocalDateTime.now())
-     vectorClocks =  vectorClocks + pair
-     queries  = update :: queries
-     true
+     if(!queries.contains(update))
+     {
+       val pair = (serverID,LocalDateTime.now())
+       vectorClocks =  vectorClocks + pair
+       queries  = update :: queries
+       true
+     }
+     else
+     {
+       false
+     }
    }
    else 
    {

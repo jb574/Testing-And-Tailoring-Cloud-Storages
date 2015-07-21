@@ -17,4 +17,7 @@ object Messages
   case class TerminationRequest()
   case class TestMessage()
   case class RequestVote()
+  case class ConcernedHealthRequest()
+  case class MasterAlive()
+  case class WonVote()
 }

@@ -10,3 +10,6 @@ Application started (Dev)
 2015-07-20 11:38:19,714 - [INFO] - from play in New I/O worker #1 
 Starting application default Akka system.
 
+2015-07-20 15:06:59,860 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-3 
+Shutdown application default Akka system.
+

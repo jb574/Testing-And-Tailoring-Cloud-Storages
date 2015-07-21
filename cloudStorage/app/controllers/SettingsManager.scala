@@ -13,6 +13,8 @@ object SettingsManager
   addValue("primServers",3)
   addValue("secServers", 4)
   addValue("checkUpTime",20)
+  addValue("lifeTime",40)
+
   private def addValue(key:String,value:Int) =
   {
     configSettings = configSettings + (key -> value)

@@ -1,6 +1,6 @@
 package Actors.Replicators
 
-import Actors.Messages.{RequestVote, MakeConsistent, TestMessage, Message}
+import Actors.Messages._
 import Actors.SystemActor
 import akka.actor._
 import akka.pattern.AskSupport
@@ -39,6 +39,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
   val FailureHandle = context.actorSelection("akka://application/user/$e")
   var avServers:ArrayBuffer[ActorRef] = ArrayBuffer()
   var seenMaster = true
+  runSafetyCheck
   /**
    *method that announces that a message has been recieved
    * by this server
@@ -49,23 +50,24 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     logger ! Message(" message recieved by server $id")
   }
 
-  def scheduleNextConsistencyRun =
+  def scheduleNextMasterCheckup =
   {
     val time = SettingsManager.retrieveValue("timeTilNextConsistencySweep")
     context.system.scheduler.scheduleOnce(time  seconds)
     {
-      runSafteyCheck()
+      runSafetyCheck()
     }
   }
 
-  def  runSafteyCheck(): Unit =
+  def  runSafetyCheck =
   {
     if(!master)
     {
        if(seenMaster)
        {
          seenMaster = false
-         avServers.foreach((server) => server ! false)
+         avServers.foreach((server) => server ! ConcernedHealthRequest)
+         scheduleNextMasterCheckup
        }
       else
        {
@@ -98,6 +100,10 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     else
     {
       FailureHandle ! (false,update)
+      inconsistentUpdates.foreach((clock) =>
+        clock.queries.foreach((query) => FailureHandle ! (false,update)  ) )
+      clusterOverseer ! (master,avIndex)
+      context.stop(self)
     }
   }
 
@@ -172,6 +178,18 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
       context.become(mergeMode)
     case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
       sender ! queryResult
+    case ConcernedHealthRequest =>
+      if(master)
+      {
+        sender ! MasterAlive
+      }
+    case MasterAlive =>
+      seenMaster = true
+    case WonVote =>
+      master = true
+    case RequestVote =>
+      val rand = new Random()
+      sender ! rand.nextInt(avServers.size)
   }
 
   def mergeMode:Receive =
@@ -199,6 +217,13 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
       queryResult.markComplete
       println("all done!")
       sender ! queryResult
+    case false =>
+      if(master)
+      {
+        sender ! true
+      }
+    case true =>
+      seenMaster = true
   }
 
   def receive = standardOperation

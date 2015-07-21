@@ -63,3 +63,7 @@ Sending msg to client play-fork-run-41e91620-3f6b-4100-b982-ade02d8231dc: Detach
 Sending msg to client play-fork-run-41e91620-3f6b-4100-b982-ade02d8231dc: DetachedLogEvent(LogMessage(debug,> server-send-ready-for-request))
 Sending msg to client play-fork-run-41e91620-3f6b-4100-b982-ade02d8231dc: BuildLoaded()
 Sending msg to client play-fork-run-41e91620-3f6b-4100-b982-ade02d8231dc: DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request))
+Client play-fork-run-41e91620-3f6b-4100-b982-ade02d8231dc EOF, shutting down.
+Stopping client.
+Dropping message (0,ReceivedResponse()) to dead client play-fork-run-41e91620-3f6b-4100-b982-ade02d8231dc
+Client play-fork-run-41e91620-3f6b-4100-b982-ade02d8231dc thread exiting.

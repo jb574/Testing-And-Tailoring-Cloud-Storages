@@ -35,7 +35,6 @@ class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) exten
 with AskSupport
 {
   var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
-  var serverId  = 0
 
 
   override  def preStart() =
