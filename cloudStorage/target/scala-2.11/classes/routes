@@ -22,7 +22,7 @@ GET         /log                     controllers.FrontEnd.getLogOutput
 POST        /insert                  controllers.FrontEnd.insert
 POST        /delete                  controllers.FrontEnd.delete
 GET         /makeConsistent          controllers.FrontEnd.makeConsistent
-POST        /time/updatedTIme        controllers.FrontEnd.changeTImeSweep(updatedTime:Int)
+POST        /name/value/updateVal        controllers.FrontEnd.changeProperty(name:String,value:Int)
 GET         /allUpdates              controllers.FrontEnd.getInconsistentUPdateInfo
 POST        /select                  controllers.FrontEnd.runEventuallyConsistentQuery
 

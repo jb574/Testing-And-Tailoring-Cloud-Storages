@@ -149,23 +149,26 @@ object FrontEnd  extends Controller
     )
   }
 
-  def changeTImeSweep(updatedTime:Int) = Action
+
+  def changeProperty(name:String,value:Int) = Action
   {
-    if(updatedTime > 0)
+    if(value > 0)
     {
-      SettingsManager.updateKey("timeTilNextConsistencySweep",updatedTime)
-      Ok("time updated")
+        SettingsManager.updateKey(name,value)
+        Ok(s"value $name updated to $value")
     }
-    else
+     else
     {
-      BadRequest("the new time value must be greater than 0")
+      BadRequest(s"the new value for $name must be greater than 0")
     }
   }
 
 
+
+
+
  def runEventuallyConsistentQuery = Action.async(BodyParsers.parse.json)
  {
-
      request =>
       val query = request.body.validate[SelectStatement]
      query.fold(

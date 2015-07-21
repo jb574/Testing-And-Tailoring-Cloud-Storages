@@ -1,5 +1,5 @@
 package Actors.Replicators
-
+import scala.concurrent.duration._
 import Actors.Messages._
 import Actors.SystemActor
 import akka.actor._
@@ -14,7 +14,7 @@ import scala.collection.immutable.HashMap
 import Actor._
 import akka._
 import akka.actor.ActorContext
-
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.util.Random
 
 /**
@@ -50,16 +50,16 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     logger ! Message(" message recieved by server $id")
   }
 
-  def scheduleNextMasterCheckup =
+  def scheduleNextMasterCheckup:Unit =
   {
     val time = SettingsManager.retrieveValue("timeTilNextConsistencySweep")
     context.system.scheduler.scheduleOnce(time  seconds)
     {
-      runSafetyCheck()
+      runSafetyCheck
     }
   }
 
-  def  runSafetyCheck =
+  def  runSafetyCheck:Unit =
   {
     if(!master)
     {
@@ -194,14 +194,14 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
 
   def mergeMode:Receive =
   {
-    case foreignQueries:List[QuerySet] =>
+    case foreignQueries: List[QuerySet] =>
       println("checking foriegn queries")
-      if(master)
+      if (master)
       {
-        makeConsistent(foreignQueries,sender)
+        makeConsistent(foreignQueries, sender)
         noSeen = noSeen + 1
         println("doing consistency run for this node")
-        if(noSeen == 2)
+        if (noSeen == 2)
         {
           replicationMarshaller ! inconsistentUpdates
           println("ferrying everything back to the standard mode")
@@ -209,21 +209,26 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
           context.become(standardOperation)
         }
       }
-    case (false, set:QuerySet) =>
+    case (false, set: QuerySet) =>
       println("removing old nodes ")
       inconsistentUpdates = inconsistentUpdates.filter(
         (current) => !set.equals(current))
-    case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
+    case queryResult: QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
       queryResult.markComplete
       println("all done!")
       sender ! queryResult
-    case false =>
-      if(master)
+    case ConcernedHealthRequest =>
+      if (master)
       {
-        sender ! true
+        sender ! MasterAlive
       }
-    case true =>
+    case MasterAlive =>
       seenMaster = true
+    case WonVote =>
+      master = true
+    case RequestVote =>
+      val rand = new Random()
+      sender ! rand.nextInt(avServers.size)
   }
 
   def receive = standardOperation

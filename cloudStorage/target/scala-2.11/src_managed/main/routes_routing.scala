@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:4fe6b6b3d825407ac6acb212c86f293637b1be2c
-// @DATE:Mon Jul 06 11:51:51 BST 2015
+// @HASH:4fd6694f93dddc805b72e67f838c174d02386a69
+// @DATE:Tue Jul 21 14:51:31 BST 2015
 
 
 import scala.language.reflectiveCalls
@@ -114,10 +114,10 @@ HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "makeConsis
         
 
 // @LINE:25
-private[this] lazy val controllers_FrontEnd_changeTImeSweep11_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("time/updatedTIme"))))
-private[this] lazy val controllers_FrontEnd_changeTImeSweep11_invoker = createInvoker(
-controllers.FrontEnd.changeTImeSweep(fakeValue[Int]),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "changeTImeSweep", Seq(classOf[Int]),"POST", """""", Routes.prefix + """time/updatedTIme"""))
+private[this] lazy val controllers_FrontEnd_changeProperty11_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("name/value/updateVal"))))
+private[this] lazy val controllers_FrontEnd_changeProperty11_invoker = createInvoker(
+controllers.FrontEnd.changeProperty(fakeValue[String], fakeValue[Int]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "changeProperty", Seq(classOf[String], classOf[Int]),"POST", """""", Routes.prefix + """name/value/updateVal"""))
         
 
 // @LINE:26
@@ -161,7 +161,7 @@ private[this] lazy val controllers_Assets_versioned17_invoker = createInvoker(
 controllers.Assets.versioned(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """testold""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """time/updatedTIme""","""controllers.FrontEnd.changeTImeSweep(updatedTime:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.FrontEnd.getInconsistentUPdateInfo"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample1""","""controllers.SampleApplications.runFirstSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample2""","""controllers.SampleApplications.runSecondSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.SampleApplications.test"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """testold""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """name/value/updateVal""","""controllers.FrontEnd.changeProperty(name:String, value:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.FrontEnd.getInconsistentUPdateInfo"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample1""","""controllers.SampleApplications.runFirstSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample2""","""controllers.SampleApplications.runSecondSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.SampleApplications.test"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -258,9 +258,9 @@ case controllers_FrontEnd_makeConsistent10_route(params) => {
         
 
 // @LINE:25
-case controllers_FrontEnd_changeTImeSweep11_route(params) => {
-   call(params.fromQuery[Int]("updatedTime", None)) { (updatedTime) =>
-        controllers_FrontEnd_changeTImeSweep11_invoker.call(controllers.FrontEnd.changeTImeSweep(updatedTime))
+case controllers_FrontEnd_changeProperty11_route(params) => {
+   call(params.fromQuery[String]("name", None), params.fromQuery[Int]("value", None)) { (name, value) =>
+        controllers_FrontEnd_changeProperty11_invoker.call(controllers.FrontEnd.changeProperty(name, value))
    }
 }
         

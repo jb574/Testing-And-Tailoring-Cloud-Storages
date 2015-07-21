@@ -91,7 +91,7 @@ with AskSupport
   def getRandomServerNumber: Int =
   {
     val rand = new Random()
-    serverId = rand.nextInt(3)
+    val serverId = rand.nextInt(3)
     println("chosen server" + serverId)
     serverId
   }

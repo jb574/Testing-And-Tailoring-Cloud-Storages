@@ -20,7 +20,7 @@ import scala.collection.mutable.ArrayBuffer
 class ReplicationServerTest extends  PlaySpecification {
 
   class TestSystem extends TestKit(ActorSystem("testSystem")) {
-    val server = TestActorRef(new ReplicationServer(testActor, 0, testActor,true))
+    val server = TestActorRef(new ReplicationServer(testActor, 0, testActor,true,testActor,0))
     var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
     for (index <- 0 to 3) {
       servers.insert(index,testActor)

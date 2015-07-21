@@ -8,12 +8,28 @@ package controllers
 object SettingsManager
 {
    private var configSettings:Map[String,Int] = Map()
-  addValue("timeTilNextConsistencySweep",100)
-  addValue("chanceOfGoodResult",0)
-  addValue("primServers",3)
-  addValue("secServers", 4)
-  addValue("checkUpTime",20)
-  addValue("lifeTime",40)
+  LoadConfigEventualConsistency
+
+  def LoadConfigCurrent: Unit =
+  {
+    addValue("timeTilNextConsistencySweep", 100)
+    addValue("chanceOfGoodResult", 0)
+    addValue("primServers", 3)
+    addValue("secServers", 4)
+    addValue("checkUpTime", 20)
+    addValue("lifeTime", 40)
+  }
+
+  def LoadConfigEventualConsistency: Unit =
+  {
+    addValue("timeTilNextConsistencySweep", 100)
+    addValue("chanceOfGoodResult", 0)
+    addValue("primServers", 3)
+    addValue("secServers", 4)
+    addValue("checkUpTime", 20)
+    addValue("lifeTime", 40)
+  }
+
 
   private def addValue(key:String,value:Int) =
   {

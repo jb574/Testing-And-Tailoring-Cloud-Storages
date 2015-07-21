@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:4fe6b6b3d825407ac6acb212c86f293637b1be2c
-// @DATE:Mon Jul 06 11:51:51 BST 2015
+// @HASH:4fd6694f93dddc805b72e67f838c174d02386a69
+// @DATE:Tue Jul 21 14:51:31 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -119,13 +119,6 @@ def runEventuallyConsistentQuery(): Call = {
 }
                         
 
-// @LINE:25
-def changeTImeSweep(updatedTime:Int): Call = {
-   import ReverseRouteContext.empty
-   Call("POST", _prefix + { _defaultPrefix } + "time/updatedTIme" + queryString(List(Some(implicitly[QueryStringBindable[Int]].unbind("updatedTime", updatedTime)))))
-}
-                        
-
 // @LINE:26
 def getInconsistentUPdateInfo(): Call = {
    import ReverseRouteContext.empty
@@ -137,6 +130,13 @@ def getInconsistentUPdateInfo(): Call = {
 def insert(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "insert")
+}
+                        
+
+// @LINE:25
+def changeProperty(name:String, value:Int): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "name/value/updateVal" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("name", name)), Some(implicitly[QueryStringBindable[Int]].unbind("value", value)))))
 }
                         
 
@@ -343,17 +343,6 @@ def runEventuallyConsistentQuery : JavascriptReverseRoute = JavascriptReverseRou
 )
                         
 
-// @LINE:25
-def changeTImeSweep : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.FrontEnd.changeTImeSweep",
-   """
-      function(updatedTime) {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "time/updatedTIme" + _qS([(""" + implicitly[QueryStringBindable[Int]].javascriptUnbind + """)("updatedTime", updatedTime)])})
-      }
-   """
-)
-                        
-
 // @LINE:26
 def getInconsistentUPdateInfo : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.FrontEnd.getInconsistentUPdateInfo",
@@ -371,6 +360,17 @@ def insert : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "insert"})
+      }
+   """
+)
+                        
+
+// @LINE:25
+def changeProperty : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.changeProperty",
+   """
+      function(name,value) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "name/value/updateVal" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("name", name), (""" + implicitly[QueryStringBindable[Int]].javascriptUnbind + """)("value", value)])})
       }
    """
 )
@@ -567,12 +567,6 @@ def runEventuallyConsistentQuery(): play.api.mvc.HandlerRef[_] = new play.api.mv
 )
                       
 
-// @LINE:25
-def changeTImeSweep(updatedTime:Int): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.FrontEnd.changeTImeSweep(updatedTime), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "changeTImeSweep", Seq(classOf[Int]), "POST", """""", _prefix + """time/updatedTIme""")
-)
-                      
-
 // @LINE:26
 def getInconsistentUPdateInfo(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.getInconsistentUPdateInfo(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getInconsistentUPdateInfo", Seq(), "GET", """""", _prefix + """allUpdates""")
@@ -582,6 +576,12 @@ def getInconsistentUPdateInfo(): play.api.mvc.HandlerRef[_] = new play.api.mvc.H
 // @LINE:22
 def insert(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.insert(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "insert", Seq(), "POST", """""", _prefix + """insert""")
+)
+                      
+
+// @LINE:25
+def changeProperty(name:String, value:Int): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.changeProperty(name, value), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "changeProperty", Seq(classOf[String], classOf[Int]), "POST", """""", _prefix + """name/value/updateVal""")
 )
                       
 

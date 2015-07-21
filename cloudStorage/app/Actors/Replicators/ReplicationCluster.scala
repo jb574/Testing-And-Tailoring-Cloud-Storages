@@ -1,5 +1,5 @@
 package Actors.Replicators
-
+import scala.concurrent.ExecutionContext.Implicits.global
 import Actors.Messages.{WonVote, RequestVote}
 import Actors.SystemActor
 import akka.actor.{Props, ActorRef}
@@ -34,6 +34,7 @@ with AskSupport
     {
       createServer(false,index)
     }
+    servers.foreach((server) => server ! (true,servers))
   }
 
   def createServer(master:Boolean,index:Int) =
