@@ -75,3 +75,5 @@
 <controllers.SimpleUpdateTest-stats timestamp="1437382017526"><stats time="400" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
 <controllers.SimpleUpdateTest-stats timestamp="1437382458009"><stats time="412" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
 <controllers.SimpleUpdateTest-stats timestamp="1437382817689"><stats time="403" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437736832892"><stats time="504" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>
+<controllers.SimpleUpdateTest-stats timestamp="1437737966664"><stats time="421" expectations="1" successes="1" examples="1"></stats></controllers.SimpleUpdateTest-stats>

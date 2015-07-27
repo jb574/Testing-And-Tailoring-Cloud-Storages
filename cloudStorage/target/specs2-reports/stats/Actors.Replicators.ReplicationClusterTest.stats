@@ -6,3 +6,5 @@
 <Actors.Replicators.ReplicationClusterTest-stats timestamp="1437382513552"><stats time="21" expectations="1" errors="1" examples="1"></stats></Actors.Replicators.ReplicationClusterTest-stats>
 <Actors.Replicators.ReplicationClusterTest-stats timestamp="1437382804306"><stats time="21" expectations="1" successes="1" examples="1"><trend><stats time="21" errors="-1" successes="1"></stats></trend></stats></Actors.Replicators.ReplicationClusterTest-stats>
 <Actors.Replicators.ReplicationClusterTest-stats timestamp="1437382820101"><stats time="69" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationClusterTest-stats>
+<Actors.Replicators.ReplicationClusterTest-stats timestamp="1437736835425"><stats time="73" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationClusterTest-stats>
+<Actors.Replicators.ReplicationClusterTest-stats timestamp="1437737969160"><stats time="68" expectations="1" successes="1" examples="1"></stats></Actors.Replicators.ReplicationClusterTest-stats>

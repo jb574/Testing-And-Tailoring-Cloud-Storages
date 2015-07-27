@@ -76,3 +76,5 @@
 <controllers.SimpleQueryTest-stats timestamp="1437382019883"><stats time="74" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
 <controllers.SimpleQueryTest-stats timestamp="1437382463483"><stats time="46" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
 <controllers.SimpleQueryTest-stats timestamp="1437382820186"><stats time="57" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437736835503"><stats time="56" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>
+<controllers.SimpleQueryTest-stats timestamp="1437737969239"><stats time="55" expectations="1" successes="1" examples="1"></stats></controllers.SimpleQueryTest-stats>

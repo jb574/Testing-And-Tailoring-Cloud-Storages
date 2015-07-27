@@ -112,3 +112,5 @@
 <Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1437382019063"><stats time="339" expectations="5" successes="5" examples="5"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
 <Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1437382459547"><stats time="324" expectations="5" successes="5" examples="5"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
 <Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1437382819260"><stats time="324" expectations="5" successes="5" examples="5"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1437736834540"><stats time="327" expectations="5" successes="5" examples="5"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>
+<Actors.Replicators.ReplicationOverSeerTest-stats timestamp="1437737968325"><stats time="327" expectations="5" successes="5" examples="5"></stats></Actors.Replicators.ReplicationOverSeerTest-stats>

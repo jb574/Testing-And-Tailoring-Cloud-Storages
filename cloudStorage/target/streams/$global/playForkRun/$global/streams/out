@@ -158,4 +158,828 @@
 [info] 
 [info] 32m(Server started, use Ctrl+D to stop and go back to the console...)0m
 [info] 
+[info] Compiling 33 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure
+[warn]      case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
+[warn]                   ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn]     case list:List[QuerySet] => sendUpdatesToDatabase(list)
+[warn]               ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:128: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn]     case testData:ArrayBuffer[ActorRef] => servers = testData
+[warn]                   ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:193: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn]     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
+[warn]                     ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:194: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn]     case (true, avList:ArrayBuffer[ActorRef]) => avServers = avList
+[warn]                        ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:223: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn]     case foreignQueries: List[QuerySet] =>
+[warn]                          ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:198: Adaptation of argument list by inserting () has been deprecated: this is unlikely to be what you want.
+[warn]         signature: Future.apply[T](body: => T)(implicit executor: scala.concurrent.ExecutionContext): scala.concurrent.Future[T]
+[warn]   given arguments: <none>
+[warn]  after adaptation: Future((): Unit)
+[warn]             var res: Future[Any] = Future()
+[warn]                                          ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:212: non-variable type argument String in type pattern scala.collection.immutable.Set[String] (the underlying of Set[String]) is unchecked since it is eliminated by erasure
+[warn]                 case data:Set[String] => result = data.toString()
+[warn]                           ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:120: unreachable code
+[warn]     case voteChange:RequestVote =>
+[warn]                                 ^
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:180: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result
+[warn]   def GetInfoFromDatabase(allPossibleNeeded:Boolean):(Request[JsValue]) => Future[SimpleResult] =
+[warn]                                                                         ^
+[warn] there were 9 feature warnings; re-run with -feature for details
+[warn] 11 warnings found
+[info] play - database [default] connected at jdbc:mysql://localhost:8889/health
+[info] play - Application started (Dev)
+[info] play - Starting application default Akka system.
+[info] hello world
+[info] akka://application/user/$e
+[info] hitting prestart
+[info] hitting prestart
+[info] hitting prestart
+[info] master is true
+[info] master is true
+[info] master is true
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] message: hello world, date: 2015-07-26T22:23:23.128
+[info] }
+[info] hitting it 
+[info] im on fire
+[info] chosen server2
+[info] chance is 38
+[info] chance is 21
+[info] chance is 2
+[info] chance is 24
+[info] message: message recieved by consistency server 2, av server 3, date: 2015-07-26T22:23:23.291
+[info] }
+[info] message: message recieved by consistency server 2, av server 2, date: 2015-07-26T22:23:23.291
+[info] }
+[info] message: message recieved by consistency server 2, av server 0, date: 2015-07-26T22:23:23.291
+[info] }
+[info] message: message recieved by consistency server 2, av server 1, date: 2015-07-26T22:23:23.291
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:28.053
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:28.053
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:28.053
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:28.062
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:28.062
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:28.062
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:28.062
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:28.062
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:28.063
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:33.072
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:33.072
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:33.073
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:33.083
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:33.083
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:33.083
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:33.083
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:33.083
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:33.083
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:38.092
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:38.092
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:38.092
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:38.103
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:38.104
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:38.104
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:38.104
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:38.104
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:38.104
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:43.111
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:43.111
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:43.111
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:43.121
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:43.121
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:43.121
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:43.122
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:43.122
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:43.122
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:48.131
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:48.131
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:48.131
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:48.144
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:48.144
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:48.144
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:48.144
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:48.144
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:48.144
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:53.153
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:53.153
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:53.153
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:53.162
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:53.162
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:53.162
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:53.162
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:53.162
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:53.162
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:58.171
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:58.171
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:58.171
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:58.184
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:23:58.184
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:58.184
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:23:58.184
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:58.184
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:23:58.184
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:03.193
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:03.193
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:03.193
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:03.203
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:03.203
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:03.203
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:03.203
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:03.203
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:03.204
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:08.212
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:08.212
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:08.212
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:08.223
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:08.223
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:08.223
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:08.223
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:08.224
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:08.224
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:13.233
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:13.234
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:13.234
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:13.244
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:13.244
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:13.244
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:13.244
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:13.244
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:13.244
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:18.254
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:18.254
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:18.254
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:18.262
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:18.263
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:18.263
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:18.263
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:18.263
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:18.263
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:23.273
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:23.273
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:23.273
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:23.282
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:23.282
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:23.282
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:23.282
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:23.283
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:23.283
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:28.293
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:28.293
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:28.293
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:28.302
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:28.302
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:28.302
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:28.302
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:28.303
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:28.303
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:33.313
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:33.313
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:33.313
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:33.323
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:33.323
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:33.323
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:33.323
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:33.323
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:33.323
+[info] }
+[info] hitting it 
+[info] im on fire
+[info] chosen server2
+[info] chance is 36
+[info] chance is 46
+[info] chance is 64
+[info] message: message recieved by consistency server 2, av server 0, date: 2015-07-26T22:24:35.949
+[info] }
+[info] chance is 9
+[info] message: message recieved by consistency server 2, av server 2, date: 2015-07-26T22:24:35.949
+[info] }
+[info] message: message recieved by consistency server 2, av server 3, date: 2015-07-26T22:24:35.950
+[info] }
+[info] message: message recieved by consistency server 2, av server 1, date: 2015-07-26T22:24:35.950
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:38.332
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:38.332
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:38.332
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:38.332
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:38.332
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:38.332
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:38.332
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:38.344
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:38.344
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:43.352
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:43.352
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:43.352
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:43.352
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:43.353
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:43.353
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:43.353
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:43.362
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:43.362
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:48.372
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:48.372
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:48.372
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:48.372
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:48.372
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:48.372
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:48.372
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:48.383
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:48.383
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:53.391
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:53.392
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:53.392
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:53.392
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:53.392
+[info] }
+[info] message:  seen master node for consistency server 0, checking again, date: 2015-07-26T22:24:53.392
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:53.392
+[info] }
+[info] message:  seen master node for consistency server 2, checking again, date: 2015-07-26T22:24:53.401
+[info] }
+[info] message:  seen master node for consistency server 1, checking again, date: 2015-07-26T22:24:53.401
+[info] }
 [info] Stopping Play fork run ...
+[info] play - Shutdown application default Akka system.
+[info] making consistent
+[info] [ERROR] [07/26/2015 22:24:54.417] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationOverSeer.scheduleNextConsistencyRun(ReplicationOverSeer.scala:61)
+[info] 	at Actors.Replicators.ReplicationOverSeer.makeConsistent(ReplicationOverSeer.scala:105)
+[info] 	at Actors.Replicators.ReplicationOverSeer$$anonfun$scheduleNextConsistencyRun$1.apply$mcV$sp(ReplicationOverSeer.scala:63)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/26/2015 22:24:54.418] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationServer.scheduleNextMasterCheckup(ReplicationServer.scala:59)
+[info] 	at Actors.Replicators.ReplicationServer.runSafetyCheck(ReplicationServer.scala:75)
+[info] 	at Actors.Replicators.ReplicationServer$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationServer.scala:61)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/26/2015 22:24:54.419] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationServer.scheduleNextMasterCheckup(ReplicationServer.scala:59)
+[info] 	at Actors.Replicators.ReplicationServer.runSafetyCheck(ReplicationServer.scala:75)
+[info] 	at Actors.Replicators.ReplicationServer$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationServer.scala:61)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/26/2015 22:24:54.420] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationServer.scheduleNextMasterCheckup(ReplicationServer.scala:59)
+[info] 	at Actors.Replicators.ReplicationServer.runSafetyCheck(ReplicationServer.scala:75)
+[info] 	at Actors.Replicators.ReplicationServer$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationServer.scala:61)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/26/2015 22:24:54.421] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationServer.scheduleNextMasterCheckup(ReplicationServer.scala:59)
+[info] 	at Actors.Replicators.ReplicationServer.runSafetyCheck(ReplicationServer.scala:75)
+[info] 	at Actors.Replicators.ReplicationServer$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationServer.scala:61)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/26/2015 22:24:54.421] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationServer.scheduleNextMasterCheckup(ReplicationServer.scala:59)
+[info] 	at Actors.Replicators.ReplicationServer.runSafetyCheck(ReplicationServer.scala:75)
+[info] 	at Actors.Replicators.ReplicationServer$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationServer.scala:61)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/26/2015 22:24:54.424] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationServer.scheduleNextMasterCheckup(ReplicationServer.scala:59)
+[info] 	at Actors.Replicators.ReplicationServer.runSafetyCheck(ReplicationServer.scala:75)
+[info] 	at Actors.Replicators.ReplicationServer$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationServer.scala:61)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/26/2015 22:24:54.425] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationServer.scheduleNextMasterCheckup(ReplicationServer.scala:59)
+[info] 	at Actors.Replicators.ReplicationServer.runSafetyCheck(ReplicationServer.scala:75)
+[info] 	at Actors.Replicators.ReplicationServer$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationServer.scala:61)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/26/2015 22:24:54.426] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationServer.scheduleNextMasterCheckup(ReplicationServer.scala:59)
+[info] 	at Actors.Replicators.ReplicationServer.runSafetyCheck(ReplicationServer.scala:75)
+[info] 	at Actors.Replicators.ReplicationServer$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationServer.scala:61)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/26/2015 22:24:54.427] [application-akka.actor.default-dispatcher-2] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationServer.scheduleNextMasterCheckup(ReplicationServer.scala:59)
+[info] 	at Actors.Replicators.ReplicationServer.runSafetyCheck(ReplicationServer.scala:75)
+[info] 	at Actors.Replicators.ReplicationServer$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationServer.scala:61)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 

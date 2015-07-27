@@ -166,36 +166,56 @@ object FrontEnd  extends Controller
 
 
 
+  def getAllPossiblilities = Action.async(BodyParsers.parse.json)
+  {
+    GetInfoFromDatabase(true)
+  }
 
  def runEventuallyConsistentQuery = Action.async(BodyParsers.parse.json)
  {
-     request =>
+     GetInfoFromDatabase(false)
+ }
+
+
+  def GetInfoFromDatabase(allPossibleNeeded:Boolean):(Request[JsValue]) => Future[SimpleResult] =
+  {
+    request =>
       val query = request.body.validate[SelectStatement]
-     query.fold(
-       errors =>
-       {
+      query.fold(
+        errors =>
+        {
 
-         Future(BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors))))
-       },
-       goodQuery =>
-       {
-         Future
-         {
-           var queryResult: QueryResult = queryDatabase(goodQuery)
-           implicit val timeout = Timeout(5 seconds)
-           val res:Future[Any] = repServer ? queryResult
-           res onSuccess
-             {
-               case properResults:QueryResult =>  queryResult = properResults
-             }
-           println("rocking and rolling")
-           Ok(Json.toJson(queryResult.toString))
-         }
-       }
-     )
-   }
-
-
+          Future(BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors))))
+        },
+        goodQuery =>
+        {
+          Future
+          {
+            var queryResult: QueryResult = queryDatabase(goodQuery)
+            println(s"just got response from database and it is" +
+              s" ${queryResult.toString}")
+            implicit val timeout = Timeout(5 seconds)
+            var res: Future[Any] = Future()
+            if(allPossibleNeeded)
+            {
+              res= repServer ? (true,queryResult)
+            }
+            else
+            {
+              res = repServer ?  queryResult
+            }
+            var result = ""
+            res onSuccess
+              {
+                case properResults:QueryResult =>   result = queryResult.toString
+                  println(s"so we should end up with ${properResults.toString}")
+                case data:Set[String] => result = data.toString()
+              }
+            Ok(Json.toJson(result))
+          }
+        }
+      )
+  }
 
   def addRow(queryResult:QueryResult,row:Row): Unit = {
     val rawData = row.asMap

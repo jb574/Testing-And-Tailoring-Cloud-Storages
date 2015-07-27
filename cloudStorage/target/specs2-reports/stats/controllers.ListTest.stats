@@ -89,3 +89,5 @@
 <controllers.ListTest-stats timestamp="1437382017856"><stats time="63" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
 <controllers.ListTest-stats timestamp="1437382458341"><stats time="60" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
 <controllers.ListTest-stats timestamp="1437382818036"><stats time="67" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1437736833230"><stats time="66" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>
+<controllers.ListTest-stats timestamp="1437737967026"><stats time="69" expectations="1" successes="1" examples="1"></stats></controllers.ListTest-stats>

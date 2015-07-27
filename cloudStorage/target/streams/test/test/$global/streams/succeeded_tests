@@ -1,21 +1,20 @@
 #Successful Tests
-#Mon Jul 20 10:00:20 BST 2015
-Actors.Replicators.ReplicationServerTest=1437382818902
-controllers.SimpleUpdateTest=1437382817697
-controllers.SettingsManagerTest=1437382819716
-models.CreateTableStatementTest=1437382818420
-controllers.ListTest=1437382818043
-models.insertTableStatementTest=1437382817940
-controllers.SimpleQueryTest=1437382820190
-Actors.Replicators.ReplicationOverSeerTest=1437382819276
-controllers.TestOfATest=1437382818130
-models.QuerySetTest=1437382819826
-Actors.Replicators.ReplicationMarshallerTest=1437382817272
-models.InconsistentUpdatesLogTest=1437382819374
-models.DropTableStatementTest=1437382817847
-models.DeleteTableStatementTest=1437382819873
-Actors.DatabaseComitterOverSeerTest=1437382820016
-models.UpdateStatementTest=1437382818216
-Actors.DatabaseCommiterTest=1437382819455
-models.LogTest=1437382818292
-Actors.Replicators.ReplicationClusterTest=1437382820109
+#Fri Jul 24 12:39:29 BST 2015
+controllers.SimpleUpdateTest=1437737966672
+controllers.SettingsManagerTest=1437737968773
+models.CreateTableStatementTest=1437737967419
+controllers.ListTest=1437737967034
+models.insertTableStatementTest=1437737966922
+controllers.SimpleQueryTest=1437737969244
+Actors.Replicators.ReplicationOverSeerTest=1437737968339
+controllers.TestOfATest=1437737967130
+models.QuerySetTest=1437737968886
+Actors.Replicators.ReplicationMarshallerTest=1437737966227
+models.InconsistentUpdatesLogTest=1437737968437
+models.DropTableStatementTest=1437737966838
+models.DeleteTableStatementTest=1437737968935
+Actors.DatabaseComitterOverSeerTest=1437737969076
+models.UpdateStatementTest=1437737967216
+Actors.DatabaseCommiterTest=1437737968516
+models.LogTest=1437737967300
+Actors.Replicators.ReplicationClusterTest=1437737969167

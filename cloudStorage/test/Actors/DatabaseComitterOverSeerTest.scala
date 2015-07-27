@@ -45,7 +45,7 @@ class DatabaseComitterOverSeerTest  extends  PlaySpecification
       assert(testSystem.test())
     }
   }
-  "the database committer overseer should" should
+  "the database committer overseer " should
     {
       "not process each query more than once" in new WithApplication
       {

@@ -20,3 +20,5 @@
 <models.insertTableStatementTest-stats timestamp="1437382017761"><stats time="46" expectations="1" successes="1" examples="1"></stats></models.insertTableStatementTest-stats>
 <models.insertTableStatementTest-stats timestamp="1437382458246"><stats time="50" expectations="1" successes="1" examples="1"></stats></models.insertTableStatementTest-stats>
 <models.insertTableStatementTest-stats timestamp="1437382817930"><stats time="57" expectations="1" successes="1" examples="1"></stats></models.insertTableStatementTest-stats>
+<models.insertTableStatementTest-stats timestamp="1437736833132"><stats time="49" expectations="1" successes="1" examples="1"></stats></models.insertTableStatementTest-stats>
+<models.insertTableStatementTest-stats timestamp="1437737966913"><stats time="50" expectations="1" successes="1" examples="1"></stats></models.insertTableStatementTest-stats>

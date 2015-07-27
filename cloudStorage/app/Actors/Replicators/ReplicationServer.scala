@@ -39,20 +39,23 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
   val FailureHandle = context.actorSelection("akka://application/user/$e")
   var avServers:ArrayBuffer[ActorRef] = ArrayBuffer()
   var seenMaster = true
-  runSafetyCheck
   /**
    *method that announces that a message has been recieved
    * by this server
    */
   private def respondToTestMessage =
   {
-    println(" message received by server " + id)
-    logger ! Message(" message recieved by server $id")
+    logger ! Message(s"message recieved by consistency server $id, av server $avIndex")
   }
+
+   override  def preStart =
+   {
+     scheduleNextMasterCheckup
+   }
 
   def scheduleNextMasterCheckup:Unit =
   {
-    val time = SettingsManager.retrieveValue("timeTilNextConsistencySweep")
+    val time = SettingsManager.retrieveValue("checkUpTime")
     context.system.scheduler.scheduleOnce(time  seconds)
     {
       runSafetyCheck
@@ -65,12 +68,16 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     {
        if(seenMaster)
        {
+         logger ! Message(" seen master node for " +
+           s"consistency server $id, checking again")
          seenMaster = false
          avServers.foreach((server) => server ! ConcernedHealthRequest)
          scheduleNextMasterCheckup
        }
       else
        {
+         logger ! Message("the master hasn't reported in in a while," +
+           "electing a new master")
             clusterOverseer ! RequestVote
        }
     }
@@ -86,25 +93,43 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
   private def processNewQuery(update:MutableSQLStatement) =
   {
     val rand = new Random()
-    val chance = rand.nextInt(100)
-    if (chance > SettingsManager.retrieveValue("chanceOfGoodResult"))
+    var chance = rand.nextInt(100)
+    println("chance is " + chance)
+    val target =   SettingsManager.retrieveValue("chanceOfGoodResult")
+    if(master)
+    {
+      chance = chance + 20
+    }
+    if (chance < target)
     {
       respondToTestMessage
       InconsistentQueryRecords.addItem(update.getNewSQLStatement)
       if (!inconsistentUpdates.exists((clockSeq) => clockSeq.addNewQuery(update, id)))
       {
         inconsistentUpdates = new QuerySet(update, id) :: inconsistentUpdates
-        println(inconsistentUpdates.size)
       }
     }
     else
     {
+      logger ! Message(s"this message brought  server $avIndex down")
+      if(master)
+      {
+        logger ! Message(s"sever $avIndex was the master")
+      }
       FailureHandle ! (false,update)
       inconsistentUpdates.foreach((clock) =>
         clock.queries.foreach((query) => FailureHandle ! (false,update)  ) )
       clusterOverseer ! (master,avIndex)
-      context.stop(self)
+      context.become(dead)
     }
+  }
+
+  def dead:Receive =
+  {
+    case revival:Boolean =>
+      master = revival
+      context.become(standardOperation)
+    case _ =>
   }
 
   /**
@@ -178,6 +203,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
       context.become(mergeMode)
     case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
       sender ! queryResult
+      println(s"at the start the result is ${queryResult.toString}")
     case ConcernedHealthRequest =>
       if(master)
       {

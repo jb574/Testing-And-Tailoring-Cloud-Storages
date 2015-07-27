@@ -10,6 +10,7 @@ import models.QueryResultHelper.QueryResult
 import scala.concurrent.duration._
 import scala.collection.mutable.ArrayBuffer
 import scala.concurrent.Future
+import Actors.Messages.Message
 
 /**
  * this is a replication cluster of several servers
@@ -49,13 +50,13 @@ with AskSupport
     var  done = false
     while(!done)
     {
-      implicit val timeout = Timeout(5 seconds)
-      val res:Future[Any] =  servers(masterIndex) ? RequestVote
-      res onSuccess
-        {
-          case properResults:Int =>
-            if(!downServers.contains(properResults))
-            {
+      if(!downServers.contains(index))
+      {
+        implicit val timeout = Timeout(5 seconds)
+        val res:Future[Any] =  servers(index) ? RequestVote
+        res onSuccess
+          {
+            case properResults:Int =>
               done = true
               if(votes.contains(index))
               {
@@ -65,9 +66,9 @@ with AskSupport
               {
                 votes = votes + (index -> (votes(index) + 1))
               }
-            }
 
-        }
+          }
+      }
     }
 
   }
@@ -75,7 +76,9 @@ with AskSupport
 
   def holdVote =
   {
-    for (index <- 0 to servers.size)
+    logger ! Message("holding vote")
+    votes = Map()
+    for (index <- 0 to servers.size-1)
     {
       requestVote(index)
     }
@@ -90,6 +93,7 @@ with AskSupport
       }
       servers(winner) ! WonVote
       masterIndex = winner
+      logger ! Message(s"for cluster $id, the new master is $masterIndex")
     }
   }
 
@@ -97,14 +101,24 @@ with AskSupport
   def receive =
   {
     case result:QueryResult =>
+      println("running query")
       implicit val timeout = Timeout(5 seconds)
-      val res:Future[Any] =  servers(masterIndex) ? result
+      val res =  servers(masterIndex) ? result
       res onSuccess
         {
-          case properResults:QueryResult => sender ! properResults
+          case properResults:QueryResult => sender !  properResults
         }
-    case msg:Any => servers.foreach((server) => server ! msg)
+      println("so the result  is " + result.toString )
+    case msg:Any =>
+      for(index <- 0 to servers.size-1)
+      {
+        if(!downServers.contains(index))
+        {
+          servers(index) ! msg
+        }
+      }
     case voteChange:RequestVote =>
+      logger ! Message("starting vote")
       holdVote
     case (nodeRank:Boolean, pos:Int ) =>
       val time = SettingsManager.retrieveValue("lifeTime")
@@ -112,14 +126,7 @@ with AskSupport
       context.system.scheduler.scheduleOnce( time seconds)
       {
         downServers = downServers - pos
-        if(nodeRank)
-        {
-          createServer(false,pos)
-        }
-        else
-        {
-          createServer(nodeRank,pos)
-        }
+        servers(pos) ! false
       }
 
   }

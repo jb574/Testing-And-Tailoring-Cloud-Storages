@@ -22,6 +22,12 @@ object LogHelper
    * @param msg the message of this log entry
    */
   case class LogEntry( msg:String, date:String)
+  {
+    override def toString =
+    {
+      s"message: $msg, date: $date${System.lineSeparator()}}"
+    }
+  }
 
   private var log = List[LogEntry]()
   implicit val LogWrites = Json.writes[LogEntry]
@@ -34,8 +40,9 @@ object LogHelper
    */
   def addLogEntry(message:String) =
   {
-    log = new LogEntry(message, LocalDateTime.now().toString) :: log
-    println(log.toString())
+    val entry =  LogEntry(message, LocalDateTime.now().toString)
+    println(entry.toString)
+    log = entry :: log
   }
   /**
    * @return a json version of the log

@@ -22,3 +22,5 @@
 <models.DropTableStatementTest-stats timestamp="1437382017670"><stats time="105" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
 <models.DropTableStatementTest-stats timestamp="1437382458146"><stats time="97" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
 <models.DropTableStatementTest-stats timestamp="1437382817830"><stats time="96" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437736833033"><stats time="101" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>
+<models.DropTableStatementTest-stats timestamp="1437737966811"><stats time="99" expectations="2" successes="2" examples="2"></stats></models.DropTableStatementTest-stats>

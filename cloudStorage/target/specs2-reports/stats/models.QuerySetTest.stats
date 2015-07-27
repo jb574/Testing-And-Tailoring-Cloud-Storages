@@ -25,3 +25,5 @@
 <models.QuerySetTest-stats timestamp="1437382019546"><stats time="94" expectations="3" successes="3" examples="3"><trend><stats time="94" errors="-1" successes="1"></stats></trend></stats></models.QuerySetTest-stats>
 <models.QuerySetTest-stats timestamp="1437382460045"><stats time="93" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
 <models.QuerySetTest-stats timestamp="1437382819816"><stats time="84" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437736835123"><stats time="92" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>
+<models.QuerySetTest-stats timestamp="1437737968877"><stats time="87" expectations="3" successes="3" examples="3"></stats></models.QuerySetTest-stats>

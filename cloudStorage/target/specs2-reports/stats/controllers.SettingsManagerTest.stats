@@ -19,3 +19,5 @@
 <controllers.SettingsManagerTest-stats timestamp="1437382019422"><stats time="146" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
 <controllers.SettingsManagerTest-stats timestamp="1437382459921"><stats time="150" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
 <controllers.SettingsManagerTest-stats timestamp="1437382819703"><stats time="226" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437736834996"><stats time="131" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>
+<controllers.SettingsManagerTest-stats timestamp="1437737968760"><stats time="222" expectations="4" successes="4" examples="4"></stats></controllers.SettingsManagerTest-stats>

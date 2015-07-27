@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:4fd6694f93dddc805b72e67f838c174d02386a69
-// @DATE:Tue Jul 21 14:51:31 BST 2015
+// @HASH:04a4412a5fc1a16fcd44f0d07f5c43d1722b09ed
+// @DATE:Fri Jul 24 14:21:47 BST 2015
 
 
 import scala.language.reflectiveCalls
@@ -134,34 +134,41 @@ controllers.FrontEnd.runEventuallyConsistentQuery,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "runEventuallyConsistentQuery", Nil,"POST", """""", Routes.prefix + """select"""))
         
 
+// @LINE:28
+private[this] lazy val controllers_FrontEnd_getAllPossiblilities14_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("selectAllPossible"))))
+private[this] lazy val controllers_FrontEnd_getAllPossiblilities14_invoker = createInvoker(
+controllers.FrontEnd.getAllPossiblilities,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getAllPossiblilities", Nil,"POST", """""", Routes.prefix + """selectAllPossible"""))
+        
+
 // @LINE:32
-private[this] lazy val controllers_SampleApplications_runFirstSample14_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("sample1"))))
-private[this] lazy val controllers_SampleApplications_runFirstSample14_invoker = createInvoker(
+private[this] lazy val controllers_SampleApplications_runFirstSample15_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("sample1"))))
+private[this] lazy val controllers_SampleApplications_runFirstSample15_invoker = createInvoker(
 controllers.SampleApplications.runFirstSample,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "runFirstSample", Nil,"GET", """ the urls below show the ample applications i wrote to help rove my eventual consistency implementation does the jo""", Routes.prefix + """sample1"""))
         
 
 // @LINE:33
-private[this] lazy val controllers_SampleApplications_runSecondSample15_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("sample2"))))
-private[this] lazy val controllers_SampleApplications_runSecondSample15_invoker = createInvoker(
+private[this] lazy val controllers_SampleApplications_runSecondSample16_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("sample2"))))
+private[this] lazy val controllers_SampleApplications_runSecondSample16_invoker = createInvoker(
 controllers.SampleApplications.runSecondSample,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "runSecondSample", Nil,"GET", """""", Routes.prefix + """sample2"""))
         
 
 // @LINE:34
-private[this] lazy val controllers_SampleApplications_test16_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("test"))))
-private[this] lazy val controllers_SampleApplications_test16_invoker = createInvoker(
+private[this] lazy val controllers_SampleApplications_test17_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("test"))))
+private[this] lazy val controllers_SampleApplications_test17_invoker = createInvoker(
 controllers.SampleApplications.test,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "test", Nil,"GET", """""", Routes.prefix + """test"""))
         
 
 // @LINE:37
-private[this] lazy val controllers_Assets_versioned17_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_versioned17_invoker = createInvoker(
+private[this] lazy val controllers_Assets_versioned18_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_versioned18_invoker = createInvoker(
 controllers.Assets.versioned(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """testold""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """name/value/updateVal""","""controllers.FrontEnd.changeProperty(name:String, value:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.FrontEnd.getInconsistentUPdateInfo"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample1""","""controllers.SampleApplications.runFirstSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample2""","""controllers.SampleApplications.runSecondSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.SampleApplications.test"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """testold""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """name/value/updateVal""","""controllers.FrontEnd.changeProperty(name:String, value:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.FrontEnd.getInconsistentUPdateInfo"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """selectAllPossible""","""controllers.FrontEnd.getAllPossiblilities"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample1""","""controllers.SampleApplications.runFirstSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample2""","""controllers.SampleApplications.runSecondSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.SampleApplications.test"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -281,34 +288,42 @@ case controllers_FrontEnd_runEventuallyConsistentQuery13_route(params) => {
 }
         
 
-// @LINE:32
-case controllers_SampleApplications_runFirstSample14_route(params) => {
+// @LINE:28
+case controllers_FrontEnd_getAllPossiblilities14_route(params) => {
    call { 
-        controllers_SampleApplications_runFirstSample14_invoker.call(controllers.SampleApplications.runFirstSample)
+        controllers_FrontEnd_getAllPossiblilities14_invoker.call(controllers.FrontEnd.getAllPossiblilities)
+   }
+}
+        
+
+// @LINE:32
+case controllers_SampleApplications_runFirstSample15_route(params) => {
+   call { 
+        controllers_SampleApplications_runFirstSample15_invoker.call(controllers.SampleApplications.runFirstSample)
    }
 }
         
 
 // @LINE:33
-case controllers_SampleApplications_runSecondSample15_route(params) => {
+case controllers_SampleApplications_runSecondSample16_route(params) => {
    call { 
-        controllers_SampleApplications_runSecondSample15_invoker.call(controllers.SampleApplications.runSecondSample)
+        controllers_SampleApplications_runSecondSample16_invoker.call(controllers.SampleApplications.runSecondSample)
    }
 }
         
 
 // @LINE:34
-case controllers_SampleApplications_test16_route(params) => {
+case controllers_SampleApplications_test17_route(params) => {
    call { 
-        controllers_SampleApplications_test16_invoker.call(controllers.SampleApplications.test)
+        controllers_SampleApplications_test17_invoker.call(controllers.SampleApplications.test)
    }
 }
         
 
 // @LINE:37
-case controllers_Assets_versioned17_route(params) => {
+case controllers_Assets_versioned18_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_versioned17_invoker.call(controllers.Assets.versioned(path, file))
+        controllers_Assets_versioned18_invoker.call(controllers.Assets.versioned(path, file))
    }
 }
         

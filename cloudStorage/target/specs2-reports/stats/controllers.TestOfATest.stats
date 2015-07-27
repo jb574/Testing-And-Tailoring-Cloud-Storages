@@ -81,3 +81,5 @@
 <controllers.TestOfATest-stats timestamp="1437382017939"><stats time="50" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
 <controllers.TestOfATest-stats timestamp="1437382458425"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
 <controllers.TestOfATest-stats timestamp="1437382818123"><stats time="56" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1437736833318"><stats time="52" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>
+<controllers.TestOfATest-stats timestamp="1437737967122"><stats time="58" expectations="1" successes="1" examples="1"></stats></controllers.TestOfATest-stats>

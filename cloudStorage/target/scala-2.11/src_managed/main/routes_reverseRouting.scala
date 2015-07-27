@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:4fd6694f93dddc805b72e67f838c174d02386a69
-// @DATE:Tue Jul 21 14:51:31 BST 2015
+// @HASH:04a4412a5fc1a16fcd44f0d07f5c43d1722b09ed
+// @DATE:Fri Jul 24 14:21:47 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -18,6 +18,7 @@ import Router.queryString
 // @LINE:34
 // @LINE:33
 // @LINE:32
+// @LINE:28
 // @LINE:27
 // @LINE:26
 // @LINE:25
@@ -78,6 +79,7 @@ def versioned(file:String): Call = {
 }
                           
 
+// @LINE:28
 // @LINE:27
 // @LINE:26
 // @LINE:25
@@ -109,6 +111,13 @@ def makeConsistent(): Call = {
 def delete(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "delete")
+}
+                        
+
+// @LINE:28
+def getAllPossiblilities(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "selectAllPossible")
 }
                         
 
@@ -209,6 +218,7 @@ def saveMutableQuery(): Call = {
 // @LINE:34
 // @LINE:33
 // @LINE:32
+// @LINE:28
 // @LINE:27
 // @LINE:26
 // @LINE:25
@@ -286,6 +296,7 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:28
 // @LINE:27
 // @LINE:26
 // @LINE:25
@@ -327,6 +338,17 @@ def delete : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "delete"})
+      }
+   """
+)
+                        
+
+// @LINE:28
+def getAllPossiblilities : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.getAllPossiblilities",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "selectAllPossible"})
       }
    """
 )
@@ -473,6 +495,7 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 // @LINE:34
 // @LINE:33
 // @LINE:32
+// @LINE:28
 // @LINE:27
 // @LINE:26
 // @LINE:25
@@ -530,6 +553,7 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
+// @LINE:28
 // @LINE:27
 // @LINE:26
 // @LINE:25
@@ -558,6 +582,12 @@ def makeConsistent(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:23
 def delete(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.delete(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "delete", Seq(), "POST", """""", _prefix + """delete""")
+)
+                      
+
+// @LINE:28
+def getAllPossiblilities(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.getAllPossiblilities(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getAllPossiblilities", Seq(), "POST", """""", _prefix + """selectAllPossible""")
 )
                       
 

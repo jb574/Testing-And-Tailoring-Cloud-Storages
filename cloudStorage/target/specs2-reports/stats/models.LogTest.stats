@@ -19,3 +19,5 @@
 <models.LogTest-stats timestamp="1437382018083"><stats time="40" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
 <models.LogTest-stats timestamp="1437382458571"><stats time="39" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
 <models.LogTest-stats timestamp="1437382818286"><stats time="49" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437736833471"><stats time="44" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>
+<models.LogTest-stats timestamp="1437737967293"><stats time="49" expectations="1" successes="1" examples="1"></stats></models.LogTest-stats>

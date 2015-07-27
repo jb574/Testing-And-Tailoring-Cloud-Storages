@@ -25,7 +25,7 @@ GET         /makeConsistent          controllers.FrontEnd.makeConsistent
 POST        /name/value/updateVal        controllers.FrontEnd.changeProperty(name:String,value:Int)
 GET         /allUpdates              controllers.FrontEnd.getInconsistentUPdateInfo
 POST        /select                  controllers.FrontEnd.runEventuallyConsistentQuery
-
+POST        /selectAllPossible       controllers.FrontEnd.getAllPossiblilities
 
 
 # the urls below show the ample applications i wrote to help rove my eventual consistency implementation does the jo

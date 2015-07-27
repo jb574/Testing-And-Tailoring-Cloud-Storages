@@ -213,7 +213,11 @@ object QueryResultHelper
      */
     def addRow(row:Map[String,String]) =
       results = row :: results
-    
+
+    def this(other:QueryResult) =
+    {
+      this(other.tables,other.results)
+    }
     
     
   }

@@ -25,3 +25,5 @@
 <models.UpdateStatementTest-stats timestamp="1437382018016"><stats time="48" expectations="1" successes="1" examples="1"></stats></models.UpdateStatementTest-stats>
 <models.UpdateStatementTest-stats timestamp="1437382458506"><stats time="48" expectations="1" successes="1" examples="1"></stats></models.UpdateStatementTest-stats>
 <models.UpdateStatementTest-stats timestamp="1437382818210"><stats time="55" expectations="1" successes="1" examples="1"></stats></models.UpdateStatementTest-stats>
+<models.UpdateStatementTest-stats timestamp="1437736833400"><stats time="51" expectations="1" successes="1" examples="1"></stats></models.UpdateStatementTest-stats>
+<models.UpdateStatementTest-stats timestamp="1437737967211"><stats time="56" expectations="1" successes="1" examples="1"></stats></models.UpdateStatementTest-stats>

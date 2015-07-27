@@ -20,4 +20,5 @@ object Messages
   case class ConcernedHealthRequest()
   case class MasterAlive()
   case class WonVote()
+  case class InformationRequest()
 }

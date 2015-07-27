@@ -17,3 +17,5 @@
 <models.InconsistentUpdatesLogTest-stats timestamp="1437382019166"><stats time="72" expectations="2" successes="2" examples="2"></stats></models.InconsistentUpdatesLogTest-stats>
 <models.InconsistentUpdatesLogTest-stats timestamp="1437382459654"><stats time="72" expectations="2" successes="2" examples="2"></stats></models.InconsistentUpdatesLogTest-stats>
 <models.InconsistentUpdatesLogTest-stats timestamp="1437382819365"><stats time="70" expectations="2" successes="2" examples="2"></stats></models.InconsistentUpdatesLogTest-stats>
+<models.InconsistentUpdatesLogTest-stats timestamp="1437736834646"><stats time="72" expectations="2" successes="2" examples="2"></stats></models.InconsistentUpdatesLogTest-stats>
+<models.InconsistentUpdatesLogTest-stats timestamp="1437737968426"><stats time="69" expectations="2" successes="2" examples="2"></stats></models.InconsistentUpdatesLogTest-stats>

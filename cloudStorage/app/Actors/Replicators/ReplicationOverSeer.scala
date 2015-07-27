@@ -106,22 +106,45 @@ with AskSupport
   }
 
 
+  def getOneValue(server:ActorRef,resSet:Set[String],result:QueryResult):Set[String] =
+  {
+    val queryRes = processQuery(new QueryResult(result))
+     resSet + ("|" + queryRes.toString + "|")
+  }
+
   def receive =
   {
     case query:MutableSQLStatement =>  processUpdate(query)
     case MakeConsistent => makeConsistent
+    case (true, result:QueryResult) =>
+      var resSet:Set[String] = Set()
+       servers.foreach(
+         (server) => resSet = getOneValue(server,resSet,result))
+      sender ! resSet
     case results:QueryResult =>
-      implicit val timeout = Timeout(5 seconds)
-      val res:Future[Any] = servers(getRandomServerNumber) ? results
-      res onSuccess
-      {
-      case properResults:QueryResult => sender ! properResults
-      }
+      val updatedResultss:QueryResult = processQuery(results)
+      println(s"were sending ${updatedResultss.toString}")
+      sender ! updatedResultss
     case testData:ArrayBuffer[ActorRef] => servers = testData
               updateReferenceLists
     case msg  => error(getClass.toString,msg.getClass.toString)
 
   }
+
+  def processQuery(result: QueryResult):QueryResult =
+  {
+    var finalResult = new QueryResult()
+    implicit val timeout = Timeout(5 seconds)
+    val res = servers(getRandomServerNumber) ? result
+    res onSuccess
+      {
+        case properResults:QueryResult =>
+          println("string is " + properResults.toString)
+          finalResult = properResults
+      }
+   finalResult
+  }
+
 
 
 }

@@ -1,3 +1,15 @@
-2015-07-21 14:52:23,698 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-6 
+2015-07-26 22:22:01,326 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-07-26 22:23:22,787 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost:8889/health
+
+2015-07-26 22:23:22,799 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-07-26 22:23:23,003 - [INFO] - from play in New I/O worker #1 
+Starting application default Akka system.
+
+2015-07-26 22:24:54,390 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-5 
+Shutdown application default Akka system.
 

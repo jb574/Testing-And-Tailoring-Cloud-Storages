@@ -20,3 +20,5 @@
 <models.DeleteTableStatementTest-stats timestamp="1437382019606"><stats time="35" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
 <models.DeleteTableStatementTest-stats timestamp="1437382460105"><stats time="36" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
 <models.DeleteTableStatementTest-stats timestamp="1437382819868"><stats time="30" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
+<models.DeleteTableStatementTest-stats timestamp="1437736835188"><stats time="30" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>
+<models.DeleteTableStatementTest-stats timestamp="1437737968929"><stats time="31" expectations="1" successes="1" examples="1"></stats></models.DeleteTableStatementTest-stats>

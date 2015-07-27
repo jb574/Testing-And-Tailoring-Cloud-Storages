@@ -2,27 +2,27 @@
 [0m[[0mdebug[0m] [0mCreate a single-thread test executor[0m
 [0m[[0mdebug[0m] [0mRunner for com.novocode.junit.JUnitFramework produced 0 initial tasks for 0 tests.[0m
 [0m[[0mdebug[0m] [0mRunner for org.specs2.runner.Specs2Framework produced 19 initial tasks for 19 tests.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.Replicators.ReplicationMarshallerTest, sbt.ForkMain$SubclassFingerscan@63d17b8c, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.Replicators.ReplicationMarshallerTest, sbt.ForkMain$SubclassFingerscan@6a20f830, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mReplicationMarshallerTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mthe ReplicationMarshaller  should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m send any ArrayBuffer messages it gets straight onto the database server to be comitted[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification ReplicationMarshallerTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 1 second, 222 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 1 second, 260 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.SimpleUpdateTest, sbt.ForkMain$SubclassFingerscan@2f1359a4, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.SimpleUpdateTest, sbt.ForkMain$SubclassFingerscan@1f2ff4de, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mSimpleUpdateTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mthe databas query action  should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m execute a simple sql update and keep a record of it[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification SimpleUpdateTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 403 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 421 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(models.DropTableStatementTest, sbt.ForkMain$SubclassFingerscan@2c108bff, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(models.DropTableStatementTest, sbt.ForkMain$SubclassFingerscan@179679c1, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mDropTableStatementTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37ma drop table statement should[0m[37m[0m[0m
@@ -32,50 +32,50 @@
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m be capable of producign perfect SQL[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification DropTableStatementTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 96 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 99 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m2 examples, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 2 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(models.insertTableStatementTest, sbt.ForkMain$SubclassFingerscan@56326734, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(models.insertTableStatementTest, sbt.ForkMain$SubclassFingerscan@7bd8ab8b, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0minsertTableStatementTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37man insert table statement should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m behave like real SQL when converted to text[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification insertTableStatementTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 57 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 50 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.ListTest, sbt.ForkMain$SubclassFingerscan@2db9029d, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.ListTest, sbt.ForkMain$SubclassFingerscan@28d14dff, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mListTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mthe listAction should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m display a json list[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification ListTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 67 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 69 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.TestOfATest, sbt.ForkMain$SubclassFingerscan@49376dce, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.TestOfATest, sbt.ForkMain$SubclassFingerscan@125f8a64, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mTestOfATest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mtestAction Application should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m print something[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification TestOfATest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 56 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 58 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(models.UpdateStatementTest, sbt.ForkMain$SubclassFingerscan@270fd71e, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(models.UpdateStatementTest, sbt.ForkMain$SubclassFingerscan@308b435e, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mUpdateStatementTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37man update statment should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m produce proper sql[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification UpdateStatementTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 55 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 56 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(models.LogTest, sbt.ForkMain$SubclassFingerscan@2e3af75f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(models.LogTest, sbt.ForkMain$SubclassFingerscan@70a617a3, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mLogTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37ma call to addLogEntry should[0m[37m[0m[0m
@@ -85,7 +85,7 @@
 [0m[[0minfo[0m] [0m[36mFinished in 49 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(models.CreateTableStatementTest, sbt.ForkMain$SubclassFingerscan@57abb790, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(models.CreateTableStatementTest, sbt.ForkMain$SubclassFingerscan@3dd4e794, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mCreateTableStatementTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37ma create table statement should[0m[37m[0m[0m
@@ -95,14 +95,32 @@
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m be capbaple of producing an sql represnetation that matches real sql[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification CreateTableStatementTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 96 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 84 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m2 examples, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 2 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.Replicators.ReplicationServerTest, sbt.ForkMain$SubclassFingerscan@1c11c8d7, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.Replicators.ReplicationServerTest, sbt.ForkMain$SubclassFingerscan@da859c, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mReplicationServerTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37ma replication server should[0m[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m[0m [32m+[0m always handle  new queries effectively[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m [31m![0m always handle  new queries effectively[0m[0m
+[0m[[31merror[0m] [0m    IllegalActorStateException: : underlying actor is terminated  (TestActorRef.scala:89)[0m
+[0m[[31merror[0m] [0makka.testkit.TestActorRef.underlyingActor(TestActorRef.scala:89)[0m
+[0m[[31merror[0m] [0mActors.Replicators.ReplicationServerTest$TestSystem.checkProcessingNewQueries(ReplicationServerTest.scala:33)[0m
+[0m[[31merror[0m] [0mActors.Replicators.ReplicationServerTest$$anonfun$10$$anonfun$apply$8$$anon$1$$anonfun$2.apply$mcZ$sp(ReplicationServerTest.scala:100)[0m
+[0m[[31merror[0m] [0mActors.Replicators.ReplicationServerTest$$anonfun$10$$anonfun$apply$8$$anon$1$$anonfun$2.apply(ReplicationServerTest.scala:100)[0m
+[0m[[31merror[0m] [0mActors.Replicators.ReplicationServerTest$$anonfun$10$$anonfun$apply$8$$anon$1$$anonfun$2.apply(ReplicationServerTest.scala:100)[0m
+[0m[[31merror[0m] [0mActors.Replicators.ReplicationServerTest$$anonfun$10$$anonfun$apply$8$$anon$1.delayedEndpoint$Actors$Replicators$ReplicationServerTest$$anonfun$10$$anonfun$apply$8$$anon$1$1(ReplicationServerTest.scala:100)[0m
+[0m[[31merror[0m] [0mActors.Replicators.ReplicationServerTest$$anonfun$10$$anonfun$apply$8$$anon$1$delayedInit$body.apply(ReplicationServerTest.scala:98)[0m
+[0m[[31merror[0m] [0mplay.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)[0m
+[0m[[31merror[0m] [0mplay.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)[0m
+[0m[[31merror[0m] [0mplay.api.test.PlayRunners$class.running(Helpers.scala:49)[0m
+[0m[[31merror[0m] [0mplay.api.test.Helpers$.running(Helpers.scala:403)[0m
+[0m[[31merror[0m] [0mplay.api.test.WithApplication.around(Specs.scala:23)[0m
+[0m[[31merror[0m] [0mplay.api.test.WithApplication.delayedInit(Specs.scala:20)[0m
+[0m[[31merror[0m] [0mActors.Replicators.ReplicationServerTest$$anonfun$10$$anonfun$apply$8$$anon$1.<init>(ReplicationServerTest.scala:98)[0m
+[0m[[31merror[0m] [0mActors.Replicators.ReplicationServerTest$$anonfun$10$$anonfun$apply$8.apply(ReplicationServerTest.scala:98)[0m
+[0m[[31merror[0m] [0mActors.Replicators.ReplicationServerTest$$anonfun$10$$anonfun$apply$8.apply(ReplicationServerTest.scala:98)[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37ma replication server  should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m always be able to change application servers at aill [37m[0m[0m
@@ -123,10 +141,10 @@
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m should merge all queries that operate on the same tables sent before the last one [37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification ReplicationServerTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 411 ms[0m[0m
-[0m[[0minfo[0m] [0m[36m[0m[36m7 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 433 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m7 examples, 0 failure, 1 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 7 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.Replicators.ReplicationOverSeerTest, sbt.ForkMain$SubclassFingerscan@3a857392, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.Replicators.ReplicationOverSeerTest, sbt.ForkMain$SubclassFingerscan@34f35046, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mReplicationOverSeerTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mthe Replicationoverseers  should[0m[37m[0m[0m
@@ -145,10 +163,10 @@
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m make sure thatone server recieves each databae result[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification ReplicationOverSeerTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 324 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 327 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m5 examples, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 5 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(models.InconsistentUpdatesLogTest, sbt.ForkMain$SubclassFingerscan@4b885ce1, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(models.InconsistentUpdatesLogTest, sbt.ForkMain$SubclassFingerscan@66db78d1, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mInconsistentUpdatesLogTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mthe inconsistent updates log should[0m[37m[0m[0m
@@ -158,20 +176,20 @@
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m be able to regurgitatle all seen updates[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification InconsistentUpdatesLogTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 70 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 69 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m2 examples, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 2 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.DatabaseCommiterTest, sbt.ForkMain$SubclassFingerscan@593fdcfa, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.DatabaseCommiterTest, sbt.ForkMain$SubclassFingerscan@504466ff, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mDatabaseCommiterTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mthe database committer should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m throw an illegalArgumentException when it gets a message it doesn'tknow how to handle[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification DatabaseCommiterTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 59 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 55 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.SettingsManagerTest, sbt.ForkMain$SubclassFingerscan@10700b9b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.SettingsManagerTest, sbt.ForkMain$SubclassFingerscan@5a2e990c, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mSettingsManagerTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mthe settings manager should[0m[37m[0m[0m
@@ -187,10 +205,10 @@
 [0m[[0minfo[0m] [0m[37m[0m [32m+[0m trhow an excpetion if we try to create a key[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification SettingsManagerTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 226 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 222 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m4 examples, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 4 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(models.QuerySetTest, sbt.ForkMain$SubclassFingerscan@15ef5924, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(models.QuerySetTest, sbt.ForkMain$SubclassFingerscan@27602666, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mQuerySetTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mtwo querysets that share the same tables should[0m[37m[0m[0m
@@ -203,57 +221,56 @@
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m have both sets of elements and vector clocks[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification QuerySetTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 84 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 87 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m3 examples, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 3 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(models.DeleteTableStatementTest, sbt.ForkMain$SubclassFingerscan@3e04b08, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(models.DeleteTableStatementTest, sbt.ForkMain$SubclassFingerscan@135513a8, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mDeleteTableStatementTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37ma delte table statement should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m be capable of bing run in a database when convertted to a string[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification DeleteTableStatementTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 30 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 31 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.DatabaseComitterOverSeerTest, sbt.ForkMain$SubclassFingerscan@32f054d0, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.DatabaseComitterOverSeerTest, sbt.ForkMain$SubclassFingerscan@659148b9, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mDatabaseComitterOverSeerTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mthe database committer overseer should should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m spawn a slave, send it on and keep a record of it[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m[0m[37mthe database committer overseer should should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mthe database committer overseer  should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m not process each query more than once[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification DatabaseComitterOverSeerTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 102 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 116 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m2 examples, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 2 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.Replicators.ReplicationClusterTest, sbt.ForkMain$SubclassFingerscan@10e4af2c, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(Actors.Replicators.ReplicationClusterTest, sbt.ForkMain$SubclassFingerscan@1a6fa912, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mReplicationClusterTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37ma replication cluster should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m forward all messages it recieves[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification ReplicationClusterTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 69 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 68 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.SimpleQueryTest, sbt.ForkMain$SubclassFingerscan@fdfc526, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(controllers.SimpleQueryTest, sbt.ForkMain$SubclassFingerscan@c7a2f7f, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0mSimpleQueryTest[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37mthe databas query action  should[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[32m+[0m execute a simple sql query and keep a record of it[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification SimpleQueryTest[0m
-[0m[[0minfo[0m] [0m[36mFinished in 57 ms[0m[0m
+[0m[[0minfo[0m] [0m[36mFinished in 55 ms[0m[0m
 [0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 0 error[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
 [0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
 [0m[[0mdebug[0m] [0mSummary for specs2 not available.[0m
-[0m[[0minfo[0m] [0mPassed: Total 38, Failed 0, Errors 0, Passed 38[0m
+[0m[[31merror[0m] [0mError: Total 38, Failed 0, Errors 1, Passed 37[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
-[0m[[0mdebug[0m] [0m	Actors.Replicators.ReplicationServerTest[0m
 [0m[[0mdebug[0m] [0m	models.QuerySetTest[0m
 [0m[[0mdebug[0m] [0m	controllers.SimpleQueryTest[0m
 [0m[[0mdebug[0m] [0m	models.UpdateStatementTest[0m
@@ -272,3 +289,6 @@
 [0m[[0mdebug[0m] [0m	controllers.ListTest[0m
 [0m[[0mdebug[0m] [0m	Actors.DatabaseCommiterTest[0m
 [0m[[0mdebug[0m] [0m	models.LogTest[0m
+[0m[[31merror[0m] [0mError during tests:[0m
+[0m[[31merror[0m] [0m	Actors.Replicators.ReplicationServerTest[0m
+[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
