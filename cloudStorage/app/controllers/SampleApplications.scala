@@ -3,7 +3,7 @@ package controllers
 
 import models.SelectStatementHelper.SelectStatement
 import play.api.mvc._
-import sample.{WebServiceUtils, SingleWriterSample, DoubleWriterService}
+import sample.{DynamoDBInterface, WebServiceUtils, SingleWriterSample, DoubleWriterService}
 
 /**
  * This class houses
@@ -21,6 +21,11 @@ object SampleApplications  extends Controller
      Ok(SingleWriterSample.runSample())
   }
 
+
+  def amazonTest = Action
+  {
+       Ok(DynamoDBInterface.preformRead().toString)
+  }
 
   def test = Action
   {

@@ -14,7 +14,7 @@ import akka.dispatch
 import akka.pattern.AskSupport
 import akka.testkit.TestActorRef
 import akka.util.Timeout
-import models.InconsistentQueryRecords
+import models.{BasicAvailStatsGenerator, InconsistentQueryRecords}
 import models.QueryResultHelper.QueryResult
 import models.SQLStatementHelper.MutableSQLStatement
 import models.UpdateTableStatmentHelper.UpdateTableStatment
@@ -103,6 +103,7 @@ with AskSupport
     println("making consistent")
     servers.foreach((server) => server ! MakeConsistent)
     scheduleNextConsistencyRun
+    BasicAvailStatsGenerator.recordStats()
   }
 
 

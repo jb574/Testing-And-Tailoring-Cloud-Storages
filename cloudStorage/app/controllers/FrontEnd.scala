@@ -14,7 +14,7 @@ import scala.concurrent.{ExecutionContext, Future, Await}
 import controllers.Application._
 import models.CreateTableStatementHelpers.CreateTableStatement
 import models.DripTableStatementHelper.DropTableStatement
-import models.{InconsistentQueryRecords, LogHelper, SQLQuery}
+import models.{BasicAvailStatsGenerator, InconsistentQueryRecords, LogHelper, SQLQuery}
 import models.UpdateTableStatmentHelper.UpdateTableStatment
 import play.api.libs.json._
 import akka.util.Timeout
@@ -143,12 +143,19 @@ object FrontEnd  extends Controller
       },
       goodStatement => {
         println("hitting it ")
+        InconsistentQueryRecords.addItem(goodStatement.toString)
         repServer ! goodStatement
         Ok("all ok here")
       }
     )
   }
 
+
+
+  def getAvailibilityStats =Action
+  {
+    Ok(BasicAvailStatsGenerator.getDisplayableResults())
+  }
 
   def changeProperty(name:String,value:Int) = Action
   {

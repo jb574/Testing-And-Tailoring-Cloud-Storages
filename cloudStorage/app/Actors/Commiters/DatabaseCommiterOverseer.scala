@@ -46,7 +46,6 @@ class DatabaseCommiterOverseer (logger:ActorRef) extends SystemActor(logger)
     {
       println("sending to database now")
       val slave = context.actorOf(Props(new DatabaseCommiter(logger)))
-      FailureHandle ! (true, update)
       slave ! update
       slave ! PoisonPill
       seenQueries = seenQueries + update

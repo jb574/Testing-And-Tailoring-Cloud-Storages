@@ -22,16 +22,16 @@ GET         /log                     controllers.FrontEnd.getLogOutput
 POST        /insert                  controllers.FrontEnd.insert
 POST        /delete                  controllers.FrontEnd.delete
 GET         /makeConsistent          controllers.FrontEnd.makeConsistent
-POST        /name/value/updateVal        controllers.FrontEnd.changeProperty(name:String,value:Int)
+POST       /updateVal/name/value    controllers.FrontEnd.changeProperty(name:String,value:Int)
 GET         /allUpdates              controllers.FrontEnd.getInconsistentUPdateInfo
 POST        /select                  controllers.FrontEnd.runEventuallyConsistentQuery
 POST        /selectAllPossible       controllers.FrontEnd.getAllPossiblilities
-
-
+GET         /amazonTest               controllers.SampleApplications.amazonTest
+GET        /stats                    controllers.FrontEnd.getAvailibilityStats
 # the urls below show the ample applications i wrote to help rove my eventual consistency implementation does the jo
 GET    /sample1                    controllers.SampleApplications.runFirstSample
 GET    /sample2                    controllers.SampleApplications.runSecondSample
-GET    /test                       controllers.SampleApplications.test
+GET    /test                       controllers.SampleApplications.amazonTest
 
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file            controllers.Assets.versioned(path="/public", file)

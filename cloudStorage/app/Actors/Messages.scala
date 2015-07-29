@@ -21,4 +21,5 @@ object Messages
   case class MasterAlive()
   case class WonVote()
   case class InformationRequest()
+  case class RequestNewVote()
 }

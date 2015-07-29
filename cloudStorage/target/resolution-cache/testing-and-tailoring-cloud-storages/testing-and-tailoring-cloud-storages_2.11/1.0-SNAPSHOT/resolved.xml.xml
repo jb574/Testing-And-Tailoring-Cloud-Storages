@@ -4,7 +4,7 @@
 		module="testing-and-tailoring-cloud-storages_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20150726222158"
+		publication="20150729150117"
 	>
 		<description>
 		Testing and Tailoring cloud storages
@@ -45,5 +45,6 @@
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.35" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-testkit_2.11" rev="2.3.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.3.9" conf="compile->default(compile)"/>
+		<dependency org="com.amazonaws" name="aws-java-sdk" rev="1.10.5.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

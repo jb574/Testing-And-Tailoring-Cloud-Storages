@@ -1,15 +1,155 @@
-2015-07-26 22:22:01,326 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-3 
+2015-07-29 15:01:21,775 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-07-26 22:23:22,787 - [INFO] - from play in play-internal-execution-context-1 
+2015-07-29 15:01:57,918 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:mysql://localhost:8889/health
 
-2015-07-26 22:23:22,799 - [INFO] - from play in play-internal-execution-context-1 
+2015-07-29 15:01:57,931 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-07-26 22:23:23,003 - [INFO] - from play in New I/O worker #1 
-Starting application default Akka system.
+2015-07-29 15:01:59,446 - [ERROR] - from application in play-akka.actor.default-dispatcher-5 
 
-2015-07-26 22:24:54,390 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-5 
-Shutdown application default Akka system.
+
+! @6n1ek5mo2 - Internal server error, for (GET) [/test] ->
+
+play.api.Application$$anon$1: Execution exception[[AmazonServiceException: null (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: AccessDeniedException; Request ID: ACDV56T5541MC35R3UPKRKEB2VVV4KQNSO5AEMVJF66Q9ASUAAJG)]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$14$$anonfun$apply$1.applyOrElse(PlayDefaultUpstreamHandler.scala:205) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$14$$anonfun$apply$1.applyOrElse(PlayDefaultUpstreamHandler.scala:202) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36) [scala-library-2.11.7.jar:na]
+	at scala.util.Failure$$anonfun$recover$1.apply(Try.scala:216) [scala-library-2.11.7.jar:na]
+	at scala.util.Try$.apply(Try.scala:192) [scala-library-2.11.7.jar:na]
+	at scala.util.Failure.recover(Try.scala:216) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+Caused by: com.amazonaws.AmazonServiceException: null (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: AccessDeniedException; Request ID: ACDV56T5541MC35R3UPKRKEB2VVV4KQNSO5AEMVJF66Q9ASUAAJG)
+	at com.amazonaws.http.AmazonHttpClient.handleErrorResponse(AmazonHttpClient.java:1160) ~[aws-java-sdk-core-1.10.5.1.jar:na]
+	at com.amazonaws.http.AmazonHttpClient.executeOneRequest(AmazonHttpClient.java:748) ~[aws-java-sdk-core-1.10.5.1.jar:na]
+	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:467) ~[aws-java-sdk-core-1.10.5.1.jar:na]
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:302) ~[aws-java-sdk-core-1.10.5.1.jar:na]
+	at com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient.invoke(AmazonDynamoDBClient.java:1781) ~[aws-java-sdk-dynamodb-1.10.5.1.jar:na]
+	at com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient.getItem(AmazonDynamoDBClient.java:1150) ~[aws-java-sdk-dynamodb-1.10.5.1.jar:na]
+	at com.amazonaws.services.dynamodbv2.document.internal.GetItemImpl.doLoadItem(GetItemImpl.java:77) ~[aws-java-sdk-dynamodb-1.10.5.1.jar:na]
+	at com.amazonaws.services.dynamodbv2.document.internal.GetItemImpl.getItemOutcome(GetItemImpl.java:40) ~[aws-java-sdk-dynamodb-1.10.5.1.jar:na]
+	at com.amazonaws.services.dynamodbv2.document.internal.GetItemImpl.getItemOutcome(GetItemImpl.java:99) ~[aws-java-sdk-dynamodb-1.10.5.1.jar:na]
+	at com.amazonaws.services.dynamodbv2.document.internal.GetItemImpl.getItem(GetItemImpl.java:111) ~[aws-java-sdk-dynamodb-1.10.5.1.jar:na]
+	at com.amazonaws.services.dynamodbv2.document.Table.getItem(Table.java:610) ~[aws-java-sdk-dynamodb-1.10.5.1.jar:na]
+	at sample.DynamoDBInterface$.preformRead(DynamoDBInterface.scala:23) ~[classes/:na]
+	at controllers.SampleApplications$$anonfun$amazonTest$1.apply(SampleApplications.scala:27) ~[classes/:na]
+	at controllers.SampleApplications$$anonfun$amazonTest$1.apply(SampleApplications.scala:27) ~[classes/:na]
+	at play.api.mvc.ActionBuilder$$anonfun$apply$17.apply(Action.scala:464) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.ActionBuilder$$anonfun$apply$17.apply(Action.scala:464) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$.invokeBlock(Action.scala:556) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$.invokeBlock(Action.scala:555) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.Option.map(Option.scala:146) ~[scala-library-2.11.7.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.7.jar:na]
+	... 6 common frames omitted
+
+2015-07-29 15:06:58,444 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 10. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2015-07-29 15:06:59,451 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 9. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2015-07-29 15:07:00,458 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 8. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2015-07-29 15:07:01,466 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 7. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2015-07-29 15:07:02,473 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 6. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2015-07-29 15:07:03,480 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 5. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2015-07-29 15:07:04,487 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 4. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2015-07-29 15:07:04,632 - [ERROR] - from com.jolbox.bonecp.ConnectionHandle in BoneCP-pool-watch-thread 
+Database access problem. Killing off this connection and all remaining connections in the connection pool. SQL State = 08S01
+
+2015-07-29 15:07:04,634 - [ERROR] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Error in trying to obtain a connection. Retrying in 1000ms
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_05]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) ~[na:1.8.0_05]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_05]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) ~[na:1.8.0_05]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[na:1.8.0_05]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[na:1.8.0_05]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.obtainInternalConnection(BoneCP.java:269) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.ConnectionHandle.<init>(ConnectionHandle.java:242) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.fillConnections(PoolWatchThread.java:115) [bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.run(PoolWatchThread.java:82) [bonecp-0.8.0.RELEASE.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_05]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_05]
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_05]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345) ~[na:1.8.0_05]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_05]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_05]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_05]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_05]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297) ~[mysql-connector-java-5.1.35.jar:5.1.35]
+	... 21 common frames omitted
 

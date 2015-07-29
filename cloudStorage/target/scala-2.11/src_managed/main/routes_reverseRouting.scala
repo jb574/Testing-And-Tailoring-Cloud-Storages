@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:04a4412a5fc1a16fcd44f0d07f5c43d1722b09ed
-// @DATE:Fri Jul 24 14:21:47 BST 2015
+// @HASH:68e74a763b0a4766d09cb7164605e0dd5b2a7198
+// @DATE:Wed Jul 29 14:05:19 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -18,6 +18,8 @@ import Router.queryString
 // @LINE:34
 // @LINE:33
 // @LINE:32
+// @LINE:30
+// @LINE:29
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -38,20 +40,27 @@ package controllers {
 // @LINE:34
 // @LINE:33
 // @LINE:32
+// @LINE:29
 class ReverseSampleApplications {
 
+
+// @LINE:34
+// @LINE:29
+def amazonTest(): Call = {
+   () match {
+// @LINE:29
+case ()  =>
+  import ReverseRouteContext.empty
+  Call("GET", _prefix + { _defaultPrefix } + "amazonTest")
+                                         
+   }
+}
+                                                
 
 // @LINE:33
 def runSecondSample(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "sample2")
-}
-                        
-
-// @LINE:34
-def test(): Call = {
-   import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "test")
 }
                         
 
@@ -79,6 +88,7 @@ def versioned(file:String): Call = {
 }
                           
 
+// @LINE:30
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -121,6 +131,13 @@ def getAllPossiblilities(): Call = {
 }
                         
 
+// @LINE:30
+def getAvailibilityStats(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "stats")
+}
+                        
+
 // @LINE:27
 def runEventuallyConsistentQuery(): Call = {
    import ReverseRouteContext.empty
@@ -145,7 +162,7 @@ def insert(): Call = {
 // @LINE:25
 def changeProperty(name:String, value:Int): Call = {
    import ReverseRouteContext.empty
-   Call("POST", _prefix + { _defaultPrefix } + "name/value/updateVal" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("name", name)), Some(implicitly[QueryStringBindable[Int]].unbind("value", value)))))
+   Call("POST", _prefix + { _defaultPrefix } + "updateVal/name/value" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("name", name)), Some(implicitly[QueryStringBindable[Int]].unbind("value", value)))))
 }
                         
 
@@ -218,6 +235,8 @@ def saveMutableQuery(): Call = {
 // @LINE:34
 // @LINE:33
 // @LINE:32
+// @LINE:30
+// @LINE:29
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -239,8 +258,26 @@ import ReverseRouteContext.empty
 // @LINE:34
 // @LINE:33
 // @LINE:32
+// @LINE:29
 class ReverseSampleApplications {
 
+
+// @LINE:34
+// @LINE:29
+def amazonTest : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.SampleApplications.amazonTest",
+   """
+      function() {
+      if (true) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "amazonTest"})
+      }
+      if (true) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "test"})
+      }
+      }
+   """
+)
+                        
 
 // @LINE:33
 def runSecondSample : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -248,17 +285,6 @@ def runSecondSample : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "sample2"})
-      }
-   """
-)
-                        
-
-// @LINE:34
-def test : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.SampleApplications.test",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "test"})
       }
    """
 )
@@ -296,6 +322,7 @@ def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:30
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -354,6 +381,17 @@ def getAllPossiblilities : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:30
+def getAvailibilityStats : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.getAvailibilityStats",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "stats"})
+      }
+   """
+)
+                        
+
 // @LINE:27
 def runEventuallyConsistentQuery : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.FrontEnd.runEventuallyConsistentQuery",
@@ -392,7 +430,7 @@ def changeProperty : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.FrontEnd.changeProperty",
    """
       function(name,value) {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "name/value/updateVal" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("name", name), (""" + implicitly[QueryStringBindable[Int]].javascriptUnbind + """)("value", value)])})
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "updateVal/name/value" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("name", name), (""" + implicitly[QueryStringBindable[Int]].javascriptUnbind + """)("value", value)])})
       }
    """
 )
@@ -495,6 +533,8 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 // @LINE:34
 // @LINE:33
 // @LINE:32
+// @LINE:30
+// @LINE:29
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -516,18 +556,19 @@ package controllers.ref {
 // @LINE:34
 // @LINE:33
 // @LINE:32
+// @LINE:29
 class ReverseSampleApplications {
 
+
+// @LINE:29
+def amazonTest(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.SampleApplications.amazonTest(), HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "amazonTest", Seq(), "GET", """""", _prefix + """amazonTest""")
+)
+                      
 
 // @LINE:33
 def runSecondSample(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.SampleApplications.runSecondSample(), HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "runSecondSample", Seq(), "GET", """""", _prefix + """sample2""")
-)
-                      
-
-// @LINE:34
-def test(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.SampleApplications.test(), HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "test", Seq(), "GET", """""", _prefix + """test""")
 )
                       
 
@@ -553,6 +594,7 @@ def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
+// @LINE:30
 // @LINE:28
 // @LINE:27
 // @LINE:26
@@ -591,6 +633,12 @@ def getAllPossiblilities(): play.api.mvc.HandlerRef[_] = new play.api.mvc.Handle
 )
                       
 
+// @LINE:30
+def getAvailibilityStats(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.getAvailibilityStats(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getAvailibilityStats", Seq(), "GET", """""", _prefix + """stats""")
+)
+                      
+
 // @LINE:27
 def runEventuallyConsistentQuery(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.runEventuallyConsistentQuery(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "runEventuallyConsistentQuery", Seq(), "POST", """""", _prefix + """select""")
@@ -611,7 +659,7 @@ def insert(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 
 // @LINE:25
 def changeProperty(name:String, value:Int): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.FrontEnd.changeProperty(name, value), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "changeProperty", Seq(classOf[String], classOf[Int]), "POST", """""", _prefix + """name/value/updateVal""")
+   controllers.FrontEnd.changeProperty(name, value), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "changeProperty", Seq(classOf[String], classOf[Int]), "POST", """""", _prefix + """updateVal/name/value""")
 )
                       
 

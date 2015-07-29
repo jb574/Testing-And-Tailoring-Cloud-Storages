@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:04a4412a5fc1a16fcd44f0d07f5c43d1722b09ed
-// @DATE:Fri Jul 24 14:21:47 BST 2015
+// @HASH:68e74a763b0a4766d09cb7164605e0dd5b2a7198
+// @DATE:Wed Jul 29 14:05:19 BST 2015
 
 package controllers;
 

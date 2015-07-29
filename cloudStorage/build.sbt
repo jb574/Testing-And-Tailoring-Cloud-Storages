@@ -20,3 +20,4 @@ libraryDependencies +=   "com.typesafe.akka" %% "akka-testkit" % "2.3.3"
 
 libraryDependencies += ws
 
+libraryDependencies +=   "com.amazonaws" % "aws-java-sdk" % "1.10.5.1"

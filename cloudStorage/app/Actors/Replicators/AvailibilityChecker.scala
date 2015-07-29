@@ -4,7 +4,7 @@ import Actors.Messages.{InformationRequest, Message}
 import Actors.SystemActor
 import akka.actor.ActorRef
 import controllers.SettingsManager
-import models.QuerySet
+import models.{BasicAvailStatsGenerator, QuerySet}
 import models.SQLStatementHelper.MutableSQLStatement
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -27,6 +27,7 @@ class AvailibilityChecker(repOverseer:ActorRef,logger:ActorRef) extends SystemAc
       {
         logger ! Message(s"there were $outstandingwork requests" +
           s"still still inconsistent in the database")
+        outstandingwork = 0
       }
   }
 
@@ -44,10 +45,11 @@ class AvailibilityChecker(repOverseer:ActorRef,logger:ActorRef) extends SystemAc
    def receive =
    {
      case work:QuerySet => outstandingwork += 1
-     case (true,work:QuerySet)  => outstandingwork -= work.queries.size
+     case (true,work:MutableSQLStatement)  => outstandingwork -=  1
+        BasicAvailStatsGenerator.addSucsess
      case (false,work:MutableSQLStatement) =>
-       repOverseer ! work
        failedQueries = work :: failedQueries
+       BasicAvailStatsGenerator.AddFailure
      case InformationRequest =>
        sender ! failedQueries.toString()
    }
