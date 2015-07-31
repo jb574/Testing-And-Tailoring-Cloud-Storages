@@ -259,57 +259,183 @@
 [warn] 13 warnings found
 [info] play - database [default] connected at jdbc:mysql://localhost:8889/health
 [info] play - Application started (Dev)
-[error] application - 
-[info] 
-[info] ! @6n1ek5mo2 - Internal server error, for (GET) [/test] ->
-[info] 
-[info] play.api.Application$$anon$1: Execution exception[[AmazonServiceException: null (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: AccessDeniedException; Request ID: ACDV56T5541MC35R3UPKRKEB2VVV4KQNSO5AEMVJF66Q9ASUAAJG)]]
-[info] 	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.9.jar:2.3.9]
-[info] 	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.9.jar:2.3.9]
-[info] 	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$14$$anonfun$apply$1.applyOrElse(PlayDefaultUpstreamHandler.scala:205) [play_2.11-2.3.9.jar:2.3.9]
-[info] 	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$14$$anonfun$apply$1.applyOrElse(PlayDefaultUpstreamHandler.scala:202) [play_2.11-2.3.9.jar:2.3.9]
-[info] 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36) [scala-library-2.11.7.jar:na]
-[info] Caused by: com.amazonaws.AmazonServiceException: null (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: AccessDeniedException; Request ID: ACDV56T5541MC35R3UPKRKEB2VVV4KQNSO5AEMVJF66Q9ASUAAJG)
-[info] 	at com.amazonaws.http.AmazonHttpClient.handleErrorResponse(AmazonHttpClient.java:1160) ~[aws-java-sdk-core-1.10.5.1.jar:na]
-[info] 	at com.amazonaws.http.AmazonHttpClient.executeOneRequest(AmazonHttpClient.java:748) ~[aws-java-sdk-core-1.10.5.1.jar:na]
-[info] 	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:467) ~[aws-java-sdk-core-1.10.5.1.jar:na]
-[info] 	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:302) ~[aws-java-sdk-core-1.10.5.1.jar:na]
-[info] 	at com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient.invoke(AmazonDynamoDBClient.java:1781) ~[aws-java-sdk-dynamodb-1.10.5.1.jar:na]
-[error] c.j.b.h.AbstractConnectionHook - Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 10. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
-[info] 
-[info] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[error] c.j.b.h.AbstractConnectionHook - Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 9. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
-[info] 
-[info] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[error] c.j.b.h.AbstractConnectionHook - Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 8. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
-[info] 
-[info] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[error] c.j.b.h.AbstractConnectionHook - Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 7. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
-[info] 
-[info] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[error] c.j.b.h.AbstractConnectionHook - Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 6. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
-[info] 
-[info] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[error] c.j.b.h.AbstractConnectionHook - Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 5. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
-[info] 
-[info] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[error] c.j.b.h.AbstractConnectionHook - Failed to acquire connection to jdbc:mysql://localhost:8889/health Sleeping for 1000ms and trying again. Attempts left: 4. Exception: java.net.ConnectException: Connection refused.Message:Communications link failure
-[info] 
-[info] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[info] play - Starting application default Akka system.
+[info] hello world
+[info] akka://application/user/$e
+[info] hitting prestart
+[info] hitting prestart
+[info] hitting prestart
+[info] master is true
+[info] master is true
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is false
+[info] master is true
+[info] master is false
+[info] master is false
+[info] master is false
+[info] message: hello world, date: 2015-07-31T15:01:37.925
+[info] }
+[info] hitting it 
+[info] im on fire
+[info] chosen server2
+[info] chance is 30
+[info] chance is 55
+[info] chance is 73
+[info] chance is 86
+[info] message: this message brought  server 3 down, date: 2015-07-31T15:01:38.154
+[info] }
+[info] message: this message brought  server 1 down, date: 2015-07-31T15:01:38.154
+[info] }
+[info] message: this message brought  server 2 down, date: 2015-07-31T15:01:38.154
+[info] }
+[info] message: this message brought  server 0 down, date: 2015-07-31T15:01:38.154
+[info] }
+[info] message: sever 0 was the master, date: 2015-07-31T15:01:38.154
+[info] }
+[info] downservers for cluster 2 contains Set(2)
+[info] message: noted that server 2 is down for cluster 2, date: 2015-07-31T15:01:38.159
+[info] }
+[info] message: noted that server 0 is down for cluster 2, date: 2015-07-31T15:01:38.160
+[info] }
+[info] downservers for cluster 2 contains Set(2, 0)
+[info] downservers for cluster 2 contains Set(2, 0, 3)
+[info] message: noted that server 3 is down for cluster 2, date: 2015-07-31T15:01:38.160
+[info] }
+[info] downservers for cluster 2 contains Set(2, 0, 3, 1)
+[info] message: noted that server 1 is down for cluster 2, date: 2015-07-31T15:01:38.161
+[info] }
 [info] Stopping Play fork run ...
-[error] c.j.b.ConnectionHandle - Database access problem. Killing off this connection and all remaining connections in the connection pool. SQL State = 08S01
-[error] c.j.b.PoolWatchThread - Error in trying to obtain a connection. Retrying in 1000ms
-[info] com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+[info] play - Shutdown application default Akka system.
+[info] [ERROR] [07/31/2015 15:02:15.965] [application-akka.actor.default-dispatcher-7] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationCluster.scheduleNextMasterCheckup(ReplicationCluster.scala:37)
+[info] 	at Actors.Replicators.ReplicationCluster.runSafetyCheck(ReplicationCluster.scala:51)
+[info] 	at Actors.Replicators.ReplicationCluster$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationCluster.scala:39)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
 [info] 
-[info] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-[info] 	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source) ~[na:na]
-[info] 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_05]
-[info] 	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) ~[na:1.8.0_05]
-[info] 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389) ~[mysql-connector-java-5.1.35.jar:5.1.35]
-[info] 	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038) ~[mysql-connector-java-5.1.35.jar:5.1.35]
-[info] Caused by: java.net.ConnectException: Connection refused
-[info] 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_05]
-[info] 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345) ~[na:1.8.0_05]
-[info] 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_05]
-[info] 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_05]
-[info] 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_05]
+[info] [ERROR] [07/31/2015 15:02:15.966] [application-akka.actor.default-dispatcher-7] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationCluster.scheduleNextMasterCheckup(ReplicationCluster.scala:37)
+[info] 	at Actors.Replicators.ReplicationCluster.runSafetyCheck(ReplicationCluster.scala:51)
+[info] 	at Actors.Replicators.ReplicationCluster$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationCluster.scala:39)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] [ERROR] [07/31/2015 15:02:15.967] [application-akka.actor.default-dispatcher-7] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationCluster.scheduleNextMasterCheckup(ReplicationCluster.scala:37)
+[info] 	at Actors.Replicators.ReplicationCluster.runSafetyCheck(ReplicationCluster.scala:51)
+[info] 	at Actors.Replicators.ReplicationCluster$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationCluster.scala:39)
+[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
+[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
+[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
+[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
+[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
+[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
+[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
+[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
+[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] making consistent
+[info] [ERROR] [07/31/2015 15:02:15.969] [application-akka.actor.default-dispatcher-7] [ActorSystem(application)] exception while executing timer task
+[info] java.lang.NullPointerException
+[info] 	at Actors.Replicators.ReplicationOverSeer.scheduleNextConsistencyRun(ReplicationOverSeer.scala:61)
+[info] 	at Actors.Replicators.ReplicationOverSeer.makeConsistent(ReplicationOverSeer.scala:105)
+[info] 	at Actors.Replicators.ReplicationOverSeer$$anonfun$scheduleNextConsistencyRun$1.apply$mcV$sp(ReplicationOverSeer.scala:63)

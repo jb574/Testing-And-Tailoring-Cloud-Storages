@@ -1,13 +1,32 @@
-New log file opened at Wed Jul 29 15:04:13 BST 2015 by 6178@jacks-MacBook-Pro.local
-Taking next connection to: 52173
-New client attempting to connect on port: 52174-52173
-  Address = /129.12.209.131:52173
-This client on port 52174 has uuid aecdead4-4c22-4ae5-be0c-5d42e932d4da configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-aecdead4-4c22-4ae5-be0c-5d42e932d4da
-Taking next connection to: 52173
+New log file opened at Fri Jul 31 14:56:25 BST 2015 by 9264@jacks-MacBook-Pro.local
+Taking next connection to: 54674
+New client attempting to connect on port: 54675-54674
+  Address = /129.12.209.131:54674
+This client on port 54675 has uuid e7fd83bb-5a04-4bd2-b4e0-713456d8e245 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-e7fd83bb-5a04-4bd2-b4e0-713456d8e245
+Taking next connection to: 54674
+New client attempting to connect on port: 54724-54674
+  Address = /129.12.209.131:54674
+Handshake exception on socket: 54724
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 54674
+New client attempting to connect on port: 54725-54674
+  Address = /129.12.209.131:54674
+This client on port 54725 has uuid 0e1a64ae-c242-4bb6-b03a-1f05e7bbf8da configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-0e1a64ae-c242-4bb6-b03a-1f05e7bbf8da
+Taking next connection to: 54674
 Checking to see if clients are empty...
 No non-daemon clients connected after 3 min. Shutting down.
+1 daemon clients are connected.
 Server socket thread exiting.
-0 clients open, will close them...
+1 clients open, will close them...
 All client sockets have been closed.
-Closing the 6178@jacks-MacBook-Pro.local logs at Wed Jul 29 15:07:13 BST 2015, goodbye.
+Closing the 9264@jacks-MacBook-Pro.local logs at Fri Jul 31 15:02:13 BST 2015, goodbye.
