@@ -22,9 +22,8 @@ class Logger  extends Actor with AskSupport
   }
 
   /**
-   * our recieve block, if we get a meessage
+   * our receive block, if we get a message
    * then we log it otherwise we just error
-   * @return
    */
    def receive =
    {

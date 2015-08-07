@@ -3,7 +3,7 @@ package controllers
 
 import models.SelectStatementHelper.SelectStatement
 import play.api.mvc._
-import sample.{DynamoDBInterface, WebServiceUtils, SingleWriterSample, DoubleWriterService}
+import sample._
 
 /**
  * This class houses
@@ -18,13 +18,33 @@ object SampleApplications  extends Controller
 {
   def runFirstSample = Action
   {
-     Ok(SingleWriterSample.runSample())
+     Ok(SingleWriterSample.runSample(new EmulatorDBInterface))
   }
 
+  /**
+   * code for running and configuring
+   * a sample application
+   * @param sample the sample application to run
+   * @param amazonUsed  a boolean determining which of the two services we use
+   *                    either DynamoDB or the emulator
+   * @return  the result of the sample run.
+   */
+  def runSample(sample:(DatabaseConnector) => String,amazonUsed:Boolean):String =
+  {
+     if(amazonUsed)
+     {
+       sample(new DynamoDBInterface)
+     }
+    else
+     {
+       sample(new EmulatorDBInterface)
+     }
+  }
 
   def amazonTest = Action
   {
-       Ok(DynamoDBInterface.preformRead().toString)
+    val interface = new DynamoDBInterface
+    Ok(interface.read().toString)
   }
 
   def test = Action
@@ -36,7 +56,7 @@ object SampleApplications  extends Controller
 
   def runSecondSample = Action
   {
-    Ok(DoubleWriterService.runSecondSample())
+    Ok(DoubleWriterService.runSecondSample(new DynamoDBInterface))
   }
 
 

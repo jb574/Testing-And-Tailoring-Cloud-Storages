@@ -13,16 +13,17 @@ import play.api.Play.current
  * this actor is the one responsible for making
  * database operations fully consistent
  * it does not do any of the consistency
- * checks itself but it  sends any sql queries to the database
+ * checks itself but it sends any sql queries to the database
  * as it gets them.
  * @author Jack Davey
  * @version 16th June 2015
+ * @param logger  the logging actor reference for monitoring purposes
  */
 class DatabaseCommiter(logger:ActorRef) extends SystemActor(logger)
 {
   /**
-   * recieve block for this actor
-   * if a MutableSQLStatement is recieved,
+   * receive block for this actor
+   * if a MutableSQLStatement is received,
    * it commits it to the database
    */
   def receive =

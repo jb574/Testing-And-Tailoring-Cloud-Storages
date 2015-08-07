@@ -35,7 +35,7 @@ class DatabaseCommiterOverseer (logger:ActorRef) extends SystemActor(logger)
 
   /**
    * method to transmit data to database,
-   * it checks that it hasnt already
+   * it checks that it hasn't already
    * seen the  update, if not then it creates
    * a child actor to send it to the database
    * @param update  the update to send to the database

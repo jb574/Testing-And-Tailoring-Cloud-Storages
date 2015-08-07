@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:68e74a763b0a4766d09cb7164605e0dd5b2a7198
-// @DATE:Wed Jul 29 14:05:19 BST 2015
+// @HASH:0d2a8f59b5a3e0957af1e51a4770dca3e2822945
+// @DATE:Wed Aug 05 14:18:10 BST 2015
 
 
 import scala.language.reflectiveCalls
@@ -135,10 +135,10 @@ HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "runEventua
         
 
 // @LINE:28
-private[this] lazy val controllers_FrontEnd_getAllPossiblilities14_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("selectAllPossible"))))
-private[this] lazy val controllers_FrontEnd_getAllPossiblilities14_invoker = createInvoker(
-controllers.FrontEnd.getAllPossiblilities,
-HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getAllPossiblilities", Nil,"POST", """""", Routes.prefix + """selectAllPossible"""))
+private[this] lazy val controllers_FrontEnd_getAllPossibilities14_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("selectAllPossible"))))
+private[this] lazy val controllers_FrontEnd_getAllPossibilities14_invoker = createInvoker(
+controllers.FrontEnd.getAllPossibilities,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getAllPossibilities", Nil,"POST", """""", Routes.prefix + """selectAllPossible"""))
         
 
 // @LINE:29
@@ -182,7 +182,7 @@ private[this] lazy val controllers_Assets_versioned20_invoker = createInvoker(
 controllers.Assets.versioned(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """testold""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateVal/name/value""","""controllers.FrontEnd.changeProperty(name:String, value:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.FrontEnd.getInconsistentUPdateInfo"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """selectAllPossible""","""controllers.FrontEnd.getAllPossiblilities"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """amazonTest""","""controllers.SampleApplications.amazonTest"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """stats""","""controllers.FrontEnd.getAvailibilityStats"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample1""","""controllers.SampleApplications.runFirstSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample2""","""controllers.SampleApplications.runSecondSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.SampleApplications.amazonTest"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """testold""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.FrontEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.FrontEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.FrontEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.FrontEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.FrontEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.FrontEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.FrontEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateVal/name/value""","""controllers.FrontEnd.changeProperty(name:String, value:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.FrontEnd.getInconsistentUPdateInfo"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.FrontEnd.runEventuallyConsistentQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """selectAllPossible""","""controllers.FrontEnd.getAllPossibilities"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """amazonTest""","""controllers.SampleApplications.amazonTest"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """stats""","""controllers.FrontEnd.getAvailibilityStats"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample1""","""controllers.SampleApplications.runFirstSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample2""","""controllers.SampleApplications.runSecondSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.SampleApplications.amazonTest"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -303,9 +303,9 @@ case controllers_FrontEnd_runEventuallyConsistentQuery13_route(params) => {
         
 
 // @LINE:28
-case controllers_FrontEnd_getAllPossiblilities14_route(params) => {
+case controllers_FrontEnd_getAllPossibilities14_route(params) => {
    call { 
-        controllers_FrontEnd_getAllPossiblilities14_invoker.call(controllers.FrontEnd.getAllPossiblilities)
+        controllers_FrontEnd_getAllPossibilities14_invoker.call(controllers.FrontEnd.getAllPossibilities)
    }
 }
         

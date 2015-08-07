@@ -1,41 +1,32 @@
 [0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m     case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))[0m
 [0m[[33mwarn[0m] [0m                  ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:178: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
-[0m[[33mwarn[0m] [0m    case serverList:ArrayBuffer[ActorRef] => passMessageOn(serverList)[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:231: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m    case serverList:ArrayBuffer[ActorRef] => servers.foreach((serv) => serv ! serverList)[0m
 [0m[[33mwarn[0m] [0m                    ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:179: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:232: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case (true, avList:ArrayBuffer[ActorRef]) =>  passMessageOn((true,avList))[0m
 [0m[[33mwarn[0m] [0m                       ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:181: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:236: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case foreignQueries: List[QuerySet] => passMessageOn(foreignQueries)[0m
 [0m[[33mwarn[0m] [0m                         ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:33: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case list:List[QuerySet] => sendUpdatesToDatabase(list)[0m
 [0m[[33mwarn[0m] [0m              ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:129: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:157: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case testData:ArrayBuffer[ActorRef] => servers = testData[0m
 [0m[[33mwarn[0m] [0m                  ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:159: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:164: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case serverList:ArrayBuffer[ActorRef] => otherServers = serverList[0m
 [0m[[33mwarn[0m] [0m                    ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:160: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:165: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case (true, avList:ArrayBuffer[ActorRef]) => avServers = avList[0m
 [0m[[33mwarn[0m] [0m                       ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:200: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:242: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure[0m
 [0m[[33mwarn[0m] [0m    case foreignQueries: List[QuerySet] =>[0m
 [0m[[33mwarn[0m] [0m                         ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:205: Adaptation of argument list by inserting () has been deprecated: this is unlikely to be what you want.[0m
-[0m[[33mwarn[0m] [0m        signature: Future.apply[T](body: => T)(implicit executor: scala.concurrent.ExecutionContext): scala.concurrent.Future[T][0m
-[0m[[33mwarn[0m] [0m  given arguments: <none>[0m
-[0m[[33mwarn[0m] [0m after adaptation: Future((): Unit)[0m
-[0m[[33mwarn[0m] [0m            var res: Future[Any] = Future()[0m
-[0m[[33mwarn[0m] [0m                                         ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:219: non-variable type argument String in type pattern scala.collection.immutable.Set[String] (the underlying of Set[String]) is unchecked since it is eliminated by erasure[0m
-[0m[[33mwarn[0m] [0m                case data:Set[String] => result = data.toString()[0m
-[0m[[33mwarn[0m] [0m                          ^[0m
-[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:187: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result[0m
+[0m[[33mwarn[0m] [0m/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:190: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result[0m
 [0m[[33mwarn[0m] [0m  def GetInfoFromDatabase(allPossibleNeeded:Boolean):(Request[JsValue]) => Future[SimpleResult] =[0m
 [0m[[33mwarn[0m] [0m                                                                        ^[0m
-[0m[[33mwarn[0m] [0mthere were 10 feature warnings; re-run with -feature for details[0m
-[0m[[33mwarn[0m] [0m13 warnings found[0m
+[0m[[33mwarn[0m] [0mthere were 13 feature warnings; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0m11 warnings found[0m

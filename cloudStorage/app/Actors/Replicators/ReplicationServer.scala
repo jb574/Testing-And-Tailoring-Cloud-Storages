@@ -21,6 +21,11 @@ import scala.util.Random
  * this represents one replication server
  * @author Jack Davey
  * @version 16th June 2015
+ * @param logger  a reference to the logger actor
+ * @param id the server id for this server
+ * @param replicationMarshaller  the place to send completed work to
+ * @param master   the cluster master for this server
+ * @param avIndex  the position of this server in the cluster
  */
 class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,var master:Boolean, val avIndex:Int) extends SystemActor(logger)
   with AskSupport
@@ -35,11 +40,11 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     var inconsistentUpdates:List[QuerySet] = List()
    var masterList:List[String]  = List()
     var noSeen = 0
-  val FailureHandle = context.actorSelection("akka://application/user/$e")
+  val FailureHandle = context.actorSelection("akka://application/user/availibilityChecker")
   var avServers:ArrayBuffer[ActorRef] = ArrayBuffer()
   var seenMaster = true
   /**
-   *method that announces that a message has been recieved
+   *method that announces that a message has been received
    * by this server
    */
   private def respondToTestMessage =
@@ -57,7 +62,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
   private def processNewQuery(update:MutableSQLStatement) =
   {
     val rand = new Random()
-    var chance = rand.nextInt(100)
+    val chance = rand.nextInt(100)
     println("chance is " + chance)
     val target =   SettingsManager.retrieveValue("chanceOfGoodResult")
     if (chance < target)
@@ -99,8 +104,8 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
 
   /**
    * method to send all inconsistent updates to all other
-   * replication severs, to check that
-   * they haven't seen anything mor erecent
+   * replication servers, to check that
+   * they haven't seen anything more recent
    */
   private def distributeUpdates =
   {
@@ -114,7 +119,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
   }
 
   /**
-   * method to merge two querysets together if they both go together,
+   * method to merge two query sets together if they both go together,
    * one should go before the other
    * @param first  the first queryset
    * @param second the second queryset
@@ -132,9 +137,9 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
  }
 
   /**
-   * merge an extenral query in from the rest of this system
+   * merge an external query in from the rest of this system
    * @param first the query to merge
-   * @param mergedQueries  an arraybuffer to collec tthe results to send to the database
+   * @param mergedQueries  an arraybuffer to collect the results to send to the database
    */
  private def mergeOneExternalQuery(first:QuerySet,sender:ActorRef): Unit =
  {
@@ -144,13 +149,13 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
   def standardOperation:Receive = standardOperationMain orElse permanantWork
 
   /**
-   * this is the recieve block for this actor
+   * this is the receive block for this actor
    * if a MutableSQL query arrives
-   * then we processe it, we just announce testmesages
-   * if we get a severlist then we eplace our existing
+   * then we process it, we just announce testmessages
+   * if we get a serverlist then we replace our existing
    * list with it. a makeConsistent request causes us to
-   * distribute all our pieces of  data to all other requests. if we recieve
-   * such a list of queries, then we  maeke it consistent and send the results onto the database.
+   * distribute all our pieces of data to all other requests. if we receive
+   * such a list of queries, then we make it consistent and send the results onto the database.
    */
   def standardOperationMain: Receive =
   {
@@ -159,16 +164,29 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
     case (true, avList:ArrayBuffer[ActorRef]) => avServers = avList
     case MakeConsistent =>
-      if(master)
-      {
-        InconsistentQueryRecords.clear()
-        distributeUpdates
-        noSeen = 0
-        println("starting consistency sweeep now")
-      }
-      context.become(mergeMode)
+      makeConsistent
   }
 
+
+  /**
+   * method that performs the job of making everything
+   * consistent
+   */
+  def makeConsistent =
+  {
+    if (master)
+    {
+      InconsistentQueryRecords.clear()
+      distributeUpdates
+      noSeen = 0
+      println("starting consistency sweeep now")
+    }
+    else
+    {
+      avServers.foreach((server) => server ! CatchupRequest(inconsistentUpdates))
+    }
+    context.become(mergeMode)
+  }
 
   def permanantWork:Receive =
   {
@@ -176,14 +194,38 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
       sender ! queryResult
       println(s"at the start the result is ${queryResult.toString}")
     case ConcernedHealthRequest =>
-      if(master)
-      {
-        sender ! MasterAlive
-      }
+      respondToConcernedHealthRequest
     case WonVote =>
       master = true
     case RequestVote =>
       voteForMaster
+    case other => list:CatchupRequest =>
+      list.others.foreach((set) => addMissingQuery(set) )
+
+  }
+
+  /**
+   * if we are the master, this method tells the server that we are all ok
+   */
+  def respondToConcernedHealthRequest: Unit =
+  {
+    if (master)
+    {
+      sender ! MasterAlive
+    }
+  }
+
+  /**
+   * method to check if a query from one of the
+   * slave servers is missing and add it if it's not
+   * @param set the queryset to check
+   */
+  def addMissingQuery(set: QuerySet)=
+  {
+    if (!inconsistentUpdates.contains(set))
+    {
+      inconsistentUpdates = set :: inconsistentUpdates
+    }
   }
 
   def voteForMaster: Unit =
@@ -193,7 +235,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     sender ! rand.nextInt(avServers.size)
   }
 
-  def mergeMode:Receive = mergeMode orElse permanantWork
+  def mergeMode:Receive = mergeModeMain orElse permanantWork
 
   def mergeModeMain:Receive =
   {
@@ -222,7 +264,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
 
   /**
    * this is the main code that makes everything consistent
-   * @param foreignQUeries the list of queries we recieved from all other replicas
+   * @param foreignQUeries the list of queries we received from all other replicas
    */
   def makeConsistent(foreignQUeries: List[QuerySet],sender:ActorRef): Unit =
   {

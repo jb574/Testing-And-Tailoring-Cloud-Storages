@@ -68,7 +68,7 @@ class QuerySet( var vectorClocks:Map[Int,LocalDateTime],  var queries:List[Mutab
    * actor to the database committer
    * @param committer the comitter to send to
    */
-  def sendQuerries(committer:ActorRef) = committer ! queries
+  def sendQueries(committer:ActorRef) = committer ! queries
 
   /**
    * method to check to see if two query sets

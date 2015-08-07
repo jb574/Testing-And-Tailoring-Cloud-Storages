@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:68e74a763b0a4766d09cb7164605e0dd5b2a7198
-// @DATE:Wed Jul 29 14:05:19 BST 2015
+// @HASH:0d2a8f59b5a3e0957af1e51a4770dca3e2822945
+// @DATE:Wed Aug 05 14:18:10 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -124,13 +124,6 @@ def delete(): Call = {
 }
                         
 
-// @LINE:28
-def getAllPossiblilities(): Call = {
-   import ReverseRouteContext.empty
-   Call("POST", _prefix + { _defaultPrefix } + "selectAllPossible")
-}
-                        
-
 // @LINE:30
 def getAvailibilityStats(): Call = {
    import ReverseRouteContext.empty
@@ -142,6 +135,13 @@ def getAvailibilityStats(): Call = {
 def runEventuallyConsistentQuery(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "select")
+}
+                        
+
+// @LINE:28
+def getAllPossibilities(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "selectAllPossible")
 }
                         
 
@@ -370,17 +370,6 @@ def delete : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:28
-def getAllPossiblilities : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.FrontEnd.getAllPossiblilities",
-   """
-      function() {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "selectAllPossible"})
-      }
-   """
-)
-                        
-
 // @LINE:30
 def getAvailibilityStats : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.FrontEnd.getAvailibilityStats",
@@ -398,6 +387,17 @@ def runEventuallyConsistentQuery : JavascriptReverseRoute = JavascriptReverseRou
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "select"})
+      }
+   """
+)
+                        
+
+// @LINE:28
+def getAllPossibilities : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FrontEnd.getAllPossibilities",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "selectAllPossible"})
       }
    """
 )
@@ -627,12 +627,6 @@ def delete(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:28
-def getAllPossiblilities(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.FrontEnd.getAllPossiblilities(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getAllPossiblilities", Seq(), "POST", """""", _prefix + """selectAllPossible""")
-)
-                      
-
 // @LINE:30
 def getAvailibilityStats(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.getAvailibilityStats(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getAvailibilityStats", Seq(), "GET", """""", _prefix + """stats""")
@@ -642,6 +636,12 @@ def getAvailibilityStats(): play.api.mvc.HandlerRef[_] = new play.api.mvc.Handle
 // @LINE:27
 def runEventuallyConsistentQuery(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FrontEnd.runEventuallyConsistentQuery(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "runEventuallyConsistentQuery", Seq(), "POST", """""", _prefix + """select""")
+)
+                      
+
+// @LINE:28
+def getAllPossibilities(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FrontEnd.getAllPossibilities(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FrontEnd", "getAllPossibilities", Seq(), "POST", """""", _prefix + """selectAllPossible""")
 )
                       
 

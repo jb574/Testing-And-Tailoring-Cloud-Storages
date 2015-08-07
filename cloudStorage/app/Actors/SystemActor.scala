@@ -3,7 +3,7 @@ import akka.actor.{ActorRef, Actor}
 
 
 /**
- *all of the actors that exist
+ * all of the actors that exist
  * in my system extend this
  * so that they all have a reference to the logger
  * actor
@@ -16,7 +16,7 @@ import akka.actor.{ActorRef, Actor}
  /**
   * method that raises an error if
   * we get a message we can't handle
-  * @param actor the  actor the actor that recieved the message
+  * @param actor the actor that received the message
   * @param message the message that was sent
   */
  def error(actor:String,message:String) =

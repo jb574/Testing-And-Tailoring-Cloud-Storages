@@ -1,8 +1,10 @@
 package controllers
 
+import java.lang
+
 import Actors.Commiters.DatabaseCommiterOverseer
 import Actors.Messages.{MakeConsistent, RetrieveLog, TestMessage}
-import akka.actor.Props
+import akka.actor.{ActorRef, Props}
 import akka.dispatch.Futures
 import models.DeleteStatementHelper.DeleteStatment
 import models.InsertStatmentHelper.InsertStatment
@@ -10,7 +12,7 @@ import models.SelectStatementHelper.SelectStatement
 import org.joda.time
 import org.joda.time.Seconds
 import scala.collection.mutable
-import scala.concurrent.{ExecutionContext, Future, Await}
+import scala.concurrent.{Promise, ExecutionContext, Future, Await}
 import controllers.Application._
 import models.CreateTableStatementHelpers.CreateTableStatement
 import models.DripTableStatementHelper.DropTableStatement
@@ -45,14 +47,15 @@ import ExecutionContext.Implicits.global
 object FrontEnd  extends Controller
 {
    val system = Akka.system()
-   val loggingActor = system.actorOf(Props(new Logger))
-   val databaseCommiter = system.actorOf(Props(new DatabaseCommiterOverseer(loggingActor)))
-   val replicationMarshaller = system.actorOf(Props(new ReplicationMarshaller(loggingActor,databaseCommiter)))
-   val repServer = system.actorOf(Props(new ReplicationOverSeer(loggingActor,replicationMarshaller)))
-    val checker = system.actorOf(Props(new AvailibilityChecker(repServer,loggingActor)))
+   val loggingActor = system.actorOf(Props(new Logger),"logger")
+   val databaseCommiter = system.actorOf(Props(new DatabaseCommiterOverseer(loggingActor)),"databaseComitterOverseer")
+   val replicationMarshaller = system.actorOf(Props(new ReplicationMarshaller(loggingActor,databaseCommiter)),"replicationMarshaller")
+   val repServer = system.actorOf(Props(new ReplicationOverSeer(loggingActor,replicationMarshaller)),"replicationOverseer")
+    val checker = system.actorOf(Props(new AvailabilityChecker(repServer,loggingActor)),"availibilityChecker")
+  var correctResult:String = ""
   println(checker.path)
   /**
-   * this is the sevice to create new tables in the database
+   * this is the service to create new tables in the database
    */
   def createTable = Action(BodyParsers.parse.json)
   {
@@ -92,7 +95,7 @@ object FrontEnd  extends Controller
 
 
   /**
-   *  sends a request to make the qhole system consistent
+   * sends a request to make the whole system consistent
    */
   def makeConsistent = Action
   {
@@ -111,7 +114,7 @@ object FrontEnd  extends Controller
   }
 
   /**
-   *inserts some data into the database
+   * inserts some data into the database
    */
   def insert = Action(BodyParsers.parse.json)
   {
@@ -122,7 +125,7 @@ object FrontEnd  extends Controller
 
 
   /**
-   *updates some data into the databse
+   * updates some data into the database
    */
   def update = Action(BodyParsers.parse.json)
   {
@@ -134,7 +137,7 @@ object FrontEnd  extends Controller
   /**
    * method to process a mutable sql update
    * @param statement  the update in question
-   * @return a mesage saying whther this was a sucsess
+   * @return a message saying whether this was a success
    */
   def processUpdate(statement: JsResult[MutableSQLStatement]) = {
     statement.fold(
@@ -173,7 +176,7 @@ object FrontEnd  extends Controller
 
 
 
-  def getAllPossiblilities = Action.async(BodyParsers.parse.json)
+  def getAllPossibilities = Action.async(BodyParsers.parse.json)
   {
     GetInfoFromDatabase(true)
   }
@@ -201,28 +204,36 @@ object FrontEnd  extends Controller
             var queryResult: QueryResult = queryDatabase(goodQuery)
             println(s"just got response from database and it is" +
               s" ${queryResult.toString}")
-            implicit val timeout = Timeout(5 seconds)
-            var res: Future[Any] = Future()
             if(allPossibleNeeded)
             {
-              res= repServer ? (true,queryResult)
+              val set:Set[String] = sendMessage((true,queryResult),repServer)
+              Ok(set.toString())
             }
             else
             {
-              res = repServer ?  queryResult
-            }
-            var result = ""
-            res onSuccess
+              var result = ""
+              while(result == "")
               {
-                case properResults:QueryResult =>   result = queryResult.toString
-                  println(s"so we should end up with ${properResults.toString}")
-                case data:Set[String] => result = data.toString()
+                val updates:QueryResult = sendMessage(queryResult,repServer)
+                updates.filterDufResults(goodQuery.cols.split(",").toList)
+                result = updates.toString
               }
-            Ok(Json.toJson(result))
+
+              Ok(result)
+            }
           }
         }
       )
   }
+
+ def sendMessage[message,result](msg:message,server:ActorRef):result =
+ {
+   implicit val timeout = Timeout(5 seconds)
+   val res = server ? msg
+   Await.result(res,5 seconds)
+   res.value.get.get.asInstanceOf[result]
+ }
+
 
   def addRow(queryResult:QueryResult,row:Row): Unit = {
     val rawData = row.asMap
@@ -270,10 +281,10 @@ object FrontEnd  extends Controller
 
 
   /**
-   * this is the method that acually does the legwork for create or dop table.
+   * this is the method that actually does the legwork for create or drop table.
    *
    * @param goodStatement the table in question
-   * @return  a htpresult that tells you whether it works or not.
+   * @return  a httpresult that tells you whether it works or not.
    */
   private def createOrDropTable(goodStatement:SQLStatement): Result =
   {

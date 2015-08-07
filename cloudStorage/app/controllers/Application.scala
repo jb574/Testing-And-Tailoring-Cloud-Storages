@@ -8,14 +8,20 @@ import play.api.mvc._
 import models.SQLQuery._
 import play.api.db._
 import play.api.Play.current
+
+/**
+ * sample code to test out the play framework
+ * @author Jack Davey
+ * @version 8th June 2015
+ */
 object Application extends Controller {
 
 
 
   /**
-   * very simple action i wrote to
+   * very simple action I wrote to
    * test that my setup was working OK
-   * @return just a sucsess mesage
+   * @return just a success message
    */
   def testAction = Action
   {
@@ -25,7 +31,7 @@ object Application extends Controller {
 
 
   /**
-   * a list of all the queries recieved
+   * a list of all the queries received
    * @return  the list mentioned above in
    *          JSON format
    */
@@ -44,7 +50,7 @@ object Application extends Controller {
    * method that
    * sends an sql query to the database
    * @param query the query to send
-   * @return the output of tghe database transaction
+   * @return the output of the database transaction
    */
   private def queryDatabase(query:SQLQuery):String  =
   {
@@ -57,7 +63,7 @@ object Application extends Controller {
         val res = statement.getResultSet
         val metaData = res.getMetaData
         val colCount = metaData.getColumnCount
-        var result = "operation sucseeded"
+        var result = "operation succeeded"
         var counter = 1
         while(res.next())
         {
@@ -82,7 +88,7 @@ object Application extends Controller {
   }
 
   /**
-   * method to preform the initial connection
+   * method to perform the initial connection
    * to the database
    * @return  a database connection and a statement to run with
    */
@@ -97,7 +103,7 @@ object Application extends Controller {
    * method that
    * sends an sql query to the database
    * @param query the query to send
-   * @return the output of tghe database transaction
+   * @return the output of the database transaction
    */
   private def sendToDatabase(query:SQLQuery):String  =
   {

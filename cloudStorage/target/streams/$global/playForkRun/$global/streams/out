@@ -215,227 +215,55 @@
 [info] 
 [info] 32m(Server started, use Ctrl+D to stop and go back to the console...)0m
 [info] 
-[info] Compiling 35 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
+[info] Compiling 37 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
 [warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure
 [warn]      case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
 [warn]                   ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:178: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
-[warn]     case serverList:ArrayBuffer[ActorRef] => passMessageOn(serverList)
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:231: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn]     case serverList:ArrayBuffer[ActorRef] => servers.foreach((serv) => serv ! serverList)
 [warn]                     ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:179: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:232: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case (true, avList:ArrayBuffer[ActorRef]) =>  passMessageOn((true,avList))
 [warn]                        ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:181: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:236: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
 [warn]     case foreignQueries: List[QuerySet] => passMessageOn(foreignQueries)
 [warn]                          ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:27: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:33: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
 [warn]     case list:List[QuerySet] => sendUpdatesToDatabase(list)
 [warn]               ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:129: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:157: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case testData:ArrayBuffer[ActorRef] => servers = testData
 [warn]                   ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:159: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:164: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
 [warn]                     ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:160: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:165: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case (true, avList:ArrayBuffer[ActorRef]) => avServers = avList
 [warn]                        ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:200: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:242: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
 [warn]     case foreignQueries: List[QuerySet] =>
 [warn]                          ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:205: Adaptation of argument list by inserting () has been deprecated: this is unlikely to be what you want.
-[warn]         signature: Future.apply[T](body: => T)(implicit executor: scala.concurrent.ExecutionContext): scala.concurrent.Future[T]
-[warn]   given arguments: <none>
-[warn]  after adaptation: Future((): Unit)
-[warn]             var res: Future[Any] = Future()
-[warn]                                          ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:219: non-variable type argument String in type pattern scala.collection.immutable.Set[String] (the underlying of Set[String]) is unchecked since it is eliminated by erasure
-[warn]                 case data:Set[String] => result = data.toString()
-[warn]                           ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:187: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:190: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result
 [warn]   def GetInfoFromDatabase(allPossibleNeeded:Boolean):(Request[JsValue]) => Future[SimpleResult] =
 [warn]                                                                         ^
-[warn] there were 10 feature warnings; re-run with -feature for details
-[warn] 13 warnings found
+[warn] there were 13 feature warnings; re-run with -feature for details
+[warn] 11 warnings found
 [info] play - database [default] connected at jdbc:mysql://localhost:8889/health
 [info] play - Application started (Dev)
-[info] play - Starting application default Akka system.
-[info] hello world
-[info] akka://application/user/$e
-[info] hitting prestart
-[info] hitting prestart
-[info] hitting prestart
-[info] master is true
-[info] master is true
-[info] master is false
-[info] master is false
-[info] master is false
-[info] master is false
-[info] master is false
-[info] master is false
-[info] master is true
-[info] master is false
-[info] master is false
-[info] master is false
-[info] message: hello world, date: 2015-07-31T15:01:37.925
-[info] }
-[info] hitting it 
-[info] im on fire
-[info] chosen server2
-[info] chance is 30
-[info] chance is 55
-[info] chance is 73
-[info] chance is 86
-[info] message: this message brought  server 3 down, date: 2015-07-31T15:01:38.154
-[info] }
-[info] message: this message brought  server 1 down, date: 2015-07-31T15:01:38.154
-[info] }
-[info] message: this message brought  server 2 down, date: 2015-07-31T15:01:38.154
-[info] }
-[info] message: this message brought  server 0 down, date: 2015-07-31T15:01:38.154
-[info] }
-[info] message: sever 0 was the master, date: 2015-07-31T15:01:38.154
-[info] }
-[info] downservers for cluster 2 contains Set(2)
-[info] message: noted that server 2 is down for cluster 2, date: 2015-07-31T15:01:38.159
-[info] }
-[info] message: noted that server 0 is down for cluster 2, date: 2015-07-31T15:01:38.160
-[info] }
-[info] downservers for cluster 2 contains Set(2, 0)
-[info] downservers for cluster 2 contains Set(2, 0, 3)
-[info] message: noted that server 3 is down for cluster 2, date: 2015-07-31T15:01:38.160
-[info] }
-[info] downservers for cluster 2 contains Set(2, 0, 3, 1)
-[info] message: noted that server 1 is down for cluster 2, date: 2015-07-31T15:01:38.161
-[info] }
+[info] writing 1  
+[info] writing 2  
+[info] writing 33  
+[info] writing 35  
+[info] writing 4  
+[info] writing 52  
+[info] writing 25  
+[info] writing 8  
+[info] writing 79  
+[info] writing 95  
+[info] writing 89  
+[info] writing 1  
+[info] writing 87  
+[info] writing 82  
+[info] writing 6  
+[info] writing 11  
 [info] Stopping Play fork run ...
-[info] play - Shutdown application default Akka system.
-[info] [ERROR] [07/31/2015 15:02:15.965] [application-akka.actor.default-dispatcher-7] [ActorSystem(application)] exception while executing timer task
-[info] java.lang.NullPointerException
-[info] 	at Actors.Replicators.ReplicationCluster.scheduleNextMasterCheckup(ReplicationCluster.scala:37)
-[info] 	at Actors.Replicators.ReplicationCluster.runSafetyCheck(ReplicationCluster.scala:51)
-[info] 	at Actors.Replicators.ReplicationCluster$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationCluster.scala:39)
-[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
-[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
-[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
-[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
-[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
-[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
-[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
-[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
-[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
-[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
-[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-[info] 
-[info] [ERROR] [07/31/2015 15:02:15.966] [application-akka.actor.default-dispatcher-7] [ActorSystem(application)] exception while executing timer task
-[info] java.lang.NullPointerException
-[info] 	at Actors.Replicators.ReplicationCluster.scheduleNextMasterCheckup(ReplicationCluster.scala:37)
-[info] 	at Actors.Replicators.ReplicationCluster.runSafetyCheck(ReplicationCluster.scala:51)
-[info] 	at Actors.Replicators.ReplicationCluster$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationCluster.scala:39)
-[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
-[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
-[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
-[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
-[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
-[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
-[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
-[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
-[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
-[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
-[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-[info] 
-[info] [ERROR] [07/31/2015 15:02:15.967] [application-akka.actor.default-dispatcher-7] [ActorSystem(application)] exception while executing timer task
-[info] java.lang.NullPointerException
-[info] 	at Actors.Replicators.ReplicationCluster.scheduleNextMasterCheckup(ReplicationCluster.scala:37)
-[info] 	at Actors.Replicators.ReplicationCluster.runSafetyCheck(ReplicationCluster.scala:51)
-[info] 	at Actors.Replicators.ReplicationCluster$$anonfun$scheduleNextMasterCheckup$1.apply$mcV$sp(ReplicationCluster.scala:39)
-[info] 	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:117)
-[info] 	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(Scheduler.scala:476)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:282)
-[info] 	at akka.actor.LightArrayRevolverScheduler$$anonfun$close$1.apply(Scheduler.scala:281)
-[info] 	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
-[info] 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
-[info] 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
-[info] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
-[info] 	at akka.actor.LightArrayRevolverScheduler.close(Scheduler.scala:280)
-[info] 	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:687)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply$mcV$sp(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$liftedTree2$1$1.apply(ActorSystem.scala:616)
-[info] 	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:640)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.runNext$1(ActorSystem.scala:807)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply$mcV$sp(ActorSystem.scala:810)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$run$1.apply(ActorSystem.scala:803)
-[info] 	at akka.util.ReentrantGuard.withGuard(LockUtil.scala:15)
-[info] 	at akka.actor.ActorSystemImpl$TerminationCallbacks.run(ActorSystem.scala:803)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at akka.actor.ActorSystemImpl$$anonfun$terminationCallbacks$1.apply(ActorSystem.scala:637)
-[info] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:67)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:82)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at akka.dispatch.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:59)
-[info] 	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-[info] 	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:58)
-[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
-[info] 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
-[info] 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-[info] 
-[info] making consistent
-[info] [ERROR] [07/31/2015 15:02:15.969] [application-akka.actor.default-dispatcher-7] [ActorSystem(application)] exception while executing timer task
-[info] java.lang.NullPointerException
-[info] 	at Actors.Replicators.ReplicationOverSeer.scheduleNextConsistencyRun(ReplicationOverSeer.scala:61)
-[info] 	at Actors.Replicators.ReplicationOverSeer.makeConsistent(ReplicationOverSeer.scala:105)
-[info] 	at Actors.Replicators.ReplicationOverSeer$$anonfun$scheduleNextConsistencyRun$1.apply$mcV$sp(ReplicationOverSeer.scala:63)

@@ -15,19 +15,18 @@ object DoubleWriterService extends App
    *   until eithe rof them has a value that it has never seen before
    * @return a string outuptu.
    */
-   def runSecondSample():String =
+   def runSecondSample(db: DatabaseConnector):String =
    {
-       val first = new Writer
-        val second = new Writer
+       val first = new Writer(db)
+        val second = new Writer(db)
          var seenQueries = 0
         var result = ""
        var abnormalityDetected = false
         while(!abnormalityDetected)
         {
-          first.makeWrite()
-          second.makeWrite()
+
            seenQueries = seenQueries + 1
-          if(first.makeRead() || second.makeRead())
+          if(!first.makeWriteAndRead() || !second.makeWriteAndRead())
           {
             result = s"it took $seenQueries tries to get an inconsistent val"
             abnormalityDetected = true
@@ -35,4 +34,7 @@ object DoubleWriterService extends App
         }
      result
    }
+
+
+
 }

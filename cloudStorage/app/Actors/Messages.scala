@@ -1,8 +1,10 @@
 package Actors
+
+import models.QuerySet
 import models.SQLStatementHelper.MutableSQLStatement
 
 /**
- * this object  contains al of the messages
+ * this object contains all of the messages
  * that my system can send
  * @author Jack Davey
  * @version 16th June 2014
@@ -22,4 +24,5 @@ object Messages
   case class WonVote()
   case class InformationRequest()
   case class RequestNewVote()
+  case class CatchupRequest(others:List[QuerySet])
 }

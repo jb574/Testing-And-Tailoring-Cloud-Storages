@@ -1,7 +1,7 @@
 package Actors.Replicators
 
 import java.time.LocalDateTime
-import controllers.SettingsManager
+import controllers.{FrontEnd, SettingsManager}
 
 import scala.util.Success
 import scala.util.Failure
@@ -26,10 +26,13 @@ import  akka.util.Timeout._
 import scala.collection.mutable.ArrayBuffer
 
 /**
- * this class is responsible for  overseeing the actual eventual consistency
+ * this class is responsible for overseeing the actual eventual consistency
  * process
  * @author Jack Davey
  * @version 16th June 2015
+ * @param logger the logging actor for monitoring purposes
+ * @param replicationMarshaller the replication marshaller actor to pass on to the actual
+ *                              servers
  */
 class ReplicationOverSeer(logger:ActorRef,replicationMarshaller: ActorRef) extends SystemActor(logger)
 with AskSupport
@@ -37,11 +40,16 @@ with AskSupport
   var servers:ArrayBuffer[ActorRef] = ArrayBuffer()
 
 
+  /**
+   * initialization code that runs
+   * whenever the actor is started
+   * it creates the child servers
+   */
   override  def preStart() =
   {
       for(index <- 0 to SettingsManager.retrieveValue("primServers"))
       {
-        val server = context.actorOf(Props(new ReplicationCluster(logger,index,replicationMarshaller)))
+        val server = context.actorOf(Props(new ReplicationCluster(logger,index,replicationMarshaller)),s"cluster_$index")
         servers.insert(index,server)
       }
       updateReferenceLists
@@ -51,10 +59,10 @@ with AskSupport
 
 
   /**
-   * this chedules the next run to make everything eventually
+   * this schedules the next run to make everything eventually
    * consistent on all the worker servers.
    */
-  def scheduleNextConsistencyRun =
+  def scheduleNextConsistencyRun:Unit =
   {
     val time = SettingsManager.retrieveValue("timeTilNextConsistencySweep")
     InconsistentQueryRecords.time = LocalDateTime.now().plusSeconds(time)
@@ -67,8 +75,8 @@ with AskSupport
 
 
   /**
-   * method to choose a server at raodom and
-   * send the  recently recieved SQL query to it
+   * method to choose a server at random and
+   * send the recently received SQL query to it
    * @param update the update in question
    */
   def processUpdate(update:MutableSQLStatement) =
@@ -88,6 +96,10 @@ with AskSupport
      servers(serverId) ! TestMessage
    }
 
+  /**
+   * @return   a random server number
+   *            to choose a server with
+   */
   def getRandomServerNumber: Int =
   {
     val rand = new Random()
@@ -96,23 +108,38 @@ with AskSupport
     serverId
   }
 
+  /**
+   * sends the list of servers to all the children
+   */
   def updateReferenceLists = servers.foreach((thing) => thing ! servers)
 
-  def makeConsistent(): Unit =
+  /**
+   * makes the whole system consistent
+   */
+  def makeConsistent() =
   {
     println("making consistent")
     servers.foreach((server) => server ! MakeConsistent)
     scheduleNextConsistencyRun
-    BasicAvailStatsGenerator.recordStats()
   }
 
 
+  /**
+   * retrieves one value from a server
+   * @param server the server to get the value from
+   * @param resSet the Set[String] in which to store the result
+   * @param result  the queryset from which to obtain the result
+   * @return the updated set
+   */
   def getOneValue(server:ActorRef,resSet:Set[String],result:QueryResult):Set[String] =
   {
     val queryRes = processQuery(new QueryResult(result))
      resSet + ("|" + queryRes.toString + "|")
   }
 
+  /**
+   * receive block that determines actors behaviour
+   */
   def receive =
   {
     case query:MutableSQLStatement =>  processUpdate(query)
@@ -125,6 +152,7 @@ with AskSupport
     case results:QueryResult =>
       val updatedResultss:QueryResult = processQuery(results)
       println(s"were sending ${updatedResultss.toString}")
+      FrontEnd.correctResult = updatedResultss.toString
       sender ! updatedResultss
     case testData:ArrayBuffer[ActorRef] => servers = testData
               updateReferenceLists
@@ -132,17 +160,22 @@ with AskSupport
 
   }
 
+  /**
+   * method to process a new query
+   * @param result  the data returned from the database
+   * @return  the data with some updates applied to it
+   */
   def processQuery(result: QueryResult):QueryResult =
   {
     var finalResult = new QueryResult()
     implicit val timeout = Timeout(5 seconds)
     val res = servers(getRandomServerNumber) ? result
+    Await.result(res,5 seconds)
     res onSuccess
-      {
-        case properResults:QueryResult =>
-          println("string is " + properResults.toString)
-          finalResult = properResults
-      }
+    {
+      case results:QueryResult => finalResult = results
+    }
+    println(s"from this function we will return ${finalResult.toString}")
    finalResult
   }
 

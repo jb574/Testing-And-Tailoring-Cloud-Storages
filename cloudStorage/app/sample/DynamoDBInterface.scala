@@ -13,7 +13,7 @@ import scala.util.Random
 /**
  * Created by jackdavey on 28/07/15.
  */
-object DynamoDBInterface
+class DynamoDBInterface  extends  DatabaseConnector
 {
    val awsCreds = new BasicAWSCredentials("AKIAJYJ4PYBBM3TKXXPQ", "6y83XxoA8ezANpPNvazTbDCaCJH4G66qyNa5v7BO")
    val dynamoDB =   new DynamoDB(new AmazonDynamoDBClient(awsCreds))
@@ -41,19 +41,19 @@ object DynamoDBInterface
   }
 
 
-  def preformRead():Int =
+  def read():Int =
   {
-    preformWrite()
+    write(new Random().nextInt(50))
     val table = dynamoDB.getTable("main")
     val item = table.getItem("id",101)
     item.getNumber("age").intValue()
   }
 
 
-  def preformWrite() =
+  def write(age:Int) =
   {
     val table = dynamoDB.getTable("main")
-    createItem(table,new Random().nextInt(50))
+    createItem(table,age)
   }
 
 

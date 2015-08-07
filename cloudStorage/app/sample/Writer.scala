@@ -8,24 +8,30 @@ import models.UpdateTableStatmentHelper.UpdateTableStatment
 /**
  * Created by jackdavey on 03/07/15.
  */
-class Writer
+class Writer(db:DatabaseConnector)
 {
-  var expectedResults:List[Int]  = List()
-  val query = new SelectStatement(List("test"),"*","")
-  var firstResult = WebServiceUtils.executeSelect(query)
+  var firstResult = db.read()
+  var expectedResults:List[Int]  = List(firstResult)
+
   def makeWrite():Unit =
   {
     val random = new Random()
     val age =  random.nextInt(100)
-    val update = new UpdateTableStatment(List("test"),
-      Map("age" ->s"$age"),Map("name" -> "'dad'"))
     expectedResults = age :: expectedResults
+    println(s"writing $age  ")
+    db.write(age)
+  }
+
+  def makeWriteAndRead():Boolean =
+  {
+    makeWrite()
+    makeRead()
   }
 
   def makeRead(): Boolean =
   {
 
-    val result = WebServiceUtils.executeSelect(query)
+    val result = db.read()
     goodResponse(result)
   }
 
@@ -39,9 +45,9 @@ class Writer
    * @param response the result string to check
    * @return a boolean indicating yes or no
    */
-  def goodResponse(response:String):Boolean =
+  def goodResponse(response:Int):Boolean =
   {
-    response.equals(firstResult) || expectedResults.exists(num => response.contains(num))
+    !expectedResults.contains(response)
   }
 
 

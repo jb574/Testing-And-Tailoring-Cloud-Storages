@@ -14,7 +14,7 @@ object SelectStatementHelper
     override def getNewSQLStatement =
     {
       val tableString:String = tables.mkString(",")
-      s"select $cols from $tableString $restOfQuery; "
+      s"select * from $tableString $restOfQuery; "
     }
 
     def retrieveTableInfo():List[String] =

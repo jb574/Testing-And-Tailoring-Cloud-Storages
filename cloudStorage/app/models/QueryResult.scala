@@ -41,6 +41,7 @@ object QueryResultHelper
        this(List(),List())
      }
 
+
     /**
      * mark this query as complete, so it can
      * be returned to the user
@@ -52,6 +53,19 @@ object QueryResultHelper
      *         return this query
      */
     def isDone:Boolean = done
+
+   def filterDufResults(cols:List[String]) =
+   {
+     if(!cols.contains("*"))
+     {
+       results = results.map((row) =>
+         row.filter{case (key,value) => cols.contains(key)}
+       )
+     }
+   }
+
+
+
 
     /**
      * applies the effects of a specific mutable sql
@@ -174,6 +188,7 @@ object QueryResultHelper
     def applyUpdate(where:Map[String,String],updates:Map[String,String]): Unit =
     {
       val applicableRows =  findApplicableRows(where)
+       println(s"number of applicable rows is ${applicableRows.length}")
       if(applicableRows.nonEmpty)
       {
         println("preforming update")
