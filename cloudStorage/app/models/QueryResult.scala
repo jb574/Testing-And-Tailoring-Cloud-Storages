@@ -2,12 +2,11 @@ package models
 
 import models.SQLStatementHelper.MutableSQLStatement
 import play.api.libs.json.Json
-import scala.collection.Map
 import models.UpdateTableStatmentHelper.UpdateTableStatment
 import models.DeleteStatementHelper.DeleteStatment
 import models.InsertStatmentHelper.InsertStatment
 /**
- * this clas contains various helper methods
+ * this class contains various helper methods
  * and functions to support
  * the QueryResultHelper class
  * see below for more details on this
@@ -19,6 +18,18 @@ object QueryResultHelper
 
 
   /**
+   * class to represent a row in the result
+   * set
+   * @param columns the columns of the row
+   * @author Jack Davey
+   * @version 13th August 2015
+   */
+  case class Row(var columns:Map[String,String])
+  implicit val rowWrites = Json.writes[Row]
+  implicit val rableReads = Json.reads[Row]
+
+
+  /**
    * this is the class that 
    * represents results for users, 
    * therefore this class is JSONParsable
@@ -27,11 +38,65 @@ object QueryResultHelper
    *@author Jack Davey
    * @version 22nd June 2015
    */
- case class QueryResult(private var tables:List[String],private var results:List[Map[String,String]])
+ case class QueryResult(private var tables:List[String],private var results:List[Row])
   {
     var done:Boolean = false
+
     /**
-     * auxilary constructor for this class
+     * @return the number of rows in
+     *         the result set
+     */
+    def size:Int = results.size
+
+    /**
+     * @return get teh column headers
+     *         as a set of strings
+     */
+    def headers:Set[String] = results.head.columns.keySet
+
+    /**
+     * @param index the index of a particular row
+     * @return the row at position index specified
+     *         above
+     */
+    def getRow(index:Int):Row =
+    {
+      var counter = 0
+      for(row:Row <- results)
+      {
+        if(counter == index)
+        {
+          return row
+        }
+        counter = counter + 1
+      }
+      throw new IndexOutOfBoundsException(" that row doesn't exist")
+    }
+
+    /**
+     * retruns a field
+     * fromt he row at the index
+     * withthe column name name
+     * @param index  the index  of the row to look for
+     * @param name the name of the field ot look for
+     * @return as above
+     */
+    def getField(index:Int, name:String):String =
+    {
+      val row = getRow(index)
+      if(row.columns.contains(name))
+      {
+        row.columns(name)
+      }
+      else
+      {
+        throw new IllegalArgumentException("no column with that name")
+      }
+    }
+
+
+    /**
+     * auxiliary constructor for this class
      * it allows for the creation of an empty
      * QueryResult without any results previously being
      * added
@@ -49,7 +114,7 @@ object QueryResultHelper
     def markComplete = done = true
 
     /**
-     * @return a signal to the web application on whther it is safe t
+     * @return a signal to the web application on whether it is safe to
      *         return this query
      */
     def isDone:Boolean = done
@@ -59,7 +124,7 @@ object QueryResultHelper
      if(!cols.contains("*"))
      {
        results = results.map((row) =>
-         row.filter{case (key,value) => cols.contains(key)}
+         Row(row.columns.filter{case (key,value) => cols.contains(key)})
        )
      }
    }
@@ -85,7 +150,7 @@ object QueryResultHelper
     /**
      * find out of we are talking about the same
      * set of tables
-     * @param otherTables the othertables to check
+     * @param otherTables the other tables to check
      * @return as above
      */
     def talkingAboutSameTable(otherTables:List[String]): Boolean=
@@ -106,18 +171,18 @@ object QueryResultHelper
     /**
      * find out if a specific where clause is valid
      * @param where a map representing the where clause
-     * @param row  the row for which we are loooking
+     * @param row  the row for which we are looking
      * @return   a yes or no answer to the above question
      */
-    def isWhereClauseValid(where:Map[String,String],row:Map[String,String]):Boolean =
+    def isWhereClauseValid(where: Map[String, String], row: Row):Boolean =
     {
-      val result = where.forall{case (key, value) => isValidCluase(row,key,value)}
+      val result = where.forall{case (key, value) => isValidCluase(row.columns,key,value)}
       result
     }
 
     /**
-     * find out if a partiular property of a row holds
-     * for instance, when doing an SQL update, you might want to check whther
+     * find out if a particular property of a row holds
+     * for instance, when doing an SQL update, you might want to check whether
      * the name column is equal to Jack
      * @param row  the row to test on
      * @param key  the name of the column we want to test
@@ -143,7 +208,7 @@ object QueryResultHelper
     {
       var result = ""
       results.foreach((row) =>
-        for((col, value) <- row)
+        for((col, value) <- row.columns)
         {
           result = result  + (col + " " + value + " ")
         }
@@ -171,8 +236,8 @@ object QueryResultHelper
     }
 
     /**
-     * applies a delte to this resultSet
-     * @param where a map representing the where clause for this delte set
+     * applies a delete to this resultSet
+     * @param where a map representing the where clause for this delete set
      */
     def applyDelete(where:Map[String,String]) =
     {
@@ -181,7 +246,7 @@ object QueryResultHelper
     }
 
     /**
-     * applies an update for this resultse
+     * applies an update for this results
      * @param where   the where clause for this set
      * @param updates the set of updates to apply if this where clause holds 
      */
@@ -192,31 +257,31 @@ object QueryResultHelper
       if(applicableRows.nonEmpty)
       {
         println("preforming update")
-        results = results.map(row => checkRowForUpdates(row,where,updates))
+        results = results.map(row => checkRowForUpdates(row, where, updates))
         println(results.toString)
       }
     }
 
     /**
      * goes through a row and updates its
-     * contets where nencessary
-     * @param row   the  row in question
+     * contents where necessary
+     * @param row   the row in question
      * @param where  the where clause for the update
      * @param updates the set of updates to apply
      * @return the updated row
      */
-    def checkRowForUpdates( row:Map[String,String],where:Map[String,String],updates:Map[String,String]):Map[String,String] =
+    def checkRowForUpdates(row: Row, where: Map[String, String], updates: Map[String, String]):Row =
     {
-      if(isWhereClauseValid(where,row))
+      if(isWhereClauseValid(where, row))
       {
-        var resultRow:Map[String,String] = row
+        var resultRow:Map[String,String] = row.columns
           updates.foreach{ case (key, value) => resultRow = updateValue(updates,resultRow,key) }
-       return resultRow
+       return Row(resultRow)
       }
       row
     }
 
-    def findApplicableRows(where: Map[String, String]):List[Map[String,String]] =
+    def findApplicableRows(where: Map[String, String]):List[Row] =
     {
       val res = results.filter(row => isWhereClauseValid(where, row))
       res
@@ -227,7 +292,7 @@ object QueryResultHelper
      * @param row
      */
     def addRow(row:Map[String,String]) =
-      results = row :: results
+      results = Row(row) :: results
 
     def this(other:QueryResult) =
     {
@@ -237,7 +302,8 @@ object QueryResultHelper
     
   }
 
-
+  implicit val resultrites = Json.writes[QueryResult]
+  implicit val resultReads = Json.reads[QueryResult]
 
 
 }

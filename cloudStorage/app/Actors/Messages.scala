@@ -25,4 +25,8 @@ object Messages
   case class InformationRequest()
   case class RequestNewVote()
   case class CatchupRequest(others:List[QuerySet])
+  case class StragglersRequest()
+  case class StragglersResponse(response:List[QuerySet])
+  case class Update(ok:Boolean,update:MutableSQLStatement)
+  case class Flush()
 }

@@ -29,7 +29,6 @@ class DatabaseCommiter(logger:ActorRef) extends SystemActor(logger)
   def receive =
   {
     case  update:MutableSQLStatement    => applyDatabaseUpdate(update)
-    case msg  => error(getClass.toString,msg.getClass.toString)
   }
 
   /**

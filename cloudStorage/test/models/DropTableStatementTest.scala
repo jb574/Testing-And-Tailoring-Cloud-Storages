@@ -1,7 +1,7 @@
 package models
 
 import models.CreateTableStatementHelpers.CreateTableStatement
-import models.DripTableStatementHelper.DropTableStatement
+import models.DropTableStatementHelper.DropTableStatement
 import play.api.test.{PlaySpecification, WithApplication}
 
 /**

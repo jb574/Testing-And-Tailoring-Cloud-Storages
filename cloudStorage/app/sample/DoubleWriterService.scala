@@ -26,7 +26,7 @@ object DoubleWriterService extends App
         {
 
            seenQueries = seenQueries + 1
-          if(!first.makeWriteAndRead() || !second.makeWriteAndRead())
+          if(!first.makeWriteAndRead() && !second.makeWriteAndRead())
           {
             result = s"it took $seenQueries tries to get an inconsistent val"
             abnormalityDetected = true

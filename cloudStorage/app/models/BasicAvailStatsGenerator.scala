@@ -2,6 +2,7 @@ package models
 
 import java.time.LocalDate
 
+import models.SQLStatementHelper.MutableSQLStatement
 import play.api.libs.json.{JsValue, Json}
 
 /**
@@ -12,23 +13,39 @@ import play.api.libs.json.{JsValue, Json}
  */
 object BasicAvailStatsGenerator
 {
+
    class currentStats()
   {
     override  def toString =
     {
       s"percentage  of sucsessful updatas; $percentagegood, failed updates " +
-        s"$percentageBad, total : ${sucesses + failures}} $date"
+        s"$percentageBad, total : ${sucesses + failures}}, ${outStanding.size} unnacounted for updates $date"
     }
-
      var sucesses = 0
      var failures = 0
+    var total = 0
     var date = LocalDate.now()
      var percentagegood:Double = 0
      var percentageBad:Double = 0
+    var outStanding:Set[MutableSQLStatement]  = Set()
 
-    def addGoodResult() = sucesses = sucesses + 1
 
-    def addFailure() = failures = failures + 1
+    def addGoodResult(update:MutableSQLStatement) =
+    {
+      outStanding = outStanding - update
+      total = total + 1
+      sucesses = sucesses + 1
+    }
+
+
+
+    def addFailure() =
+    {
+      failures = failures +  1;
+      total  = total + 1
+    }
+
+    def informNewUpdateArrival(update:MutableSQLStatement) =  outStanding = outStanding + update
 
      private def calcPerc(amount:Double,total:Double):Double =
      {
@@ -52,11 +69,13 @@ object BasicAvailStatsGenerator
 
    var current =  new currentStats
 
-  def addSucsess = current.addGoodResult()
+  def addSucsess(update:MutableSQLStatement) =
+    current.addGoodResult(update)
 
 
   def AddFailure = current.addFailure()
 
+  def informNewPacketArrival(update:MutableSQLStatement)  = current.informNewUpdateArrival(update)
 
    def recordStats() =
    {

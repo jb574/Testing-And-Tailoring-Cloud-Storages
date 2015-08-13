@@ -1,6 +1,6 @@
 package Actors.Replicators
 
-import models.{QuerySet, InconsistentQueryRecords}
+import models.{BasicAvailStatsGenerator, QuerySet, InconsistentQueryRecords}
 import models.SQLStatementHelper.MutableSQLStatement
 
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -15,7 +15,7 @@ import scala.concurrent.duration._
 import scala.collection.mutable.ArrayBuffer
 import scala.concurrent.Future
 import scala.concurrent.Await
-
+import Actors.ActorUtils
 /**
  * this is a replication cluster of several servers
  * to simulate basic availability
@@ -35,7 +35,7 @@ with AskSupport
   var masterIndex = 0
   var downServers:Set[Int] = Set()
   var seenMaster = true
-
+  val FailureHandle = context.actorSelection("akka://application/user/availibilityChecker")
   /**
    * method for scheduling the next master checkup
    *
@@ -194,16 +194,19 @@ with AskSupport
 
   def receive =
   {
+    case Flush =>
+      servers.foreach((server) => server ! Flush)
     case result:QueryResult =>
       println("running query")
       implicit val timeout = Timeout(5 seconds)
       val res =  servers(masterIndex) ? result
       Await.result(res,5 seconds)
-      var finalRes = new QueryResult()
+      var finalRes =  new QueryResult()
       res onSuccess
         {
           case properResults:QueryResult => finalRes = properResults
         }
+
       println(s"at the cluster stage we have ${finalRes.toString}")
       println("so the result  is " + result.toString )
       sender ! finalRes
@@ -226,7 +229,9 @@ with AskSupport
     case MasterAlive =>
       logger ! Message("we've seen the master")
       seenMaster = true
-    case update:MutableSQLStatement => passMessageOn(update)
+    case update:MutableSQLStatement =>
+         downServers.foreach((server) => FailureHandle ! Update(false,update) )
+      passMessageOn(update)
     case test:TestMessage => passMessageOn(test)
     case serverList:ArrayBuffer[ActorRef] => servers.foreach((serv) => serv ! serverList)
     case (true, avList:ArrayBuffer[ActorRef]) =>  passMessageOn((true,avList))
@@ -244,12 +249,6 @@ with AskSupport
    */
   def passMessageOn(msg: Any)=
   {
-    for (index <- 0 to servers.size - 1)
-    {
-      if (!downServers.contains(index))
-      {
-        servers(index) ! msg
-      }
-    }
+    servers.foreach((serv) => serv ! msg)
   }
 }

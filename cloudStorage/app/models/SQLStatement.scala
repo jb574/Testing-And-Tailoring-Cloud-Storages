@@ -1,5 +1,7 @@
 package models
 
+import java.time.LocalDateTime
+
 import play.api.libs.json.Json
 
 
@@ -24,7 +26,7 @@ object SQLStatementHelper
   {
       private var id = assignNewId
       def getNewSQLStatement:String
-
+     var created = LocalDateTime.now()
   }
 
   /**

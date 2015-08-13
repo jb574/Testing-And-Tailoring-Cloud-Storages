@@ -215,20 +215,17 @@
 [info] 
 [info] 32m(Server started, use Ctrl+D to stop and go back to the console...)0m
 [info] 
-[info] Compiling 37 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Commiters/DatabaseCommiterOverseer.scala:31: non-variable type argument models.SQLStatementHelper.MutableSQLStatement in type pattern List[models.SQLStatementHelper.MutableSQLStatement] (the underlying of List[models.SQLStatementHelper.MutableSQLStatement]) is unchecked since it is eliminated by erasure
-[warn]      case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
-[warn]                   ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:231: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[info] Compiling 40 Scala sources and 1 Java source to /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/target/scala-2.11/classes...
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:236: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case serverList:ArrayBuffer[ActorRef] => servers.foreach((serv) => serv ! serverList)
 [warn]                     ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:232: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:237: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case (true, avList:ArrayBuffer[ActorRef]) =>  passMessageOn((true,avList))
 [warn]                        ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:236: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationCluster.scala:241: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
 [warn]     case foreignQueries: List[QuerySet] => passMessageOn(foreignQueries)
 [warn]                          ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:33: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationMarshaller.scala:34: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
 [warn]     case list:List[QuerySet] => sendUpdatesToDatabase(list)
 [warn]               ^
 [warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationOverSeer.scala:157: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
@@ -240,30 +237,38 @@
 [warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:165: non-variable type argument akka.actor.ActorRef in type pattern scala.collection.mutable.ArrayBuffer[akka.actor.ActorRef] is unchecked since it is eliminated by erasure
 [warn]     case (true, avList:ArrayBuffer[ActorRef]) => avServers = avList
 [warn]                        ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:242: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/Actors/Replicators/ReplicationServer.scala:260: non-variable type argument models.QuerySet in type pattern List[models.QuerySet] (the underlying of List[models.QuerySet]) is unchecked since it is eliminated by erasure
 [warn]     case foreignQueries: List[QuerySet] =>
 [warn]                          ^
-[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/FrontEnd.scala:190: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/BackEnd.scala:236: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result
 [warn]   def GetInfoFromDatabase(allPossibleNeeded:Boolean):(Request[JsValue]) => Future[SimpleResult] =
 [warn]                                                                         ^
-[warn] there were 13 feature warnings; re-run with -feature for details
+[warn] /Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/app/controllers/BackEnd.scala:333: type SimpleResult in package mvc is deprecated: SimpleResult has been renamed to Result
+[warn]   private def createOrDropTable(goodStatement:SQLStatement): SimpleResult =
+[warn]                                                              ^
+[warn] there were 12 feature warnings; re-run with -feature for details
 [warn] 11 warnings found
 [info] play - database [default] connected at jdbc:mysql://localhost:8889/health
 [info] play - Application started (Dev)
-[info] writing 1  
-[info] writing 2  
-[info] writing 33  
-[info] writing 35  
-[info] writing 4  
-[info] writing 52  
-[info] writing 25  
-[info] writing 8  
-[info] writing 79  
-[info] writing 95  
-[info] writing 89  
-[info] writing 1  
-[info] writing 87  
-[info] writing 82  
-[info] writing 6  
-[info] writing 11  
+[info] 
+[info] 
+[info] NEW RUN
+[info] Printing item after conditional update to new attribute...
+[info] {
+[info]   "name" : "dad",
+[info]   "id" : 101,
+[info]   "age" : 10
+[info] }
+[info] looking for value 10
+[info] 10
+[info] 10
+[info] loop counter is now 1
+[info] 10
+[info] loop counter is now 2
+[info] 10
+[info] loop counter is now 3
+[info] 10
+[info] loop counter is now 4
+[info] 10
+[info] loop counter is now 5
 [info] Stopping Play fork run ...

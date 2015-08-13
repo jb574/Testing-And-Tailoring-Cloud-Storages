@@ -6,6 +6,8 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient
 import com.amazonaws.services.dynamodbv2.document.DynamoDB
 import com.amazonaws.services.dynamodbv2.document.Item
 import com.amazonaws.services.dynamodbv2.document.Table
+import com.amazonaws.services.dynamodbv2.document.spec.UpdateItemSpec
+import com.amazonaws.services.dynamodbv2.document.utils.{ValueMap, NameMap}
 import com.amazonaws.services.dynamodbv2.model._
 import scala.collection.JavaConverters
 import scala.util.Random
@@ -43,17 +45,31 @@ class DynamoDBInterface  extends  DatabaseConnector
 
   def read():Int =
   {
-    write(new Random().nextInt(50))
     val table = dynamoDB.getTable("main")
     val item = table.getItem("id",101)
-    item.getNumber("age").intValue()
+    val result=  item.getNumber("age").intValue()
+    println(result)
+    result
   }
 
 
   def write(age:Int) =
   {
     val table = dynamoDB.getTable("main")
-    createItem(table,age)
+     val updateItemSpec = new UpdateItemSpec()
+      .withPrimaryKey("id", 101)
+      .withReturnValues(ReturnValue.ALL_NEW)
+      .withUpdateExpression("set #p = :val1")
+      .withNameMap(new NameMap().`with`("#p", "age"))
+    .withValueMap(new ValueMap()
+    .withNumber(":val1", age))
+
+    val outcome = table.updateItem(updateItemSpec);
+
+    // Check the response.
+    System.out
+      .println("Printing item after conditional update to new attribute...");
+    System.out.println(outcome.getItem().toJSONPretty());
   }
 
 

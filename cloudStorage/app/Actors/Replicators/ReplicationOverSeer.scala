@@ -1,7 +1,7 @@
 package Actors.Replicators
 
 import java.time.LocalDateTime
-import controllers.{FrontEnd, SettingsManager}
+import controllers.{BackEnd, SettingsManager}
 
 import scala.util.Success
 import scala.util.Failure
@@ -103,7 +103,7 @@ with AskSupport
   def getRandomServerNumber: Int =
   {
     val rand = new Random()
-    val serverId = rand.nextInt(3)
+    val serverId = rand.nextInt(SettingsManager.retrieveValue("primServers"))
     println("chosen server" + serverId)
     serverId
   }
@@ -152,12 +152,12 @@ with AskSupport
     case results:QueryResult =>
       val updatedResultss:QueryResult = processQuery(results)
       println(s"were sending ${updatedResultss.toString}")
-      FrontEnd.correctResult = updatedResultss.toString
+      BackEnd.correctResult = updatedResultss.toString
       sender ! updatedResultss
     case testData:ArrayBuffer[ActorRef] => servers = testData
               updateReferenceLists
-    case msg  => error(getClass.toString,msg.getClass.toString)
-
+    case Flush =>
+      servers.foreach((server) => server ! Flush)
   }
 
   /**

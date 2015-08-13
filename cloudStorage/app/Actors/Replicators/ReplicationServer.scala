@@ -6,7 +6,7 @@ import akka.actor._
 import akka.pattern.AskSupport
 import controllers.SettingsManager
 import models.QueryResultHelper.QueryResult
-import models.{QuerySet, InconsistentQueryRecords}
+import models.{BasicAvailStatsGenerator, QuerySet, InconsistentQueryRecords}
 import models.SQLStatementHelper.MutableSQLStatement
 import java.time.{LocalDateTime, LocalDate}
 import scala.collection.mutable.ArrayBuffer
@@ -65,10 +65,10 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     val chance = rand.nextInt(100)
     println("chance is " + chance)
     val target =   SettingsManager.retrieveValue("chanceOfGoodResult")
-    if (chance < target)
+    if (chance <= target)
     {
-      logger ! Message("recieved message ok")
-      FailureHandle ! (true, update)
+      logger ! Message(s"recieved message ok by server $avIndex")
+      FailureHandle ! Update(true,update)
       respondToTestMessage
       InconsistentQueryRecords.addItem(update.getNewSQLStatement)
       if (!inconsistentUpdates.exists((clockSeq) => clockSeq.addNewQuery(update, id)))
@@ -78,14 +78,14 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     }
     else
     {
+
       logger ! Message(s"this message brought  server $avIndex down")
+      FailureHandle ! Update(false,update)
       if(master)
       {
         logger ! Message(s"sever $avIndex was the master")
       }
-      FailureHandle ! (false,update)
-      inconsistentUpdates.foreach((clock) =>
-        clock.queries.foreach((query) => FailureHandle ! (false,update)  ) )
+      inconsistentUpdates = List()
       context.parent ! (master,avIndex)
       context.become(dead)
     }
@@ -164,6 +164,7 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
     case serverList:ArrayBuffer[ActorRef] => otherServers = serverList
     case (true, avList:ArrayBuffer[ActorRef]) => avServers = avList
     case MakeConsistent =>
+      avServers.foreach((server) => server ! StragglersRequest)
       makeConsistent
   }
 
@@ -190,6 +191,23 @@ class ReplicationServer(logger:ActorRef,id:Int,replicationMarshaller:ActorRef,va
 
   def permanantWork:Receive =
   {
+    case msg:Flush => inconsistentUpdates = List()
+    case StragglersRequest => sender ! StragglersResponse(inconsistentUpdates)
+    case response:StragglersResponse =>
+      response.response.foreach( (set) =>
+        if(!inconsistentUpdates.contains(set))
+        {
+           val option = inconsistentUpdates.find((otherSet) =>  otherSet.canBeMeged(set))
+          if(option.isDefined)
+          {
+            option.get.mergeQuerySets(set)
+          }
+          else
+          {
+             inconsistentUpdates =  set :: inconsistentUpdates
+          }
+        }
+      )
     case queryResult:QueryResult => inconsistentUpdates.foreach(update => update.executeQuery(queryResult))
       sender ! queryResult
       println(s"at the start the result is ${queryResult.toString}")

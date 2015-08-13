@@ -7,12 +7,12 @@ import sample._
 
 /**
  * This class houses
- * the invokign mechansims for the
+ * the invoking mechanisms for the
  * sample applications that I have written
- * to verify that  my emulator
+ * to verify that my emulator
  * meets the BASE properties
  * @author Jack Davey
- * @version 3rd June 2015
+ * @version 3rd July 2015
  */
 object SampleApplications  extends Controller
 {
@@ -25,7 +25,7 @@ object SampleApplications  extends Controller
    * code for running and configuring
    * a sample application
    * @param sample the sample application to run
-   * @param amazonUsed  a boolean determining which of the two services we use
+   * @param amazonUsed a boolean determining which of the two services we use
    *                    either DynamoDB or the emulator
    * @return  the result of the sample run.
    */
@@ -41,19 +41,52 @@ object SampleApplications  extends Controller
      }
   }
 
+  /**
+   * code to test the connection
+   * with Amazon
+   */
   def amazonTest = Action
   {
     val interface = new DynamoDBInterface
     Ok(interface.read().toString)
   }
 
+
+  def timeToConsistent = Action
+  {
+    var count = 0
+    var result = s""
+    Ok(result + s"    " +
+      s"${TimeTakenTilConsistencyExample.runSample(new DynamoDBInterface)}")
+  }
+
+
+  /**
+   * code to test that the select statement
+   * is being run effectively
+   */
   def test = Action
   {
     val query = new SelectStatement(List("test"),"*","")
     Ok(WebServiceUtils.executeSelect(query))
   }
 
+  /**
+   *  code to test the basic availability
+   *  this doesn't actually give the stats
+   *  back but it sends 1000 requests to my system
+   *  as an appropriate test
+   */
+  def runAvSample = Action
+  {
+    BasicAavailabilitySampleOne.runSample(new EmulatorDBInterface)
+    Ok("sample run")
+  }
 
+
+  /**
+   * runs the second sample with two writers
+   */
   def runSecondSample = Action
   {
     Ok(DoubleWriterService.runSecondSample(new DynamoDBInterface))

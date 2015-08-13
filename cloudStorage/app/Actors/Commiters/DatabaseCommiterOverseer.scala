@@ -28,9 +28,9 @@ class DatabaseCommiterOverseer (logger:ActorRef) extends SystemActor(logger)
    */
    def receive =
    {
-     case updates:List[MutableSQLStatement] => updates.map(query => transmitDataToDatabase(query))
-     case msg  => error(getClass.toString,msg.getClass.toString)
+     case update:MutableSQLStatement =>  transmitDataToDatabase(update)
    }
+
 
 
   /**

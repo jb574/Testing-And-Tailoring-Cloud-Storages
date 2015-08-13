@@ -6,32 +6,33 @@
 # i developed as part of the first tieration
 # they dont contribute anythign useful to the
 #rest of the application
-GET         /testold                    controllers.Application.testAction
-GET         /seenQueries             controllers.Application.listQueries
-POST        /addQuery                controllers.Application.saveQuery
-POST        /updateDataOld           controllers.Application.saveMutableQuery
+GET         /testold                     controllers.Application.testAction
+GET         /seenQueries                 controllers.Application.listQueries
+POST        /addQuery                    controllers.Application.saveQuery
+POST        /updateDataOld               controllers.Application.saveMutableQuery
 
 
 
 #These urls  are the services that form
 # my implementation of eventual consistency
-POST        /createTable             controllers.FrontEnd.createTable
-POST        /dropTable               controllers.FrontEnd.dropTable
-POST        /updateData              controllers.FrontEnd.update
-GET         /log                     controllers.FrontEnd.getLogOutput
-POST        /insert                  controllers.FrontEnd.insert
-POST        /delete                  controllers.FrontEnd.delete
-GET         /makeConsistent          controllers.FrontEnd.makeConsistent
-POST       /updateVal/name/value    controllers.FrontEnd.changeProperty(name:String,value:Int)
-GET         /allUpdates              controllers.FrontEnd.getInconsistentUPdateInfo
-POST        /select                  controllers.FrontEnd.runEventuallyConsistentQuery
-POST        /selectAllPossible       controllers.FrontEnd.getAllPossibilities
-GET         /amazonTest               controllers.SampleApplications.amazonTest
-GET        /stats                    controllers.FrontEnd.getAvailibilityStats
+POST        /createTable                 controllers.BackEnd.createTable
+POST        /dropTable                   controllers.BackEnd.dropTable
+POST        /updateData                  controllers.BackEnd.update
+GET         /log                         controllers.BackEnd.getLogOutput
+POST        /insert                      controllers.BackEnd.insert
+POST        /delete                      controllers.BackEnd.delete
+GET         /makeConsistent              controllers.BackEnd.makeConsistent
+POST        /updateVal/name/value        controllers.BackEnd.changeProperty(name:String,value:Int)
+GET         /allUpdates                  controllers.BackEnd.getInconsistentUPdateInfo
+POST        /select                      controllers.BackEnd.runEventuallyConsistentQuery
+POST        /selectAllPossible           controllers.BackEnd.getAllPossibilities
+GET         /amazonTest                  controllers.SampleApplications.amazonTest
+GET         /stats                       controllers.BackEnd.getAvailibilityStats
 # the urls below show the ample applications i wrote to help rove my eventual consistency implementation does the jo
-GET    /sample1                    controllers.SampleApplications.runFirstSample
-GET    /sample2                    controllers.SampleApplications.runSecondSample
-GET    /test                       controllers.SampleApplications.amazonTest
-
+GET         /sample1                     controllers.SampleApplications.runFirstSample
+GET         /sample2                     controllers.SampleApplications.runSecondSample
+GET         /test                        controllers.SampleApplications.amazonTest
+GET         /avsam                       controllers.SampleApplications.runAvSample
+GET         /cons                        controllers.SampleApplications.timeToConsistent
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/*file            controllers.Assets.versioned(path="/public", file)
+GET         /assets/*file                controllers.Assets.versioned(path="/public", file)

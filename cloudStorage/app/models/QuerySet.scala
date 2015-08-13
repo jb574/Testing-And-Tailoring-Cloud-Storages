@@ -13,6 +13,9 @@ import akka.actor.ActorRef
 class QuerySet( var vectorClocks:Map[Int,LocalDateTime],  var queries:List[MutableSQLStatement],
                 var tableNames:List[String])
 {
+
+  def this() = this(Map[Int,LocalDateTime](),List(),List())
+
   val dateCreated = LocalDateTime.now()
 
   /**
@@ -33,7 +36,6 @@ class QuerySet( var vectorClocks:Map[Int,LocalDateTime],  var queries:List[Mutab
    * @return  a boolean indicating whether the update
    *          and this query set work on the same tables.
    */
-
   def dealQithSameeData(other:QuerySet):Boolean =
   {
     other.tableNames.equals(tableNames)
@@ -68,7 +70,28 @@ class QuerySet( var vectorClocks:Map[Int,LocalDateTime],  var queries:List[Mutab
    * actor to the database committer
    * @param committer the comitter to send to
    */
-  def sendQueries(committer:ActorRef) = committer ! queries
+  def sendQueries(committer:ActorRef) =
+  {
+      while(queries.nonEmpty)
+      {
+        var now = LocalDateTime.now()
+        queries.foreach((query) =>
+        if (query.created.isBefore(now)) now = query.created )
+        val statementOption = queries.find((query) => query.created.equals(now))
+        if(statementOption.isDefined)
+        {
+          val statement:MutableSQLStatement = statementOption.get
+          committer ! statement
+          queries =  queries.filter((query) => !query.equals(statement))
+        }
+        else
+          {
+
+          }
+
+      }
+      committer ! queries
+    }
 
   /**
    * method to check to see if two query sets
@@ -151,8 +174,10 @@ class QuerySet( var vectorClocks:Map[Int,LocalDateTime],  var queries:List[Mutab
      addNewTables(update)
      if(!queries.contains(update))
      {
-       val pair = (serverID,LocalDateTime.now())
+       val clockTime = LocalDateTime.now()
+       val pair = (serverID,clockTime)
        vectorClocks =  vectorClocks + pair
+       update.created = clockTime
        queries  = update :: queries
        true
      }

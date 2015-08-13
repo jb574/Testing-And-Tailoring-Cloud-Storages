@@ -28,3 +28,21 @@ Application started (Prod)
 2015-06-09 11:03:51,306 - [INFO] - from play in main 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
+2015-08-10 09:44:30,323 - [INFO] - from play in main 
+database [default] connected at jdbc:mysql://localhost:8889/health
+
+2015-08-10 09:44:30,339 - [INFO] - from play in main 
+Application started (Prod)
+
+2015-08-10 09:44:30,417 - [INFO] - from play in main 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-08-10 09:44:51,847 - [INFO] - from play in New I/O worker #1 
+Starting application default Akka system.
+
+2015-08-10 09:48:20,076 - [INFO] - from play in main 
+database [default] connected at jdbc:mysql://localhost:8889/health
+
+2015-08-10 09:48:20,117 - [INFO] - from play in main 
+Application started (Prod)
+

@@ -25,7 +25,7 @@ class EmulatorDBInterface  extends  DatabaseConnector
     val response = WebServiceUtils.executeSelect(query)
     val betterResponse = response.replace("age","").
       replaceAll("\\s","").replaceAll("\"", "");
-    println(betterResponse)
+    println(s"read value is $betterResponse")
     Integer.parseInt(betterResponse)
   }
 
@@ -35,6 +35,7 @@ class EmulatorDBInterface  extends  DatabaseConnector
    */
   def write(age: Int) =
   {
+    println(s"written value is $age")
     val update = new UpdateTableStatment(List("test"),
       Map("age" ->s"$age"),Map("name" -> "'dad'"))
     WebServiceUtils.executeUpdate(update)

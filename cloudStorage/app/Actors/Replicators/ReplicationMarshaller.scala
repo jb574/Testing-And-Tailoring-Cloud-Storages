@@ -2,6 +2,7 @@ package Actors.Replicators
 
 import Actors.SystemActor
 import akka.actor.ActorRef
+import controllers.SettingsManager
 import models.{BasicAvailStatsGenerator, QuerySet}
 import scala.collection.mutable.ArrayBuffer
 
@@ -43,13 +44,21 @@ class ReplicationMarshaller(logger:ActorRef,committer:ActorRef) extends SystemAc
     list.foreach(query => queries.append(query))
     noSeen = noSeen + 1
     println(noSeen)
-    if (noSeen == 6)
+    if (noSeen == SettingsManager.retrieveValue("primServers"))
     {
       println("clear")
-      queries.clear()
+      while(queries.nonEmpty)
+      {
+        var first = true
+        var earliest = new QuerySet()
+        queries.foreach((query) => if(query.dateCreated.isBefore(earliest.dateCreated))
+        earliest = query)
+        earliest.sendQueries(committer)
+        queries = queries - earliest
+      }
       noSeen = 0
+      BasicAvailStatsGenerator.recordStats()
     }
-    list.foreach(query => query.sendQueries(committer))
-    BasicAvailStatsGenerator.recordStats()
+
   }
 }

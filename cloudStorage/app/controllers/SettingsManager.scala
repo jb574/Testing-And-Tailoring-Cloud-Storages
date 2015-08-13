@@ -10,9 +10,12 @@ object SettingsManager
    private var configSettings:Map[String,Int] = Map()
   LoadConfigCurrent
 
+  /**
+   * loads the current configuration
+   */
   def LoadConfigCurrent: Unit =
   {
-    addValue("timeTilNextConsistencySweep", 100000)
+    addValue("timeTilNextConsistencySweep", 15)
     addValue("chanceOfGoodResult", 100)
     addValue("primServers", 2)
     addValue("secServers", 3)
@@ -21,9 +24,13 @@ object SettingsManager
     addValue("avTarget",200)
   }
 
+  /**
+   * loads a standard config good for eventual consistency
+   * but with availability disabled
+   */
   def LoadConfigEventualConsistency: Unit =
   {
-    addValue("timeTilNextConsistencySweep", 100)
+    addValue("timeTilNextConsistencySweep", 60)
     addValue("chanceOfGoodResult", 100)
     addValue("primServers", 3)
     addValue("secServers", 4)
@@ -32,10 +39,14 @@ object SettingsManager
   }
 
 
+  /**
+   * adds a value to the settings manager
+   * @param key the name of the value
+   * @param value the value itself
+   */
   private def addValue(key:String,value:Int) =
-  {
     configSettings = configSettings + (key -> value)
-  }
+
 
   /**
    * change a value in the map
@@ -43,7 +54,7 @@ object SettingsManager
    * for it to be changed
    * @param key the name of the property
    * @param value the new value of the property
-   * @throws IllegalArgumentException if the desired propertydoes not exist
+   * @throws IllegalArgumentException if the desired property does not exist
    */
    def updateKey(key:String,value:Int) =
   {

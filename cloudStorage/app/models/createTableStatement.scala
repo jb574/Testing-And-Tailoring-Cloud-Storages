@@ -3,7 +3,7 @@ package models
 import play.api.libs.json.Json
 
 /**
- * class to allow represntation of SQL
+ * class to allow representation of SQL
  * create table statements
  * @author Jack Davey
  * @version 15th June 2015
@@ -12,10 +12,10 @@ import play.api.libs.json.Json
 {
 
   /**
-   * this is thae actual class itself
+   * this is the actual class itself
    * @author Jack Davey
    * @version 15th June 2015
-   * @param tables the names of the database tables involved.
+   * @param tables the names of the database tables involved
    * @param columns the columns of the new table
    */
   case class CreateTableStatement(tables:List[String],columns:List[String], private val  otherInfo:String) extends models.SQLStatementHelper.SQLStatement(tables)
