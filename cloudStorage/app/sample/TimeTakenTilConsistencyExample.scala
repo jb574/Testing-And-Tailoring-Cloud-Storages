@@ -20,13 +20,25 @@ object TimeTakenTilConsistencyExample
     }
   }
 
+  def writeVal(db:DatabaseConnector):Int =
+  {
+    val result =  new Random().nextInt(100)
+    db.write(result)
+    result
+  }
+
    def runSample(db:DatabaseConnector):String =
    {
      println()
      println()
      println("NEW RUN")
-     val result =  new Random().nextInt(100)
-     db.write(result)
+     var index = 0
+     while(index < 100)
+     {
+       writeVal(db)
+       index = index + 1
+     }
+     var result = writeVal(db)
      println(s"looking for value $result")
      var loopCounter = 0
      var newResult = db.read()
@@ -36,13 +48,13 @@ object TimeTakenTilConsistencyExample
        if (db.read() == result)
        {
          loopCounter = loopCounter + 1
-         println(s"loop counter is now $loopCounter")
+        result =   writeVal(db)
+
        }
        else
        {
          loopCounter = 0
          attemptCounter = attemptCounter + 1
-         println("loopcounter back to zero")
        }
      }
 

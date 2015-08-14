@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:e0e7207ef877f5e3ac91900793f985b8886020fd
-// @DATE:Wed Aug 12 14:08:15 BST 2015
+// @HASH:72798bc96faa205553ec46bfe6d7a47629f43e68
+// @DATE:Fri Aug 14 14:31:58 BST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -14,7 +14,8 @@ import _root_.controllers.Assets.Asset
 import Router.queryString
 
 
-// @LINE:38
+// @LINE:39
+// @LINE:37
 // @LINE:36
 // @LINE:35
 // @LINE:34
@@ -39,6 +40,7 @@ import Router.queryString
 // @LINE:9
 package controllers {
 
+// @LINE:37
 // @LINE:36
 // @LINE:35
 // @LINE:34
@@ -68,6 +70,13 @@ def timeToConsistent(): Call = {
 }
                         
 
+// @LINE:37
+def percTest(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "perc")
+}
+                        
+
 // @LINE:32
 def runFirstSample(): Call = {
    import ReverseRouteContext.empty
@@ -92,11 +101,11 @@ def runSecondSample(): Call = {
 }
                           
 
-// @LINE:38
+// @LINE:39
 class ReverseAssets {
 
 
-// @LINE:38
+// @LINE:39
 def versioned(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -249,7 +258,8 @@ def saveMutableQuery(): Call = {
                   
 
 
-// @LINE:38
+// @LINE:39
+// @LINE:37
 // @LINE:36
 // @LINE:35
 // @LINE:34
@@ -275,6 +285,7 @@ def saveMutableQuery(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:37
 // @LINE:36
 // @LINE:35
 // @LINE:34
@@ -307,6 +318,17 @@ def timeToConsistent : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "cons"})
+      }
+   """
+)
+                        
+
+// @LINE:37
+def percTest : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.SampleApplications.percTest",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "perc"})
       }
    """
 )
@@ -348,11 +370,11 @@ def runSecondSample : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:38
+// @LINE:39
 class ReverseAssets {
 
 
-// @LINE:38
+// @LINE:39
 def versioned : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.versioned",
    """
@@ -573,7 +595,8 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:38
+// @LINE:39
+// @LINE:37
 // @LINE:36
 // @LINE:35
 // @LINE:34
@@ -599,6 +622,7 @@ def saveMutableQuery : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
+// @LINE:37
 // @LINE:36
 // @LINE:35
 // @LINE:34
@@ -617,6 +641,12 @@ def amazonTest(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:36
 def timeToConsistent(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.SampleApplications.timeToConsistent(), HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "timeToConsistent", Seq(), "GET", """""", _prefix + """cons""")
+)
+                      
+
+// @LINE:37
+def percTest(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.SampleApplications.percTest(), HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "percTest", Seq(), "GET", """""", _prefix + """perc""")
 )
                       
 
@@ -641,11 +671,11 @@ def runSecondSample(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:38
+// @LINE:39
 class ReverseAssets {
 
 
-// @LINE:38
+// @LINE:39
 def versioned(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.versioned(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )

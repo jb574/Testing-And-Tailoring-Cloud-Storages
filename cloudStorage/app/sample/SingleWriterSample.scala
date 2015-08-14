@@ -30,14 +30,13 @@ object SingleWriterSample
         queriesMade = queriesMade + 1
        // println("result is " + result)
         //println("response is " + response)
-        if(!(result == response))
+        if(result != age)
         {
           consistentResults = consistentResults + 1
           age =  random.nextInt(100)
           db.write(age)
-          var response = db.read()
         }
       }
-      "it took " + queriesMade  + " attempts to get 4 inconsistent results"
+      "it took " + consistentResults  + " attempts to get 4 inconsistent results"
   }
 }

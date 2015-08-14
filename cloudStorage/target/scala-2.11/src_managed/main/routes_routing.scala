@@ -1,6 +1,6 @@
 // @SOURCE:/Users/jackdavey/Documents/Testing-And-Tailoring-Cloud-Storages/cloudStorage/conf/routes
-// @HASH:e0e7207ef877f5e3ac91900793f985b8886020fd
-// @DATE:Wed Aug 12 14:08:15 BST 2015
+// @HASH:72798bc96faa205553ec46bfe6d7a47629f43e68
+// @DATE:Fri Aug 14 14:31:58 BST 2015
 
 
 import scala.language.reflectiveCalls
@@ -190,13 +190,20 @@ controllers.SampleApplications.timeToConsistent,
 HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "timeToConsistent", Nil,"GET", """""", Routes.prefix + """cons"""))
         
 
-// @LINE:38
-private[this] lazy val controllers_Assets_versioned22_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_versioned22_invoker = createInvoker(
+// @LINE:37
+private[this] lazy val controllers_SampleApplications_percTest22_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("perc"))))
+private[this] lazy val controllers_SampleApplications_percTest22_invoker = createInvoker(
+controllers.SampleApplications.percTest,
+HandlerDef(this.getClass.getClassLoader, "", "controllers.SampleApplications", "percTest", Nil,"GET", """""", Routes.prefix + """perc"""))
+        
+
+// @LINE:39
+private[this] lazy val controllers_Assets_versioned23_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_versioned23_invoker = createInvoker(
 controllers.Assets.versioned(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "versioned", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """testold""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.BackEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.BackEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.BackEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.BackEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.BackEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.BackEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.BackEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateVal/name/value""","""controllers.BackEnd.changeProperty(name:String, value:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.BackEnd.getInconsistentUPdateInfo"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.BackEnd.runEventuallyConsistentQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """selectAllPossible""","""controllers.BackEnd.getAllPossibilities"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """amazonTest""","""controllers.SampleApplications.amazonTest"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """stats""","""controllers.BackEnd.getAvailibilityStats"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample1""","""controllers.SampleApplications.runFirstSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample2""","""controllers.SampleApplications.runSecondSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.SampleApplications.amazonTest"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """avsam""","""controllers.SampleApplications.runAvSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """cons""","""controllers.SampleApplications.timeToConsistent"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """testold""","""controllers.Application.testAction"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """seenQueries""","""controllers.Application.listQueries"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addQuery""","""controllers.Application.saveQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateDataOld""","""controllers.Application.saveMutableQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createTable""","""controllers.BackEnd.createTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dropTable""","""controllers.BackEnd.dropTable"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateData""","""controllers.BackEnd.update"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """log""","""controllers.BackEnd.getLogOutput"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """insert""","""controllers.BackEnd.insert"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """delete""","""controllers.BackEnd.delete"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """makeConsistent""","""controllers.BackEnd.makeConsistent"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """updateVal/name/value""","""controllers.BackEnd.changeProperty(name:String, value:Int)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """allUpdates""","""controllers.BackEnd.getInconsistentUPdateInfo"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """select""","""controllers.BackEnd.runEventuallyConsistentQuery"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """selectAllPossible""","""controllers.BackEnd.getAllPossibilities"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """amazonTest""","""controllers.SampleApplications.amazonTest"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """stats""","""controllers.BackEnd.getAvailibilityStats"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample1""","""controllers.SampleApplications.runFirstSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """sample2""","""controllers.SampleApplications.runSecondSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """test""","""controllers.SampleApplications.amazonTest"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """avsam""","""controllers.SampleApplications.runAvSample"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """cons""","""controllers.SampleApplications.timeToConsistent"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """perc""","""controllers.SampleApplications.percTest"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.versioned(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -380,10 +387,18 @@ case controllers_SampleApplications_timeToConsistent21_route(params) => {
 }
         
 
-// @LINE:38
-case controllers_Assets_versioned22_route(params) => {
+// @LINE:37
+case controllers_SampleApplications_percTest22_route(params) => {
+   call { 
+        controllers_SampleApplications_percTest22_invoker.call(controllers.SampleApplications.percTest)
+   }
+}
+        
+
+// @LINE:39
+case controllers_Assets_versioned23_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_versioned22_invoker.call(controllers.Assets.versioned(path, file))
+        controllers_Assets_versioned23_invoker.call(controllers.Assets.versioned(path, file))
    }
 }
         

@@ -48,7 +48,6 @@ class DynamoDBInterface  extends  DatabaseConnector
     val table = dynamoDB.getTable("main")
     val item = table.getItem("id",101)
     val result=  item.getNumber("age").intValue()
-    println(result)
     result
   }
 
@@ -56,20 +55,7 @@ class DynamoDBInterface  extends  DatabaseConnector
   def write(age:Int) =
   {
     val table = dynamoDB.getTable("main")
-     val updateItemSpec = new UpdateItemSpec()
-      .withPrimaryKey("id", 101)
-      .withReturnValues(ReturnValue.ALL_NEW)
-      .withUpdateExpression("set #p = :val1")
-      .withNameMap(new NameMap().`with`("#p", "age"))
-    .withValueMap(new ValueMap()
-    .withNumber(":val1", age))
-
-    val outcome = table.updateItem(updateItemSpec);
-
-    // Check the response.
-    System.out
-      .println("Printing item after conditional update to new attribute...");
-    System.out.println(outcome.getItem().toJSONPretty());
+     createItem(table,age)
   }
 
 

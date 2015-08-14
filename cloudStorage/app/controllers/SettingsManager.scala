@@ -15,7 +15,7 @@ object SettingsManager
    */
   def LoadConfigCurrent: Unit =
   {
-    addValue("timeTilNextConsistencySweep", 15)
+    addValue("timeTilNextConsistencySweep", 10000)
     addValue("chanceOfGoodResult", 100)
     addValue("primServers", 2)
     addValue("secServers", 3)

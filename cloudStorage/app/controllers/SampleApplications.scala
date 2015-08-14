@@ -18,7 +18,15 @@ object SampleApplications  extends Controller
 {
   def runFirstSample = Action
   {
-     Ok(SingleWriterSample.runSample(new EmulatorDBInterface))
+     Ok(SingleWriterSample.runSample(new DynamoDBInterface))
+  }
+
+
+  def percTest = Action
+  {
+    Ok(s"${PercentageOfConsistantReadsExample.runSample(
+      new EmulatorDBInterface, 3
+    )}")
   }
 
   /**

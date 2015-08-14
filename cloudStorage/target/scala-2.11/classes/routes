@@ -34,5 +34,6 @@ GET         /sample2                     controllers.SampleApplications.runSecon
 GET         /test                        controllers.SampleApplications.amazonTest
 GET         /avsam                       controllers.SampleApplications.runAvSample
 GET         /cons                        controllers.SampleApplications.timeToConsistent
+GET         /perc                        controllers.SampleApplications.percTest
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file                controllers.Assets.versioned(path="/public", file)
